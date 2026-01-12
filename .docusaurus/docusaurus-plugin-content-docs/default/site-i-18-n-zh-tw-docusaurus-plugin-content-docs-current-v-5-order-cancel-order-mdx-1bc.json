@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/cancel-order",
+  "id": "v5/order/cancel-order",
+  "title": "撤銷委託單",
+  "description": "- 您必須指定orderId或者orderLinkId.",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/order/cancel-order.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/cancel-order",
+  "permalink": "/usa-docs/zh-TW/v5/order/cancel-order",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "撤銷委託單",
+    "sidebar_label": "撤銷委託單",
+    "sidebar_position": 3
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "修改委託單",
+    "permalink": "/usa-docs/zh-TW/v5/order/amend-order"
+  },
+  "next": {
+    "title": "查詢實時和終態委託單",
+    "permalink": "/usa-docs/zh-TW/v5/order/open-order"
+  }
+}

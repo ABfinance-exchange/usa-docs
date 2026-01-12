@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/batch-place",
+  "id": "v5/order/batch-place",
+  "title": "Batch Place Order",
+  "description": "This endpoint allows you to place more than one order in a single request.",
+  "source": "@site/docs/v5/order/batch-place.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/batch-place",
+  "permalink": "/usa-docs/v5/order/batch-place",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "Batch Place Order",
+    "sidebar_label": "Batch Place Order",
+    "sidebar_position": 7
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Trade History (2 years)",
+    "permalink": "/usa-docs/v5/order/execution"
+  },
+  "next": {
+    "title": "Batch Amend Order",
+    "permalink": "/usa-docs/v5/order/batch-amend"
+  }
+}

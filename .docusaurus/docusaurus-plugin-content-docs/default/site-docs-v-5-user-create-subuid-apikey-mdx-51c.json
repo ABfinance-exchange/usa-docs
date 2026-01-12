@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/create-subuid-apikey",
+  "id": "v5/user/create-subuid-apikey",
+  "title": "Create Sub UID API Key",
+  "description": "To create new API key for those newly created sub UID. Use master user's api key only.",
+  "source": "@site/docs/v5/user/create-subuid-apikey.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/create-subuid-apikey",
+  "permalink": "/usa-docs/v5/user/create-subuid-apikey",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Create Sub UID API Key",
+    "sidebar_label": "Create Sub UID API Key",
+    "sidebar_position": 2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Create Sub UID",
+    "permalink": "/usa-docs/v5/user/create-subuid"
+  },
+  "next": {
+    "title": "Get Sub UID List (Limited)",
+    "permalink": "/usa-docs/v5/user/subuid-list"
+  }
+}

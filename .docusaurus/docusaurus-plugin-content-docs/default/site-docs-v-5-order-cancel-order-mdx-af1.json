@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/cancel-order",
+  "id": "v5/order/cancel-order",
+  "title": "Cancel Order",
+  "description": "- You must specify orderId or orderLinkId to cancel the order.",
+  "source": "@site/docs/v5/order/cancel-order.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/cancel-order",
+  "permalink": "/usa-docs/v5/order/cancel-order",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Cancel Order",
+    "sidebar_label": "Cancel Order",
+    "sidebar_position": 3
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Amend Order",
+    "permalink": "/usa-docs/v5/order/amend-order"
+  },
+  "next": {
+    "title": "Get Open & Closed Orders",
+    "permalink": "/usa-docs/v5/order/open-order"
+  }
+}

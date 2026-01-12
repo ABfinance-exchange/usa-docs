@@ -1,0 +1,19 @@
+{
+  "unversionedId": "v5/asset/convert/convert-coin-list",
+  "id": "v5/asset/convert/convert-coin-list",
+  "title": "查詢兌換幣種列表",
+  "description": "您可以通過該接口獲取到各個帳戶內的兌入兌出幣種列表",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/convert/convert-coin-list.mdx",
+  "sourceDirName": "v5/asset/convert",
+  "slug": "/v5/asset/convert/convert-coin-list",
+  "permalink": "/usa-docs/zh-TW/v5/asset/convert/convert-coin-list",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "查詢兌換幣種列表",
+    "sidebar_label": "查詢兌換幣種列表",
+    "sidebar_position": 1
+  }
+}

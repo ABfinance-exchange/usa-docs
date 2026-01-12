@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/withdraw/cancel-withdraw",
+  "id": "v5/asset/withdraw/cancel-withdraw",
+  "title": "撤銷提幣",
+  "description": "HTTP 請求",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/withdraw/cancel-withdraw.mdx",
+  "sourceDirName": "v5/asset/withdraw",
+  "slug": "/v5/asset/withdraw/cancel-withdraw",
+  "permalink": "/usa-docs/zh-TW/v5/asset/withdraw/cancel-withdraw",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 17,
+  "frontMatter": {
+    "title": "撤銷提幣",
+    "sidebar_label": "撤銷提幣",
+    "sidebar_position": 17
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "提現",
+    "permalink": "/usa-docs/zh-TW/v5/asset/withdraw/"
+  },
+  "next": {
+    "title": "新建子帳戶",
+    "permalink": "/usa-docs/zh-TW/v5/user/create-subuid"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/fee-rate",
+  "id": "v5/account/fee-rate",
+  "title": "查詢手續費率",
+  "description": "查詢交易手續費率",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/account/fee-rate.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/fee-rate",
+  "permalink": "/usa-docs/zh-TW/v5/account/fee-rate",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "查詢手續費率",
+    "sidebar_label": "查詢手續費率",
+    "sidebar_position": 8
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢用户可交易產品的規格信息",
+    "permalink": "/usa-docs/zh-TW/v5/account/instrument"
+  },
+  "next": {
+    "title": "查詢抵押品信息",
+    "permalink": "/usa-docs/zh-TW/v5/account/collateral-info"
+  }
+}

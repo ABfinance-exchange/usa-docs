@@ -1,0 +1,19 @@
+{
+  "unversionedId": "v5/asset/convert/confirm-quote",
+  "id": "v5/asset/convert/confirm-quote",
+  "title": "Confirm a Quote",
+  "description": "1. The exchange is async; please check the final status by calling the query result API.",
+  "source": "@site/docs/v5/asset/convert/confirm-quote.mdx",
+  "sourceDirName": "v5/asset/convert",
+  "slug": "/v5/asset/convert/confirm-quote",
+  "permalink": "/usa-docs/v5/asset/convert/confirm-quote",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Confirm a Quote",
+    "sidebar_label": "Confirm a Quote",
+    "sidebar_position": 3
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/froze-subuid",
+  "id": "v5/user/froze-subuid",
+  "title": "Freeze Sub UID",
+  "description": "Freeze Sub UID. Use master user's api key only.",
+  "source": "@site/docs/v5/user/froze-subuid.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/froze-subuid",
+  "permalink": "/usa-docs/v5/user/froze-subuid",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Freeze Sub UID",
+    "sidebar_label": "Freeze Sub UID",
+    "sidebar_position": 4
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Fund Custodial Sub Acct",
+    "permalink": "/usa-docs/v5/user/fund-subuid-list"
+  },
+  "next": {
+    "title": "Get API Key Information",
+    "permalink": "/usa-docs/v5/user/apikey-info"
+  }
+}

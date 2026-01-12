@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/collateral-info",
+  "id": "v5/account/collateral-info",
+  "title": "查詢抵押品信息",
+  "description": "獲取當前統一保證金賬戶的抵押品信息，包括借貸利率，可藉貸金額以及抵押品折算率，是否可抵押作為保證金等信息",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/account/collateral-info.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/collateral-info",
+  "permalink": "/usa-docs/zh-TW/v5/account/collateral-info",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "title": "查詢抵押品信息",
+    "sidebar_label": "查詢抵押品信息",
+    "sidebar_position": 9
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢手續費率",
+    "permalink": "/usa-docs/zh-TW/v5/account/fee-rate"
+  },
+  "next": {
+    "title": "查詢DCP配置",
+    "permalink": "/usa-docs/zh-TW/v5/account/dcp-info"
+  }
+}

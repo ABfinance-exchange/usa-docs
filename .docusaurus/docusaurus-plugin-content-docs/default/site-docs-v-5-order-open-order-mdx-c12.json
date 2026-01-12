@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/open-order",
+  "id": "v5/order/open-order",
+  "title": "Get Open & Closed Orders",
+  "description": "Primarily query unfilled or partially filled orders in real-time, but also supports querying recent 500 closed status (Cancelled, Filled) orders. Please see the usage of request param openOnly.",
+  "source": "@site/docs/v5/order/open-order.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/open-order",
+  "permalink": "/usa-docs/v5/order/open-order",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Get Open & Closed Orders",
+    "sidebar_label": "Get Open & Closed Orders",
+    "sidebar_position": 4
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Cancel Order",
+    "permalink": "/usa-docs/v5/order/cancel-order"
+  },
+  "next": {
+    "title": "Cancel All Orders",
+    "permalink": "/usa-docs/v5/order/cancel-all"
+  }
+}

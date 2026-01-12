@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/earn/product-info",
+  "id": "v5/earn/product-info",
+  "title": "查询产品信息",
+  "description": "不需要鑒權",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/earn/product-info.mdx",
+  "sourceDirName": "v5/earn",
+  "slug": "/v5/earn/product-info",
+  "permalink": "/usa-docs/zh-TW/v5/earn/product-info",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "查询产品信息",
+    "sidebar_label": "查询产品信息",
+    "sidebar_position": 1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "刪除子帳戶下的API Key",
+    "permalink": "/usa-docs/zh-TW/v5/user/rm-sub-apikey"
+  },
+  "next": {
+    "title": "質押/贖回",
+    "permalink": "/usa-docs/zh-TW/v5/earn/create-order"
+  }
+}

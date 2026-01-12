@@ -1,0 +1,26 @@
+{
+  "unversionedId": "v5/smp",
+  "id": "v5/smp",
+  "title": "自成交攔截",
+  "description": "什麼是自成交？",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/smp.mdx",
+  "sourceDirName": "v5",
+  "slug": "/v5/smp",
+  "permalink": "/usa-docs/zh-TW/v5/smp",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "自成交攔截",
+    "sidebar_label": "自成交攔截"
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢公告",
+    "permalink": "/usa-docs/zh-TW/v5/announcement"
+  },
+  "next": {
+    "title": "查詢市場價格K線數據",
+    "permalink": "/usa-docs/zh-TW/v5/market/kline"
+  }
+}

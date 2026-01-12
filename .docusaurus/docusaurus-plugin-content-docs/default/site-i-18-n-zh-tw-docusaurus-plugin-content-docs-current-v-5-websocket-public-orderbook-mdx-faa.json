@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/public/orderbook",
+  "id": "v5/websocket/public/orderbook",
+  "title": "深度",
+  "description": "訂閱不同深度的推送",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/websocket/public/orderbook.mdx",
+  "sourceDirName": "v5/websocket/public",
+  "slug": "/v5/websocket/public/orderbook",
+  "permalink": "/usa-docs/zh-TW/v5/websocket/public/orderbook",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "深度",
+    "sidebar_label": "深度",
+    "sidebar_position": 1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "訂閱WebSocket",
+    "permalink": "/usa-docs/zh-TW/v5/ws/connect"
+  },
+  "next": {
+    "title": "RPI 深度",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/public/orderbook-rpi"
+  }
+}

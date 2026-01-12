@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/modify-sub-apikey",
+  "id": "v5/user/modify-sub-apikey",
+  "title": "修改子帳戶的API Key設置",
+  "description": "修改子帳戶API key的設置, 支持母帳戶管理子帳戶key的設置, 或者子帳戶key直接修改本身。",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/user/modify-sub-apikey.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/modify-sub-apikey",
+  "permalink": "/usa-docs/zh-TW/v5/user/modify-sub-apikey",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "修改子帳戶的API Key設置",
+    "sidebar_label": "修改子帳戶的API Key設置",
+    "sidebar_position": 7
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "修改母帳戶的API Key設置",
+    "permalink": "/usa-docs/zh-TW/v5/user/modify-master-apikey"
+  },
+  "next": {
+    "title": "刪除子帳戶",
+    "permalink": "/usa-docs/zh-TW/v5/user/rm-subuid"
+  }
+}

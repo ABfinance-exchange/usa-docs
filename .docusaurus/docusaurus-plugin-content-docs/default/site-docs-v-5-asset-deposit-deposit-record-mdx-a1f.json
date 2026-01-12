@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/deposit/deposit-record",
+  "id": "v5/asset/deposit/deposit-record",
+  "title": "Get Deposit Records (on-chain)",
+  "description": "Query deposit records",
+  "source": "@site/docs/v5/asset/deposit/deposit-record.mdx",
+  "sourceDirName": "v5/asset/deposit",
+  "slug": "/v5/asset/deposit/deposit-record",
+  "permalink": "/usa-docs/v5/asset/deposit/deposit-record",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "title": "Get Deposit Records (on-chain)",
+    "sidebar_label": "Get Deposit Records (on-chain)",
+    "sidebar_position": 12
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Set Deposit Account",
+    "permalink": "/usa-docs/v5/asset/deposit/set-deposit-acct"
+  },
+  "next": {
+    "title": "Get Sub Deposit Records (on-chain)",
+    "permalink": "/usa-docs/v5/asset/deposit/sub-deposit-record"
+  }
+}

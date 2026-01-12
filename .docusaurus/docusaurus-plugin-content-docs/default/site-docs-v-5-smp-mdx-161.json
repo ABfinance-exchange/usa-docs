@@ -1,0 +1,26 @@
+{
+  "unversionedId": "v5/smp",
+  "id": "v5/smp",
+  "title": "Self Match Prevention",
+  "description": "What is SMP?",
+  "source": "@site/docs/v5/smp.mdx",
+  "sourceDirName": "v5",
+  "slug": "/v5/smp",
+  "permalink": "/usa-docs/v5/smp",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Self Match Prevention",
+    "sidebar_label": "Self Match Prevention"
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Announcement",
+    "permalink": "/usa-docs/v5/announcement"
+  },
+  "next": {
+    "title": "Get Server Time",
+    "permalink": "/usa-docs/v5/market/time"
+  }
+}

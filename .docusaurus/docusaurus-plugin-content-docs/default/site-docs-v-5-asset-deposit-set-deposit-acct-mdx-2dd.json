@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/deposit/set-deposit-acct",
+  "id": "v5/asset/deposit/set-deposit-acct",
+  "title": "Set Deposit Account",
+  "description": "Set auto transfer account after deposit. The same function as the setting for Deposit on web GUI",
+  "source": "@site/docs/v5/asset/deposit/set-deposit-acct.mdx",
+  "sourceDirName": "v5/asset/deposit",
+  "slug": "/v5/asset/deposit/set-deposit-acct",
+  "permalink": "/usa-docs/v5/asset/deposit/set-deposit-acct",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11.5,
+  "frontMatter": {
+    "title": "Set Deposit Account",
+    "sidebar_label": "Set Deposit Account",
+    "sidebar_position": 11.5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Transferable Coin",
+    "permalink": "/usa-docs/v5/asset/transfer/transferable-coin"
+  },
+  "next": {
+    "title": "Get Deposit Records (on-chain)",
+    "permalink": "/usa-docs/v5/asset/deposit/deposit-record"
+  }
+}

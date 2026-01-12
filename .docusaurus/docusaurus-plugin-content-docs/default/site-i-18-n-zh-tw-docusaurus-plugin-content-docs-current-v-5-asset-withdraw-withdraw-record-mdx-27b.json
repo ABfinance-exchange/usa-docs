@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/withdraw/withdraw-record",
+  "id": "v5/asset/withdraw/withdraw-record",
+  "title": "查詢提現紀錄",
+  "description": "* endTime - startTime需要小於等於30天. 默認查詢最近30天的紀錄。",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/withdraw/withdraw-record.mdx",
+  "sourceDirName": "v5/asset/withdraw",
+  "slug": "/v5/asset/withdraw/withdraw-record",
+  "permalink": "/usa-docs/zh-TW/v5/asset/withdraw/withdraw-record",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "title": "查詢提現紀錄",
+    "sidebar_label": "查詢提現紀錄",
+    "sidebar_position": 14
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢地址簿提幣地址",
+    "permalink": "/usa-docs/zh-TW/v5/asset/withdraw/withdraw-address"
+  },
+  "next": {
+    "title": "查詢交易所列表 (韓國用戶)",
+    "permalink": "/usa-docs/zh-TW/v5/asset/withdraw/vasp-list"
+  }
+}

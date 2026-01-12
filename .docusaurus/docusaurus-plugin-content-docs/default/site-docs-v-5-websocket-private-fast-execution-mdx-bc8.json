@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/private/fast-execution",
+  "id": "v5/websocket/private/fast-execution",
+  "title": "Fast Execution",
+  "description": "Fast execution stream significantly reduces data latency compared original \"execution\" stream. However, it pushes limited",
+  "source": "@site/docs/v5/websocket/private/fast-execution.mdx",
+  "sourceDirName": "v5/websocket/private",
+  "slug": "/v5/websocket/private/fast-execution",
+  "permalink": "/usa-docs/v5/websocket/private/fast-execution",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2.1,
+  "frontMatter": {
+    "title": "Fast Execution",
+    "sidebar_label": "Fast Execution",
+    "sidebar_position": 2.1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Execution",
+    "permalink": "/usa-docs/v5/websocket/private/execution"
+  },
+  "next": {
+    "title": "Order",
+    "permalink": "/usa-docs/v5/websocket/private/order"
+  }
+}

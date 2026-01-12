@@ -1,0 +1,27 @@
+{
+  "unversionedId": "v5/websocket/wss-authentication",
+  "id": "v5/websocket/wss-authentication",
+  "title": "訂閱WebSocket",
+  "description": "WebSocket公共頻道:",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/websocket/wss-authentication.mdx",
+  "sourceDirName": "v5/websocket",
+  "slug": "/v5/ws/connect",
+  "permalink": "/usa-docs/zh-TW/v5/ws/connect",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "訂閱WebSocket",
+    "sidebar_label": "訂閱WebSocket",
+    "slug": "/v5/ws/connect"
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢每小時收益歷史",
+    "permalink": "/usa-docs/zh-TW/v5/earn/hourly-yield"
+  },
+  "next": {
+    "title": "深度",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/public/orderbook"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/market/recent-trade",
+  "id": "v5/market/recent-trade",
+  "title": "Get Recent Public Trades",
+  "description": "Query recent public trading history.",
+  "source": "@site/docs/v5/market/recent-trade.mdx",
+  "sourceDirName": "v5/market",
+  "slug": "/v5/market/recent-trade",
+  "permalink": "/usa-docs/v5/market/recent-trade",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "Get Recent Public Trades",
+    "sidebar_label": "Get Recent Public Trades",
+    "sidebar_position": 8
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Tickers",
+    "permalink": "/usa-docs/v5/market/tickers"
+  },
+  "next": {
+    "title": "Get Index Price Components",
+    "permalink": "/usa-docs/v5/market/index-components"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/rm-master-apikey",
+  "id": "v5/user/rm-master-apikey",
+  "title": "刪除母帳戶的API Key",
+  "description": "刪除母帳戶下的api key。使用待刪除的api key調用接口。需使用母帳戶的API key。",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/user/rm-master-apikey.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/rm-master-apikey",
+  "permalink": "/usa-docs/zh-TW/v5/user/rm-master-apikey",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "刪除母帳戶的API Key",
+    "sidebar_label": "刪除母帳戶的API Key",
+    "sidebar_position": 8
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "刪除子帳戶",
+    "permalink": "/usa-docs/zh-TW/v5/user/rm-subuid"
+  },
+  "next": {
+    "title": "刪除子帳戶下的API Key",
+    "permalink": "/usa-docs/zh-TW/v5/user/rm-sub-apikey"
+  }
+}

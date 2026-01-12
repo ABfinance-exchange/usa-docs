@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/apikey-info",
+  "id": "v5/user/apikey-info",
+  "title": "查詢API Key相關信息",
+  "description": "獲取API key的相關信息。使用待查詢的api key調用接口。適用於母、子帳戶的api key。",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/user/apikey-info.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/apikey-info",
+  "permalink": "/usa-docs/zh-TW/v5/user/apikey-info",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "查詢API Key相關信息",
+    "sidebar_label": "查詢API Key相關信息",
+    "sidebar_position": 5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "凍結/解凍子帳戶",
+    "permalink": "/usa-docs/zh-TW/v5/user/froze-subuid"
+  },
+  "next": {
+    "title": "查詢子帳戶的所有API Key信息",
+    "permalink": "/usa-docs/zh-TW/v5/user/list-sub-apikeys"
+  }
+}

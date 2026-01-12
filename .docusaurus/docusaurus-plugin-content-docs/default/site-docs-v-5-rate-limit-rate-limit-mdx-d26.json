@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/rate-limit/rate-limit",
+  "id": "v5/rate-limit/rate-limit",
+  "title": "Rate Limit Rules",
+  "description": "IP Limit",
+  "source": "@site/docs/v5/rate-limit/rate-limit.mdx",
+  "sourceDirName": "v5/rate-limit",
+  "slug": "/v5/rate-limit/",
+  "permalink": "/usa-docs/v5/rate-limit/",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Rate Limit Rules",
+    "sidebar_label": "Rate Limit Rules",
+    "sidebar_position": 1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Websocket Trade Guideline",
+    "permalink": "/usa-docs/v5/websocket/trade/guideline"
+  },
+  "next": {
+    "title": "API Rate Limit Rules for VIPs",
+    "permalink": "/usa-docs/v5/rate-limit/rules-for-vips"
+  }
+}

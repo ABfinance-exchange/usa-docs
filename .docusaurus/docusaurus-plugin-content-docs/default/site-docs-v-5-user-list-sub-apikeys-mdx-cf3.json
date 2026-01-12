@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/list-sub-apikeys",
+  "id": "v5/user/list-sub-apikeys",
+  "title": "Get Sub Account All API Keys",
+  "description": "Query all api keys information of a sub UID.",
+  "source": "@site/docs/v5/user/list-sub-apikeys.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/list-sub-apikeys",
+  "permalink": "/usa-docs/v5/user/list-sub-apikeys",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5.4,
+  "frontMatter": {
+    "title": "Get Sub Account All API Keys",
+    "sidebar_label": "Get Sub Account All API Keys",
+    "sidebar_position": 5.4
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get API Key Information",
+    "permalink": "/usa-docs/v5/user/apikey-info"
+  },
+  "next": {
+    "title": "Get UID Wallet Type",
+    "permalink": "/usa-docs/v5/user/wallet-type"
+  }
+}

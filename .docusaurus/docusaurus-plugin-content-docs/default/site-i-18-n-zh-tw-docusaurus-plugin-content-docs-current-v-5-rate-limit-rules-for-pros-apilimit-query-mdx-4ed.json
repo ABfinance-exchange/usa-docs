@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/rate-limit/rules-for-pros/apilimit-query",
+  "id": "v5/rate-limit/rules-for-pros/apilimit-query",
+  "title": "查詢 API 速率限制",
+  "description": "查詢 API 速率限制",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/rate-limit/rules-for-pros/apilimit-query.mdx",
+  "sourceDirName": "v5/rate-limit/rules-for-pros",
+  "slug": "/v5/rate-limit/rules-for-pros/apilimit-query",
+  "permalink": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-query",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "查詢 API 速率限制",
+    "sidebar_label": "查詢 API 速率限制",
+    "sidebar_position": 3
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "設定 API 速率限制",
+    "permalink": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-set"
+  },
+  "next": {
+    "title": "查詢 Ins level的速率限制上限和使用量",
+    "permalink": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-query-cap"
+  }
+}

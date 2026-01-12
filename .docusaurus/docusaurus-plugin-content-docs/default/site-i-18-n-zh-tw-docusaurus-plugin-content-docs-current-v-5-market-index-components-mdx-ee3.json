@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/market/index-components",
+  "id": "v5/market/index-components",
+  "title": "獲取指數價格組成",
+  "description": "HTTP 請求",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/market/index-components.mdx",
+  "sourceDirName": "v5/market",
+  "slug": "/v5/market/index-components",
+  "permalink": "/usa-docs/zh-TW/v5/market/index-components",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 17,
+  "frontMatter": {
+    "title": "獲取指數價格組成",
+    "sidebar_label": "獲取指數價格組成",
+    "sidebar_position": 17
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢平台最近成交歷史",
+    "permalink": "/usa-docs/zh-TW/v5/market/recent-trade"
+  },
+  "next": {
+    "title": "查詢訂單價格限制",
+    "permalink": "/usa-docs/zh-TW/v5/market/order-price-limit"
+  }
+}

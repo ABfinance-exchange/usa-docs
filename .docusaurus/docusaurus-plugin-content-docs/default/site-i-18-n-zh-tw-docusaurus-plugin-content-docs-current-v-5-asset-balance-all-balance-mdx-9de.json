@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/balance/all-balance",
+  "id": "v5/asset/balance/all-balance",
+  "title": "查詢賬戶所有幣種余額",
+  "description": "支持查詢母帳戶的各個帳戶類型的幣種餘額，以及母帳戶下各子帳戶的各個帳戶類型的幣種餘額。",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/balance/all-balance.mdx",
+  "sourceDirName": "v5/asset/balance",
+  "slug": "/v5/asset/balance/all-balance",
+  "permalink": "/usa-docs/zh-TW/v5/asset/balance/all-balance",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0.2,
+  "frontMatter": {
+    "title": "查詢賬戶所有幣種余額",
+    "sidebar_label": "查詢賬戶所有幣種余額",
+    "sidebar_position": 0.2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢子帳號列表",
+    "permalink": "/usa-docs/zh-TW/v5/asset/sub-uid-list"
+  },
+  "next": {
+    "title": "查詢帳戶單個幣種餘額",
+    "permalink": "/usa-docs/zh-TW/v5/asset/balance/account-coin-balance"
+  }
+}

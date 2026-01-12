@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/smp-group",
+  "id": "v5/account/smp-group",
+  "title": "Get SMP Group ID",
+  "description": "Query the SMP group ID of self match prevention",
+  "source": "@site/docs/v5/account/smp-group.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/smp-group",
+  "permalink": "/usa-docs/v5/account/smp-group",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 18,
+  "frontMatter": {
+    "title": "Get SMP Group ID",
+    "sidebar_label": "Get SMP Group ID",
+    "sidebar_position": 18
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Batch Set Collateral Coin",
+    "permalink": "/usa-docs/v5/account/batch-set-collateral"
+  },
+  "next": {
+    "title": "Get Trade Behaviour Setting",
+    "permalink": "/usa-docs/v5/account/get-user-setting-config"
+  }
+}

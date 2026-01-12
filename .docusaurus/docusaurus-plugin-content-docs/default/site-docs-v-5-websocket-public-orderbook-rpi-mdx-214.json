@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/public/orderbook-rpi",
+  "id": "v5/websocket/public/orderbook-rpi",
+  "title": "RPI Orderbook",
+  "description": "Subscribe to the orderbook stream including RPI quote",
+  "source": "@site/docs/v5/websocket/public/orderbook-rpi.mdx",
+  "sourceDirName": "v5/websocket/public",
+  "slug": "/v5/websocket/public/orderbook-rpi",
+  "permalink": "/usa-docs/v5/websocket/public/orderbook-rpi",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1.1,
+  "frontMatter": {
+    "title": "RPI Orderbook",
+    "sidebar_label": "RPI Orderbook",
+    "sidebar_position": 1.1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Orderbook",
+    "permalink": "/usa-docs/v5/websocket/public/orderbook"
+  },
+  "next": {
+    "title": "Trade",
+    "permalink": "/usa-docs/v5/websocket/public/trade"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/market/rpi-orderbook",
+  "id": "v5/market/rpi-orderbook",
+  "title": "Get RPI Orderbook",
+  "description": "Query for orderbook depth data.",
+  "source": "@site/docs/v5/market/rpi-orderbook.mdx",
+  "sourceDirName": "v5/market",
+  "slug": "/v5/market/rpi-orderbook",
+  "permalink": "/usa-docs/v5/market/rpi-orderbook",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5.5,
+  "frontMatter": {
+    "title": "Get RPI Orderbook",
+    "sidebar_label": "Get RPI Orderbook",
+    "sidebar_position": 5.5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Orderbook",
+    "permalink": "/usa-docs/v5/market/orderbook"
+  },
+  "next": {
+    "title": "Get Tickers",
+    "permalink": "/usa-docs/v5/market/tickers"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/modify-master-apikey",
+  "id": "v5/user/modify-master-apikey",
+  "title": "Modify Master API Key",
+  "description": "Modify the settings of master api key. Use the api key pending to be modified to call the endpoint. Use master user's api key only.",
+  "source": "@site/docs/v5/user/modify-master-apikey.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/modify-master-apikey",
+  "permalink": "/usa-docs/v5/user/modify-master-apikey",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Modify Master API Key",
+    "sidebar_label": "Modify Master API Key",
+    "sidebar_position": 6
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get UID Wallet Type",
+    "permalink": "/usa-docs/v5/user/wallet-type"
+  },
+  "next": {
+    "title": "Modify Sub API Key",
+    "permalink": "/usa-docs/v5/user/modify-sub-apikey"
+  }
+}

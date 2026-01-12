@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/deposit/set-deposit-acct",
+  "id": "v5/asset/deposit/set-deposit-acct",
+  "title": "設置充值帳戶",
+  "description": "設置充值後的自動轉入帳戶類型。該功能與網頁端-設置-充值保持一致。",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/deposit/set-deposit-acct.mdx",
+  "sourceDirName": "v5/asset/deposit",
+  "slug": "/v5/asset/deposit/set-deposit-acct",
+  "permalink": "/usa-docs/zh-TW/v5/asset/deposit/set-deposit-acct",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11.5,
+  "frontMatter": {
+    "title": "設置充值帳戶",
+    "sidebar_label": "設置充值帳戶",
+    "sidebar_position": 11.5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢萬能劃轉紀錄",
+    "permalink": "/usa-docs/zh-TW/v5/asset/transfer/unitransfer-list"
+  },
+  "next": {
+    "title": "查詢充值紀錄 (鏈上)",
+    "permalink": "/usa-docs/zh-TW/v5/asset/deposit/deposit-record"
+  }
+}

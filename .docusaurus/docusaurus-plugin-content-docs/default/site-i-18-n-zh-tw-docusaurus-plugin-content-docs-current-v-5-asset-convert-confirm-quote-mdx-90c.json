@@ -1,0 +1,19 @@
+{
+  "unversionedId": "v5/asset/convert/confirm-quote",
+  "id": "v5/asset/convert/confirm-quote",
+  "title": "確認報價",
+  "description": "1. 該接口是異步的, 請通過查詢請求確認最終兌換結果",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/convert/confirm-quote.mdx",
+  "sourceDirName": "v5/asset/convert",
+  "slug": "/v5/asset/convert/confirm-quote",
+  "permalink": "/usa-docs/zh-TW/v5/asset/convert/confirm-quote",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "確認報價",
+    "sidebar_label": "確認報價",
+    "sidebar_position": 3
+  }
+}

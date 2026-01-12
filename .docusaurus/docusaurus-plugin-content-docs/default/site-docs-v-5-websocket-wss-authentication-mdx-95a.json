@@ -1,0 +1,27 @@
+{
+  "unversionedId": "v5/websocket/wss-authentication",
+  "id": "v5/websocket/wss-authentication",
+  "title": "Connect",
+  "description": "WebSocket public stream:",
+  "source": "@site/docs/v5/websocket/wss-authentication.mdx",
+  "sourceDirName": "v5/websocket",
+  "slug": "/v5/ws/connect",
+  "permalink": "/usa-docs/v5/ws/connect",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Connect",
+    "sidebar_label": "Connect",
+    "slug": "/v5/ws/connect"
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Hourly Yield History",
+    "permalink": "/usa-docs/v5/earn/hourly-yield"
+  },
+  "next": {
+    "title": "Orderbook",
+    "permalink": "/usa-docs/v5/websocket/public/orderbook"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/list-sub-apikeys",
+  "id": "v5/user/list-sub-apikeys",
+  "title": "查詢子帳戶的所有API Key信息",
+  "description": "查詢某個子帳戶下所有的api key",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/user/list-sub-apikeys.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/list-sub-apikeys",
+  "permalink": "/usa-docs/zh-TW/v5/user/list-sub-apikeys",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5.4,
+  "frontMatter": {
+    "title": "查詢子帳戶的所有API Key信息",
+    "sidebar_label": "查詢子帳戶的所有API Key信息",
+    "sidebar_position": 5.4
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢API Key相關信息",
+    "permalink": "/usa-docs/zh-TW/v5/user/apikey-info"
+  },
+  "next": {
+    "title": "查詢帳戶支持的錢包類型",
+    "permalink": "/usa-docs/zh-TW/v5/user/wallet-type"
+  }
+}

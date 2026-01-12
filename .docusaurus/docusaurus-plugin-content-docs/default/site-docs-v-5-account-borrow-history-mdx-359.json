@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/borrow-history",
+  "id": "v5/account/borrow-history",
+  "title": "Get Borrow History",
+  "description": "Get interest records, sorted in reverse order of creation time.",
+  "source": "@site/docs/v5/account/borrow-history.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/borrow-history",
+  "permalink": "/usa-docs/v5/account/borrow-history",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "title": "Get Borrow History",
+    "sidebar_label": "Get Borrow History (2 years)",
+    "sidebar_position": 11
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Set Collateral Coin",
+    "permalink": "/usa-docs/v5/account/set-collateral"
+  },
+  "next": {
+    "title": "Batch Set Collateral Coin",
+    "permalink": "/usa-docs/v5/account/batch-set-collateral"
+  }
+}

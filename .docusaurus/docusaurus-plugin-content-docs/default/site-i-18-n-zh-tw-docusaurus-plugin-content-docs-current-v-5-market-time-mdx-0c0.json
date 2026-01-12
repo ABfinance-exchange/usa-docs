@@ -1,0 +1,26 @@
+{
+  "unversionedId": "v5/market/time",
+  "id": "v5/market/time",
+  "title": "獲取服務器時間",
+  "description": "獲取服務器時間",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/market/time.mdx",
+  "sourceDirName": "v5/market",
+  "slug": "/v5/market/time",
+  "permalink": "/usa-docs/zh-TW/v5/market/time",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "獲取服務器時間",
+    "sidebar_name": "獲取服務器時間"
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢訂單價格限制",
+    "permalink": "/usa-docs/zh-TW/v5/market/order-price-limit"
+  },
+  "next": {
+    "title": "創建委託單",
+    "permalink": "/usa-docs/zh-TW/v5/order/create-order"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/market/recent-trade",
+  "id": "v5/market/recent-trade",
+  "title": "查詢平台最近成交歷史",
+  "description": "獲取平台最近成交數據",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/market/recent-trade.mdx",
+  "sourceDirName": "v5/market",
+  "slug": "/v5/market/recent-trade",
+  "permalink": "/usa-docs/zh-TW/v5/market/recent-trade",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "查詢平台最近成交歷史",
+    "sidebar_label": "查詢平台最近成交歷史",
+    "sidebar_position": 8
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢最新行情信息",
+    "permalink": "/usa-docs/zh-TW/v5/market/tickers"
+  },
+  "next": {
+    "title": "獲取指數價格組成",
+    "permalink": "/usa-docs/zh-TW/v5/market/index-components"
+  }
+}

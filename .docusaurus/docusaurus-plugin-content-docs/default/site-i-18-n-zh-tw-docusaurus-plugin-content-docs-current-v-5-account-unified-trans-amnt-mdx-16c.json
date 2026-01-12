@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/unified-trans-amnt",
+  "id": "v5/account/unified-trans-amnt",
+  "title": "查詢可劃轉餘額(统一账户)",
+  "description": "查詢統一帳戶錢包裡指定幣種的可劃轉餘額",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/account/unified-trans-amnt.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/unified-trans-amnt",
+  "permalink": "/usa-docs/zh-TW/v5/account/unified-trans-amnt",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "查詢可劃轉餘額(统一账户)",
+    "sidebar_label": "查詢可劃轉餘額(统一账户)",
+    "sidebar_position": 2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢錢包餘額",
+    "permalink": "/usa-docs/zh-TW/v5/account/wallet-balance"
+  },
+  "next": {
+    "title": "交易日誌 (統一帳戶)",
+    "permalink": "/usa-docs/zh-TW/v5/account/transaction-log"
+  }
+}

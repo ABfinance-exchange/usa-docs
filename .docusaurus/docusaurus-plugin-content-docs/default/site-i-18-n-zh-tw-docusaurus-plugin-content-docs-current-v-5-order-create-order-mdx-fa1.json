@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/create-order",
+  "id": "v5/order/create-order",
+  "title": "創建委託單",
+  "description": "本接口提供幣幣交易的訂單創建",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/order/create-order.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/create-order",
+  "permalink": "/usa-docs/zh-TW/v5/order/create-order",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "創建委託單",
+    "sidebar_label": "創建委託單",
+    "sidebar_position": 1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "獲取服務器時間",
+    "permalink": "/usa-docs/zh-TW/v5/market/time"
+  },
+  "next": {
+    "title": "修改委託單",
+    "permalink": "/usa-docs/zh-TW/v5/order/amend-order"
+  }
+}

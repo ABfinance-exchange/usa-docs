@@ -1,0 +1,17 @@
+{
+  "unversionedId": "changelog/v5",
+  "id": "changelog/v5",
+  "title": "V5",
+  "description": "",
+  "source": "@site/docs/changelog/v5.mdx",
+  "sourceDirName": "changelog",
+  "slug": "/changelog/v5",
+  "permalink": "/usa-docs/changelog/v5",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "V5"
+  },
+  "sidebar": "changelogSidebar"
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/market/tickers",
+  "id": "v5/market/tickers",
+  "title": "查詢最新行情信息",
+  "description": "可獲取到快照的最新市場價格，最佳買賣價格，以及過去時間內的交易量等.",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/market/tickers.mdx",
+  "sourceDirName": "v5/market",
+  "slug": "/v5/market/tickers",
+  "permalink": "/usa-docs/zh-TW/v5/market/tickers",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "查詢最新行情信息",
+    "sidebar_label": "查詢最新行情信息",
+    "sidebar_position": 6
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "RPI Orderbook (深度)",
+    "permalink": "/usa-docs/zh-TW/v5/market/rpi-orderbook"
+  },
+  "next": {
+    "title": "查詢平台最近成交歷史",
+    "permalink": "/usa-docs/zh-TW/v5/market/recent-trade"
+  }
+}

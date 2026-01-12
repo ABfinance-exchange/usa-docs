@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/public/ticker",
+  "id": "v5/websocket/public/ticker",
+  "title": "Ticker",
+  "description": "Subscribe to the ticker stream.",
+  "source": "@site/docs/v5/websocket/public/ticker.mdx",
+  "sourceDirName": "v5/websocket/public",
+  "slug": "/v5/websocket/public/ticker",
+  "permalink": "/usa-docs/v5/websocket/public/ticker",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Ticker",
+    "sidebar_label": "Ticker",
+    "sidebar_position": 3
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Trade",
+    "permalink": "/usa-docs/v5/websocket/public/trade"
+  },
+  "next": {
+    "title": "Kline",
+    "permalink": "/usa-docs/v5/websocket/public/kline"
+  }
+}

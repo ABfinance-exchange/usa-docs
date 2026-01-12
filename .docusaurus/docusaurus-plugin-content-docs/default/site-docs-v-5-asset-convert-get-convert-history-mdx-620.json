@@ -1,0 +1,19 @@
+{
+  "unversionedId": "v5/asset/convert/get-convert-history",
+  "id": "v5/asset/convert/get-convert-history",
+  "title": "Get Convert History",
+  "description": "Returns all confirmed quotes.",
+  "source": "@site/docs/v5/asset/convert/get-convert-history.mdx",
+  "sourceDirName": "v5/asset/convert",
+  "slug": "/v5/asset/convert/get-convert-history",
+  "permalink": "/usa-docs/v5/asset/convert/get-convert-history",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Get Convert History",
+    "sidebar_label": "Get Convert History",
+    "sidebar_position": 5
+  }
+}

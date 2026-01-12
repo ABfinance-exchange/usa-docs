@@ -1,0 +1,26 @@
+{
+  "unversionedId": "v5/announcement",
+  "id": "v5/announcement",
+  "title": "查詢公告",
+  "description": "HTTP 請求",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/announcement.mdx",
+  "sourceDirName": "v5",
+  "slug": "/v5/announcement",
+  "permalink": "/usa-docs/zh-TW/v5/announcement",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "查詢公告",
+    "sidebar_label": "查詢公告"
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "接入指南",
+    "permalink": "/usa-docs/zh-TW/v5/guide"
+  },
+  "next": {
+    "title": "自成交攔截",
+    "permalink": "/usa-docs/zh-TW/v5/smp"
+  }
+}

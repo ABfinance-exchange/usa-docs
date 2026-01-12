@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/market/orderbook",
+  "id": "v5/market/orderbook",
+  "title": "Order Book (深度)",
+  "description": "獲取深度數據",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/market/orderbook.mdx",
+  "sourceDirName": "v5/market",
+  "slug": "/v5/market/orderbook",
+  "permalink": "/usa-docs/zh-TW/v5/market/orderbook",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Order Book (深度)",
+    "sidebar_label": "Order Book (深度)",
+    "sidebar_position": 5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢可交易產品的規格信息",
+    "permalink": "/usa-docs/zh-TW/v5/market/instrument"
+  },
+  "next": {
+    "title": "RPI Orderbook (深度)",
+    "permalink": "/usa-docs/zh-TW/v5/market/rpi-orderbook"
+  }
+}

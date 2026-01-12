@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/market/index-components",
+  "id": "v5/market/index-components",
+  "title": "Get Index Price Components",
+  "description": "HTTP Request",
+  "source": "@site/docs/v5/market/index-components.mdx",
+  "sourceDirName": "v5/market",
+  "slug": "/v5/market/index-components",
+  "permalink": "/usa-docs/v5/market/index-components",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 17,
+  "frontMatter": {
+    "title": "Get Index Price Components",
+    "sidebar_label": "Get Index Price Components",
+    "sidebar_position": 17
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Recent Public Trades",
+    "permalink": "/usa-docs/v5/market/recent-trade"
+  },
+  "next": {
+    "title": "Get Order Price Limit",
+    "permalink": "/usa-docs/v5/market/order-price-limit"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/deposit/sub-deposit-record",
+  "id": "v5/asset/deposit/sub-deposit-record",
+  "title": "查詢子帳號的充值紀錄 (鏈上)",
+  "description": "僅能通過主帳號的API key來查詢子帳號的充值紀錄",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/deposit/sub-deposit-record.mdx",
+  "sourceDirName": "v5/asset/deposit",
+  "slug": "/v5/asset/deposit/sub-deposit-record",
+  "permalink": "/usa-docs/zh-TW/v5/asset/deposit/sub-deposit-record",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13,
+  "frontMatter": {
+    "title": "查詢子帳號的充值紀錄 (鏈上)",
+    "sidebar_label": "查詢子帳號的充值紀錄 (鏈上)",
+    "sidebar_position": 13
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢充值紀錄 (鏈上)",
+    "permalink": "/usa-docs/zh-TW/v5/asset/deposit/deposit-record"
+  },
+  "next": {
+    "title": "查詢充值記錄 (平台转账)",
+    "permalink": "/usa-docs/zh-TW/v5/asset/deposit/internal-deposit-record"
+  }
+}

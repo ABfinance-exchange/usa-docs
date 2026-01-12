@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/deposit/master-deposit-addr",
+  "id": "v5/asset/deposit/master-deposit-addr",
+  "title": "Get Master Deposit Address",
+  "description": "Query the deposit address information of MASTER account.",
+  "source": "@site/docs/v5/asset/deposit/master-deposit-addr.mdx",
+  "sourceDirName": "v5/asset/deposit",
+  "slug": "/v5/asset/deposit/master-deposit-addr",
+  "permalink": "/usa-docs/v5/asset/deposit/master-deposit-addr",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13.1,
+  "frontMatter": {
+    "title": "Get Master Deposit Address",
+    "sidebar_label": "Get Master Deposit Address",
+    "sidebar_position": 13.1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Internal Deposit Records (off-chain)",
+    "permalink": "/usa-docs/v5/asset/deposit/internal-deposit-record"
+  },
+  "next": {
+    "title": "Get Sub Deposit Address",
+    "permalink": "/usa-docs/v5/asset/deposit/sub-deposit-addr"
+  }
+}

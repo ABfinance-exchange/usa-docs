@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/private/execution",
+  "id": "v5/websocket/private/execution",
+  "title": "個人成交",
+  "description": "訂閱個人成交的推送",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/websocket/private/execution.mdx",
+  "sourceDirName": "v5/websocket/private",
+  "slug": "/v5/websocket/private/execution",
+  "permalink": "/usa-docs/zh-TW/v5/websocket/private/execution",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "個人成交",
+    "sidebar_label": "個人成交",
+    "sidebar_position": 2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "訂單價格限制",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/public/order-price-limit"
+  },
+  "next": {
+    "title": "個人成交 (Fast)",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/private/fast-execution"
+  }
+}

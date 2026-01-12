@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/balance/delay-amount",
+  "id": "v5/asset/balance/delay-amount",
+  "title": "Get Withdrawable Amount",
+  "description": "How can partial funds be subject to delayed withdrawal requests?",
+  "source": "@site/docs/v5/asset/balance/delay-amount.mdx",
+  "sourceDirName": "v5/asset/balance",
+  "slug": "/v5/asset/balance/delay-amount",
+  "permalink": "/usa-docs/v5/asset/balance/delay-amount",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Get Withdrawable Amount",
+    "sidebar_label": "Get Withdrawable Amount",
+    "sidebar_position": 3
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get All Coins Balance",
+    "permalink": "/usa-docs/v5/asset/balance/all-balance"
+  },
+  "next": {
+    "title": "Create Internal Transfer",
+    "permalink": "/usa-docs/v5/asset/transfer/create-inter-transfer"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/dcp-info",
+  "id": "v5/account/dcp-info",
+  "title": "Get DCP Info",
+  "description": "Query the DCP configuration of the account. Before calling the interface, please make sure you have applied for the UTA account DCP configuration with your account manager",
+  "source": "@site/docs/v5/account/dcp-info.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/dcp-info",
+  "permalink": "/usa-docs/v5/account/dcp-info",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8.1,
+  "frontMatter": {
+    "title": "Get DCP Info",
+    "sidebar_label": "Get DCP Info",
+    "sidebar_position": 8.1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Collateral Info",
+    "permalink": "/usa-docs/v5/account/collateral-info"
+  },
+  "next": {
+    "title": "Set Collateral Coin",
+    "permalink": "/usa-docs/v5/account/set-collateral"
+  }
+}

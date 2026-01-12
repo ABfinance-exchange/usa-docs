@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/fee-rate",
+  "id": "v5/account/fee-rate",
+  "title": "Get Fee Rate",
+  "description": "Get the trading fee rate.",
+  "source": "@site/docs/v5/account/fee-rate.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/fee-rate",
+  "permalink": "/usa-docs/v5/account/fee-rate",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "Get Fee Rate",
+    "sidebar_label": "Get Fee Rate",
+    "sidebar_position": 7
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Account Instruments Info",
+    "permalink": "/usa-docs/v5/account/instrument"
+  },
+  "next": {
+    "title": "Get Collateral Info",
+    "permalink": "/usa-docs/v5/account/collateral-info"
+  }
+}

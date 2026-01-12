@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/market/instrument",
+  "id": "v5/market/instrument",
+  "title": "查詢可交易產品的規格信息",
+  "description": "查詢全站可交易產品的基礎配置規則信息",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/market/instrument.mdx",
+  "sourceDirName": "v5/market",
+  "slug": "/v5/market/instrument",
+  "permalink": "/usa-docs/zh-TW/v5/market/instrument",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4.5,
+  "frontMatter": {
+    "title": "查詢可交易產品的規格信息",
+    "sidebar_label": "查詢可交易產品的規格信息",
+    "sidebar_position": 4.5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢市場價格K線數據",
+    "permalink": "/usa-docs/zh-TW/v5/market/kline"
+  },
+  "next": {
+    "title": "Order Book (深度)",
+    "permalink": "/usa-docs/zh-TW/v5/market/orderbook"
+  }
+}

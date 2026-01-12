@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/batch-amend",
+  "id": "v5/order/batch-amend",
+  "title": "批量修改委託單",
+  "description": "該接口支持批量修改委託單",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/order/batch-amend.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/batch-amend",
+  "permalink": "/usa-docs/zh-TW/v5/order/batch-amend",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "批量修改委託單",
+    "sidebar_label": "批量修改委託單",
+    "sidebar_position": 8
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "批量創建委託單",
+    "permalink": "/usa-docs/zh-TW/v5/order/batch-place"
+  },
+  "next": {
+    "title": "批量撤銷委託單",
+    "permalink": "/usa-docs/zh-TW/v5/order/batch-cancel"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/wallet-balance",
+  "id": "v5/account/wallet-balance",
+  "title": "Get Wallet Balance",
+  "description": "Obtain wallet balance, query asset information of each currency. By default, currency",
+  "source": "@site/docs/v5/account/wallet-balance.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/wallet-balance",
+  "permalink": "/usa-docs/v5/account/wallet-balance",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Get Wallet Balance",
+    "sidebar_label": "Get Wallet Balance",
+    "sidebar_position": 1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Set DCP",
+    "permalink": "/usa-docs/v5/order/dcp"
+  },
+  "next": {
+    "title": "Get Transferable Amount (Unified)",
+    "permalink": "/usa-docs/v5/account/unified-trans-amnt"
+  }
+}

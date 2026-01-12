@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/dcp-info",
+  "id": "v5/account/dcp-info",
+  "title": "查詢DCP配置",
+  "description": "查詢帳戶現貨的dcp配置. 在調用接口前, 請確保已經和客戶經理申請了帳戶DCP開通",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/account/dcp-info.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/dcp-info",
+  "permalink": "/usa-docs/zh-TW/v5/account/dcp-info",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "title": "查詢DCP配置",
+    "sidebar_label": "查詢DCP配置",
+    "sidebar_position": 10
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢抵押品信息",
+    "permalink": "/usa-docs/zh-TW/v5/account/collateral-info"
+  },
+  "next": {
+    "title": "設置抵押品幣種",
+    "permalink": "/usa-docs/zh-TW/v5/account/set-collateral"
+  }
+}

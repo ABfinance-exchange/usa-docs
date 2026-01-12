@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/cancel-all",
+  "id": "v5/order/cancel-all",
+  "title": "撤銷所有訂單",
+  "description": "- 支持按照symbol/baseCoin撤銷訂單，若您傳入了多個參數組合, 系統僅會處理其中一個參數，其中優先級為symbol > baseCoin.",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/order/cancel-all.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/cancel-all",
+  "permalink": "/usa-docs/zh-TW/v5/order/cancel-all",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "撤銷所有訂單",
+    "sidebar_label": "撤銷所有訂單",
+    "sidebar_position": 5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢實時和終態委託單",
+    "permalink": "/usa-docs/zh-TW/v5/order/open-order"
+  },
+  "next": {
+    "title": "查詢歷史訂單 (2年)",
+    "permalink": "/usa-docs/zh-TW/v5/order/order-list"
+  }
+}

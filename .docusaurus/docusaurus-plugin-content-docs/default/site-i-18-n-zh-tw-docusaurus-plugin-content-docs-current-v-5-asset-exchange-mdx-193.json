@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/exchange",
+  "id": "v5/asset/exchange",
+  "title": "查詢兌換訂單紀錄",
+  "description": "您可能會遭遇較長的數據返回延遲",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/exchange.mdx",
+  "sourceDirName": "v5/asset",
+  "slug": "/v5/asset/exchange",
+  "permalink": "/usa-docs/zh-TW/v5/asset/exchange",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0.01,
+  "frontMatter": {
+    "title": "查詢兌換訂單紀錄",
+    "sidebar_label": "查詢兌換訂單紀錄",
+    "sidebar_position": 0.01
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "設置限價單行為",
+    "permalink": "/usa-docs/zh-TW/v5/account/set-price-limit"
+  },
+  "next": {
+    "title": "查詢幣種信息",
+    "permalink": "/usa-docs/zh-TW/v5/asset/coin-info"
+  }
+}

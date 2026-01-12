@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/collateral-info",
+  "id": "v5/account/collateral-info",
+  "title": "Get Collateral Info",
+  "description": "Get the collateral information of the current unified margin account, including loan interest rate, loanable amount,",
+  "source": "@site/docs/v5/account/collateral-info.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/collateral-info",
+  "permalink": "/usa-docs/v5/account/collateral-info",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "Get Collateral Info",
+    "sidebar_label": "Get Collateral Info",
+    "sidebar_position": 8
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Fee Rate",
+    "permalink": "/usa-docs/v5/account/fee-rate"
+  },
+  "next": {
+    "title": "Get DCP Info",
+    "permalink": "/usa-docs/v5/account/dcp-info"
+  }
+}

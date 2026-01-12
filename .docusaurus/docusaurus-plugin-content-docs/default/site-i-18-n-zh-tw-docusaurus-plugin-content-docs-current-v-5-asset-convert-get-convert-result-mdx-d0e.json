@@ -1,0 +1,19 @@
+{
+  "unversionedId": "v5/asset/convert/get-convert-result",
+  "id": "v5/asset/convert/get-convert-result",
+  "title": "查詢報價單狀態",
+  "description": "* 您可以通過quoteTxId指定查詢某筆被確認的報價單",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/convert/get-convert-result.mdx",
+  "sourceDirName": "v5/asset/convert",
+  "slug": "/v5/asset/convert/get-convert-result",
+  "permalink": "/usa-docs/zh-TW/v5/asset/convert/get-convert-result",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "查詢報價單狀態",
+    "sidebar_label": "查詢報價單狀態",
+    "sidebar_position": 4
+  }
+}

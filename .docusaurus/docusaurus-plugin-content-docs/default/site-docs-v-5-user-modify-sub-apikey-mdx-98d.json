@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/modify-sub-apikey",
+  "id": "v5/user/modify-sub-apikey",
+  "title": "Modify Sub API Key",
+  "description": "Modify the settings of sub api key. Use the sub account api key pending to be modified to call the endpoint or use master",
+  "source": "@site/docs/v5/user/modify-sub-apikey.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/modify-sub-apikey",
+  "permalink": "/usa-docs/v5/user/modify-sub-apikey",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "Modify Sub API Key",
+    "sidebar_label": "Modify Sub API Key",
+    "sidebar_position": 7
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Modify Master API Key",
+    "permalink": "/usa-docs/v5/user/modify-master-apikey"
+  },
+  "next": {
+    "title": "Delete Sub UID",
+    "permalink": "/usa-docs/v5/user/rm-subuid"
+  }
+}

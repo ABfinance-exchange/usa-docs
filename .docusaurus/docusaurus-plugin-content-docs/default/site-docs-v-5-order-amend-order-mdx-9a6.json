@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/amend-order",
+  "id": "v5/order/amend-order",
+  "title": "Amend Order",
+  "description": "You can only modify unfilled or partially filled orders.",
+  "source": "@site/docs/v5/order/amend-order.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/amend-order",
+  "permalink": "/usa-docs/v5/order/amend-order",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Amend Order",
+    "sidebar_label": "Amend Order",
+    "sidebar_position": 2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Place Order",
+    "permalink": "/usa-docs/v5/order/create-order"
+  },
+  "next": {
+    "title": "Cancel Order",
+    "permalink": "/usa-docs/v5/order/cancel-order"
+  }
+}

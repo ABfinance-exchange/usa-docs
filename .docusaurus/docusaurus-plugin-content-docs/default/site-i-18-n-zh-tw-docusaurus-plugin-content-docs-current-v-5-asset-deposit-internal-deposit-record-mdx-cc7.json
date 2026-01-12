@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/deposit/internal-deposit-record",
+  "id": "v5/asset/deposit/internal-deposit-record",
+  "title": "查詢充值記錄 (平台转账)",
+  "description": "查詢平台內部充值紀錄",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/deposit/internal-deposit-record.mdx",
+  "sourceDirName": "v5/asset/deposit",
+  "slug": "/v5/asset/deposit/internal-deposit-record",
+  "permalink": "/usa-docs/zh-TW/v5/asset/deposit/internal-deposit-record",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13.05,
+  "frontMatter": {
+    "title": "查詢充值記錄 (平台转账)",
+    "sidebar_label": "查詢充值記錄 (平台转账)",
+    "sidebar_position": 13.05
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢子帳號的充值紀錄 (鏈上)",
+    "permalink": "/usa-docs/zh-TW/v5/asset/deposit/sub-deposit-record"
+  },
+  "next": {
+    "title": "查詢主帳號充值地址",
+    "permalink": "/usa-docs/zh-TW/v5/asset/deposit/master-deposit-addr"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/balance/delay-amount",
+  "id": "v5/asset/balance/delay-amount",
+  "title": "查詢可提現金額",
+  "description": "如何會導致部分資金被要求延遲提幣？",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/balance/delay-amount.mdx",
+  "sourceDirName": "v5/asset/balance",
+  "slug": "/v5/asset/balance/delay-amount",
+  "permalink": "/usa-docs/zh-TW/v5/asset/balance/delay-amount",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "title": "查詢可提現金額",
+    "sidebar_label": "查詢可提現金額",
+    "sidebar_position": 15
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢帳戶單個幣種餘額",
+    "permalink": "/usa-docs/zh-TW/v5/asset/balance/account-coin-balance"
+  },
+  "next": {
+    "title": "查詢劃轉紀錄 (單帳號內)",
+    "permalink": "/usa-docs/zh-TW/v5/asset/transfer/inter-transfer-list"
+  }
+}

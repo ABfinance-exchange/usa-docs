@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/deposit/sub-deposit-addr",
+  "id": "v5/asset/deposit/sub-deposit-addr",
+  "title": "查詢子帳號充值地址",
+  "description": "僅能使用該母帳號*的API key",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/deposit/sub-deposit-addr.mdx",
+  "sourceDirName": "v5/asset/deposit",
+  "slug": "/v5/asset/deposit/sub-deposit-addr",
+  "permalink": "/usa-docs/zh-TW/v5/asset/deposit/sub-deposit-addr",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13.2,
+  "frontMatter": {
+    "title": "查詢子帳號充值地址",
+    "sidebar_label": "查詢子帳號充值地址",
+    "sidebar_position": 13.2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢主帳號充值地址",
+    "permalink": "/usa-docs/zh-TW/v5/asset/deposit/master-deposit-addr"
+  },
+  "next": {
+    "title": "查詢地址簿提幣地址",
+    "permalink": "/usa-docs/zh-TW/v5/asset/withdraw/withdraw-address"
+  }
+}

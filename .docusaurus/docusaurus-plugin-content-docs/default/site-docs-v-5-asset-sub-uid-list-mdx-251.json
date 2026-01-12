@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/sub-uid-list",
+  "id": "v5/asset/sub-uid-list",
+  "title": "Get Sub UID",
+  "description": "Query the sub UIDs under a main UID. It returns up to 2000 sub accounts, if you need more, please call this endpoint.",
+  "source": "@site/docs/v5/asset/sub-uid-list.mdx",
+  "sourceDirName": "v5/asset",
+  "slug": "/v5/asset/sub-uid-list",
+  "permalink": "/usa-docs/v5/asset/sub-uid-list",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3.5,
+  "frontMatter": {
+    "title": "Get Sub UID",
+    "sidebar_label": "Get Sub UID",
+    "sidebar_position": 3.5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Coin Info",
+    "permalink": "/usa-docs/v5/asset/coin-info"
+  },
+  "next": {
+    "title": "Get Single Coin Balance",
+    "permalink": "/usa-docs/v5/asset/balance/account-coin-balance"
+  }
+}

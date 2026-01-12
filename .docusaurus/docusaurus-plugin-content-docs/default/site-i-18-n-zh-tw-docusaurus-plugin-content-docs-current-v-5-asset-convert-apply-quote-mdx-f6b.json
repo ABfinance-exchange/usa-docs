@@ -1,0 +1,19 @@
+{
+  "unversionedId": "v5/asset/convert/apply-quote",
+  "id": "v5/asset/convert/apply-quote",
+  "title": "申請報價",
+  "description": "HTTP 請求",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/convert/apply-quote.mdx",
+  "sourceDirName": "v5/asset/convert",
+  "slug": "/v5/asset/convert/apply-quote",
+  "permalink": "/usa-docs/zh-TW/v5/asset/convert/apply-quote",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "申請報價",
+    "sidebar_label": "申請報價",
+    "sidebar_position": 2
+  }
+}

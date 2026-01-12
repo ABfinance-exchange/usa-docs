@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/market/kline",
+  "id": "v5/market/kline",
+  "title": "查詢市場價格K線數據",
+  "description": "查詢市場價格K線數據",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/market/kline.mdx",
+  "sourceDirName": "v5/market",
+  "slug": "/v5/market/kline",
+  "permalink": "/usa-docs/zh-TW/v5/market/kline",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "查詢市場價格K線數據",
+    "sidebar_label": "查詢市場價格K線數據",
+    "sidebar_position": 1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "自成交攔截",
+    "permalink": "/usa-docs/zh-TW/v5/smp"
+  },
+  "next": {
+    "title": "查詢可交易產品的規格信息",
+    "permalink": "/usa-docs/zh-TW/v5/market/instrument"
+  }
+}

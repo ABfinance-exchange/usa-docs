@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/market/time",
+  "id": "v5/market/time",
+  "title": "Get Server Time",
+  "description": "* During periods of extreme market volatility, this interface may experience increased latency or temporary delays in data delivery",
+  "source": "@site/docs/v5/market/time.mdx",
+  "sourceDirName": "v5/market",
+  "slug": "/v5/market/time",
+  "permalink": "/usa-docs/v5/market/time",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0.5,
+  "frontMatter": {
+    "title": "Get Server Time",
+    "sidebar_label": "Get Server Time",
+    "sidebar_position": 0.5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Self Match Prevention",
+    "permalink": "/usa-docs/v5/smp"
+  },
+  "next": {
+    "title": "Get Kline",
+    "permalink": "/usa-docs/v5/market/kline"
+  }
+}

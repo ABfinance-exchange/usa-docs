@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/withdraw/vasp-list",
+  "id": "v5/asset/withdraw/vasp-list",
+  "title": "查詢交易所列表",
+  "description": "該接口主要用於kyc=KOR的韓國個人用戶, 在提現時需要填寫接收方交易所信息",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/withdraw/vasp-list.mdx",
+  "sourceDirName": "v5/asset/withdraw",
+  "slug": "/v5/asset/withdraw/vasp-list",
+  "permalink": "/usa-docs/zh-TW/v5/asset/withdraw/vasp-list",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "title": "查詢交易所列表",
+    "sidebar_label": "查詢交易所列表 (韓國用戶)",
+    "sidebar_position": 15
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢提現紀錄",
+    "permalink": "/usa-docs/zh-TW/v5/asset/withdraw/withdraw-record"
+  },
+  "next": {
+    "title": "提現",
+    "permalink": "/usa-docs/zh-TW/v5/asset/withdraw/"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/withdraw/cancel-withdraw",
+  "id": "v5/asset/withdraw/cancel-withdraw",
+  "title": "Cancel Withdrawal",
+  "description": "Cancel the withdrawal",
+  "source": "@site/docs/v5/asset/withdraw/cancel-withdraw.mdx",
+  "sourceDirName": "v5/asset/withdraw",
+  "slug": "/v5/asset/withdraw/cancel-withdraw",
+  "permalink": "/usa-docs/v5/asset/withdraw/cancel-withdraw",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 17,
+  "frontMatter": {
+    "title": "Cancel Withdrawal",
+    "sidebar_label": "Cancel Withdrawal",
+    "sidebar_position": 17
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Withdraw",
+    "permalink": "/usa-docs/v5/asset/withdraw/"
+  },
+  "next": {
+    "title": "Create Sub UID",
+    "permalink": "/usa-docs/v5/user/create-subuid"
+  }
+}

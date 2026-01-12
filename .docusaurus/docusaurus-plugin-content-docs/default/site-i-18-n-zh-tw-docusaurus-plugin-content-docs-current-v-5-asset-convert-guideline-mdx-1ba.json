@@ -1,0 +1,19 @@
+{
+  "unversionedId": "v5/asset/convert/guideline",
+  "id": "v5/asset/convert/guideline",
+  "title": "閃兌接入指南",
+  "description": "* 所有接口都需要進行鑒權",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/convert/guideline.mdx",
+  "sourceDirName": "v5/asset/convert",
+  "slug": "/v5/asset/convert/guideline",
+  "permalink": "/usa-docs/zh-TW/v5/asset/convert/guideline",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0.5,
+  "frontMatter": {
+    "title": "閃兌接入指南",
+    "sidebar_label": "接入指南",
+    "sidebar_position": 0.5
+  }
+}

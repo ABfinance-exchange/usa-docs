@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/page-subuid",
+  "id": "v5/user/page-subuid",
+  "title": "查詢子帳戶UID列表 (無限制)",
+  "description": "通過翻頁獲取當前母帳戶下所有的子帳戶列表，適合超過擁有1萬個子帳戶的母帳戶進行調用。需使用母帳戶的API key。",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/user/page-subuid.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/page-subuid",
+  "permalink": "/usa-docs/zh-TW/v5/user/page-subuid",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3.1,
+  "frontMatter": {
+    "title": "查詢子帳戶UID列表 (無限制)",
+    "sidebar_label": "查詢子帳戶UID列表 (無限制)",
+    "sidebar_position": 3.1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢子帳戶UID列表 (限制)",
+    "permalink": "/usa-docs/zh-TW/v5/user/subuid-list"
+  },
+  "next": {
+    "title": "查詢基金託管子帳戶列表",
+    "permalink": "/usa-docs/zh-TW/v5/user/fund-subuid-list"
+  }
+}

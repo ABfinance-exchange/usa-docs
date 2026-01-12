@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/dcp",
+  "id": "v5/order/dcp",
+  "title": "Set Disconnect Cancel All",
+  "description": "What is Disconnection Protect (DCP)?",
+  "source": "@site/docs/v5/order/dcp.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/dcp",
+  "permalink": "/usa-docs/v5/order/dcp",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "title": "Set Disconnect Cancel All",
+    "sidebar_label": "Set DCP",
+    "sidebar_position": 11
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Borrow Quota (Spot)",
+    "permalink": "/usa-docs/v5/order/spot-borrow-quota"
+  },
+  "next": {
+    "title": "Get Wallet Balance",
+    "permalink": "/usa-docs/v5/account/wallet-balance"
+  }
+}

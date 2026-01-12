@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/transfer/unitransfer",
+  "id": "v5/asset/transfer/unitransfer",
+  "title": "創建萬能劃轉",
+  "description": "支持子子帳戶間劃轉或母子帳號間劃轉。",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/transfer/unitransfer.mdx",
+  "sourceDirName": "v5/asset/transfer",
+  "slug": "/v5/asset/transfer/unitransfer",
+  "permalink": "/usa-docs/zh-TW/v5/asset/transfer/unitransfer",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "創建萬能劃轉",
+    "sidebar_label": "創建萬能劃轉",
+    "sidebar_position": 5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "劃轉 (單帳號內)",
+    "permalink": "/usa-docs/zh-TW/v5/asset/transfer/create-inter-transfer"
+  },
+  "next": {
+    "title": "查詢萬能劃轉紀錄",
+    "permalink": "/usa-docs/zh-TW/v5/asset/transfer/unitransfer-list"
+  }
+}

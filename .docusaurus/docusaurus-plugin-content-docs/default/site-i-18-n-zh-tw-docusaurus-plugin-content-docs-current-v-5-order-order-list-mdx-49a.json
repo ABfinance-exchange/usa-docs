@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/order-list",
+  "id": "v5/order/order-list",
+  "title": "查詢歷史訂單",
+  "description": "獲取歷史訂單紀錄. 由於訂單創建/撤銷是異步的, 該接口返回數據可能會有延遲. 若您想實時獲取訂單信息, 您可以查詢該接口或者通過websocket推送(推薦)",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/order/order-list.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/order-list",
+  "permalink": "/usa-docs/zh-TW/v5/order/order-list",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "查詢歷史訂單",
+    "sidebar_label": "查詢歷史訂單 (2年)",
+    "sidebar_position": 6
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "撤銷所有訂單",
+    "permalink": "/usa-docs/zh-TW/v5/order/cancel-all"
+  },
+  "next": {
+    "title": "查詢成交紀錄 (2年)",
+    "permalink": "/usa-docs/zh-TW/v5/order/execution"
+  }
+}

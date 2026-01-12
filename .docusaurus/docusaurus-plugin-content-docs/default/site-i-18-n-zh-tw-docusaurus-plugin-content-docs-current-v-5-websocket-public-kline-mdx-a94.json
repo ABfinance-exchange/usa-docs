@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/public/kline",
+  "id": "v5/websocket/public/kline",
+  "title": "K線",
+  "description": "訂閱K線推送",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/websocket/public/kline.mdx",
+  "sourceDirName": "v5/websocket/public",
+  "slug": "/v5/websocket/public/kline",
+  "permalink": "/usa-docs/zh-TW/v5/websocket/public/kline",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "K線",
+    "sidebar_label": "K線",
+    "sidebar_position": 4
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "行情",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/public/ticker"
+  },
+  "next": {
+    "title": "訂單價格限制",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/public/order-price-limit"
+  }
+}

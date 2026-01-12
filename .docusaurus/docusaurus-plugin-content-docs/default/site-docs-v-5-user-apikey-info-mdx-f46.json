@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/apikey-info",
+  "id": "v5/user/apikey-info",
+  "title": "Get API Key Information",
+  "description": "Get the information of the api key. Use the api key pending to be checked to call the endpoint. Both master and sub user's api key are applicable.",
+  "source": "@site/docs/v5/user/apikey-info.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/apikey-info",
+  "permalink": "/usa-docs/v5/user/apikey-info",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Get API Key Information",
+    "sidebar_label": "Get API Key Information",
+    "sidebar_position": 5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Freeze Sub UID",
+    "permalink": "/usa-docs/v5/user/froze-subuid"
+  },
+  "next": {
+    "title": "Get Sub Account All API Keys",
+    "permalink": "/usa-docs/v5/user/list-sub-apikeys"
+  }
+}

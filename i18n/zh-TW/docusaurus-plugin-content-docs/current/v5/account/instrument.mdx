@@ -1,0 +1,177 @@
+---
+title: 查詢用户可交易產品的規格信息
+sidebar_label: 查詢用户可交易產品的規格信息
+sidebar_position: 5
+---
+
+查詢用户全站可交易產品的基礎配置規則信息
+> **覆蓋範圍:  現貨**
+
+:::caution
+* 現貨不支持翻頁，因此`limit`, `cusor`無效
+* 托管子账户不支持查询
+* 在極端市場波動期間, 此介面可能會出現延遲增加或資料傳遞暫時延遲的情況
+:::
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+### HTTP請求
+GET `/v5/account/instruments-info`
+
+### 請求參數
+| 參數 | 是否必需 | 類型 | 說明|
+|:----- |:-------|:-----|------ |
+|[category](../enum#category) |<b>true</b> |string |產品類型. `spot`|
+|symbol |false |string |合約名稱|
+|limit |false |integer |每頁數量限制. [`1`, `200`]. 默認: `200`|
+|cursor |false |string |游標，用於翻頁|
+
+### 響應參數
+<Tabs groupId="market-category">
+
+ <TabItem value="spot" label="Spot">
+    <table border="0.8">
+        <tr>
+            <th>參數</th><th>類型</th><th>說明</th>
+        </tr>
+        <tr>
+            <td>category</td><td>string</td><td>產品類型</td>
+        </tr>
+        <tr>
+            <td>list</td><td>array</td><td>Object</td>
+        </tr>
+        <tr>
+            <td>> symbol</td><td>string</td><td>合約名稱 </td>
+        </tr>
+        <tr>
+            <td>> baseCoin</td><td>string</td><td>交易幣種 </td>
+        </tr>
+        <tr>
+            <td>> quoteCoin</td><td>string</td><td>報價幣種 </td>
+        </tr>
+        <tr>
+            <td>> innovation</td><td>string</td><td>廢棄, 請參照<code>symbolType</code></td>
+        </tr>
+        <tr>
+            <td>> <a href="../enum#symboltype">symbolType</a></td><td>string</td><td> 交易對所屬區域</td>
+        </tr>
+        <tr>
+            <td>> <a href="../enum#status">status</a></td><td>string</td><td>合約狀態 </td>
+        </tr>
+        <tr>
+            <td>> <a href="../enum#margintrading">marginTrading</a></td><td>string</td><td>該幣對是否支持槓桿交易 <ul><li>該字段僅用於說明不同帳戶類型下某個幣對是否支持槓桿交易</li><li>您可能會遇到某個幣對支持槓桿交易, 但是不支持單邊買入或者賣出, 這種情況下您需要前往<a href="/v5/account/collateral-info">查詢抵押品信息 (UTA)</a>確認目標幣種是否可借貸</li></ul></td>
+        </tr>
+         <tr>
+            <td>> stTag</td><td>string</td><td>幣對是否存在. <code>0</code>: 否, <code>1</code>: 是 </td>
+        </tr>
+        <tr>
+            <td>> lotSizeFilter</td><td>Object</td><td>數量屬性 </td>
+        </tr>
+        <tr>
+            <td>>> basePrecision</td><td>string</td><td>交易幣種精度 </td>
+        </tr>
+        <tr>
+            <td>>> quotePrecision</td><td>string</td><td>報價幣種精度 </td>
+        </tr>
+        <tr>
+            <td>>> minOrderQty</td><td>string</td><td>單筆訂單最小下單量, 已廢棄, 不再檢查<code>minOrderQty</code>，而是檢查<code>minOrderAmt</code></td>
+        </tr>
+        <tr>
+            <td>>> maxOrderQty</td><td>string</td><td>單筆訂單最大下單量, 已廢棄, 請基於訂單類型參考<code>maxLimitOrderQty</code>, <code>maxMarketOrderQty</code> </td>
+        </tr>
+        <tr>
+            <td>>> minOrderAmt</td><td>string</td><td>單筆訂單最小訂單額 </td>
+        </tr>
+        <tr>
+            <td>>> maxOrderAmt</td><td>string</td><td>單筆訂單最大訂單額, 已廢棄, 不再檢查 <code>maxOrderAmt</code>，而是檢查 <code>maxLimitOrderQty</code> 和 <code>maxMarketOrderQty</code></td>
+        </tr>
+         <tr>
+            <td>>> maxLimitOrderQty</td><td>string</td><td>單筆限價訂單最大下單量 </td>
+        </tr>
+         <tr>
+            <td><nobr>>> maxMarketOrderQty</nobr></td><td>string</td><td>單筆市價訂單最大下單量 </td>
+        </tr>
+        <tr>
+            <td>>> postOnlyMaxLimitOrderSize </td><td>string</td><td>被動委託(Post-Only)與零售價格優化(RPI)的最大限價單規模</td>
+        </tr>
+        <tr>
+            <td>> priceFilter</td><td>Object</td><td>價格屬性 </td>
+        </tr>
+        <tr>
+            <td>>> tickSize</td><td>string</td><td>修改訂單的步長 </td>
+        </tr>
+        <tr>
+            <td>> riskParameters</td><td>Object</td><td>限價單價格風控參數</td>
+        </tr>
+        <tr>
+            <td>>> priceLimitRatioX</td><td>string</td><td>參數 X</td>
+        </tr>
+        <tr>
+            <td>>> priceLimitRatioY</td><td>string</td><td>參數 Y</td>
+        </tr>
+       <tr>
+            <td>> isPublicRpi </td><td>boolean</td><td>是否公開給做市商進行 RPI<li> true: 公開給做市商進行 RPI</li> <li>false: 没有公開給做市商進行 RPI</li> </td>
+        </tr>
+        <tr>
+            <td>> myRpiPermission </td><td>boolean</td><td>當前使用者是否有RPI權限<li> true: 有RPI權限</li> <li>false: 没有有RPI權限</li> </td>
+        </tr>
+    </table>
+</TabItem> 
+</Tabs>
+
+
+---
+
+### 請求示例
+
+<Tabs groupId="market-category">
+
+<TabItem value="spot" label="Spot">
+
+```json
+{
+    "retCode": 0,
+    "retMsg": "OK",
+    "result": {
+        "category": "spot",
+        "list": [
+            {
+                "symbol": "BTCUSDT",
+                "baseCoin": "BTC",
+                "quoteCoin": "USDT",
+                "innovation": "0",
+                "status": "Trading",
+                "marginTrading": "utaOnly",
+                "stTag": "0",
+                "lotSizeFilter": {
+                    "basePrecision": "0.000001",
+                    "quotePrecision": "0.00000001",
+                    "minOrderQty": "0.000001",
+                    "maxOrderQty": "17000",
+                    "minOrderAmt": "5",
+                    "maxOrderAmt": "1999999999",
+                    "maxLimitOrderQty": "17000",
+                    "maxMarketOrderQty": "8500",
+                    "postOnlyMaxLimitOrderSize":"60000"
+                },
+                "priceFilter": {
+                    "tickSize": "0.01"
+                },
+                "riskParameters": {
+                    "priceLimitRatioX": "0.05",
+                    "priceLimitRatioY": "0.05"
+                },
+                "symbolType": "",
+                "isPublicRpi": true,
+                "myRpiPermission": true
+            }
+        ]
+    },
+    "retExtInfo": {},
+    "time": 1760682563907
+}
+```
+
+</TabItem>
+</Tabs>

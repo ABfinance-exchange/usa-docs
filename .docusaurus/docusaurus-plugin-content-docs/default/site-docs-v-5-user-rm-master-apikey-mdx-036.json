@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/rm-master-apikey",
+  "id": "v5/user/rm-master-apikey",
+  "title": "Delete Master API Key",
+  "description": "Delete the api key of master account. Use the api key pending to be delete to call the endpoint. Use master user's api key only.",
+  "source": "@site/docs/v5/user/rm-master-apikey.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/rm-master-apikey",
+  "permalink": "/usa-docs/v5/user/rm-master-apikey",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "Delete Master API Key",
+    "sidebar_label": "Delete Master API Key",
+    "sidebar_position": 8
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Delete Sub UID",
+    "permalink": "/usa-docs/v5/user/rm-subuid"
+  },
+  "next": {
+    "title": "Delete Sub API Key",
+    "permalink": "/usa-docs/v5/user/rm-sub-apikey"
+  }
+}

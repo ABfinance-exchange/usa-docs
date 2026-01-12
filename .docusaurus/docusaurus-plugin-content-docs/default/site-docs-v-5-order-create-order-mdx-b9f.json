@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/create-order",
+  "id": "v5/order/create-order",
+  "title": "Place Order",
+  "description": "This endpoint supports to create the order for Spot",
+  "source": "@site/docs/v5/order/create-order.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/create-order",
+  "permalink": "/usa-docs/v5/order/create-order",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Place Order",
+    "sidebar_label": "Place Order",
+    "sidebar_position": 1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Order Price Limit",
+    "permalink": "/usa-docs/v5/market/order-price-limit"
+  },
+  "next": {
+    "title": "Amend Order",
+    "permalink": "/usa-docs/v5/order/amend-order"
+  }
+}

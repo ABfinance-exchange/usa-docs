@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/set-price-limit",
+  "id": "v5/account/set-price-limit",
+  "title": "設置限價單行為",
+  "description": "您可以設定當限價單價格超過最高買價或最低賣價時，系統的行為方式。",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/account/set-price-limit.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/set-price-limit",
+  "permalink": "/usa-docs/zh-TW/v5/account/set-price-limit",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 22,
+  "frontMatter": {
+    "title": "設置限價單行為",
+    "sidebar_label": "設置限價單行為",
+    "sidebar_position": 22
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢交易行為設置",
+    "permalink": "/usa-docs/zh-TW/v5/account/get-user-setting-config"
+  },
+  "next": {
+    "title": "查詢兌換訂單紀錄",
+    "permalink": "/usa-docs/zh-TW/v5/asset/exchange"
+  }
+}

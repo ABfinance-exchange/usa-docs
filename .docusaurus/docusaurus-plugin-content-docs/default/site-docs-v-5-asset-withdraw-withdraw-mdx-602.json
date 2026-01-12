@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/withdraw/withdraw",
+  "id": "v5/asset/withdraw/withdraw",
+  "title": "Withdraw",
+  "description": "Withdraw assets from your account. You can make an off-chain transfer if the target wallet address is from Abfinance. This means that no blockchain fee will be charged.",
+  "source": "@site/docs/v5/asset/withdraw/withdraw.mdx",
+  "sourceDirName": "v5/asset/withdraw",
+  "slug": "/v5/asset/withdraw/",
+  "permalink": "/usa-docs/v5/asset/withdraw/",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 16,
+  "frontMatter": {
+    "title": "Withdraw",
+    "sidebar_label": "Withdraw",
+    "sidebar_position": 16
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Exchange Entity List (KOR)",
+    "permalink": "/usa-docs/v5/asset/withdraw/vasp-list"
+  },
+  "next": {
+    "title": "Cancel Withdrawal",
+    "permalink": "/usa-docs/v5/asset/withdraw/cancel-withdraw"
+  }
+}

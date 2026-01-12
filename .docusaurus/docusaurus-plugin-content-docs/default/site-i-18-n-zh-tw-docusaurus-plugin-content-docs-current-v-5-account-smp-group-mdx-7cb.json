@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/smp-group",
+  "id": "v5/account/smp-group",
+  "title": "查詢SMP組ID",
+  "description": "查詢自成交攔截的SMP交易群組ID",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/account/smp-group.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/smp-group",
+  "permalink": "/usa-docs/zh-TW/v5/account/smp-group",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 20,
+  "frontMatter": {
+    "title": "查詢SMP組ID",
+    "sidebar_label": "查詢SMP組ID",
+    "sidebar_position": 20
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "批量設置抵押品幣種",
+    "permalink": "/usa-docs/zh-TW/v5/account/batch-set-collateral"
+  },
+  "next": {
+    "title": "查詢交易行為設置",
+    "permalink": "/usa-docs/zh-TW/v5/account/get-user-setting-config"
+  }
+}

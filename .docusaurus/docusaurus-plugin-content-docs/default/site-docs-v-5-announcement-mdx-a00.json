@@ -1,0 +1,26 @@
+{
+  "unversionedId": "v5/announcement",
+  "id": "v5/announcement",
+  "title": "Get Announcement",
+  "description": "HTTP Request",
+  "source": "@site/docs/v5/announcement.mdx",
+  "sourceDirName": "v5",
+  "slug": "/v5/announcement",
+  "permalink": "/usa-docs/v5/announcement",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Get Announcement",
+    "sidebar_label": "Get Announcement"
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Integration Guidance",
+    "permalink": "/usa-docs/v5/guide"
+  },
+  "next": {
+    "title": "Self Match Prevention",
+    "permalink": "/usa-docs/v5/smp"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/earn/position",
+  "id": "v5/earn/position",
+  "title": "查詢理財持倉",
+  "description": "API key需要\"理財\"\"權限",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/earn/position.mdx",
+  "sourceDirName": "v5/earn",
+  "slug": "/v5/earn/position",
+  "permalink": "/usa-docs/zh-TW/v5/earn/position",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "查詢理財持倉",
+    "sidebar_label": "查詢理財持倉",
+    "sidebar_position": 4
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢質押/贖回訂單歷史",
+    "permalink": "/usa-docs/zh-TW/v5/earn/order-history"
+  },
+  "next": {
+    "title": "查詢收益歷史",
+    "permalink": "/usa-docs/zh-TW/v5/earn/yield-history"
+  }
+}

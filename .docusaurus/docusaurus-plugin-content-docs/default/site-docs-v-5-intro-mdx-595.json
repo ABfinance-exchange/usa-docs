@@ -1,0 +1,17 @@
+{
+  "unversionedId": "v5/intro",
+  "id": "v5/intro",
+  "title": "Introduction",
+  "description": "Overview",
+  "source": "@site/docs/v5/intro.mdx",
+  "sourceDirName": "v5",
+  "slug": "/v5/intro",
+  "permalink": "/usa-docs/v5/intro",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Introduction",
+    "sidebar_label": "Introduction"
+  }
+}

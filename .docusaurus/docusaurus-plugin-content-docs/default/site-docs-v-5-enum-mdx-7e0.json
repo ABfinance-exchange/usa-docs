@@ -1,0 +1,26 @@
+{
+  "unversionedId": "v5/enum",
+  "id": "v5/enum",
+  "title": "Enums Definitions",
+  "description": "locale",
+  "source": "@site/docs/v5/enum.mdx",
+  "sourceDirName": "v5",
+  "slug": "/v5/enum",
+  "permalink": "/usa-docs/v5/enum",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Enums Definitions",
+    "sidebar_label": "Enums Definitions"
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get All Rate Limits",
+    "permalink": "/usa-docs/v5/rate-limit/rules-for-pros/apilimit-query-all"
+  },
+  "next": {
+    "title": "Error Codes",
+    "permalink": "/usa-docs/v5/error"
+  }
+}

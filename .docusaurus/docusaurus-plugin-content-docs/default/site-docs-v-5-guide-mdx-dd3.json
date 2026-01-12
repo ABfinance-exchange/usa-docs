@@ -1,0 +1,22 @@
+{
+  "unversionedId": "v5/guide",
+  "id": "v5/guide",
+  "title": "Integration Guidance",
+  "description": "Authentication",
+  "source": "@site/docs/v5/guide.mdx",
+  "sourceDirName": "v5",
+  "slug": "/v5/guide",
+  "permalink": "/usa-docs/v5/guide",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Integration Guidance",
+    "sidebar_label": "Integration Guidance"
+  },
+  "sidebar": "v5SideBar",
+  "next": {
+    "title": "Get Announcement",
+    "permalink": "/usa-docs/v5/announcement"
+  }
+}

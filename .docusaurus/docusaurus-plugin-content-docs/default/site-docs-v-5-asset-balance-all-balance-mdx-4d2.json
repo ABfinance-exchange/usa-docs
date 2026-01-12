@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/balance/all-balance",
+  "id": "v5/asset/balance/all-balance",
+  "title": "Get All Coins Balance",
+  "description": "You could get all coin balance of all account types under the master account, and sub account.",
+  "source": "@site/docs/v5/asset/balance/all-balance.mdx",
+  "sourceDirName": "v5/asset/balance",
+  "slug": "/v5/asset/balance/all-balance",
+  "permalink": "/usa-docs/v5/asset/balance/all-balance",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Get All Coins Balance",
+    "sidebar_label": "Get All Coins Balance",
+    "sidebar_position": 2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Single Coin Balance",
+    "permalink": "/usa-docs/v5/asset/balance/account-coin-balance"
+  },
+  "next": {
+    "title": "Get Withdrawable Amount",
+    "permalink": "/usa-docs/v5/asset/balance/delay-amount"
+  }
+}

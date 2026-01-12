@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/unified-trans-amnt",
+  "id": "v5/account/unified-trans-amnt",
+  "title": "Get Transferable Amount (Unified)",
+  "description": "Query the available amount to transfer of a specific coin in the Unified wallet.",
+  "source": "@site/docs/v5/account/unified-trans-amnt.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/unified-trans-amnt",
+  "permalink": "/usa-docs/v5/account/unified-trans-amnt",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Get Transferable Amount (Unified)",
+    "sidebar_label": "Get Transferable Amount (Unified)",
+    "sidebar_position": 2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Wallet Balance",
+    "permalink": "/usa-docs/v5/account/wallet-balance"
+  },
+  "next": {
+    "title": "Get Transaction Log (UTA)",
+    "permalink": "/usa-docs/v5/account/transaction-log"
+  }
+}

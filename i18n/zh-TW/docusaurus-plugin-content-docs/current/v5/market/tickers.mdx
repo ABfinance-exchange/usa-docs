@@ -1,0 +1,138 @@
+---
+title: 查詢最新行情信息
+sidebar_label: 查詢最新行情信息
+sidebar_position: 6
+---
+
+可獲取到快照的最新市場價格，最佳買賣價格，以及過去時間內的交易量等.
+> **覆蓋範圍: 現貨**
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+### HTTP請求
+GET `/v5/market/tickers`
+
+### 請求參數
+| 參數 | 是否必需 | 類型 | 說明|
+|:----- |:-------|:-----|------ |
+|[category](../enum#category) |**true** |string |產品類型. `spot`|
+|[symbol](../enum#symbol) |false |string |币种名稱 |
+
+### 響應參數
+<Tabs groupId="market-category">
+
+
+<TabItem value="spot" label="Spot">
+    <table border="0.8">
+        <tr>
+            <th>參數</th><th>類型</th><th>說明</th>
+        </tr>
+        <tr>
+            <td>category</td><td>string</td><td>產品類型</td>
+        </tr>
+        <tr>
+            <td>list</td><td>array</td><td>Object</td>
+        </tr>
+        <tr>
+            <td>> symbol</td><td>string</td><td>币种名稱 </td>
+        </tr>
+        <tr>
+            <td>> bid1Price</td><td>string</td><td>買1價 </td>
+        </tr>
+        <tr>
+            <td>> bid1Size</td><td>string</td><td>買1價的數量 </td>
+        </tr>
+        <tr>
+            <td>> ask1Price</td><td>string</td><td>賣1價 </td>
+        </tr>
+        <tr>
+            <td>> ask1Size</td><td>string</td><td>賣1價的數量 </td>
+        </tr>
+        <tr>
+            <td>> lastPrice</td><td>string</td><td>最新市場成交價 </td>
+        </tr>
+        <tr>
+            <td>> prevPrice24h</td><td>string</td><td>24小時前的整點市價 </td>
+        </tr>
+        <tr>
+            <td>> price24hPcnt</td><td>string</td><td>市場價格相對24h前變化的百分比 </td>
+        </tr>
+        <tr>
+            <td>> highPrice24h</td><td>string</td><td>最近24小時的最高價 </td>
+        </tr>
+        <tr>
+            <td>> lowPrice24h</td><td>string</td><td>最近24小時的最低價 </td>
+        </tr>
+        <tr>
+            <td>> turnover24h</td><td>string</td><td>最近24小時成交額 </td>
+        </tr>
+        <tr>
+            <td>> volume24h</td><td>string</td><td>最近24小時成交量 </td>
+        </tr>
+        <tr>
+            <td>> usdIndexPrice</td><td>string</td><td>USD指數價格 <ul><li>用於計算統一帳戶裡資產折算成USD價值的價格</li><li>若幣種不屬於抵押品幣種, 則返回空字符串</li><li>只有那些幣對名是"XXX/USDT"或者"XXX/USDC"有值</li></ul></td>
+        </tr>
+    </table>
+</TabItem>
+</Tabs>
+
+
+---
+
+### 請求示例
+
+<Tabs groupId="market-category">
+
+<TabItem value="spot" label="Spot">
+
+<Tabs groupId="programming-languages">
+<TabItem value="http" label="HTTP">
+
+```http
+GET /v5/market/tickers?category=spot&symbol=BTCUSDT HTTP/1.1
+Host: api-testnet.abfinance.com
+```
+
+</TabItem>
+</Tabs>
+
+</TabItem>
+</Tabs>
+
+### 響應示例
+
+<Tabs groupId="market-category">
+
+<TabItem value="spot" label="Spot">
+
+```json
+{
+    "retCode": 0,
+    "retMsg": "OK",
+    "result": {
+        "category": "spot",
+        "list": [
+            {
+                "symbol": "BTCUSDT",
+                "bid1Price": "20517.96",
+                "bid1Size": "2",
+                "ask1Price": "20527.77",
+                "ask1Size": "1.862172",
+                "lastPrice": "20533.13",
+                "prevPrice24h": "20393.48",
+                "price24hPcnt": "0.0068",
+                "highPrice24h": "21128.12",
+                "lowPrice24h": "20318.89",
+                "turnover24h": "243765620.65899866",
+                "volume24h": "11801.27771",
+                "usdIndexPrice": "20784.12009279"
+            }
+        ]
+    },
+    "retExtInfo": {},
+    "time": 1673859087947
+}
+```
+</TabItem>
+</Tabs>

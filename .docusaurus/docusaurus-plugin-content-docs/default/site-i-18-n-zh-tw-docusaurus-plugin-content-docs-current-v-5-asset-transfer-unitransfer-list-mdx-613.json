@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/transfer/unitransfer-list",
+  "id": "v5/asset/transfer/unitransfer-list",
+  "title": "查詢萬能劃轉紀錄",
+  "description": "* 母子帳號的api key都支持調用",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/transfer/unitransfer-list.mdx",
+  "sourceDirName": "v5/asset/transfer",
+  "slug": "/v5/asset/transfer/unitransfer-list",
+  "permalink": "/usa-docs/zh-TW/v5/asset/transfer/unitransfer-list",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "查詢萬能劃轉紀錄",
+    "sidebar_label": "查詢萬能劃轉紀錄",
+    "sidebar_position": 6
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "創建萬能劃轉",
+    "permalink": "/usa-docs/zh-TW/v5/asset/transfer/unitransfer"
+  },
+  "next": {
+    "title": "設置充值帳戶",
+    "permalink": "/usa-docs/zh-TW/v5/asset/deposit/set-deposit-acct"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/deposit/master-deposit-addr",
+  "id": "v5/asset/deposit/master-deposit-addr",
+  "title": "查詢主帳號充值地址",
+  "description": "僅支持母帳號API key",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/deposit/master-deposit-addr.mdx",
+  "sourceDirName": "v5/asset/deposit",
+  "slug": "/v5/asset/deposit/master-deposit-addr",
+  "permalink": "/usa-docs/zh-TW/v5/asset/deposit/master-deposit-addr",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13.1,
+  "frontMatter": {
+    "title": "查詢主帳號充值地址",
+    "sidebar_label": "查詢主帳號充值地址",
+    "sidebar_position": 13.1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢充值記錄 (平台转账)",
+    "permalink": "/usa-docs/zh-TW/v5/asset/deposit/internal-deposit-record"
+  },
+  "next": {
+    "title": "查詢子帳號充值地址",
+    "permalink": "/usa-docs/zh-TW/v5/asset/deposit/sub-deposit-addr"
+  }
+}

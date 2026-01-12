@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/froze-subuid",
+  "id": "v5/user/froze-subuid",
+  "title": "凍結/解凍子帳戶",
+  "description": "凍結或解凍子帳戶。需使用母帳戶的API key。",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/user/froze-subuid.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/froze-subuid",
+  "permalink": "/usa-docs/zh-TW/v5/user/froze-subuid",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "凍結/解凍子帳戶",
+    "sidebar_label": "凍結/解凍子帳戶",
+    "sidebar_position": 4
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢基金託管子帳戶列表",
+    "permalink": "/usa-docs/zh-TW/v5/user/fund-subuid-list"
+  },
+  "next": {
+    "title": "查詢API Key相關信息",
+    "permalink": "/usa-docs/zh-TW/v5/user/apikey-info"
+  }
+}

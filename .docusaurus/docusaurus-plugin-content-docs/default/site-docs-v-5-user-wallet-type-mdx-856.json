@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/wallet-type",
+  "id": "v5/user/wallet-type",
+  "title": "Get UID Wallet Type",
+  "description": "Get available wallet types for the master account or sub account",
+  "source": "@site/docs/v5/user/wallet-type.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/wallet-type",
+  "permalink": "/usa-docs/v5/user/wallet-type",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5.5,
+  "frontMatter": {
+    "title": "Get UID Wallet Type",
+    "sidebar_label": "Get UID Wallet Type",
+    "sidebar_position": 5.5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Sub Account All API Keys",
+    "permalink": "/usa-docs/v5/user/list-sub-apikeys"
+  },
+  "next": {
+    "title": "Modify Master API Key",
+    "permalink": "/usa-docs/v5/user/modify-master-apikey"
+  }
+}

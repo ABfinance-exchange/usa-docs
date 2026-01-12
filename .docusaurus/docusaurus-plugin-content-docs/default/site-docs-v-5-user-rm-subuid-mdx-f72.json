@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/rm-subuid",
+  "id": "v5/user/rm-subuid",
+  "title": "Delete Sub UID",
+  "description": "Delete a sub UID. Before deleting the UID, please make sure there is no asset.",
+  "source": "@site/docs/v5/user/rm-subuid.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/rm-subuid",
+  "permalink": "/usa-docs/v5/user/rm-subuid",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7.5,
+  "frontMatter": {
+    "title": "Delete Sub UID",
+    "sidebar_label": "Delete Sub UID",
+    "sidebar_position": 7.5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Modify Sub API Key",
+    "permalink": "/usa-docs/v5/user/modify-sub-apikey"
+  },
+  "next": {
+    "title": "Delete Master API Key",
+    "permalink": "/usa-docs/v5/user/rm-master-apikey"
+  }
+}

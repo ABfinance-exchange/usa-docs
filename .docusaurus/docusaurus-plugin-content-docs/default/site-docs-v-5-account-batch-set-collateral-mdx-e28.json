@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/batch-set-collateral",
+  "id": "v5/account/batch-set-collateral",
+  "title": "Batch Set Collateral Coin",
+  "description": "HTTP Request",
+  "source": "@site/docs/v5/account/batch-set-collateral.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/batch-set-collateral",
+  "permalink": "/usa-docs/v5/account/batch-set-collateral",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "title": "Batch Set Collateral Coin",
+    "sidebar_label": "Batch Set Collateral Coin",
+    "sidebar_position": 12
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Borrow History (2 years)",
+    "permalink": "/usa-docs/v5/account/borrow-history"
+  },
+  "next": {
+    "title": "Get SMP Group ID",
+    "permalink": "/usa-docs/v5/account/smp-group"
+  }
+}

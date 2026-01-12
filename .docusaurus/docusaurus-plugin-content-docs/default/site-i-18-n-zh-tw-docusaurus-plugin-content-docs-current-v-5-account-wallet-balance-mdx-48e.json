@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/wallet-balance",
+  "id": "v5/account/wallet-balance",
+  "title": "查詢錢包餘額",
+  "description": "獲取統一帳戶錢包餘額, 查詢各個幣種的資產信息. 默認不返回資產或負債為0的幣種信息。",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/account/wallet-balance.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/wallet-balance",
+  "permalink": "/usa-docs/zh-TW/v5/account/wallet-balance",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "查詢錢包餘額",
+    "sidebar_label": "查詢錢包餘額",
+    "sidebar_position": 1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "設置斷線保護時間",
+    "permalink": "/usa-docs/zh-TW/v5/order/dcp"
+  },
+  "next": {
+    "title": "查詢可劃轉餘額(统一账户)",
+    "permalink": "/usa-docs/zh-TW/v5/account/unified-trans-amnt"
+  }
+}

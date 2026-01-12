@@ -1,0 +1,44 @@
+---
+title: 訂單價格限制
+sidebar_label: 訂單價格限制
+sidebar_position: 10
+---
+
+訂閱訂單價格限制的推送.<br/>
+現貨交易訂單價格限制.<br/>
+
+
+推送頻率: **300毫秒**
+
+**Topic:**<br/>
+`priceLimit.{symbol}`
+
+### 響應參數
+| 參數 | 類型 | 說明|
+|:----- |:-----|----- |
+|topic |string |Topic名 |
+|ts |number |行情服務生成數據的時間戳 (毫秒)  |
+|data |array |Object. |
+|> symbol |string |合約名稱 |
+|> buyLmt |string |最高買價 |
+|> sellLmt |string |最低賣價 |
+
+### 訂閱示例
+
+```python
+{"op": "subscribe", "args": ["priceLimit.BTCUSDT"]}
+```
+
+### 響應示例
+
+```json
+{
+    "topic": "priceLimit.BTCUSDT",
+    "data": {
+        "symbol": "BTCUSDT",
+        "buyLmt": "114450.00",
+        "sellLmt": "103550.00"
+    },
+    "ts": 1750059683782
+}
+```

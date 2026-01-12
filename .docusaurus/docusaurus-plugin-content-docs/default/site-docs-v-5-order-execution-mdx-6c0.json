@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/execution",
+  "id": "v5/order/execution",
+  "title": "Get Trade History",
+  "description": "Query users' execution records, sorted by execTime in descending order.",
+  "source": "@site/docs/v5/order/execution.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/execution",
+  "permalink": "/usa-docs/v5/order/execution",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6.1,
+  "frontMatter": {
+    "title": "Get Trade History",
+    "sidebar_label": "Get Trade History (2 years)",
+    "sidebar_position": 6.1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Order History (2 years)",
+    "permalink": "/usa-docs/v5/order/order-list"
+  },
+  "next": {
+    "title": "Batch Place Order",
+    "permalink": "/usa-docs/v5/order/batch-place"
+  }
+}

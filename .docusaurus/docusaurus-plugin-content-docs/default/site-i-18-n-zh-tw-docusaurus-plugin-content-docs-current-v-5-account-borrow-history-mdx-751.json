@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/borrow-history",
+  "id": "v5/account/borrow-history",
+  "title": "查詢利息記錄",
+  "description": "獲取利息記錄，按照創建時間倒敘排列",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/account/borrow-history.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/borrow-history",
+  "permalink": "/usa-docs/zh-TW/v5/account/borrow-history",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "title": "查詢利息記錄",
+    "sidebar_label": "查詢利息記錄 (2年)",
+    "sidebar_position": 14
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "設置抵押品幣種",
+    "permalink": "/usa-docs/zh-TW/v5/account/set-collateral"
+  },
+  "next": {
+    "title": "批量設置抵押品幣種",
+    "permalink": "/usa-docs/zh-TW/v5/account/batch-set-collateral"
+  }
+}

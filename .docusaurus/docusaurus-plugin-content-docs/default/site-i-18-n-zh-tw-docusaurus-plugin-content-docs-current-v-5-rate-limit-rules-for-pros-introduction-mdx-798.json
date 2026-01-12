@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/rate-limit/rules-for-pros/introduction",
+  "id": "v5/rate-limit/rules-for-pros/introduction",
+  "title": "限頻介紹",
+  "description": "PROs接口限頻規則",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/rate-limit/rules-for-pros/introduction.mdx",
+  "sourceDirName": "v5/rate-limit/rules-for-pros",
+  "slug": "/v5/rate-limit/rules-for-pros/introduction",
+  "permalink": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/introduction",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "限頻介紹",
+    "sidebar_label": "限頻介紹",
+    "sidebar_position": 1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "VIP的接口限頻規則",
+    "permalink": "/usa-docs/zh-TW/v5/rate-limit/rules-for-vips"
+  },
+  "next": {
+    "title": "設定 API 速率限制",
+    "permalink": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-set"
+  }
+}

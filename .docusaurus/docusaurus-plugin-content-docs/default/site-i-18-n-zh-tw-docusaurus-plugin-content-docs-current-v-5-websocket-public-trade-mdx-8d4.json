@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/public/trade",
+  "id": "v5/websocket/public/trade",
+  "title": "平台成交",
+  "description": "訂閱平台上最近成交的推送.",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/websocket/public/trade.mdx",
+  "sourceDirName": "v5/websocket/public",
+  "slug": "/v5/websocket/public/trade",
+  "permalink": "/usa-docs/zh-TW/v5/websocket/public/trade",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "平台成交",
+    "sidebar_label": "平台成交",
+    "sidebar_position": 2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "RPI 深度",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/public/orderbook-rpi"
+  },
+  "next": {
+    "title": "行情",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/public/ticker"
+  }
+}

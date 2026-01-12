@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/deposit/deposit-record",
+  "id": "v5/asset/deposit/deposit-record",
+  "title": "查詢充值紀錄 (鏈上)",
+  "description": "* endTime - startTime需要小於等於30天，默認查詢最近30天的紀錄",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/deposit/deposit-record.mdx",
+  "sourceDirName": "v5/asset/deposit",
+  "slug": "/v5/asset/deposit/deposit-record",
+  "permalink": "/usa-docs/zh-TW/v5/asset/deposit/deposit-record",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "title": "查詢充值紀錄 (鏈上)",
+    "sidebar_label": "查詢充值紀錄 (鏈上)",
+    "sidebar_position": 12
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "設置充值帳戶",
+    "permalink": "/usa-docs/zh-TW/v5/asset/deposit/set-deposit-acct"
+  },
+  "next": {
+    "title": "查詢子帳號的充值紀錄 (鏈上)",
+    "permalink": "/usa-docs/zh-TW/v5/asset/deposit/sub-deposit-record"
+  }
+}

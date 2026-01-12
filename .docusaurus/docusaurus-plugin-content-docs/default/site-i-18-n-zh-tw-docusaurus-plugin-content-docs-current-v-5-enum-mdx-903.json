@@ -1,0 +1,26 @@
+{
+  "unversionedId": "v5/enum",
+  "id": "v5/enum",
+  "title": "枚舉定義",
+  "description": "locale",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/enum.mdx",
+  "sourceDirName": "v5",
+  "slug": "/v5/enum",
+  "permalink": "/usa-docs/zh-TW/v5/enum",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "枚舉定義",
+    "sidebar_label": "枚舉定義"
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢所有 API 限速",
+    "permalink": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-query-all"
+  },
+  "next": {
+    "title": "錯誤碼",
+    "permalink": "/usa-docs/zh-TW/v5/error"
+  }
+}

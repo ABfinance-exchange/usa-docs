@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/wallet-type",
+  "id": "v5/user/wallet-type",
+  "title": "查詢帳戶支持的錢包類型",
+  "description": "查詢母帳戶或者子帳戶下支持的錢包類型",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/user/wallet-type.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/wallet-type",
+  "permalink": "/usa-docs/zh-TW/v5/user/wallet-type",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5.5,
+  "frontMatter": {
+    "title": "查詢帳戶支持的錢包類型",
+    "sidebar_label": "查詢帳戶支持的錢包類型",
+    "sidebar_position": 5.5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢子帳戶的所有API Key信息",
+    "permalink": "/usa-docs/zh-TW/v5/user/list-sub-apikeys"
+  },
+  "next": {
+    "title": "修改母帳戶的API Key設置",
+    "permalink": "/usa-docs/zh-TW/v5/user/modify-master-apikey"
+  }
+}

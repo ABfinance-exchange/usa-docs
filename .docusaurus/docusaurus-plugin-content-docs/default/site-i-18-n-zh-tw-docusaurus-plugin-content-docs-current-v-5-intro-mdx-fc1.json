@@ -1,0 +1,17 @@
+{
+  "unversionedId": "v5/intro",
+  "id": "v5/intro",
+  "title": "概覽",
+  "description": "簡介",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/intro.mdx",
+  "sourceDirName": "v5",
+  "slug": "/v5/intro",
+  "permalink": "/usa-docs/zh-TW/v5/intro",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "概覽",
+    "sidebar_label": "概覽"
+  }
+}

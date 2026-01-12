@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/withdraw/withdraw-record",
+  "id": "v5/asset/withdraw/withdraw-record",
+  "title": "Get Withdrawal Records",
+  "description": "Query withdrawal records.",
+  "source": "@site/docs/v5/asset/withdraw/withdraw-record.mdx",
+  "sourceDirName": "v5/asset/withdraw",
+  "slug": "/v5/asset/withdraw/withdraw-record",
+  "permalink": "/usa-docs/v5/asset/withdraw/withdraw-record",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "title": "Get Withdrawal Records",
+    "sidebar_label": "Get Withdrawal Records",
+    "sidebar_position": 14
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Withdrawal Address List",
+    "permalink": "/usa-docs/v5/asset/withdraw/withdraw-address"
+  },
+  "next": {
+    "title": "Get Exchange Entity List (KOR)",
+    "permalink": "/usa-docs/v5/asset/withdraw/vasp-list"
+  }
+}

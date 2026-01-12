@@ -1,0 +1,1417 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "v5SideBar": [
+      {
+        "type": "link",
+        "label": "接入指南",
+        "href": "/usa-docs/zh-TW/v5/guide",
+        "docId": "v5/guide"
+      },
+      {
+        "type": "link",
+        "label": "查詢公告",
+        "href": "/usa-docs/zh-TW/v5/announcement",
+        "docId": "v5/announcement"
+      },
+      {
+        "type": "link",
+        "label": "自成交攔截",
+        "href": "/usa-docs/zh-TW/v5/smp",
+        "docId": "v5/smp"
+      },
+      {
+        "type": "category",
+        "label": "公有行情",
+        "items": [
+          {
+            "type": "link",
+            "label": "查詢市場價格K線數據",
+            "href": "/usa-docs/zh-TW/v5/market/kline",
+            "docId": "v5/market/kline"
+          },
+          {
+            "type": "link",
+            "label": "查詢可交易產品的規格信息",
+            "href": "/usa-docs/zh-TW/v5/market/instrument",
+            "docId": "v5/market/instrument"
+          },
+          {
+            "type": "link",
+            "label": "Order Book (深度)",
+            "href": "/usa-docs/zh-TW/v5/market/orderbook",
+            "docId": "v5/market/orderbook"
+          },
+          {
+            "type": "link",
+            "label": "RPI Orderbook (深度)",
+            "href": "/usa-docs/zh-TW/v5/market/rpi-orderbook",
+            "docId": "v5/market/rpi-orderbook"
+          },
+          {
+            "type": "link",
+            "label": "查詢最新行情信息",
+            "href": "/usa-docs/zh-TW/v5/market/tickers",
+            "docId": "v5/market/tickers"
+          },
+          {
+            "type": "link",
+            "label": "查詢平台最近成交歷史",
+            "href": "/usa-docs/zh-TW/v5/market/recent-trade",
+            "docId": "v5/market/recent-trade"
+          },
+          {
+            "type": "link",
+            "label": "獲取指數價格組成",
+            "href": "/usa-docs/zh-TW/v5/market/index-components",
+            "docId": "v5/market/index-components"
+          },
+          {
+            "type": "link",
+            "label": "查詢訂單價格限制",
+            "href": "/usa-docs/zh-TW/v5/market/order-price-limit",
+            "docId": "v5/market/order-price-limit"
+          },
+          {
+            "type": "link",
+            "label": "獲取服務器時間",
+            "href": "/usa-docs/zh-TW/v5/market/time",
+            "docId": "v5/market/time"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "交易",
+        "items": [
+          {
+            "type": "link",
+            "label": "創建委託單",
+            "href": "/usa-docs/zh-TW/v5/order/create-order",
+            "docId": "v5/order/create-order"
+          },
+          {
+            "type": "link",
+            "label": "修改委託單",
+            "href": "/usa-docs/zh-TW/v5/order/amend-order",
+            "docId": "v5/order/amend-order"
+          },
+          {
+            "type": "link",
+            "label": "撤銷委託單",
+            "href": "/usa-docs/zh-TW/v5/order/cancel-order",
+            "docId": "v5/order/cancel-order"
+          },
+          {
+            "type": "link",
+            "label": "查詢實時和終態委託單",
+            "href": "/usa-docs/zh-TW/v5/order/open-order",
+            "docId": "v5/order/open-order"
+          },
+          {
+            "type": "link",
+            "label": "撤銷所有訂單",
+            "href": "/usa-docs/zh-TW/v5/order/cancel-all",
+            "docId": "v5/order/cancel-all"
+          },
+          {
+            "type": "link",
+            "label": "查詢歷史訂單 (2年)",
+            "href": "/usa-docs/zh-TW/v5/order/order-list",
+            "docId": "v5/order/order-list"
+          },
+          {
+            "type": "link",
+            "label": "查詢成交紀錄 (2年)",
+            "href": "/usa-docs/zh-TW/v5/order/execution",
+            "docId": "v5/order/execution"
+          },
+          {
+            "type": "link",
+            "label": "批量創建委託單",
+            "href": "/usa-docs/zh-TW/v5/order/batch-place",
+            "docId": "v5/order/batch-place"
+          },
+          {
+            "type": "link",
+            "label": "批量修改委託單",
+            "href": "/usa-docs/zh-TW/v5/order/batch-amend",
+            "docId": "v5/order/batch-amend"
+          },
+          {
+            "type": "link",
+            "label": "批量撤銷委託單",
+            "href": "/usa-docs/zh-TW/v5/order/batch-cancel",
+            "docId": "v5/order/batch-cancel"
+          },
+          {
+            "type": "link",
+            "label": "查詢用戶可用額度 (現貨)",
+            "href": "/usa-docs/zh-TW/v5/order/spot-borrow-quota",
+            "docId": "v5/order/spot-borrow-quota"
+          },
+          {
+            "type": "link",
+            "label": "設置斷線保護時間",
+            "href": "/usa-docs/zh-TW/v5/order/dcp",
+            "docId": "v5/order/dcp"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "帳戶",
+        "items": [
+          {
+            "type": "link",
+            "label": "查詢錢包餘額",
+            "href": "/usa-docs/zh-TW/v5/account/wallet-balance",
+            "docId": "v5/account/wallet-balance"
+          },
+          {
+            "type": "link",
+            "label": "查詢可劃轉餘額(统一账户)",
+            "href": "/usa-docs/zh-TW/v5/account/unified-trans-amnt",
+            "docId": "v5/account/unified-trans-amnt"
+          },
+          {
+            "type": "link",
+            "label": "交易日誌 (統一帳戶)",
+            "href": "/usa-docs/zh-TW/v5/account/transaction-log",
+            "docId": "v5/account/transaction-log"
+          },
+          {
+            "type": "link",
+            "label": "查詢賬戶配置",
+            "href": "/usa-docs/zh-TW/v5/account/account-info",
+            "docId": "v5/account/account-info"
+          },
+          {
+            "type": "link",
+            "label": "查詢用户可交易產品的規格信息",
+            "href": "/usa-docs/zh-TW/v5/account/instrument",
+            "docId": "v5/account/instrument"
+          },
+          {
+            "type": "link",
+            "label": "查詢手續費率",
+            "href": "/usa-docs/zh-TW/v5/account/fee-rate",
+            "docId": "v5/account/fee-rate"
+          },
+          {
+            "type": "link",
+            "label": "查詢抵押品信息",
+            "href": "/usa-docs/zh-TW/v5/account/collateral-info",
+            "docId": "v5/account/collateral-info"
+          },
+          {
+            "type": "link",
+            "label": "查詢DCP配置",
+            "href": "/usa-docs/zh-TW/v5/account/dcp-info",
+            "docId": "v5/account/dcp-info"
+          },
+          {
+            "type": "link",
+            "label": "設置抵押品幣種",
+            "href": "/usa-docs/zh-TW/v5/account/set-collateral",
+            "docId": "v5/account/set-collateral"
+          },
+          {
+            "type": "link",
+            "label": "查詢利息記錄 (2年)",
+            "href": "/usa-docs/zh-TW/v5/account/borrow-history",
+            "docId": "v5/account/borrow-history"
+          },
+          {
+            "type": "link",
+            "label": "批量設置抵押品幣種",
+            "href": "/usa-docs/zh-TW/v5/account/batch-set-collateral",
+            "docId": "v5/account/batch-set-collateral"
+          },
+          {
+            "type": "link",
+            "label": "查詢SMP組ID",
+            "href": "/usa-docs/zh-TW/v5/account/smp-group",
+            "docId": "v5/account/smp-group"
+          },
+          {
+            "type": "link",
+            "label": "查詢交易行為設置",
+            "href": "/usa-docs/zh-TW/v5/account/get-user-setting-config",
+            "docId": "v5/account/get-user-setting-config"
+          },
+          {
+            "type": "link",
+            "label": "設置限價單行為",
+            "href": "/usa-docs/zh-TW/v5/account/set-price-limit",
+            "docId": "v5/account/set-price-limit"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "資產",
+        "items": [
+          {
+            "type": "link",
+            "label": "查詢兌換訂單紀錄",
+            "href": "/usa-docs/zh-TW/v5/asset/exchange",
+            "docId": "v5/asset/exchange"
+          },
+          {
+            "type": "link",
+            "label": "查詢幣種信息",
+            "href": "/usa-docs/zh-TW/v5/asset/coin-info",
+            "docId": "v5/asset/coin-info"
+          },
+          {
+            "type": "link",
+            "label": "查詢子帳號列表",
+            "href": "/usa-docs/zh-TW/v5/asset/sub-uid-list",
+            "docId": "v5/asset/sub-uid-list"
+          },
+          {
+            "type": "category",
+            "label": "餘額",
+            "items": [
+              {
+                "type": "link",
+                "label": "查詢賬戶所有幣種余額",
+                "href": "/usa-docs/zh-TW/v5/asset/balance/all-balance",
+                "docId": "v5/asset/balance/all-balance"
+              },
+              {
+                "type": "link",
+                "label": "查詢帳戶單個幣種餘額",
+                "href": "/usa-docs/zh-TW/v5/asset/balance/account-coin-balance",
+                "docId": "v5/asset/balance/account-coin-balance"
+              },
+              {
+                "type": "link",
+                "label": "查詢可提現金額",
+                "href": "/usa-docs/zh-TW/v5/asset/balance/delay-amount",
+                "docId": "v5/asset/balance/delay-amount"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "category",
+            "label": "劃轉",
+            "items": [
+              {
+                "type": "link",
+                "label": "查詢劃轉紀錄 (單帳號內)",
+                "href": "/usa-docs/zh-TW/v5/asset/transfer/inter-transfer-list",
+                "docId": "v5/asset/transfer/inter-transfer-list"
+              },
+              {
+                "type": "link",
+                "label": "帳戶類型間可劃轉的幣種",
+                "href": "/usa-docs/zh-TW/v5/asset/transfer/transferable-coin",
+                "docId": "v5/asset/transfer/transferable-coin"
+              },
+              {
+                "type": "link",
+                "label": "劃轉 (單帳號內)",
+                "href": "/usa-docs/zh-TW/v5/asset/transfer/create-inter-transfer",
+                "docId": "v5/asset/transfer/create-inter-transfer"
+              },
+              {
+                "type": "link",
+                "label": "創建萬能劃轉",
+                "href": "/usa-docs/zh-TW/v5/asset/transfer/unitransfer",
+                "docId": "v5/asset/transfer/unitransfer"
+              },
+              {
+                "type": "link",
+                "label": "查詢萬能劃轉紀錄",
+                "href": "/usa-docs/zh-TW/v5/asset/transfer/unitransfer-list",
+                "docId": "v5/asset/transfer/unitransfer-list"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "category",
+            "label": "充值",
+            "items": [
+              {
+                "type": "link",
+                "label": "設置充值帳戶",
+                "href": "/usa-docs/zh-TW/v5/asset/deposit/set-deposit-acct",
+                "docId": "v5/asset/deposit/set-deposit-acct"
+              },
+              {
+                "type": "link",
+                "label": "查詢充值紀錄 (鏈上)",
+                "href": "/usa-docs/zh-TW/v5/asset/deposit/deposit-record",
+                "docId": "v5/asset/deposit/deposit-record"
+              },
+              {
+                "type": "link",
+                "label": "查詢子帳號的充值紀錄 (鏈上)",
+                "href": "/usa-docs/zh-TW/v5/asset/deposit/sub-deposit-record",
+                "docId": "v5/asset/deposit/sub-deposit-record"
+              },
+              {
+                "type": "link",
+                "label": "查詢充值記錄 (平台转账)",
+                "href": "/usa-docs/zh-TW/v5/asset/deposit/internal-deposit-record",
+                "docId": "v5/asset/deposit/internal-deposit-record"
+              },
+              {
+                "type": "link",
+                "label": "查詢主帳號充值地址",
+                "href": "/usa-docs/zh-TW/v5/asset/deposit/master-deposit-addr",
+                "docId": "v5/asset/deposit/master-deposit-addr"
+              },
+              {
+                "type": "link",
+                "label": "查詢子帳號充值地址",
+                "href": "/usa-docs/zh-TW/v5/asset/deposit/sub-deposit-addr",
+                "docId": "v5/asset/deposit/sub-deposit-addr"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "category",
+            "label": "提現",
+            "items": [
+              {
+                "type": "link",
+                "label": "查詢地址簿提幣地址",
+                "href": "/usa-docs/zh-TW/v5/asset/withdraw/withdraw-address",
+                "docId": "v5/asset/withdraw/withdraw-address"
+              },
+              {
+                "type": "link",
+                "label": "查詢提現紀錄",
+                "href": "/usa-docs/zh-TW/v5/asset/withdraw/withdraw-record",
+                "docId": "v5/asset/withdraw/withdraw-record"
+              },
+              {
+                "type": "link",
+                "label": "查詢交易所列表 (韓國用戶)",
+                "href": "/usa-docs/zh-TW/v5/asset/withdraw/vasp-list",
+                "docId": "v5/asset/withdraw/vasp-list"
+              },
+              {
+                "type": "link",
+                "label": "提現",
+                "href": "/usa-docs/zh-TW/v5/asset/withdraw/",
+                "docId": "v5/asset/withdraw/withdraw"
+              },
+              {
+                "type": "link",
+                "label": "撤銷提幣",
+                "href": "/usa-docs/zh-TW/v5/asset/withdraw/cancel-withdraw",
+                "docId": "v5/asset/withdraw/cancel-withdraw"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "用戶",
+        "items": [
+          {
+            "type": "link",
+            "label": "新建子帳戶",
+            "href": "/usa-docs/zh-TW/v5/user/create-subuid",
+            "docId": "v5/user/create-subuid"
+          },
+          {
+            "type": "link",
+            "label": "新建子帳戶的API Key",
+            "href": "/usa-docs/zh-TW/v5/user/create-subuid-apikey",
+            "docId": "v5/user/create-subuid-apikey"
+          },
+          {
+            "type": "link",
+            "label": "查詢子帳戶UID列表 (限制)",
+            "href": "/usa-docs/zh-TW/v5/user/subuid-list",
+            "docId": "v5/user/subuid-list"
+          },
+          {
+            "type": "link",
+            "label": "查詢子帳戶UID列表 (無限制)",
+            "href": "/usa-docs/zh-TW/v5/user/page-subuid",
+            "docId": "v5/user/page-subuid"
+          },
+          {
+            "type": "link",
+            "label": "查詢基金託管子帳戶列表",
+            "href": "/usa-docs/zh-TW/v5/user/fund-subuid-list",
+            "docId": "v5/user/fund-subuid-list"
+          },
+          {
+            "type": "link",
+            "label": "凍結/解凍子帳戶",
+            "href": "/usa-docs/zh-TW/v5/user/froze-subuid",
+            "docId": "v5/user/froze-subuid"
+          },
+          {
+            "type": "link",
+            "label": "查詢API Key相關信息",
+            "href": "/usa-docs/zh-TW/v5/user/apikey-info",
+            "docId": "v5/user/apikey-info"
+          },
+          {
+            "type": "link",
+            "label": "查詢子帳戶的所有API Key信息",
+            "href": "/usa-docs/zh-TW/v5/user/list-sub-apikeys",
+            "docId": "v5/user/list-sub-apikeys"
+          },
+          {
+            "type": "link",
+            "label": "查詢帳戶支持的錢包類型",
+            "href": "/usa-docs/zh-TW/v5/user/wallet-type",
+            "docId": "v5/user/wallet-type"
+          },
+          {
+            "type": "link",
+            "label": "修改母帳戶的API Key設置",
+            "href": "/usa-docs/zh-TW/v5/user/modify-master-apikey",
+            "docId": "v5/user/modify-master-apikey"
+          },
+          {
+            "type": "link",
+            "label": "修改子帳戶的API Key設置",
+            "href": "/usa-docs/zh-TW/v5/user/modify-sub-apikey",
+            "docId": "v5/user/modify-sub-apikey"
+          },
+          {
+            "type": "link",
+            "label": "刪除子帳戶",
+            "href": "/usa-docs/zh-TW/v5/user/rm-subuid",
+            "docId": "v5/user/rm-subuid"
+          },
+          {
+            "type": "link",
+            "label": "刪除母帳戶的API Key",
+            "href": "/usa-docs/zh-TW/v5/user/rm-master-apikey",
+            "docId": "v5/user/rm-master-apikey"
+          },
+          {
+            "type": "link",
+            "label": "刪除子帳戶下的API Key",
+            "href": "/usa-docs/zh-TW/v5/user/rm-sub-apikey",
+            "docId": "v5/user/rm-sub-apikey"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "理財",
+        "items": [
+          {
+            "type": "link",
+            "label": "查询产品信息",
+            "href": "/usa-docs/zh-TW/v5/earn/product-info",
+            "docId": "v5/earn/product-info"
+          },
+          {
+            "type": "link",
+            "label": "質押/贖回",
+            "href": "/usa-docs/zh-TW/v5/earn/create-order",
+            "docId": "v5/earn/create-order"
+          },
+          {
+            "type": "link",
+            "label": "查詢質押/贖回訂單歷史",
+            "href": "/usa-docs/zh-TW/v5/earn/order-history",
+            "docId": "v5/earn/order-history"
+          },
+          {
+            "type": "link",
+            "label": "查詢理財持倉",
+            "href": "/usa-docs/zh-TW/v5/earn/position",
+            "docId": "v5/earn/position"
+          },
+          {
+            "type": "link",
+            "label": "查詢收益歷史",
+            "href": "/usa-docs/zh-TW/v5/earn/yield-history",
+            "docId": "v5/earn/yield-history"
+          },
+          {
+            "type": "link",
+            "label": "查詢每小時收益歷史",
+            "href": "/usa-docs/zh-TW/v5/earn/hourly-yield",
+            "docId": "v5/earn/hourly-yield"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "WebSocket流",
+        "items": [
+          {
+            "type": "link",
+            "label": "訂閱WebSocket",
+            "href": "/usa-docs/zh-TW/v5/ws/connect",
+            "docId": "v5/websocket/wss-authentication"
+          },
+          {
+            "type": "category",
+            "label": "公共頻道",
+            "items": [
+              {
+                "type": "link",
+                "label": "深度",
+                "href": "/usa-docs/zh-TW/v5/websocket/public/orderbook",
+                "docId": "v5/websocket/public/orderbook"
+              },
+              {
+                "type": "link",
+                "label": "RPI 深度",
+                "href": "/usa-docs/zh-TW/v5/websocket/public/orderbook-rpi",
+                "docId": "v5/websocket/public/orderbook-rpi"
+              },
+              {
+                "type": "link",
+                "label": "平台成交",
+                "href": "/usa-docs/zh-TW/v5/websocket/public/trade",
+                "docId": "v5/websocket/public/trade"
+              },
+              {
+                "type": "link",
+                "label": "行情",
+                "href": "/usa-docs/zh-TW/v5/websocket/public/ticker",
+                "docId": "v5/websocket/public/ticker"
+              },
+              {
+                "type": "link",
+                "label": "K線",
+                "href": "/usa-docs/zh-TW/v5/websocket/public/kline",
+                "docId": "v5/websocket/public/kline"
+              },
+              {
+                "type": "link",
+                "label": "訂單價格限制",
+                "href": "/usa-docs/zh-TW/v5/websocket/public/order-price-limit",
+                "docId": "v5/websocket/public/order-price-limit"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "category",
+            "label": "私有頻道",
+            "items": [
+              {
+                "type": "link",
+                "label": "個人成交",
+                "href": "/usa-docs/zh-TW/v5/websocket/private/execution",
+                "docId": "v5/websocket/private/execution"
+              },
+              {
+                "type": "link",
+                "label": "個人成交 (Fast)",
+                "href": "/usa-docs/zh-TW/v5/websocket/private/fast-execution",
+                "docId": "v5/websocket/private/fast-execution"
+              },
+              {
+                "type": "link",
+                "label": "訂單",
+                "href": "/usa-docs/zh-TW/v5/websocket/private/order",
+                "docId": "v5/websocket/private/order"
+              },
+              {
+                "type": "link",
+                "label": "錢包",
+                "href": "/usa-docs/zh-TW/v5/websocket/private/wallet",
+                "docId": "v5/websocket/private/wallet"
+              },
+              {
+                "type": "link",
+                "label": "斷線保護",
+                "href": "/usa-docs/zh-TW/v5/websocket/private/dcp",
+                "docId": "v5/websocket/private/dcp"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "category",
+            "label": "交易",
+            "items": [
+              {
+                "type": "link",
+                "label": "Websocket下單指南",
+                "href": "/usa-docs/zh-TW/v5/websocket/trade/guideline",
+                "docId": "v5/websocket/trade/guideline"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "頻率限制",
+        "items": [
+          {
+            "type": "link",
+            "label": "基礎頻率限制",
+            "href": "/usa-docs/zh-TW/v5/rate-limit/",
+            "docId": "v5/rate-limit/rate-limit"
+          },
+          {
+            "type": "link",
+            "label": "VIP的接口限頻規則",
+            "href": "/usa-docs/zh-TW/v5/rate-limit/rules-for-vips",
+            "docId": "v5/rate-limit/rules-for-vips"
+          },
+          {
+            "type": "category",
+            "label": "PROs接口限頻規則",
+            "items": [
+              {
+                "type": "link",
+                "label": "限頻介紹",
+                "href": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/introduction",
+                "docId": "v5/rate-limit/rules-for-pros/introduction"
+              },
+              {
+                "type": "link",
+                "label": "設定 API 速率限制",
+                "href": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-set",
+                "docId": "v5/rate-limit/rules-for-pros/apilimit-set"
+              },
+              {
+                "type": "link",
+                "label": "查詢 API 速率限制",
+                "href": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-query",
+                "docId": "v5/rate-limit/rules-for-pros/apilimit-query"
+              },
+              {
+                "type": "link",
+                "label": "查詢 Ins level的速率限制上限和使用量",
+                "href": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-query-cap",
+                "docId": "v5/rate-limit/rules-for-pros/apilimit-query-cap"
+              },
+              {
+                "type": "link",
+                "label": "查詢所有 API 限速",
+                "href": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-query-all",
+                "docId": "v5/rate-limit/rules-for-pros/apilimit-query-all"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "link",
+        "label": "枚舉定義",
+        "href": "/usa-docs/zh-TW/v5/enum",
+        "docId": "v5/enum"
+      },
+      {
+        "type": "link",
+        "label": "錯誤碼",
+        "href": "/usa-docs/zh-TW/v5/error",
+        "docId": "v5/error"
+      }
+    ],
+    "changelogSidebar": [
+      {
+        "type": "link",
+        "label": "V5",
+        "href": "/usa-docs/zh-TW/changelog/v5",
+        "docId": "changelog/v5"
+      }
+    ]
+  },
+  "docs": {
+    "changelog/v5": {
+      "id": "changelog/v5",
+      "title": "V5",
+      "description": "",
+      "sidebar": "changelogSidebar"
+    },
+    "v5/account/account-info": {
+      "id": "v5/account/account-info",
+      "title": "查詢賬戶配置",
+      "description": "該接口可以查詢統一帳戶的保證金模式, 當前帳戶模式等配置",
+      "sidebar": "v5SideBar"
+    },
+    "v5/account/batch-set-collateral": {
+      "id": "v5/account/batch-set-collateral",
+      "title": "批量設置抵押品幣種",
+      "description": "用戶可以批量開啟或關閉統一帳戶中幣種抵押屬性，默認都是關閉的",
+      "sidebar": "v5SideBar"
+    },
+    "v5/account/borrow-history": {
+      "id": "v5/account/borrow-history",
+      "title": "查詢利息記錄",
+      "description": "獲取利息記錄，按照創建時間倒敘排列",
+      "sidebar": "v5SideBar"
+    },
+    "v5/account/collateral-info": {
+      "id": "v5/account/collateral-info",
+      "title": "查詢抵押品信息",
+      "description": "獲取當前統一保證金賬戶的抵押品信息，包括借貸利率，可藉貸金額以及抵押品折算率，是否可抵押作為保證金等信息",
+      "sidebar": "v5SideBar"
+    },
+    "v5/account/dcp-info": {
+      "id": "v5/account/dcp-info",
+      "title": "查詢DCP配置",
+      "description": "查詢帳戶現貨的dcp配置. 在調用接口前, 請確保已經和客戶經理申請了帳戶DCP開通",
+      "sidebar": "v5SideBar"
+    },
+    "v5/account/fee-rate": {
+      "id": "v5/account/fee-rate",
+      "title": "查詢手續費率",
+      "description": "查詢交易手續費率",
+      "sidebar": "v5SideBar"
+    },
+    "v5/account/get-user-setting-config": {
+      "id": "v5/account/get-user-setting-config",
+      "title": "查詢交易行為設置",
+      "description": "您可以查詢當限價單價格超過最高買價或最低賣價時，系統的行為方式。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/account/instrument": {
+      "id": "v5/account/instrument",
+      "title": "查詢用户可交易產品的規格信息",
+      "description": "查詢用户全站可交易產品的基礎配置規則信息",
+      "sidebar": "v5SideBar"
+    },
+    "v5/account/set-collateral": {
+      "id": "v5/account/set-collateral",
+      "title": "設置抵押品幣種",
+      "description": "用戶可以自行決定是否開啟統一帳戶中幣種是否進行抵押，默認都是關閉的",
+      "sidebar": "v5SideBar"
+    },
+    "v5/account/set-price-limit": {
+      "id": "v5/account/set-price-limit",
+      "title": "設置限價單行為",
+      "description": "您可以設定當限價單價格超過最高買價或最低賣價時，系統的行為方式。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/account/smp-group": {
+      "id": "v5/account/smp-group",
+      "title": "查詢SMP組ID",
+      "description": "查詢自成交攔截的SMP交易群組ID",
+      "sidebar": "v5SideBar"
+    },
+    "v5/account/transaction-log": {
+      "id": "v5/account/transaction-log",
+      "title": "交易日誌",
+      "description": "整個賬戶統一錢包裡的交易日誌, 支持最多查詢過去2年的數據",
+      "sidebar": "v5SideBar"
+    },
+    "v5/account/unified-trans-amnt": {
+      "id": "v5/account/unified-trans-amnt",
+      "title": "查詢可劃轉餘額(统一账户)",
+      "description": "查詢統一帳戶錢包裡指定幣種的可劃轉餘額",
+      "sidebar": "v5SideBar"
+    },
+    "v5/account/wallet-balance": {
+      "id": "v5/account/wallet-balance",
+      "title": "查詢錢包餘額",
+      "description": "獲取統一帳戶錢包餘額, 查詢各個幣種的資產信息. 默認不返回資產或負債為0的幣種信息。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/announcement": {
+      "id": "v5/announcement",
+      "title": "查詢公告",
+      "description": "HTTP 請求",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/balance/account-coin-balance": {
+      "id": "v5/asset/balance/account-coin-balance",
+      "title": "查詢帳戶單個幣種餘額",
+      "description": "獲取某帳戶類型下某指定幣種的餘額。支持通過輸入子帳戶id來查詢子帳戶的某個帳戶類型下的某個幣種餘額",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/balance/all-balance": {
+      "id": "v5/asset/balance/all-balance",
+      "title": "查詢賬戶所有幣種余額",
+      "description": "支持查詢母帳戶的各個帳戶類型的幣種餘額，以及母帳戶下各子帳戶的各個帳戶類型的幣種餘額。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/balance/delay-amount": {
+      "id": "v5/asset/balance/delay-amount",
+      "title": "查詢可提現金額",
+      "description": "如何會導致部分資金被要求延遲提幣？",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/coin-info": {
+      "id": "v5/asset/coin-info",
+      "title": "查詢幣種信息",
+      "description": "獲取幣種信息，包括鏈信息，是否可充可提",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/convert/apply-quote": {
+      "id": "v5/asset/convert/apply-quote",
+      "title": "申請報價",
+      "description": "HTTP 請求"
+    },
+    "v5/asset/convert/confirm-quote": {
+      "id": "v5/asset/convert/confirm-quote",
+      "title": "確認報價",
+      "description": "1. 該接口是異步的, 請通過查詢請求確認最終兌換結果"
+    },
+    "v5/asset/convert/convert-coin-list": {
+      "id": "v5/asset/convert/convert-coin-list",
+      "title": "查詢兌換幣種列表",
+      "description": "您可以通過該接口獲取到各個帳戶內的兌入兌出幣種列表"
+    },
+    "v5/asset/convert/get-convert-history": {
+      "id": "v5/asset/convert/get-convert-history",
+      "title": "查詢兌換歷史",
+      "description": "那些被確認的報價單, 不管最終狀態如何, 該接口都會返回"
+    },
+    "v5/asset/convert/get-convert-result": {
+      "id": "v5/asset/convert/get-convert-result",
+      "title": "查詢報價單狀態",
+      "description": "* 您可以通過quoteTxId指定查詢某筆被確認的報價單"
+    },
+    "v5/asset/convert/guideline": {
+      "id": "v5/asset/convert/guideline",
+      "title": "閃兌接入指南",
+      "description": "* 所有接口都需要進行鑒權"
+    },
+    "v5/asset/deposit/deposit-record": {
+      "id": "v5/asset/deposit/deposit-record",
+      "title": "查詢充值紀錄 (鏈上)",
+      "description": "* endTime - startTime需要小於等於30天，默認查詢最近30天的紀錄",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/deposit/internal-deposit-record": {
+      "id": "v5/asset/deposit/internal-deposit-record",
+      "title": "查詢充值記錄 (平台转账)",
+      "description": "查詢平台內部充值紀錄",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/deposit/master-deposit-addr": {
+      "id": "v5/asset/deposit/master-deposit-addr",
+      "title": "查詢主帳號充值地址",
+      "description": "僅支持母帳號API key",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/deposit/set-deposit-acct": {
+      "id": "v5/asset/deposit/set-deposit-acct",
+      "title": "設置充值帳戶",
+      "description": "設置充值後的自動轉入帳戶類型。該功能與網頁端-設置-充值保持一致。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/deposit/sub-deposit-addr": {
+      "id": "v5/asset/deposit/sub-deposit-addr",
+      "title": "查詢子帳號充值地址",
+      "description": "僅能使用該母帳號*的API key",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/deposit/sub-deposit-record": {
+      "id": "v5/asset/deposit/sub-deposit-record",
+      "title": "查詢子帳號的充值紀錄 (鏈上)",
+      "description": "僅能通過主帳號的API key來查詢子帳號的充值紀錄",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/exchange": {
+      "id": "v5/asset/exchange",
+      "title": "查詢兌換訂單紀錄",
+      "description": "您可能會遭遇較長的數據返回延遲",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/sub-uid-list": {
+      "id": "v5/asset/sub-uid-list",
+      "title": "查詢子帳號列表",
+      "description": "查詢某個母帳戶的子帳號列表, 返回至多2000個子帳戶, 如果您有更多, 可以調用這個接口.",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/transfer/create-inter-transfer": {
+      "id": "v5/asset/transfer/create-inter-transfer",
+      "title": "劃轉 (單帳號內)",
+      "description": "創建單帳號下帳戶類型間的劃轉操作",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/transfer/inter-transfer-list": {
+      "id": "v5/asset/transfer/inter-transfer-list",
+      "title": "查詢劃轉紀錄 (單帳號內)",
+      "description": "獲取單帳號內的劃轉紀錄",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/transfer/transferable-coin": {
+      "id": "v5/asset/transfer/transferable-coin",
+      "title": "帳戶類型間可劃轉的幣種",
+      "description": "HTTP 請求",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/transfer/unitransfer": {
+      "id": "v5/asset/transfer/unitransfer",
+      "title": "創建萬能劃轉",
+      "description": "支持子子帳戶間劃轉或母子帳號間劃轉。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/transfer/unitransfer-list": {
+      "id": "v5/asset/transfer/unitransfer-list",
+      "title": "查詢萬能劃轉紀錄",
+      "description": "* 母子帳號的api key都支持調用",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/withdraw/cancel-withdraw": {
+      "id": "v5/asset/withdraw/cancel-withdraw",
+      "title": "撤銷提幣",
+      "description": "HTTP 請求",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/withdraw/vasp-list": {
+      "id": "v5/asset/withdraw/vasp-list",
+      "title": "查詢交易所列表",
+      "description": "該接口主要用於kyc=KOR的韓國個人用戶, 在提現時需要填寫接收方交易所信息",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/withdraw/withdraw": {
+      "id": "v5/asset/withdraw/withdraw",
+      "title": "提現",
+      "description": "若目標地址是平台內部地址, 您可以實現內部平台轉帳",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/withdraw/withdraw-address": {
+      "id": "v5/asset/withdraw/withdraw-address",
+      "title": "查詢地址簿提幣地址",
+      "description": "查詢地址簿中的提幣地址",
+      "sidebar": "v5SideBar"
+    },
+    "v5/asset/withdraw/withdraw-record": {
+      "id": "v5/asset/withdraw/withdraw-record",
+      "title": "查詢提現紀錄",
+      "description": "* endTime - startTime需要小於等於30天. 默認查詢最近30天的紀錄。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/earn/create-order": {
+      "id": "v5/earn/create-order",
+      "title": "質押/贖回",
+      "description": "API key需要\"理財\"\"權限",
+      "sidebar": "v5SideBar"
+    },
+    "v5/earn/hourly-yield": {
+      "id": "v5/earn/hourly-yield",
+      "title": "查詢每小時收益歷史",
+      "description": "API key需要\"理財\"\"權限",
+      "sidebar": "v5SideBar"
+    },
+    "v5/earn/order-history": {
+      "id": "v5/earn/order-history",
+      "title": "查詢質押/贖回訂單歷史",
+      "description": "API key需要\"理財\"\"權限",
+      "sidebar": "v5SideBar"
+    },
+    "v5/earn/position": {
+      "id": "v5/earn/position",
+      "title": "查詢理財持倉",
+      "description": "API key需要\"理財\"\"權限",
+      "sidebar": "v5SideBar"
+    },
+    "v5/earn/product-info": {
+      "id": "v5/earn/product-info",
+      "title": "查询产品信息",
+      "description": "不需要鑒權",
+      "sidebar": "v5SideBar"
+    },
+    "v5/earn/yield-history": {
+      "id": "v5/earn/yield-history",
+      "title": "查詢收益歷史",
+      "description": "您可以獲取過去3個月的收益歷史",
+      "sidebar": "v5SideBar"
+    },
+    "v5/enum": {
+      "id": "v5/enum",
+      "title": "枚舉定義",
+      "description": "locale",
+      "sidebar": "v5SideBar"
+    },
+    "v5/error": {
+      "id": "v5/error",
+      "title": "錯誤碼",
+      "description": "HTTP 響應碼",
+      "sidebar": "v5SideBar"
+    },
+    "v5/guide": {
+      "id": "v5/guide",
+      "title": "接入指南",
+      "description": "鑒權/認證",
+      "sidebar": "v5SideBar"
+    },
+    "v5/intro": {
+      "id": "v5/intro",
+      "title": "概覽",
+      "description": "簡介"
+    },
+    "v5/market/index-components": {
+      "id": "v5/market/index-components",
+      "title": "獲取指數價格組成",
+      "description": "HTTP 請求",
+      "sidebar": "v5SideBar"
+    },
+    "v5/market/instrument": {
+      "id": "v5/market/instrument",
+      "title": "查詢可交易產品的規格信息",
+      "description": "查詢全站可交易產品的基礎配置規則信息",
+      "sidebar": "v5SideBar"
+    },
+    "v5/market/kline": {
+      "id": "v5/market/kline",
+      "title": "查詢市場價格K線數據",
+      "description": "查詢市場價格K線數據",
+      "sidebar": "v5SideBar"
+    },
+    "v5/market/order-price-limit": {
+      "id": "v5/market/order-price-limit",
+      "title": "查詢訂單價格限制",
+      "description": "現貨交易訂單價格限制.",
+      "sidebar": "v5SideBar"
+    },
+    "v5/market/orderbook": {
+      "id": "v5/market/orderbook",
+      "title": "Order Book (深度)",
+      "description": "獲取深度數據",
+      "sidebar": "v5SideBar"
+    },
+    "v5/market/recent-trade": {
+      "id": "v5/market/recent-trade",
+      "title": "查詢平台最近成交歷史",
+      "description": "獲取平台最近成交數據",
+      "sidebar": "v5SideBar"
+    },
+    "v5/market/rpi-orderbook": {
+      "id": "v5/market/rpi-orderbook",
+      "title": "RPI Orderbook (深度)",
+      "description": "獲取深度數據",
+      "sidebar": "v5SideBar"
+    },
+    "v5/market/tickers": {
+      "id": "v5/market/tickers",
+      "title": "查詢最新行情信息",
+      "description": "可獲取到快照的最新市場價格，最佳買賣價格，以及過去時間內的交易量等.",
+      "sidebar": "v5SideBar"
+    },
+    "v5/market/time": {
+      "id": "v5/market/time",
+      "title": "獲取服務器時間",
+      "description": "獲取服務器時間",
+      "sidebar": "v5SideBar"
+    },
+    "v5/order/amend-order": {
+      "id": "v5/order/amend-order",
+      "title": "修改委託單",
+      "description": "您只能修改那些未成交或者部分成交的訂單。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/order/batch-amend": {
+      "id": "v5/order/batch-amend",
+      "title": "批量修改委託單",
+      "description": "該接口支持批量修改委託單",
+      "sidebar": "v5SideBar"
+    },
+    "v5/order/batch-cancel": {
+      "id": "v5/order/batch-cancel",
+      "title": "批量撤銷委託單",
+      "description": "該接口可以批量撤銷多筆訂單",
+      "sidebar": "v5SideBar"
+    },
+    "v5/order/batch-place": {
+      "id": "v5/order/batch-place",
+      "title": "批量創建委託單",
+      "description": "該接口支持批量創建委託單",
+      "sidebar": "v5SideBar"
+    },
+    "v5/order/cancel-all": {
+      "id": "v5/order/cancel-all",
+      "title": "撤銷所有訂單",
+      "description": "- 支持按照symbol/baseCoin撤銷訂單，若您傳入了多個參數組合, 系統僅會處理其中一個參數，其中優先級為symbol > baseCoin.",
+      "sidebar": "v5SideBar"
+    },
+    "v5/order/cancel-order": {
+      "id": "v5/order/cancel-order",
+      "title": "撤銷委託單",
+      "description": "- 您必須指定orderId或者orderLinkId.",
+      "sidebar": "v5SideBar"
+    },
+    "v5/order/create-order": {
+      "id": "v5/order/create-order",
+      "title": "創建委託單",
+      "description": "本接口提供幣幣交易的訂單創建",
+      "sidebar": "v5SideBar"
+    },
+    "v5/order/dcp": {
+      "id": "v5/order/dcp",
+      "title": "設置斷線保護時間",
+      "description": "什麼是斷線保護 (Disconnection Protect)?",
+      "sidebar": "v5SideBar"
+    },
+    "v5/order/execution": {
+      "id": "v5/order/execution",
+      "title": "查詢成交紀錄",
+      "description": "獲取用戶成交紀錄，返回結果按execTime降序排列",
+      "sidebar": "v5SideBar"
+    },
+    "v5/order/open-order": {
+      "id": "v5/order/open-order",
+      "title": "查詢實時和終態委託單",
+      "description": "主要用於實時查詢未成交或部分成交的訂單信息, 但結合入参openOnly能夠查詢到最近500條到達終態的訂單. 若需要查詢更久的訂單紀錄，請使用查詢歷史訂單接口.",
+      "sidebar": "v5SideBar"
+    },
+    "v5/order/order-list": {
+      "id": "v5/order/order-list",
+      "title": "查詢歷史訂單",
+      "description": "獲取歷史訂單紀錄. 由於訂單創建/撤銷是異步的, 該接口返回數據可能會有延遲. 若您想實時獲取訂單信息, 您可以查詢該接口或者通過websocket推送(推薦)",
+      "sidebar": "v5SideBar"
+    },
+    "v5/order/spot-borrow-quota": {
+      "id": "v5/order/spot-borrow-quota",
+      "title": "查詢用戶可用額度 (現貨)",
+      "description": "可以查詢現貨幣幣交易以及槓桿交易時, 可用對應幣種的實時餘額",
+      "sidebar": "v5SideBar"
+    },
+    "v5/rate-limit/rate-limit": {
+      "id": "v5/rate-limit/rate-limit",
+      "title": "基礎頻率限制",
+      "description": "IP限頻",
+      "sidebar": "v5SideBar"
+    },
+    "v5/rate-limit/rules-for-pros/apilimit-query": {
+      "id": "v5/rate-limit/rules-for-pros/apilimit-query",
+      "title": "查詢 API 速率限制",
+      "description": "查詢 API 速率限制",
+      "sidebar": "v5SideBar"
+    },
+    "v5/rate-limit/rules-for-pros/apilimit-query-all": {
+      "id": "v5/rate-limit/rules-for-pros/apilimit-query-all",
+      "title": "查詢所有 API 限速",
+      "description": "查詢所有 API 限速",
+      "sidebar": "v5SideBar"
+    },
+    "v5/rate-limit/rules-for-pros/apilimit-query-cap": {
+      "id": "v5/rate-limit/rules-for-pros/apilimit-query-cap",
+      "title": "查詢 Ins level的速率限制上限和使用量",
+      "description": "查詢 Ins level的速率限制上限和使用量",
+      "sidebar": "v5SideBar"
+    },
+    "v5/rate-limit/rules-for-pros/apilimit-set": {
+      "id": "v5/rate-limit/rules-for-pros/apilimit-set",
+      "title": "設定 API 速率限制",
+      "description": "設定 API 速率限制",
+      "sidebar": "v5SideBar"
+    },
+    "v5/rate-limit/rules-for-pros/introduction": {
+      "id": "v5/rate-limit/rules-for-pros/introduction",
+      "title": "限頻介紹",
+      "description": "PROs接口限頻規則",
+      "sidebar": "v5SideBar"
+    },
+    "v5/rate-limit/rules-for-vips": {
+      "id": "v5/rate-limit/rules-for-vips",
+      "title": "VIP的接口限頻規則",
+      "description": "不同VIP等級的接口限頻規則",
+      "sidebar": "v5SideBar"
+    },
+    "v5/smp": {
+      "id": "v5/smp",
+      "title": "自成交攔截",
+      "description": "什麼是自成交？",
+      "sidebar": "v5SideBar"
+    },
+    "v5/user/apikey-info": {
+      "id": "v5/user/apikey-info",
+      "title": "查詢API Key相關信息",
+      "description": "獲取API key的相關信息。使用待查詢的api key調用接口。適用於母、子帳戶的api key。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/user/create-subuid": {
+      "id": "v5/user/create-subuid",
+      "title": "新建子帳戶",
+      "description": "創建新的子帳戶。需使用母帳戶的API key。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/user/create-subuid-apikey": {
+      "id": "v5/user/create-subuid-apikey",
+      "title": "新建子帳戶的API Key",
+      "description": "給新建好的子帳戶創建新的API key。需使用母帳戶的API key。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/user/froze-subuid": {
+      "id": "v5/user/froze-subuid",
+      "title": "凍結/解凍子帳戶",
+      "description": "凍結或解凍子帳戶。需使用母帳戶的API key。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/user/fund-subuid-list": {
+      "id": "v5/user/fund-subuid-list",
+      "title": "查詢基金託管子帳戶列表",
+      "description": "託管機構可以通過這個接口查詢到基金託管子帳戶列表",
+      "sidebar": "v5SideBar"
+    },
+    "v5/user/list-sub-apikeys": {
+      "id": "v5/user/list-sub-apikeys",
+      "title": "查詢子帳戶的所有API Key信息",
+      "description": "查詢某個子帳戶下所有的api key",
+      "sidebar": "v5SideBar"
+    },
+    "v5/user/modify-master-apikey": {
+      "id": "v5/user/modify-master-apikey",
+      "title": "修改母帳戶的API Key設置",
+      "description": "修改母帳戶API key的設置。使用待修改的api key調用接口。需使用母帳戶的API key。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/user/modify-sub-apikey": {
+      "id": "v5/user/modify-sub-apikey",
+      "title": "修改子帳戶的API Key設置",
+      "description": "修改子帳戶API key的設置, 支持母帳戶管理子帳戶key的設置, 或者子帳戶key直接修改本身。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/user/page-subuid": {
+      "id": "v5/user/page-subuid",
+      "title": "查詢子帳戶UID列表 (無限制)",
+      "description": "通過翻頁獲取當前母帳戶下所有的子帳戶列表，適合超過擁有1萬個子帳戶的母帳戶進行調用。需使用母帳戶的API key。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/user/rm-master-apikey": {
+      "id": "v5/user/rm-master-apikey",
+      "title": "刪除母帳戶的API Key",
+      "description": "刪除母帳戶下的api key。使用待刪除的api key調用接口。需使用母帳戶的API key。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/user/rm-sub-apikey": {
+      "id": "v5/user/rm-sub-apikey",
+      "title": "刪除子帳戶下的API Key",
+      "description": "刪除子帳戶下的api key。使用待刪除的子帳戶api key調用接口或者使用母帳戶調用刪除指定api key",
+      "sidebar": "v5SideBar"
+    },
+    "v5/user/rm-subuid": {
+      "id": "v5/user/rm-subuid",
+      "title": "刪除子帳戶",
+      "description": "刪除子帳戶. 在刪除前, 確保該帳戶已經沒有資產了",
+      "sidebar": "v5SideBar"
+    },
+    "v5/user/subuid-list": {
+      "id": "v5/user/subuid-list",
+      "title": "查詢子帳戶UID列表 (限制)",
+      "description": "最多返回10000個子帳戶, 適合少於1萬個子帳戶的母帳戶調用。需使用母帳戶的API key。",
+      "sidebar": "v5SideBar"
+    },
+    "v5/user/wallet-type": {
+      "id": "v5/user/wallet-type",
+      "title": "查詢帳戶支持的錢包類型",
+      "description": "查詢母帳戶或者子帳戶下支持的錢包類型",
+      "sidebar": "v5SideBar"
+    },
+    "v5/websocket/private/dcp": {
+      "id": "v5/websocket/private/dcp",
+      "title": "斷線保護",
+      "description": "通過訂閱DCP流來觸發功能",
+      "sidebar": "v5SideBar"
+    },
+    "v5/websocket/private/execution": {
+      "id": "v5/websocket/private/execution",
+      "title": "個人成交",
+      "description": "訂閱個人成交的推送",
+      "sidebar": "v5SideBar"
+    },
+    "v5/websocket/private/fast-execution": {
+      "id": "v5/websocket/private/fast-execution",
+      "title": "個人成交 (Fast)",
+      "description": "精簡版本的個人成交推送, 相比原始的快速成交流, 延遲更加低",
+      "sidebar": "v5SideBar"
+    },
+    "v5/websocket/private/order": {
+      "id": "v5/websocket/private/order",
+      "title": "訂單",
+      "description": "訂閱訂單數據推送",
+      "sidebar": "v5SideBar"
+    },
+    "v5/websocket/private/wallet": {
+      "id": "v5/websocket/private/wallet",
+      "title": "錢包",
+      "description": "訂閱錢包數據推送",
+      "sidebar": "v5SideBar"
+    },
+    "v5/websocket/public/kline": {
+      "id": "v5/websocket/public/kline",
+      "title": "K線",
+      "description": "訂閱K線推送",
+      "sidebar": "v5SideBar"
+    },
+    "v5/websocket/public/order-price-limit": {
+      "id": "v5/websocket/public/order-price-limit",
+      "title": "訂單價格限制",
+      "description": "訂閱訂單價格限制的推送.",
+      "sidebar": "v5SideBar"
+    },
+    "v5/websocket/public/orderbook": {
+      "id": "v5/websocket/public/orderbook",
+      "title": "深度",
+      "description": "訂閱不同深度的推送",
+      "sidebar": "v5SideBar"
+    },
+    "v5/websocket/public/orderbook-rpi": {
+      "id": "v5/websocket/public/orderbook-rpi",
+      "title": "RPI 深度",
+      "description": "訂閱訂單簿推送, 包含RPI報價數據",
+      "sidebar": "v5SideBar"
+    },
+    "v5/websocket/public/ticker": {
+      "id": "v5/websocket/public/ticker",
+      "title": "行情",
+      "description": "訂閱行情數據推送.",
+      "sidebar": "v5SideBar"
+    },
+    "v5/websocket/public/trade": {
+      "id": "v5/websocket/public/trade",
+      "title": "平台成交",
+      "description": "訂閱平台上最近成交的推送.",
+      "sidebar": "v5SideBar"
+    },
+    "v5/websocket/trade/guideline": {
+      "id": "v5/websocket/trade/guideline",
+      "title": "Websocket下單指南",
+      "description": "路徑",
+      "sidebar": "v5SideBar"
+    },
+    "v5/websocket/wss-authentication": {
+      "id": "v5/websocket/wss-authentication",
+      "title": "訂閱WebSocket",
+      "description": "WebSocket公共頻道:",
+      "sidebar": "v5SideBar"
+    }
+  }
+}

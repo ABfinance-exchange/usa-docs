@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/public/kline",
+  "id": "v5/websocket/public/kline",
+  "title": "Kline",
+  "description": "Subscribe to the klines stream.",
+  "source": "@site/docs/v5/websocket/public/kline.mdx",
+  "sourceDirName": "v5/websocket/public",
+  "slug": "/v5/websocket/public/kline",
+  "permalink": "/usa-docs/v5/websocket/public/kline",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Kline",
+    "sidebar_label": "Kline",
+    "sidebar_position": 4
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Ticker",
+    "permalink": "/usa-docs/v5/websocket/public/ticker"
+  },
+  "next": {
+    "title": "Order Price Limit",
+    "permalink": "/usa-docs/v5/websocket/public/order-price-limit"
+  }
+}

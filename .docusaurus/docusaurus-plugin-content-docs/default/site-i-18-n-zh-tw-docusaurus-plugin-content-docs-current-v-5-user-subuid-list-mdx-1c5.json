@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/subuid-list",
+  "id": "v5/user/subuid-list",
+  "title": "查詢子帳戶UID列表 (限制)",
+  "description": "最多返回10000個子帳戶, 適合少於1萬個子帳戶的母帳戶調用。需使用母帳戶的API key。",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/user/subuid-list.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/subuid-list",
+  "permalink": "/usa-docs/zh-TW/v5/user/subuid-list",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "查詢子帳戶UID列表 (限制)",
+    "sidebar_label": "查詢子帳戶UID列表 (限制)",
+    "sidebar_position": 3
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "新建子帳戶的API Key",
+    "permalink": "/usa-docs/zh-TW/v5/user/create-subuid-apikey"
+  },
+  "next": {
+    "title": "查詢子帳戶UID列表 (無限制)",
+    "permalink": "/usa-docs/zh-TW/v5/user/page-subuid"
+  }
+}

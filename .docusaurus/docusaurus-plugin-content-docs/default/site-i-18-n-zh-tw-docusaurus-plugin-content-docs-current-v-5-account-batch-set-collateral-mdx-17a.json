@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/batch-set-collateral",
+  "id": "v5/account/batch-set-collateral",
+  "title": "批量設置抵押品幣種",
+  "description": "用戶可以批量開啟或關閉統一帳戶中幣種抵押屬性，默認都是關閉的",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/account/batch-set-collateral.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/batch-set-collateral",
+  "permalink": "/usa-docs/zh-TW/v5/account/batch-set-collateral",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "title": "批量設置抵押品幣種",
+    "sidebar_label": "批量設置抵押品幣種",
+    "sidebar_position": 15
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢利息記錄 (2年)",
+    "permalink": "/usa-docs/zh-TW/v5/account/borrow-history"
+  },
+  "next": {
+    "title": "查詢SMP組ID",
+    "permalink": "/usa-docs/zh-TW/v5/account/smp-group"
+  }
+}

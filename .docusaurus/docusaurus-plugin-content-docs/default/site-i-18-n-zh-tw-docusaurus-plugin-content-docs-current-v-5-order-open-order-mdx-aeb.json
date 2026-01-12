@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/open-order",
+  "id": "v5/order/open-order",
+  "title": "查詢實時和終態委託單",
+  "description": "主要用於實時查詢未成交或部分成交的訂單信息, 但結合入参openOnly能夠查詢到最近500條到達終態的訂單. 若需要查詢更久的訂單紀錄，請使用查詢歷史訂單接口.",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/order/open-order.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/open-order",
+  "permalink": "/usa-docs/zh-TW/v5/order/open-order",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "查詢實時和終態委託單",
+    "sidebar_label": "查詢實時和終態委託單",
+    "sidebar_position": 4
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "撤銷委託單",
+    "permalink": "/usa-docs/zh-TW/v5/order/cancel-order"
+  },
+  "next": {
+    "title": "撤銷所有訂單",
+    "permalink": "/usa-docs/zh-TW/v5/order/cancel-all"
+  }
+}

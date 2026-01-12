@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/instrument",
+  "id": "v5/account/instrument",
+  "title": "查詢用户可交易產品的規格信息",
+  "description": "查詢用户全站可交易產品的基礎配置規則信息",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/account/instrument.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/instrument",
+  "permalink": "/usa-docs/zh-TW/v5/account/instrument",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "查詢用户可交易產品的規格信息",
+    "sidebar_label": "查詢用户可交易產品的規格信息",
+    "sidebar_position": 5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢賬戶配置",
+    "permalink": "/usa-docs/zh-TW/v5/account/account-info"
+  },
+  "next": {
+    "title": "查詢手續費率",
+    "permalink": "/usa-docs/zh-TW/v5/account/fee-rate"
+  }
+}

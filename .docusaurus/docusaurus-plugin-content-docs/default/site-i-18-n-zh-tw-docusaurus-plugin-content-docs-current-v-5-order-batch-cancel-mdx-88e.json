@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/batch-cancel",
+  "id": "v5/order/batch-cancel",
+  "title": "批量撤銷委託單",
+  "description": "該接口可以批量撤銷多筆訂單",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/order/batch-cancel.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/batch-cancel",
+  "permalink": "/usa-docs/zh-TW/v5/order/batch-cancel",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "title": "批量撤銷委託單",
+    "sidebar_label": "批量撤銷委託單",
+    "sidebar_position": 9
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "批量修改委託單",
+    "permalink": "/usa-docs/zh-TW/v5/order/batch-amend"
+  },
+  "next": {
+    "title": "查詢用戶可用額度 (現貨)",
+    "permalink": "/usa-docs/zh-TW/v5/order/spot-borrow-quota"
+  }
+}

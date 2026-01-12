@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/amend-order",
+  "id": "v5/order/amend-order",
+  "title": "修改委託單",
+  "description": "您只能修改那些未成交或者部分成交的訂單。",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/order/amend-order.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/amend-order",
+  "permalink": "/usa-docs/zh-TW/v5/order/amend-order",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "修改委託單",
+    "sidebar_label": "修改委託單",
+    "sidebar_position": 2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "創建委託單",
+    "permalink": "/usa-docs/zh-TW/v5/order/create-order"
+  },
+  "next": {
+    "title": "撤銷委託單",
+    "permalink": "/usa-docs/zh-TW/v5/order/cancel-order"
+  }
+}

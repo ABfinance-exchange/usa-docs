@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/private/order",
+  "id": "v5/websocket/private/order",
+  "title": "Order",
+  "description": "Subscribe to the order stream to see changes to your orders in real-time.",
+  "source": "@site/docs/v5/websocket/private/order.mdx",
+  "sourceDirName": "v5/websocket/private",
+  "slug": "/v5/websocket/private/order",
+  "permalink": "/usa-docs/v5/websocket/private/order",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Order",
+    "sidebar_label": "Order",
+    "sidebar_position": 3
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Fast Execution",
+    "permalink": "/usa-docs/v5/websocket/private/fast-execution"
+  },
+  "next": {
+    "title": "Wallet",
+    "permalink": "/usa-docs/v5/websocket/private/wallet"
+  }
+}

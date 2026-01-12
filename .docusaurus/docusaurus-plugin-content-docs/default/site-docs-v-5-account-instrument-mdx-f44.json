@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/instrument",
+  "id": "v5/account/instrument",
+  "title": "Get Account Instruments Info",
+  "description": "Query for the instrument specification of online trading pairs that available to users.",
+  "source": "@site/docs/v5/account/instrument.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/instrument",
+  "permalink": "/usa-docs/v5/account/instrument",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4.5,
+  "frontMatter": {
+    "title": "Get Account Instruments Info",
+    "sidebar_label": "Get Account Instruments Info",
+    "sidebar_position": 4.5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Account Info",
+    "permalink": "/usa-docs/v5/account/account-info"
+  },
+  "next": {
+    "title": "Get Fee Rate",
+    "permalink": "/usa-docs/v5/account/fee-rate"
+  }
+}

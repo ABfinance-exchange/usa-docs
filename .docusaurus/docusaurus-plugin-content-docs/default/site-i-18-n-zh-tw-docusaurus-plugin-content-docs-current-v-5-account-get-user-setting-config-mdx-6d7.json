@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/get-user-setting-config",
+  "id": "v5/account/get-user-setting-config",
+  "title": "查詢交易行為設置",
+  "description": "您可以查詢當限價單價格超過最高買價或最低賣價時，系統的行為方式。",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/account/get-user-setting-config.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/get-user-setting-config",
+  "permalink": "/usa-docs/zh-TW/v5/account/get-user-setting-config",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 21,
+  "frontMatter": {
+    "title": "查詢交易行為設置",
+    "sidebar_label": "查詢交易行為設置",
+    "sidebar_position": 21
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢SMP組ID",
+    "permalink": "/usa-docs/zh-TW/v5/account/smp-group"
+  },
+  "next": {
+    "title": "設置限價單行為",
+    "permalink": "/usa-docs/zh-TW/v5/account/set-price-limit"
+  }
+}

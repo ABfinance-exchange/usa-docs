@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/account-info",
+  "id": "v5/account/account-info",
+  "title": "查詢賬戶配置",
+  "description": "該接口可以查詢統一帳戶的保證金模式, 當前帳戶模式等配置",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/account/account-info.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/account-info",
+  "permalink": "/usa-docs/zh-TW/v5/account/account-info",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "查詢賬戶配置",
+    "sidebar_label": "查詢賬戶配置",
+    "sidebar_position": 4
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "交易日誌 (統一帳戶)",
+    "permalink": "/usa-docs/zh-TW/v5/account/transaction-log"
+  },
+  "next": {
+    "title": "查詢用户可交易產品的規格信息",
+    "permalink": "/usa-docs/zh-TW/v5/account/instrument"
+  }
+}

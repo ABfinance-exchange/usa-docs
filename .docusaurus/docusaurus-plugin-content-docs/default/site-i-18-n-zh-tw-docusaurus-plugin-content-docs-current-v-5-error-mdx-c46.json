@@ -1,0 +1,22 @@
+{
+  "unversionedId": "v5/error",
+  "id": "v5/error",
+  "title": "錯誤碼",
+  "description": "HTTP 響應碼",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/error.mdx",
+  "sourceDirName": "v5",
+  "slug": "/v5/error",
+  "permalink": "/usa-docs/zh-TW/v5/error",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "錯誤碼",
+    "sidebar_label": "錯誤碼"
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "枚舉定義",
+    "permalink": "/usa-docs/zh-TW/v5/enum"
+  }
+}

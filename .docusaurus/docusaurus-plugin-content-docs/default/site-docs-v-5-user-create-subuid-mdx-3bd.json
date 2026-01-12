@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/create-subuid",
+  "id": "v5/user/create-subuid",
+  "title": "Create Sub UID",
+  "description": "Create a new sub user id. Use master account's api key.",
+  "source": "@site/docs/v5/user/create-subuid.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/create-subuid",
+  "permalink": "/usa-docs/v5/user/create-subuid",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Create Sub UID",
+    "sidebar_label": "Create Sub UID",
+    "sidebar_position": 1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Cancel Withdrawal",
+    "permalink": "/usa-docs/v5/asset/withdraw/cancel-withdraw"
+  },
+  "next": {
+    "title": "Create Sub UID API Key",
+    "permalink": "/usa-docs/v5/user/create-subuid-apikey"
+  }
+}

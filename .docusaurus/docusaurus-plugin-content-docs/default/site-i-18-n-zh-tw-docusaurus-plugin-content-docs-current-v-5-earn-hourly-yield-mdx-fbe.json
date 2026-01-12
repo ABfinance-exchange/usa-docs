@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/earn/hourly-yield",
+  "id": "v5/earn/hourly-yield",
+  "title": "查詢每小時收益歷史",
+  "description": "API key需要\"理財\"\"權限",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/earn/hourly-yield.mdx",
+  "sourceDirName": "v5/earn",
+  "slug": "/v5/earn/hourly-yield",
+  "permalink": "/usa-docs/zh-TW/v5/earn/hourly-yield",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "查詢每小時收益歷史",
+    "sidebar_label": "查詢每小時收益歷史",
+    "sidebar_position": 6
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢收益歷史",
+    "permalink": "/usa-docs/zh-TW/v5/earn/yield-history"
+  },
+  "next": {
+    "title": "訂閱WebSocket",
+    "permalink": "/usa-docs/zh-TW/v5/ws/connect"
+  }
+}

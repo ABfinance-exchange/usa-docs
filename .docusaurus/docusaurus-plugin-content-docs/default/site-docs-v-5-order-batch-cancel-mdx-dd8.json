@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/batch-cancel",
+  "id": "v5/order/batch-cancel",
+  "title": "Batch Cancel Order",
+  "description": "This endpoint allows you to cancel more than one open order in a single request.",
+  "source": "@site/docs/v5/order/batch-cancel.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/batch-cancel",
+  "permalink": "/usa-docs/v5/order/batch-cancel",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "title": "Batch Cancel Order",
+    "sidebar_label": "Batch Cancel Order",
+    "sidebar_position": 9
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Batch Amend Order",
+    "permalink": "/usa-docs/v5/order/batch-amend"
+  },
+  "next": {
+    "title": "Get Borrow Quota (Spot)",
+    "permalink": "/usa-docs/v5/order/spot-borrow-quota"
+  }
+}

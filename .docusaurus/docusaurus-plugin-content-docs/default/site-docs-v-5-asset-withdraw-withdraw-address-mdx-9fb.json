@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/withdraw/withdraw-address",
+  "id": "v5/asset/withdraw/withdraw-address",
+  "title": "Get Withdrawal Address List",
+  "description": "Query the withdrawal addresses in the address book.",
+  "source": "@site/docs/v5/asset/withdraw/withdraw-address.mdx",
+  "sourceDirName": "v5/asset/withdraw",
+  "slug": "/v5/asset/withdraw/withdraw-address",
+  "permalink": "/usa-docs/v5/asset/withdraw/withdraw-address",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "title": "Get Withdrawal Address List",
+    "sidebar_label": "Get Withdrawal Address List",
+    "sidebar_position": 14
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Sub Deposit Address",
+    "permalink": "/usa-docs/v5/asset/deposit/sub-deposit-addr"
+  },
+  "next": {
+    "title": "Get Withdrawal Records",
+    "permalink": "/usa-docs/v5/asset/withdraw/withdraw-record"
+  }
+}

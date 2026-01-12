@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/withdraw/withdraw",
+  "id": "v5/asset/withdraw/withdraw",
+  "title": "提現",
+  "description": "若目標地址是平台內部地址, 您可以實現內部平台轉帳",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/withdraw/withdraw.mdx",
+  "sourceDirName": "v5/asset/withdraw",
+  "slug": "/v5/asset/withdraw/",
+  "permalink": "/usa-docs/zh-TW/v5/asset/withdraw/",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 16,
+  "frontMatter": {
+    "title": "提現",
+    "sidebar_label": "提現",
+    "sidebar_position": 16
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢交易所列表 (韓國用戶)",
+    "permalink": "/usa-docs/zh-TW/v5/asset/withdraw/vasp-list"
+  },
+  "next": {
+    "title": "撤銷提幣",
+    "permalink": "/usa-docs/zh-TW/v5/asset/withdraw/cancel-withdraw"
+  }
+}

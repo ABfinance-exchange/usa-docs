@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/execution",
+  "id": "v5/order/execution",
+  "title": "查詢成交紀錄",
+  "description": "獲取用戶成交紀錄，返回結果按execTime降序排列",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/order/execution.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/execution",
+  "permalink": "/usa-docs/zh-TW/v5/order/execution",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6.1,
+  "frontMatter": {
+    "title": "查詢成交紀錄",
+    "sidebar_label": "查詢成交紀錄 (2年)",
+    "sidebar_position": 6.1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢歷史訂單 (2年)",
+    "permalink": "/usa-docs/zh-TW/v5/order/order-list"
+  },
+  "next": {
+    "title": "批量創建委託單",
+    "permalink": "/usa-docs/zh-TW/v5/order/batch-place"
+  }
+}

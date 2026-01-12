@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/public/ticker",
+  "id": "v5/websocket/public/ticker",
+  "title": "行情",
+  "description": "訂閱行情數據推送.",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/websocket/public/ticker.mdx",
+  "sourceDirName": "v5/websocket/public",
+  "slug": "/v5/websocket/public/ticker",
+  "permalink": "/usa-docs/zh-TW/v5/websocket/public/ticker",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "行情",
+    "sidebar_label": "行情",
+    "sidebar_position": 3
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "平台成交",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/public/trade"
+  },
+  "next": {
+    "title": "K線",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/public/kline"
+  }
+}

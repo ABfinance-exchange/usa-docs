@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/private/order",
+  "id": "v5/websocket/private/order",
+  "title": "訂單",
+  "description": "訂閱訂單數據推送",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/websocket/private/order.mdx",
+  "sourceDirName": "v5/websocket/private",
+  "slug": "/v5/websocket/private/order",
+  "permalink": "/usa-docs/zh-TW/v5/websocket/private/order",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "訂單",
+    "sidebar_label": "訂單",
+    "sidebar_position": 3
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "個人成交 (Fast)",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/private/fast-execution"
+  },
+  "next": {
+    "title": "錢包",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/private/wallet"
+  }
+}

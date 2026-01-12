@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/market/tickers",
+  "id": "v5/market/tickers",
+  "title": "Get Tickers",
+  "description": "Query for the latest price snapshot, best bid/ask price, and trading volume in the last 24 hours.",
+  "source": "@site/docs/v5/market/tickers.mdx",
+  "sourceDirName": "v5/market",
+  "slug": "/v5/market/tickers",
+  "permalink": "/usa-docs/v5/market/tickers",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Get Tickers",
+    "sidebar_label": "Get Tickers",
+    "sidebar_position": 6
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get RPI Orderbook",
+    "permalink": "/usa-docs/v5/market/rpi-orderbook"
+  },
+  "next": {
+    "title": "Get Recent Public Trades",
+    "permalink": "/usa-docs/v5/market/recent-trade"
+  }
+}

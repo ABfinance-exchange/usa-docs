@@ -1,0 +1,22 @@
+{
+  "unversionedId": "v5/guide",
+  "id": "v5/guide",
+  "title": "接入指南",
+  "description": "鑒權/認證",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/guide.mdx",
+  "sourceDirName": "v5",
+  "slug": "/v5/guide",
+  "permalink": "/usa-docs/zh-TW/v5/guide",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "接入指南",
+    "sidebar_label": "接入指南"
+  },
+  "sidebar": "v5SideBar",
+  "next": {
+    "title": "查詢公告",
+    "permalink": "/usa-docs/zh-TW/v5/announcement"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/rate-limit/rules-for-pros/apilimit-query-all",
+  "id": "v5/rate-limit/rules-for-pros/apilimit-query-all",
+  "title": "Get All Rate Limits",
+  "description": "API rate limit: 50 req per second",
+  "source": "@site/docs/v5/rate-limit/rules-for-pros/apilimit-query-all.mdx",
+  "sourceDirName": "v5/rate-limit/rules-for-pros",
+  "slug": "/v5/rate-limit/rules-for-pros/apilimit-query-all",
+  "permalink": "/usa-docs/v5/rate-limit/rules-for-pros/apilimit-query-all",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Get All Rate Limits",
+    "sidebar_label": "Get All Rate Limits",
+    "sidebar_position": 5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Rate Limit Cap",
+    "permalink": "/usa-docs/v5/rate-limit/rules-for-pros/apilimit-query-cap"
+  },
+  "next": {
+    "title": "Enums Definitions",
+    "permalink": "/usa-docs/v5/enum"
+  }
+}

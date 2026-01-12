@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/private/execution",
+  "id": "v5/websocket/private/execution",
+  "title": "Execution",
+  "description": "Subscribe to the execution stream to see your executions in real-time.",
+  "source": "@site/docs/v5/websocket/private/execution.mdx",
+  "sourceDirName": "v5/websocket/private",
+  "slug": "/v5/websocket/private/execution",
+  "permalink": "/usa-docs/v5/websocket/private/execution",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Execution",
+    "sidebar_label": "Execution",
+    "sidebar_position": 2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Order Price Limit",
+    "permalink": "/usa-docs/v5/websocket/public/order-price-limit"
+  },
+  "next": {
+    "title": "Fast Execution",
+    "permalink": "/usa-docs/v5/websocket/private/fast-execution"
+  }
+}

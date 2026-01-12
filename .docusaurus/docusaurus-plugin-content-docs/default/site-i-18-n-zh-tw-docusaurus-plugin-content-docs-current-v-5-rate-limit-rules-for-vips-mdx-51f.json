@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/rate-limit/rules-for-vips",
+  "id": "v5/rate-limit/rules-for-vips",
+  "title": "VIP的接口限頻規則",
+  "description": "不同VIP等級的接口限頻規則",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/rate-limit/rules-for-vips.mdx",
+  "sourceDirName": "v5/rate-limit",
+  "slug": "/v5/rate-limit/rules-for-vips",
+  "permalink": "/usa-docs/zh-TW/v5/rate-limit/rules-for-vips",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "VIP的接口限頻規則",
+    "sidebar_label": "VIP的接口限頻規則",
+    "sidebar_position": 2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "基礎頻率限制",
+    "permalink": "/usa-docs/zh-TW/v5/rate-limit/"
+  },
+  "next": {
+    "title": "限頻介紹",
+    "permalink": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/introduction"
+  }
+}

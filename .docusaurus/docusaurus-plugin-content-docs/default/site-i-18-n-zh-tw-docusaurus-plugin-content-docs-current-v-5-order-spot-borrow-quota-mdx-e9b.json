@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/spot-borrow-quota",
+  "id": "v5/order/spot-borrow-quota",
+  "title": "查詢用戶可用額度 (現貨)",
+  "description": "可以查詢現貨幣幣交易以及槓桿交易時, 可用對應幣種的實時餘額",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/order/spot-borrow-quota.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/spot-borrow-quota",
+  "permalink": "/usa-docs/zh-TW/v5/order/spot-borrow-quota",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "title": "查詢用戶可用額度 (現貨)",
+    "sidebar_label": "查詢用戶可用額度 (現貨)",
+    "sidebar_position": 10
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "批量撤銷委託單",
+    "permalink": "/usa-docs/zh-TW/v5/order/batch-cancel"
+  },
+  "next": {
+    "title": "設置斷線保護時間",
+    "permalink": "/usa-docs/zh-TW/v5/order/dcp"
+  }
+}

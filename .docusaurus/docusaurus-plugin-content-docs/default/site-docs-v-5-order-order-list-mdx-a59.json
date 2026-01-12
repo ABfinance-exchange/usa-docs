@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/order-list",
+  "id": "v5/order/order-list",
+  "title": "Get Order History",
+  "description": "Query order history. As order creation/cancellation is asynchronous, the data returned from this endpoint may delay. If you want to get",
+  "source": "@site/docs/v5/order/order-list.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/order-list",
+  "permalink": "/usa-docs/v5/order/order-list",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Get Order History",
+    "sidebar_label": "Get Order History (2 years)",
+    "sidebar_position": 6
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Cancel All Orders",
+    "permalink": "/usa-docs/v5/order/cancel-all"
+  },
+  "next": {
+    "title": "Get Trade History (2 years)",
+    "permalink": "/usa-docs/v5/order/execution"
+  }
+}

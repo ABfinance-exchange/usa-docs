@@ -1,0 +1,19 @@
+{
+  "unversionedId": "v5/asset/convert/guideline",
+  "id": "v5/asset/convert/guideline",
+  "title": "Convert Guideline",
+  "description": "* All convert API endpoints need authentication",
+  "source": "@site/docs/v5/asset/convert/guideline.mdx",
+  "sourceDirName": "v5/asset/convert",
+  "slug": "/v5/asset/convert/guideline",
+  "permalink": "/usa-docs/v5/asset/convert/guideline",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0.5,
+  "frontMatter": {
+    "title": "Convert Guideline",
+    "sidebar_label": "Guideline",
+    "sidebar_position": 0.5
+  }
+}

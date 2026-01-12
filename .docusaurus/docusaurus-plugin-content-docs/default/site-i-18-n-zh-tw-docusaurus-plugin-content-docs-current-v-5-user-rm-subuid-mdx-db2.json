@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/rm-subuid",
+  "id": "v5/user/rm-subuid",
+  "title": "刪除子帳戶",
+  "description": "刪除子帳戶. 在刪除前, 確保該帳戶已經沒有資產了",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/user/rm-subuid.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/rm-subuid",
+  "permalink": "/usa-docs/zh-TW/v5/user/rm-subuid",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7.5,
+  "frontMatter": {
+    "title": "刪除子帳戶",
+    "sidebar_label": "刪除子帳戶",
+    "sidebar_position": 7.5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "修改子帳戶的API Key設置",
+    "permalink": "/usa-docs/zh-TW/v5/user/modify-sub-apikey"
+  },
+  "next": {
+    "title": "刪除母帳戶的API Key",
+    "permalink": "/usa-docs/zh-TW/v5/user/rm-master-apikey"
+  }
+}

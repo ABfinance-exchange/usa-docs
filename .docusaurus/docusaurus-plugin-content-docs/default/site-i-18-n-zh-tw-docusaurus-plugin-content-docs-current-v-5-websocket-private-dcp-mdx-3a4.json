@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/private/dcp",
+  "id": "v5/websocket/private/dcp",
+  "title": "斷線保護",
+  "description": "通過訂閱DCP流來觸發功能",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/websocket/private/dcp.mdx",
+  "sourceDirName": "v5/websocket/private",
+  "slug": "/v5/websocket/private/dcp",
+  "permalink": "/usa-docs/zh-TW/v5/websocket/private/dcp",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "斷線保護",
+    "sidebar_label": "斷線保護",
+    "sidebar_position": 6
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "錢包",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/private/wallet"
+  },
+  "next": {
+    "title": "Websocket下單指南",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/trade/guideline"
+  }
+}

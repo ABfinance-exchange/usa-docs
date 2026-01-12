@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/transfer/create-inter-transfer",
+  "id": "v5/asset/transfer/create-inter-transfer",
+  "title": "劃轉 (單帳號內)",
+  "description": "創建單帳號下帳戶類型間的劃轉操作",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/transfer/create-inter-transfer.mdx",
+  "sourceDirName": "v5/asset/transfer",
+  "slug": "/v5/asset/transfer/create-inter-transfer",
+  "permalink": "/usa-docs/zh-TW/v5/asset/transfer/create-inter-transfer",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "劃轉 (單帳號內)",
+    "sidebar_label": "劃轉 (單帳號內)",
+    "sidebar_position": 2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "帳戶類型間可劃轉的幣種",
+    "permalink": "/usa-docs/zh-TW/v5/asset/transfer/transferable-coin"
+  },
+  "next": {
+    "title": "創建萬能劃轉",
+    "permalink": "/usa-docs/zh-TW/v5/asset/transfer/unitransfer"
+  }
+}

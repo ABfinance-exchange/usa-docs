@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/sub-uid-list",
+  "id": "v5/asset/sub-uid-list",
+  "title": "查詢子帳號列表",
+  "description": "查詢某個母帳戶的子帳號列表, 返回至多2000個子帳戶, 如果您有更多, 可以調用這個接口.",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/sub-uid-list.mdx",
+  "sourceDirName": "v5/asset",
+  "slug": "/v5/asset/sub-uid-list",
+  "permalink": "/usa-docs/zh-TW/v5/asset/sub-uid-list",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3.5,
+  "frontMatter": {
+    "title": "查詢子帳號列表",
+    "sidebar_label": "查詢子帳號列表",
+    "sidebar_position": 3.5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢幣種信息",
+    "permalink": "/usa-docs/zh-TW/v5/asset/coin-info"
+  },
+  "next": {
+    "title": "查詢賬戶所有幣種余額",
+    "permalink": "/usa-docs/zh-TW/v5/asset/balance/all-balance"
+  }
+}

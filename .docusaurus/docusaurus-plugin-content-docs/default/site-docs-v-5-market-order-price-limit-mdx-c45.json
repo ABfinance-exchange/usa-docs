@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/market/order-price-limit",
+  "id": "v5/market/order-price-limit",
+  "title": "Get Order Price Limit",
+  "description": "Get spot trading order price limit",
+  "source": "@site/docs/v5/market/order-price-limit.mdx",
+  "sourceDirName": "v5/market",
+  "slug": "/v5/market/order-price-limit",
+  "permalink": "/usa-docs/v5/market/order-price-limit",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 17,
+  "frontMatter": {
+    "title": "Get Order Price Limit",
+    "sidebar_label": "Get Order Price Limit",
+    "sidebar_position": 17
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Index Price Components",
+    "permalink": "/usa-docs/v5/market/index-components"
+  },
+  "next": {
+    "title": "Place Order",
+    "permalink": "/usa-docs/v5/order/create-order"
+  }
+}

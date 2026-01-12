@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/order/cancel-all",
+  "id": "v5/order/cancel-all",
+  "title": "Cancel All Orders",
+  "description": "Cancel all open orders",
+  "source": "@site/docs/v5/order/cancel-all.mdx",
+  "sourceDirName": "v5/order",
+  "slug": "/v5/order/cancel-all",
+  "permalink": "/usa-docs/v5/order/cancel-all",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Cancel All Orders",
+    "sidebar_label": "Cancel All Orders",
+    "sidebar_position": 5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Open & Closed Orders",
+    "permalink": "/usa-docs/v5/order/open-order"
+  },
+  "next": {
+    "title": "Get Order History (2 years)",
+    "permalink": "/usa-docs/v5/order/order-list"
+  }
+}

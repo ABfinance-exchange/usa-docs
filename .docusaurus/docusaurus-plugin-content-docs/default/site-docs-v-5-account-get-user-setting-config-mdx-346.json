@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/get-user-setting-config",
+  "id": "v5/account/get-user-setting-config",
+  "title": "Get Trade Behaviour Setting",
+  "description": "You can get configuration how the system behaves when your limit order price exceeds the highest bid or lowest ask price.",
+  "source": "@site/docs/v5/account/get-user-setting-config.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/get-user-setting-config",
+  "permalink": "/usa-docs/v5/account/get-user-setting-config",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 19,
+  "frontMatter": {
+    "title": "Get Trade Behaviour Setting",
+    "sidebar_label": "Get Trade Behaviour Setting",
+    "sidebar_position": 19
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get SMP Group ID",
+    "permalink": "/usa-docs/v5/account/smp-group"
+  },
+  "next": {
+    "title": "Set Limit Price Behaviour",
+    "permalink": "/usa-docs/v5/account/set-price-limit"
+  }
+}

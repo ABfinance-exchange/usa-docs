@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/deposit/sub-deposit-addr",
+  "id": "v5/asset/deposit/sub-deposit-addr",
+  "title": "Get Sub Deposit Address",
+  "description": "Query the deposit address information of SUB account.",
+  "source": "@site/docs/v5/asset/deposit/sub-deposit-addr.mdx",
+  "sourceDirName": "v5/asset/deposit",
+  "slug": "/v5/asset/deposit/sub-deposit-addr",
+  "permalink": "/usa-docs/v5/asset/deposit/sub-deposit-addr",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13.2,
+  "frontMatter": {
+    "title": "Get Sub Deposit Address",
+    "sidebar_label": "Get Sub Deposit Address",
+    "sidebar_position": 13.2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Master Deposit Address",
+    "permalink": "/usa-docs/v5/asset/deposit/master-deposit-addr"
+  },
+  "next": {
+    "title": "Get Withdrawal Address List",
+    "permalink": "/usa-docs/v5/asset/withdraw/withdraw-address"
+  }
+}

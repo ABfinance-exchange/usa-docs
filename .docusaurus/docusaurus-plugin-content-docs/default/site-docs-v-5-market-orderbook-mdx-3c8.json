@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/market/orderbook",
+  "id": "v5/market/orderbook",
+  "title": "Get Orderbook",
+  "description": "Query for orderbook depth data.",
+  "source": "@site/docs/v5/market/orderbook.mdx",
+  "sourceDirName": "v5/market",
+  "slug": "/v5/market/orderbook",
+  "permalink": "/usa-docs/v5/market/orderbook",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Get Orderbook",
+    "sidebar_label": "Get Orderbook",
+    "sidebar_position": 5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Instruments Info",
+    "permalink": "/usa-docs/v5/market/instrument"
+  },
+  "next": {
+    "title": "Get RPI Orderbook",
+    "permalink": "/usa-docs/v5/market/rpi-orderbook"
+  }
+}

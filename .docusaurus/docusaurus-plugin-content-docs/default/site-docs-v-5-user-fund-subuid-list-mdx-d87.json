@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/fund-subuid-list",
+  "id": "v5/user/fund-subuid-list",
+  "title": "Get Fund Custodial Sub Acct",
+  "description": "The institutional client can query the fund custodial sub accounts.",
+  "source": "@site/docs/v5/user/fund-subuid-list.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/fund-subuid-list",
+  "permalink": "/usa-docs/v5/user/fund-subuid-list",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3.2,
+  "frontMatter": {
+    "title": "Get Fund Custodial Sub Acct",
+    "sidebar_label": "Get Fund Custodial Sub Acct",
+    "sidebar_position": 3.2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Sub UID List (Unlimited)",
+    "permalink": "/usa-docs/v5/user/page-subuid"
+  },
+  "next": {
+    "title": "Freeze Sub UID",
+    "permalink": "/usa-docs/v5/user/froze-subuid"
+  }
+}

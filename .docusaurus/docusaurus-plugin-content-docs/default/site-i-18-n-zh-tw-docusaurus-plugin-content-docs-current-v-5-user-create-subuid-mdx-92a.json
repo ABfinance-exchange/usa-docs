@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/create-subuid",
+  "id": "v5/user/create-subuid",
+  "title": "新建子帳戶",
+  "description": "創建新的子帳戶。需使用母帳戶的API key。",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/user/create-subuid.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/create-subuid",
+  "permalink": "/usa-docs/zh-TW/v5/user/create-subuid",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "新建子帳戶",
+    "sidebar_label": "新建子帳戶",
+    "sidebar_position": 1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "撤銷提幣",
+    "permalink": "/usa-docs/zh-TW/v5/asset/withdraw/cancel-withdraw"
+  },
+  "next": {
+    "title": "新建子帳戶的API Key",
+    "permalink": "/usa-docs/zh-TW/v5/user/create-subuid-apikey"
+  }
+}

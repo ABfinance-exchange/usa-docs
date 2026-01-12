@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/trade/guideline",
+  "id": "v5/websocket/trade/guideline",
+  "title": "Websocket下單指南",
+  "description": "路徑",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/websocket/trade/guideline.mdx",
+  "sourceDirName": "v5/websocket/trade",
+  "slug": "/v5/websocket/trade/guideline",
+  "permalink": "/usa-docs/zh-TW/v5/websocket/trade/guideline",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Websocket下單指南",
+    "sidebar_label": "Websocket下單指南",
+    "sidebar_position": 1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "斷線保護",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/private/dcp"
+  },
+  "next": {
+    "title": "基礎頻率限制",
+    "permalink": "/usa-docs/zh-TW/v5/rate-limit/"
+  }
+}

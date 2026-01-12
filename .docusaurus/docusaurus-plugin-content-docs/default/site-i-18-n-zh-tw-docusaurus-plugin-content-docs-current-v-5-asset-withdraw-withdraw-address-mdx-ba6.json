@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/withdraw/withdraw-address",
+  "id": "v5/asset/withdraw/withdraw-address",
+  "title": "查詢地址簿提幣地址",
+  "description": "查詢地址簿中的提幣地址",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/withdraw/withdraw-address.mdx",
+  "sourceDirName": "v5/asset/withdraw",
+  "slug": "/v5/asset/withdraw/withdraw-address",
+  "permalink": "/usa-docs/zh-TW/v5/asset/withdraw/withdraw-address",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "title": "查詢地址簿提幣地址",
+    "sidebar_label": "查詢地址簿提幣地址",
+    "sidebar_position": 14
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢子帳號充值地址",
+    "permalink": "/usa-docs/zh-TW/v5/asset/deposit/sub-deposit-addr"
+  },
+  "next": {
+    "title": "查詢提現紀錄",
+    "permalink": "/usa-docs/zh-TW/v5/asset/withdraw/withdraw-record"
+  }
+}

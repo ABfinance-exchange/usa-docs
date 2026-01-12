@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/balance/account-coin-balance",
+  "id": "v5/asset/balance/account-coin-balance",
+  "title": "查詢帳戶單個幣種餘額",
+  "description": "獲取某帳戶類型下某指定幣種的餘額。支持通過輸入子帳戶id來查詢子帳戶的某個帳戶類型下的某個幣種餘額",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/balance/account-coin-balance.mdx",
+  "sourceDirName": "v5/asset/balance",
+  "slug": "/v5/asset/balance/account-coin-balance",
+  "permalink": "/usa-docs/zh-TW/v5/asset/balance/account-coin-balance",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0.3,
+  "frontMatter": {
+    "title": "查詢帳戶單個幣種餘額",
+    "sidebar_label": "查詢帳戶單個幣種餘額",
+    "sidebar_position": 0.3
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢賬戶所有幣種余額",
+    "permalink": "/usa-docs/zh-TW/v5/asset/balance/all-balance"
+  },
+  "next": {
+    "title": "查詢可提現金額",
+    "permalink": "/usa-docs/zh-TW/v5/asset/balance/delay-amount"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "v5/error",
+  "id": "v5/error",
+  "title": "Error Codes",
+  "description": "HTTP Code",
+  "source": "@site/docs/v5/error.mdx",
+  "sourceDirName": "v5",
+  "slug": "/v5/error",
+  "permalink": "/usa-docs/v5/error",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Error Codes",
+    "sidebar_label": "Error Codes"
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Enums Definitions",
+    "permalink": "/usa-docs/v5/enum"
+  }
+}

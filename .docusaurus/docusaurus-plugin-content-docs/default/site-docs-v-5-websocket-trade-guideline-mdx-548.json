@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/trade/guideline",
+  "id": "v5/websocket/trade/guideline",
+  "title": "Websocket Trade Guideline",
+  "description": "URL",
+  "source": "@site/docs/v5/websocket/trade/guideline.mdx",
+  "sourceDirName": "v5/websocket/trade",
+  "slug": "/v5/websocket/trade/guideline",
+  "permalink": "/usa-docs/v5/websocket/trade/guideline",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Websocket Trade Guideline",
+    "sidebar_label": "Websocket Trade Guideline",
+    "sidebar_position": 1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Dcp",
+    "permalink": "/usa-docs/v5/websocket/private/dcp"
+  },
+  "next": {
+    "title": "Rate Limit Rules",
+    "permalink": "/usa-docs/v5/rate-limit/"
+  }
+}

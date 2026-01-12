@@ -1,0 +1,577 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/usa-docs/zh-TW/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/usa-docs/zh-TW/",
+          "mainDocId": "v5/guide",
+          "docs": [
+            {
+              "id": "changelog/v5",
+              "path": "/usa-docs/zh-TW/changelog/v5",
+              "sidebar": "changelogSidebar"
+            },
+            {
+              "id": "v5/account/account-info",
+              "path": "/usa-docs/zh-TW/v5/account/account-info",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/account/batch-set-collateral",
+              "path": "/usa-docs/zh-TW/v5/account/batch-set-collateral",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/account/borrow-history",
+              "path": "/usa-docs/zh-TW/v5/account/borrow-history",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/account/collateral-info",
+              "path": "/usa-docs/zh-TW/v5/account/collateral-info",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/account/dcp-info",
+              "path": "/usa-docs/zh-TW/v5/account/dcp-info",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/account/fee-rate",
+              "path": "/usa-docs/zh-TW/v5/account/fee-rate",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/account/get-user-setting-config",
+              "path": "/usa-docs/zh-TW/v5/account/get-user-setting-config",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/account/instrument",
+              "path": "/usa-docs/zh-TW/v5/account/instrument",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/account/set-collateral",
+              "path": "/usa-docs/zh-TW/v5/account/set-collateral",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/account/set-price-limit",
+              "path": "/usa-docs/zh-TW/v5/account/set-price-limit",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/account/smp-group",
+              "path": "/usa-docs/zh-TW/v5/account/smp-group",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/account/transaction-log",
+              "path": "/usa-docs/zh-TW/v5/account/transaction-log",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/account/unified-trans-amnt",
+              "path": "/usa-docs/zh-TW/v5/account/unified-trans-amnt",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/account/wallet-balance",
+              "path": "/usa-docs/zh-TW/v5/account/wallet-balance",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/announcement",
+              "path": "/usa-docs/zh-TW/v5/announcement",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/balance/account-coin-balance",
+              "path": "/usa-docs/zh-TW/v5/asset/balance/account-coin-balance",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/balance/all-balance",
+              "path": "/usa-docs/zh-TW/v5/asset/balance/all-balance",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/balance/delay-amount",
+              "path": "/usa-docs/zh-TW/v5/asset/balance/delay-amount",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/coin-info",
+              "path": "/usa-docs/zh-TW/v5/asset/coin-info",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/convert/apply-quote",
+              "path": "/usa-docs/zh-TW/v5/asset/convert/apply-quote"
+            },
+            {
+              "id": "v5/asset/convert/confirm-quote",
+              "path": "/usa-docs/zh-TW/v5/asset/convert/confirm-quote"
+            },
+            {
+              "id": "v5/asset/convert/convert-coin-list",
+              "path": "/usa-docs/zh-TW/v5/asset/convert/convert-coin-list"
+            },
+            {
+              "id": "v5/asset/convert/get-convert-history",
+              "path": "/usa-docs/zh-TW/v5/asset/convert/get-convert-history"
+            },
+            {
+              "id": "v5/asset/convert/get-convert-result",
+              "path": "/usa-docs/zh-TW/v5/asset/convert/get-convert-result"
+            },
+            {
+              "id": "v5/asset/convert/guideline",
+              "path": "/usa-docs/zh-TW/v5/asset/convert/guideline"
+            },
+            {
+              "id": "v5/asset/deposit/deposit-record",
+              "path": "/usa-docs/zh-TW/v5/asset/deposit/deposit-record",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/deposit/internal-deposit-record",
+              "path": "/usa-docs/zh-TW/v5/asset/deposit/internal-deposit-record",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/deposit/master-deposit-addr",
+              "path": "/usa-docs/zh-TW/v5/asset/deposit/master-deposit-addr",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/deposit/set-deposit-acct",
+              "path": "/usa-docs/zh-TW/v5/asset/deposit/set-deposit-acct",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/deposit/sub-deposit-addr",
+              "path": "/usa-docs/zh-TW/v5/asset/deposit/sub-deposit-addr",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/deposit/sub-deposit-record",
+              "path": "/usa-docs/zh-TW/v5/asset/deposit/sub-deposit-record",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/exchange",
+              "path": "/usa-docs/zh-TW/v5/asset/exchange",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/sub-uid-list",
+              "path": "/usa-docs/zh-TW/v5/asset/sub-uid-list",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/transfer/create-inter-transfer",
+              "path": "/usa-docs/zh-TW/v5/asset/transfer/create-inter-transfer",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/transfer/inter-transfer-list",
+              "path": "/usa-docs/zh-TW/v5/asset/transfer/inter-transfer-list",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/transfer/transferable-coin",
+              "path": "/usa-docs/zh-TW/v5/asset/transfer/transferable-coin",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/transfer/unitransfer",
+              "path": "/usa-docs/zh-TW/v5/asset/transfer/unitransfer",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/transfer/unitransfer-list",
+              "path": "/usa-docs/zh-TW/v5/asset/transfer/unitransfer-list",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/withdraw/cancel-withdraw",
+              "path": "/usa-docs/zh-TW/v5/asset/withdraw/cancel-withdraw",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/withdraw/vasp-list",
+              "path": "/usa-docs/zh-TW/v5/asset/withdraw/vasp-list",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/withdraw/withdraw",
+              "path": "/usa-docs/zh-TW/v5/asset/withdraw/",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/withdraw/withdraw-address",
+              "path": "/usa-docs/zh-TW/v5/asset/withdraw/withdraw-address",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/asset/withdraw/withdraw-record",
+              "path": "/usa-docs/zh-TW/v5/asset/withdraw/withdraw-record",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/earn/create-order",
+              "path": "/usa-docs/zh-TW/v5/earn/create-order",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/earn/hourly-yield",
+              "path": "/usa-docs/zh-TW/v5/earn/hourly-yield",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/earn/order-history",
+              "path": "/usa-docs/zh-TW/v5/earn/order-history",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/earn/position",
+              "path": "/usa-docs/zh-TW/v5/earn/position",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/earn/product-info",
+              "path": "/usa-docs/zh-TW/v5/earn/product-info",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/earn/yield-history",
+              "path": "/usa-docs/zh-TW/v5/earn/yield-history",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/enum",
+              "path": "/usa-docs/zh-TW/v5/enum",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/error",
+              "path": "/usa-docs/zh-TW/v5/error",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/guide",
+              "path": "/usa-docs/zh-TW/v5/guide",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/intro",
+              "path": "/usa-docs/zh-TW/v5/intro"
+            },
+            {
+              "id": "v5/market/index-components",
+              "path": "/usa-docs/zh-TW/v5/market/index-components",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/market/instrument",
+              "path": "/usa-docs/zh-TW/v5/market/instrument",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/market/kline",
+              "path": "/usa-docs/zh-TW/v5/market/kline",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/market/order-price-limit",
+              "path": "/usa-docs/zh-TW/v5/market/order-price-limit",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/market/orderbook",
+              "path": "/usa-docs/zh-TW/v5/market/orderbook",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/market/recent-trade",
+              "path": "/usa-docs/zh-TW/v5/market/recent-trade",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/market/rpi-orderbook",
+              "path": "/usa-docs/zh-TW/v5/market/rpi-orderbook",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/market/tickers",
+              "path": "/usa-docs/zh-TW/v5/market/tickers",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/market/time",
+              "path": "/usa-docs/zh-TW/v5/market/time",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/order/amend-order",
+              "path": "/usa-docs/zh-TW/v5/order/amend-order",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/order/batch-amend",
+              "path": "/usa-docs/zh-TW/v5/order/batch-amend",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/order/batch-cancel",
+              "path": "/usa-docs/zh-TW/v5/order/batch-cancel",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/order/batch-place",
+              "path": "/usa-docs/zh-TW/v5/order/batch-place",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/order/cancel-all",
+              "path": "/usa-docs/zh-TW/v5/order/cancel-all",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/order/cancel-order",
+              "path": "/usa-docs/zh-TW/v5/order/cancel-order",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/order/create-order",
+              "path": "/usa-docs/zh-TW/v5/order/create-order",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/order/dcp",
+              "path": "/usa-docs/zh-TW/v5/order/dcp",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/order/execution",
+              "path": "/usa-docs/zh-TW/v5/order/execution",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/order/open-order",
+              "path": "/usa-docs/zh-TW/v5/order/open-order",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/order/order-list",
+              "path": "/usa-docs/zh-TW/v5/order/order-list",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/order/spot-borrow-quota",
+              "path": "/usa-docs/zh-TW/v5/order/spot-borrow-quota",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/rate-limit/rate-limit",
+              "path": "/usa-docs/zh-TW/v5/rate-limit/",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/rate-limit/rules-for-pros/apilimit-query",
+              "path": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-query",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/rate-limit/rules-for-pros/apilimit-query-all",
+              "path": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-query-all",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/rate-limit/rules-for-pros/apilimit-query-cap",
+              "path": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-query-cap",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/rate-limit/rules-for-pros/apilimit-set",
+              "path": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-set",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/rate-limit/rules-for-pros/introduction",
+              "path": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/introduction",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/rate-limit/rules-for-vips",
+              "path": "/usa-docs/zh-TW/v5/rate-limit/rules-for-vips",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/smp",
+              "path": "/usa-docs/zh-TW/v5/smp",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/user/apikey-info",
+              "path": "/usa-docs/zh-TW/v5/user/apikey-info",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/user/create-subuid",
+              "path": "/usa-docs/zh-TW/v5/user/create-subuid",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/user/create-subuid-apikey",
+              "path": "/usa-docs/zh-TW/v5/user/create-subuid-apikey",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/user/froze-subuid",
+              "path": "/usa-docs/zh-TW/v5/user/froze-subuid",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/user/fund-subuid-list",
+              "path": "/usa-docs/zh-TW/v5/user/fund-subuid-list",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/user/list-sub-apikeys",
+              "path": "/usa-docs/zh-TW/v5/user/list-sub-apikeys",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/user/modify-master-apikey",
+              "path": "/usa-docs/zh-TW/v5/user/modify-master-apikey",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/user/modify-sub-apikey",
+              "path": "/usa-docs/zh-TW/v5/user/modify-sub-apikey",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/user/page-subuid",
+              "path": "/usa-docs/zh-TW/v5/user/page-subuid",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/user/rm-master-apikey",
+              "path": "/usa-docs/zh-TW/v5/user/rm-master-apikey",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/user/rm-sub-apikey",
+              "path": "/usa-docs/zh-TW/v5/user/rm-sub-apikey",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/user/rm-subuid",
+              "path": "/usa-docs/zh-TW/v5/user/rm-subuid",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/user/subuid-list",
+              "path": "/usa-docs/zh-TW/v5/user/subuid-list",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/user/wallet-type",
+              "path": "/usa-docs/zh-TW/v5/user/wallet-type",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/websocket/private/dcp",
+              "path": "/usa-docs/zh-TW/v5/websocket/private/dcp",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/websocket/private/execution",
+              "path": "/usa-docs/zh-TW/v5/websocket/private/execution",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/websocket/private/fast-execution",
+              "path": "/usa-docs/zh-TW/v5/websocket/private/fast-execution",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/websocket/private/order",
+              "path": "/usa-docs/zh-TW/v5/websocket/private/order",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/websocket/private/wallet",
+              "path": "/usa-docs/zh-TW/v5/websocket/private/wallet",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/websocket/public/kline",
+              "path": "/usa-docs/zh-TW/v5/websocket/public/kline",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/websocket/public/order-price-limit",
+              "path": "/usa-docs/zh-TW/v5/websocket/public/order-price-limit",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/websocket/public/orderbook",
+              "path": "/usa-docs/zh-TW/v5/websocket/public/orderbook",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/websocket/public/orderbook-rpi",
+              "path": "/usa-docs/zh-TW/v5/websocket/public/orderbook-rpi",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/websocket/public/ticker",
+              "path": "/usa-docs/zh-TW/v5/websocket/public/ticker",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/websocket/public/trade",
+              "path": "/usa-docs/zh-TW/v5/websocket/public/trade",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/websocket/trade/guideline",
+              "path": "/usa-docs/zh-TW/v5/websocket/trade/guideline",
+              "sidebar": "v5SideBar"
+            },
+            {
+              "id": "v5/websocket/wss-authentication",
+              "path": "/usa-docs/zh-TW/v5/ws/connect",
+              "sidebar": "v5SideBar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "v5SideBar": {
+              "link": {
+                "path": "/usa-docs/zh-TW/v5/guide",
+                "label": "v5/guide"
+              }
+            },
+            "changelogSidebar": {
+              "link": {
+                "path": "/usa-docs/zh-TW/changelog/v5",
+                "label": "changelog/v5"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

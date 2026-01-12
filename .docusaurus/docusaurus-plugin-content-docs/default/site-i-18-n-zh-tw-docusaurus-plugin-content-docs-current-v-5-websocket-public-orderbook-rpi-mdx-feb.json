@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/public/orderbook-rpi",
+  "id": "v5/websocket/public/orderbook-rpi",
+  "title": "RPI 深度",
+  "description": "訂閱訂單簿推送, 包含RPI報價數據",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/websocket/public/orderbook-rpi.mdx",
+  "sourceDirName": "v5/websocket/public",
+  "slug": "/v5/websocket/public/orderbook-rpi",
+  "permalink": "/usa-docs/zh-TW/v5/websocket/public/orderbook-rpi",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1.1,
+  "frontMatter": {
+    "title": "RPI 深度",
+    "sidebar_label": "RPI 深度",
+    "sidebar_position": 1.1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "深度",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/public/orderbook"
+  },
+  "next": {
+    "title": "平台成交",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/public/trade"
+  }
+}

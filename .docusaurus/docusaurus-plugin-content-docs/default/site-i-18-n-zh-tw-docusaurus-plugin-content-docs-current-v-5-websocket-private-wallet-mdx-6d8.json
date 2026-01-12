@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/websocket/private/wallet",
+  "id": "v5/websocket/private/wallet",
+  "title": "錢包",
+  "description": "訂閱錢包數據推送",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/websocket/private/wallet.mdx",
+  "sourceDirName": "v5/websocket/private",
+  "slug": "/v5/websocket/private/wallet",
+  "permalink": "/usa-docs/zh-TW/v5/websocket/private/wallet",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "錢包",
+    "sidebar_label": "錢包",
+    "sidebar_position": 4
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "訂單",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/private/order"
+  },
+  "next": {
+    "title": "斷線保護",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/private/dcp"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/coin-info",
+  "id": "v5/asset/coin-info",
+  "title": "查詢幣種信息",
+  "description": "獲取幣種信息，包括鏈信息，是否可充可提",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/coin-info.mdx",
+  "sourceDirName": "v5/asset",
+  "slug": "/v5/asset/coin-info",
+  "permalink": "/usa-docs/zh-TW/v5/asset/coin-info",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13.5,
+  "frontMatter": {
+    "title": "查詢幣種信息",
+    "sidebar_label": "查詢幣種信息",
+    "sidebar_position": 13.5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢兌換訂單紀錄",
+    "permalink": "/usa-docs/zh-TW/v5/asset/exchange"
+  },
+  "next": {
+    "title": "查詢子帳號列表",
+    "permalink": "/usa-docs/zh-TW/v5/asset/sub-uid-list"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/rate-limit/rules-for-pros/apilimit-query-all",
+  "id": "v5/rate-limit/rules-for-pros/apilimit-query-all",
+  "title": "查詢所有 API 限速",
+  "description": "查詢所有 API 限速",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/rate-limit/rules-for-pros/apilimit-query-all.mdx",
+  "sourceDirName": "v5/rate-limit/rules-for-pros",
+  "slug": "/v5/rate-limit/rules-for-pros/apilimit-query-all",
+  "permalink": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-query-all",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "查詢所有 API 限速",
+    "sidebar_label": "查詢所有 API 限速",
+    "sidebar_position": 5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢 Ins level的速率限制上限和使用量",
+    "permalink": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-query-cap"
+  },
+  "next": {
+    "title": "枚舉定義",
+    "permalink": "/usa-docs/zh-TW/v5/enum"
+  }
+}

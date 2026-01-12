@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/create-subuid-apikey",
+  "id": "v5/user/create-subuid-apikey",
+  "title": "新建子帳戶的API Key",
+  "description": "給新建好的子帳戶創建新的API key。需使用母帳戶的API key。",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/user/create-subuid-apikey.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/create-subuid-apikey",
+  "permalink": "/usa-docs/zh-TW/v5/user/create-subuid-apikey",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "新建子帳戶的API Key",
+    "sidebar_label": "新建子帳戶的API Key",
+    "sidebar_position": 2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "新建子帳戶",
+    "permalink": "/usa-docs/zh-TW/v5/user/create-subuid"
+  },
+  "next": {
+    "title": "查詢子帳戶UID列表 (限制)",
+    "permalink": "/usa-docs/zh-TW/v5/user/subuid-list"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/balance/account-coin-balance",
+  "id": "v5/asset/balance/account-coin-balance",
+  "title": "Get Single Coin Balance",
+  "description": "Query the balance of a specific coin in a specific account type. Supports querying sub UID's balance.",
+  "source": "@site/docs/v5/asset/balance/account-coin-balance.mdx",
+  "sourceDirName": "v5/asset/balance",
+  "slug": "/v5/asset/balance/account-coin-balance",
+  "permalink": "/usa-docs/v5/asset/balance/account-coin-balance",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Get Single Coin Balance",
+    "sidebar_label": "Get Single Coin Balance",
+    "sidebar_position": 1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Sub UID",
+    "permalink": "/usa-docs/v5/asset/sub-uid-list"
+  },
+  "next": {
+    "title": "Get All Coins Balance",
+    "permalink": "/usa-docs/v5/asset/balance/all-balance"
+  }
+}

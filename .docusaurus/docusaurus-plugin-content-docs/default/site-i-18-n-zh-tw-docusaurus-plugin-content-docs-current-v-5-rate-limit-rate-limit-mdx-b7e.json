@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/rate-limit/rate-limit",
+  "id": "v5/rate-limit/rate-limit",
+  "title": "基礎頻率限制",
+  "description": "IP限頻",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/rate-limit/rate-limit.mdx",
+  "sourceDirName": "v5/rate-limit",
+  "slug": "/v5/rate-limit/",
+  "permalink": "/usa-docs/zh-TW/v5/rate-limit/",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "基礎頻率限制",
+    "sidebar_label": "基礎頻率限制",
+    "sidebar_position": 1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Websocket下單指南",
+    "permalink": "/usa-docs/zh-TW/v5/websocket/trade/guideline"
+  },
+  "next": {
+    "title": "VIP的接口限頻規則",
+    "permalink": "/usa-docs/zh-TW/v5/rate-limit/rules-for-vips"
+  }
+}

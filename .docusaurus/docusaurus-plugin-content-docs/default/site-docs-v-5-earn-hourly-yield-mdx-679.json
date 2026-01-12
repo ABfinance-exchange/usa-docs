@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/earn/hourly-yield",
+  "id": "v5/earn/hourly-yield",
+  "title": "Get Hourly Yield History",
+  "description": "API key needs \"Earn\" permission",
+  "source": "@site/docs/v5/earn/hourly-yield.mdx",
+  "sourceDirName": "v5/earn",
+  "slug": "/v5/earn/hourly-yield",
+  "permalink": "/usa-docs/v5/earn/hourly-yield",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Get Hourly Yield History",
+    "sidebar_label": "Get Hourly Yield History",
+    "sidebar_position": 6
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Yield History",
+    "permalink": "/usa-docs/v5/earn/yield-history"
+  },
+  "next": {
+    "title": "Connect",
+    "permalink": "/usa-docs/v5/ws/connect"
+  }
+}

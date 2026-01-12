@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/user/fund-subuid-list",
+  "id": "v5/user/fund-subuid-list",
+  "title": "查詢基金託管子帳戶列表",
+  "description": "託管機構可以通過這個接口查詢到基金託管子帳戶列表",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/user/fund-subuid-list.mdx",
+  "sourceDirName": "v5/user",
+  "slug": "/v5/user/fund-subuid-list",
+  "permalink": "/usa-docs/zh-TW/v5/user/fund-subuid-list",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3.2,
+  "frontMatter": {
+    "title": "查詢基金託管子帳戶列表",
+    "sidebar_label": "查詢基金託管子帳戶列表",
+    "sidebar_position": 3.2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢子帳戶UID列表 (無限制)",
+    "permalink": "/usa-docs/zh-TW/v5/user/page-subuid"
+  },
+  "next": {
+    "title": "凍結/解凍子帳戶",
+    "permalink": "/usa-docs/zh-TW/v5/user/froze-subuid"
+  }
+}

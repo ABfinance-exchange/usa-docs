@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/account/transaction-log",
+  "id": "v5/account/transaction-log",
+  "title": "Get Transaction Log",
+  "description": "Query for transaction logs in your Unified account. It supports up to 2 years worth of data.",
+  "source": "@site/docs/v5/account/transaction-log.mdx",
+  "sourceDirName": "v5/account",
+  "slug": "/v5/account/transaction-log",
+  "permalink": "/usa-docs/v5/account/transaction-log",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Get Transaction Log",
+    "sidebar_label": "Get Transaction Log (UTA)",
+    "sidebar_position": 3
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Transferable Amount (Unified)",
+    "permalink": "/usa-docs/v5/account/unified-trans-amnt"
+  },
+  "next": {
+    "title": "Get Account Info",
+    "permalink": "/usa-docs/v5/account/account-info"
+  }
+}

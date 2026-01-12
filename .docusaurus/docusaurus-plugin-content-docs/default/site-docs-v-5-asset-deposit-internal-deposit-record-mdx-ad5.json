@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/deposit/internal-deposit-record",
+  "id": "v5/asset/deposit/internal-deposit-record",
+  "title": "Get Internal Deposit Records (off-chain)",
+  "description": "Query deposit records within the platform. These transactions are not on the blockchain.",
+  "source": "@site/docs/v5/asset/deposit/internal-deposit-record.mdx",
+  "sourceDirName": "v5/asset/deposit",
+  "slug": "/v5/asset/deposit/internal-deposit-record",
+  "permalink": "/usa-docs/v5/asset/deposit/internal-deposit-record",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13.05,
+  "frontMatter": {
+    "title": "Get Internal Deposit Records (off-chain)",
+    "sidebar_label": "Get Internal Deposit Records (off-chain)",
+    "sidebar_position": 13.05
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Sub Deposit Records (on-chain)",
+    "permalink": "/usa-docs/v5/asset/deposit/sub-deposit-record"
+  },
+  "next": {
+    "title": "Get Master Deposit Address",
+    "permalink": "/usa-docs/v5/asset/deposit/master-deposit-addr"
+  }
+}

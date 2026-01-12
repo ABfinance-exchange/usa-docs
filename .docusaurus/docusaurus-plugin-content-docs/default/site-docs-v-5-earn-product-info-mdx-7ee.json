@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/earn/product-info",
+  "id": "v5/earn/product-info",
+  "title": "Get Product Info",
+  "description": "Does not need authentication.",
+  "source": "@site/docs/v5/earn/product-info.mdx",
+  "sourceDirName": "v5/earn",
+  "slug": "/v5/earn/product-info",
+  "permalink": "/usa-docs/v5/earn/product-info",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Get Product Info",
+    "sidebar_label": "Get Product Info",
+    "sidebar_position": 1
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Delete Sub API Key",
+    "permalink": "/usa-docs/v5/user/rm-sub-apikey"
+  },
+  "next": {
+    "title": "Stake / Redeem",
+    "permalink": "/usa-docs/v5/earn/create-order"
+  }
+}

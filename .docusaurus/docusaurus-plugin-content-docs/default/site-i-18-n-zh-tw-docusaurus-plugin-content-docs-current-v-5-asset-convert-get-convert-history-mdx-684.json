@@ -1,0 +1,19 @@
+{
+  "unversionedId": "v5/asset/convert/get-convert-history",
+  "id": "v5/asset/convert/get-convert-history",
+  "title": "查詢兌換歷史",
+  "description": "那些被確認的報價單, 不管最終狀態如何, 該接口都會返回",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/asset/convert/get-convert-history.mdx",
+  "sourceDirName": "v5/asset/convert",
+  "slug": "/v5/asset/convert/get-convert-history",
+  "permalink": "/usa-docs/zh-TW/v5/asset/convert/get-convert-history",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "查詢兌換歷史",
+    "sidebar_label": "查詢兌換歷史",
+    "sidebar_position": 5
+  }
+}

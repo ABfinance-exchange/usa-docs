@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/asset/withdraw/vasp-list",
+  "id": "v5/asset/withdraw/vasp-list",
+  "title": "Get Exchange Entity List",
+  "description": "This endpoint is particularly used for kyc=KOR users. When withdraw funds, you need to fill entity id.",
+  "source": "@site/docs/v5/asset/withdraw/vasp-list.mdx",
+  "sourceDirName": "v5/asset/withdraw",
+  "slug": "/v5/asset/withdraw/vasp-list",
+  "permalink": "/usa-docs/v5/asset/withdraw/vasp-list",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "title": "Get Exchange Entity List",
+    "sidebar_label": "Get Exchange Entity List (KOR)",
+    "sidebar_position": 15
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Get Withdrawal Records",
+    "permalink": "/usa-docs/v5/asset/withdraw/withdraw-record"
+  },
+  "next": {
+    "title": "Withdraw",
+    "permalink": "/usa-docs/v5/asset/withdraw/"
+  }
+}

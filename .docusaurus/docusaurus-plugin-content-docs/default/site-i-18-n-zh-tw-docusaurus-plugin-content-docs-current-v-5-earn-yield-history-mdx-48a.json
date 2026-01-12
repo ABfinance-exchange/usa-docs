@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/earn/yield-history",
+  "id": "v5/earn/yield-history",
+  "title": "查詢收益歷史",
+  "description": "您可以獲取過去3個月的收益歷史",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/earn/yield-history.mdx",
+  "sourceDirName": "v5/earn",
+  "slug": "/v5/earn/yield-history",
+  "permalink": "/usa-docs/zh-TW/v5/earn/yield-history",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "查詢收益歷史",
+    "sidebar_label": "查詢收益歷史",
+    "sidebar_position": 5
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "查詢理財持倉",
+    "permalink": "/usa-docs/zh-TW/v5/earn/position"
+  },
+  "next": {
+    "title": "查詢每小時收益歷史",
+    "permalink": "/usa-docs/zh-TW/v5/earn/hourly-yield"
+  }
+}

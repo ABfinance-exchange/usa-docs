@@ -1,0 +1,19 @@
+{
+  "unversionedId": "v5/asset/convert/convert-coin-list",
+  "id": "v5/asset/convert/convert-coin-list",
+  "title": "Get Convert Coin List",
+  "description": "Query for the list of coins you can convert to/from.",
+  "source": "@site/docs/v5/asset/convert/convert-coin-list.mdx",
+  "sourceDirName": "v5/asset/convert",
+  "slug": "/v5/asset/convert/convert-coin-list",
+  "permalink": "/usa-docs/v5/asset/convert/convert-coin-list",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Get Convert Coin List",
+    "sidebar_label": "Get Convert Coin List",
+    "sidebar_position": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/rate-limit/rules-for-pros/apilimit-set",
+  "id": "v5/rate-limit/rules-for-pros/apilimit-set",
+  "title": "設定 API 速率限制",
+  "description": "設定 API 速率限制",
+  "source": "@site/i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/rate-limit/rules-for-pros/apilimit-set.mdx",
+  "sourceDirName": "v5/rate-limit/rules-for-pros",
+  "slug": "/v5/rate-limit/rules-for-pros/apilimit-set",
+  "permalink": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-set",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "設定 API 速率限制",
+    "sidebar_label": "設定 API 速率限制",
+    "sidebar_position": 2
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "限頻介紹",
+    "permalink": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/introduction"
+  },
+  "next": {
+    "title": "查詢 API 速率限制",
+    "permalink": "/usa-docs/zh-TW/v5/rate-limit/rules-for-pros/apilimit-query"
+  }
+}

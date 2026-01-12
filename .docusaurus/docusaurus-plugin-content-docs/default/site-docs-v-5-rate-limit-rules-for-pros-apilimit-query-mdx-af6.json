@@ -1,0 +1,28 @@
+{
+  "unversionedId": "v5/rate-limit/rules-for-pros/apilimit-query",
+  "id": "v5/rate-limit/rules-for-pros/apilimit-query",
+  "title": "Get Rate Limit",
+  "description": "API rate limit: 50 req per second",
+  "source": "@site/docs/v5/rate-limit/rules-for-pros/apilimit-query.mdx",
+  "sourceDirName": "v5/rate-limit/rules-for-pros",
+  "slug": "/v5/rate-limit/rules-for-pros/apilimit-query",
+  "permalink": "/usa-docs/v5/rate-limit/rules-for-pros/apilimit-query",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Get Rate Limit",
+    "sidebar_label": "Get Rate Limit",
+    "sidebar_position": 3
+  },
+  "sidebar": "v5SideBar",
+  "previous": {
+    "title": "Set Rate Limit",
+    "permalink": "/usa-docs/v5/rate-limit/rules-for-pros/apilimit-set"
+  },
+  "next": {
+    "title": "Get Rate Limit Cap",
+    "permalink": "/usa-docs/v5/rate-limit/rules-for-pros/apilimit-query-cap"
+  }
+}
