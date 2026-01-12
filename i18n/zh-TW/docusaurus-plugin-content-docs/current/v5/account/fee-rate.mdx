@@ -1,0 +1,64 @@
+---
+title: 查詢手續費率
+sidebar_label: 查詢手續費率
+sidebar_position: 8
+---
+查詢交易手續費率
+
+### HTTP 請求
+GET `/v5/account/fee-rate`
+
+| 參數 | 是否必需 | 類型 | 說明|
+|:----- |:-------|:-----|------ |
+|category |**true** |string |產品類型. `spot`|
+|symbol |false |string |合約名稱. 僅`spot有效|
+
+### 響應參數
+| 參數 | 類型 | 說明|
+|:----- |:-----|----- |
+|category |string |產品類型. `spot`|
+|list |array |Object |
+|> symbol |string |合約名稱|
+|> baseCoin |string |交易幣種. `SOL`, `BTC`, `ETH` <ul><li>現貨總是返回`""`</li></ul>|
+|> takerFeeRate |string |吃單手續費率|
+|> makerFeeRate |string |掛單手續費率|
+
+
+---
+
+### 請求示例
+
+<Tabs groupId="programming-languages">
+<TabItem value="http" label="HTTP">
+
+```http
+GET /v5/account/fee-rate?symbol=ETHUSDT HTTP/1.1
+Host: api.abfinance.com
+X-BAPI-SIGN: XXXXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1676360412362
+X-BAPI-RECV-WINDOW: 5000
+```
+
+</TabItem>
+</Tabs>
+
+### 響應示例
+
+```json
+{
+    "retCode": 0,
+    "retMsg": "OK",
+    "result": {
+        "list": [
+            {
+                "symbol": "ETHUSDT",
+                "takerFeeRate": "0.0006",
+                "makerFeeRate": "0.0001"
+            }
+        ]
+    },
+    "retExtInfo": {},
+    "time": 1676360412576
+}
+```

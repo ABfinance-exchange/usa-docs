@@ -1,0 +1,123 @@
+---
+title: 創建委託單
+sidebar_label: 創建委託單
+sidebar_position: 1
+---
+本接口提供幣幣交易的訂單創建
+
+:::info
+- **支持的訂單類型 (`orderType`):**<br/>
+限價單: <code>orderType</code>=<i>Limit</i>, 需要指定訂單數量和價格.<br/>
+市價單: <code>orderType</code>=<i>Market</i>, 以平台市場內最優的價格一直執行到成交. 選擇市價單時，price 參數為空。在期貨交易系統，為了保護市價單產生嚴重的滑點，平台交易系統會將市價單轉為限價單進行撮合，如果市場價格轉限價時，超過滑點設置的閾值，該筆市場價格訂單將會被取消。滑點閾值是指訂單價格偏離最新成交價格的百分比，目前閾值設置為：BTC 合約3%，其他合約5%。
+
+- **支持的timeInForce策略:**<br/>
+`GTC` 一直有效至取消<br/>
+`IOC` 立即成交或取消<br/>
+`FOK` 完全成交或取消<br/>
+`PostOnly`: 被動委托類型，如果該訂單在提交時會被立即執行成交，它將被**取消**. 這樣做的目的是為了保護您的訂單在提交的過程中，如果因為場內的價格變化，而撮合系統無法委託該筆訂單到訂單簿，因此會被取消。針對 PostOnly 訂單類型，單筆訂單可提交的數量比其他類型的訂單更多，請參考該[接口](../market/instrument#)中的`lotSizeFilter > postOnlyMaxOrderQty`參數.<br/>
+`RPI`: 提升零售訂單價格流動訂單; 指定做市商允許下此類訂單; 本身具有post only屬性, 但是此訂單僅和來自網頁或者APP端的訂單成交
+
+- **如何創建條件單:**<br/>
+在提交訂單時，如果設置了**triggerPrice**，則該訂單會自動轉為條件單。另外條件單不佔用保證金，如果條件單觸發後，保證金不足，則該筆訂單會被取消。
+
+-  您可以在下單時設置止盈止損。
+
+- **訂單數量**: 訂單數量，只支持正數。
+
+- **訂單價格**: 下限價單，價格字段**必傳**。若您有倉位, 下單價格需要高於強平價. 對於設置價格的步長，請參閱該[接口](../market/instrument#)中的`priceFilter` > `tickSize`.
+
+- **用戶自定義訂單Id**: 最大長度不超過36個字符且唯一。您可以自定義設置的订单ID(`orderLinkId`)，我们会为您关联到平台系统的唯一订单ID，并把唯一订单ID在活动委托创建成功后一并返回给您（包括Websocket），您可以使用 平台 的订单ID 和 orderLinkId 去獲取和取消訂單，如果在參數輸入中同時輸入 orderId 和 orderLinkId，平台會優先以 orderId 為准來處理對應訂單.
+
+- **訂單持有上限:**<br/>
+**現貨:** 單帳戶單交易對: 總計支持500個掛單，包括最多持有30個止盈止損委託單和30個條件單委託單<br/>
+
+- **API限頻:**<br/>
+請參見[接口頻率限制表](../rate-limit#交易)，如需要提高請求頻率，請聯繫您對應的客戶經理或通過點擊<a href="https://www.abfinance.com/future-activity/zh-TW/institutional-services">這裡</a>提交
+
+- **風控限制提示:**<br/>
+Abfinance 將針對您的 API 請求進行統計監控，當單日 (UTC 0点 - UTC 24点) 單帳號（母帳號和子帳號整體運算）訂單總数超過一定上限，平台將保留提醒、警告，以及進行必要性限制的權利。
+使用API的客戶預設接受本條款並負有配合調整的義務。
+
+:::
+
+### HTTP請求
+POST `/v5/order/create`
+
+### 請求參數
+| 參數 | 是否必需 | 類型 | 說明|
+|:----- |:-------|:-----|------ |
+|category |**true** |string |產品類型 `spot`|
+|symbol |**true** |string |合約名稱|
+|side |**true** |string |`Buy`, `Sell`|
+|[orderType](../enum#ordertype) |**true** |string |訂單類型. `Market`, `Limit`|
+|qty |**true** |string |訂單數量 <ul><li>現貨: 可以通過設置`marketUnit`來表示市價單qty的單位, 市價買單默認是`quoteCoin`, 市價賣單默認是`baseCoin`</li></ul>|
+|marketUnit |false |string |**現貨交易**創建市價單時給入參`qty`指定的單位, 支持orderFilter=Order, tpslOrder 和 StopOrder<li>`baseCoin`: 比如, 買BTCUSDT, 則"qty"的單位是BTC</li><li>`quoteCoin`: 比如, 賣BTCUSDT, 則"qty"的單位是USDT</li>|
+|slippageToleranceType |false |string |市價單滑點容差類型, `TickSize`, `Percent`<ul><li>不支持止盈止損、條件單</li><li><b>TickSize</b>: <br/>限制買單最高價格 = ask1 + <code>slippageTolerance</code> x tickSize; <br/>限制賣單最低價格 = bid1 - <code>slippageTolerance</code> x tickSize</li><li><b>Percent</b>: <br/>限制買單最高價格 = ask1 x (1 + <code>slippageTolerance</code> x 0.01); <br/>限制賣單最低價格 = bid1 x (1 - `slippageTolerance` x 0.01)</li></ul>|
+|slippageTolerance |false |string |滑點容差數值 <li>`TickSize`: 範圍是[1, 10000], 僅整數</li><li>`Percent`: 範圍是[0.01, 10], 最多2位小數</li>|
+|price |false |string |訂單價格. <ul><li>市價單將會忽視該字段</li><li>請通過該[接口](../market/instrument#response-parameters)確認最低價格和精度要求</li></ul>|
+|orderFilter |false |string |指定訂單品種. `Order`: 普通單,`tpslOrder`: 止盈止損單,`StopOrder`: 條件單. 若不傳, 默認`Order`<br/>僅對現貨有效|
+|triggerPrice |false |string |<ul><li>對於現貨, 這是下止盈止損單或者條件單的觸發價格參數</li></ul>|
+|[timeInForce](../enum#timeinforce) |false |string |<ul><li>市價單，系統直接使用`IOC`</li><li>若不傳，默認使用`GTC`</li></ul>|
+|orderLinkId |false |string |用戶自定義訂單Id|
+|takeProfit |false |string |止盈價格 <li>支持現貨</li> |
+|stopLoss |false |string |止損價格 <li>支持現貨</li> |
+|[smpType](../enum#smptype) |false |string |Smp執行類型. [什麼是SMP?](../smp)|
+|tpLimitPrice |false |string |觸發止盈後轉換為限價單的價格 <ul><li>現貨: 參數必傳當創建訂單時帶了`takeProfit` 和 `tpOrderType=Limit`</li></ul>|
+|slLimitPrice |false |string |觸發止損後轉換為限價單的價格 <ul><li>現貨: 參數必傳當創建訂單時帶了`stopLoss` 和 `slOrderType=Limit`</li></ul>|
+|tpOrderType |false |string |止盈觸發後的訂單類型 <ul><li>現貨: <br/>`Market`: 當帶了參數"takeProfit", <br/>`Limit`: 當帶了參數"takeProfit" 和 "tpLimitPrice" </li></ul>|
+|slOrderType |false |string |止損觸發後的訂單類型 <ul><li>現貨: <br/>`Market`: 當帶了參數"stopLoss", <br/>`Limit`: 當帶了參數"stopLoss" 和 "slLimitPrice" </li></ul>|
+
+### 響應參數
+| 參數 | 類型 | 說明|
+|:----- |:-----|----- |
+|orderId |string |訂單ID |
+|orderLinkId |string |用戶自定義訂單ID |
+
+:::info
+ack僅表示請求被成功接受. 請使用websocket-order推送來確認訂單狀態
+:::
+
+
+---
+
+### 請求示例
+
+<Tabs groupId="programming-languages">
+<TabItem value="http" label="HTTP">
+
+```http
+POST /v5/order/create HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1672211928338
+X-BAPI-RECV-WINDOW: 5000
+Content-Type: application/json
+
+// 現貨下僅maker單
+{"category":"spot","symbol":"BTCUSDT","side":"Buy","orderType":"Limit","qty":"0.1","price":"15600","timeInForce":"PostOnly","orderLinkId":"spot-test-01","isLeverage":0,"orderFilter":"Order"}
+
+
+// 現貨市價單, qty為報價幣種金額
+{"category":"spot","symbol":"BTCUSDT","side":"Buy","orderType":"Market","qty":"200","timeInForce":"IOC","orderLinkId":"spot-test-04","isLeverage":0,"orderFilter":"Order"}
+
+```
+
+</TabItem>
+
+</Tabs>
+
+### 響應示例
+
+```json
+{
+    "retCode": 0,
+    "retMsg": "OK",
+    "result": {
+        "orderId": "1321003749386327552",
+        "orderLinkId": "spot-test-postonly"
+    },
+    "retExtInfo": {},
+    "time": 1672211918471
+}
+```

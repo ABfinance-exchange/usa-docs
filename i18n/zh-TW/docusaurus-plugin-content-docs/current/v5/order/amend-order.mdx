@@ -1,0 +1,87 @@
+---
+title: 修改委託單
+sidebar_label: 修改委託單
+sidebar_position: 2
+---
+:::info important
+您只能修改那些**未成交**或者**部分成交**的訂單。
+:::
+
+### HTTP請求
+POST `/v5/order/amend`
+
+### 請求參數
+| 參數 | 是否必需 | 類型 | 說明|
+|:----- |:-------|:-----|------ |
+|[category](../enum#category) |**true** |string |產品類型 `spot`|
+|symbol |**true** |string |合約名稱|
+|orderId |false |string |訂單Id. `orderId`和`orderLinkId`必傳其中一個|
+|orderLinkId |false |string |用戶自定義訂單Id. `orderId`和`orderLinkId`必傳其中一個 |
+|triggerPrice |false |string |<ul><li>對於現貨, 這是下止盈止損單或者條件單的觸發價格參數</li></ul>|
+|qty |false |string |修改後的訂單數量. 若不修改，請不要傳該字段|
+|price |false |string |修改後的訂單價格. 若不修改，請不要傳該字段|
+|takeProfit |false |string |修改後的止盈價格. 當傳"0"時, 表示取消當前訂單上設置的止盈. 若不修改，請不要傳該字段<br/>|
+|stopLoss |false |string |修改後的止損價格. 當傳"0"時, 表示取消當前訂單上設置的止損. 若不修改，請不要傳該字段<br/>|
+|[tpTriggerBy](../enum#triggerby) |false |string |止盈價格觸發類型. 若下單時未設置該值，則調用該接口修改止盈價格時，該字段**必傳**|
+|[slTriggerBy](../enum#triggerby) |false |string |止損價格觸發類型. 若下單時未設置該值，則調用該接口修改止損價格時，該字段**必傳**|
+|[triggerBy](../enum#triggerby) |false |string |觸發價格的觸發類型|
+|tpLimitPrice |false |string |觸發止盈後轉換為限價單的價格<br/>當且僅當原始訂單下單時創建的是部分止盈止損限價單, 本字段才有效<br/>|
+|slLimitPrice |false |string |觸發止損後轉換為限價單的價格<br/>當且僅當原始訂單下單時創建的是部分止盈止損限價單, 本字段才有效<br/>|
+
+:::info
+ack僅表示請求被成功接受. 請使用websocket-order推送來確認訂單狀態
+:::
+
+
+---
+
+### 響應參數
+| 參數 | 類型 | 說明|
+|:----- |:-----|----- |
+|orderId |string |訂單Id |
+|orderLinkId |string |用戶自定義訂單Id |
+
+### 請求示例
+
+<Tabs groupId="programming-languages">
+<TabItem value="http" label="HTTP">
+
+```http
+POST /v5/order/amend HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1672217108106
+X-BAPI-RECV-WINDOW: 5000
+Content-Type: application/json
+
+{
+    "category": "spot",
+    "symbol": "BTCUSDT",
+    "orderLinkId": "spot-004",
+    "triggerPrice": "1145",
+    "qty": "0.15",
+    "price": "1050",
+    "takeProfit": "0",
+    "stopLoss": "0"
+}
+```
+
+</TabItem>
+
+</Tabs>
+
+### 響應示例
+
+```json
+{
+    "retCode": 0,
+    "retMsg": "OK",
+    "result": {
+        "orderId": "c6f055d9-7f21-4079-913d-e6523a9cfffa",
+        "orderLinkId": "spot-004"
+    },
+    "retExtInfo": {},
+    "time": 1672217093461
+}
+```

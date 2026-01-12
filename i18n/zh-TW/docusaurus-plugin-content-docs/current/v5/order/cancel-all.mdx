@@ -1,0 +1,87 @@
+---
+title: 撤銷所有訂單
+sidebar_label: 撤銷所有訂單
+sidebar_position: 5
+---
+
+:::info
+- 支持按照symbol/baseCoin撤銷訂單，若您傳入了多個參數組合, 系統僅會處理其中一個參數，其中優先級為`symbol` > `baseCoin`.
+- **注意**: 當`category`=_spot_, 您可以不傳人任何參數，就能取消所有現貨的委託單 (默認普通單)。
+:::
+
+:::info
+**現貨**: 無限制<br/>
+:::
+
+### HTTP請求
+POST `/v5/order/cancel-all`
+
+### 請求參數
+| 參數 | 是否必需 | 類型 | 說明|
+|:----- |:-------|:-----|------ |
+|[category](../enum#category) |**true** |string |產品類型 `spot`|
+|symbol |false|string |合約名稱|
+|baseCoin |false|string |交易幣種 |
+|orderFilter |false |string |<ul><li>category=`spot`, 該字段可以傳: <br/>`Order`(普通單), `tpslOrder`(止盈止損單)<br/>`StopOrder`(條件單), `OcoOrder`<br/>`BidirectionalTpslOrder`(現貨雙向止盈止損訂單)<br/>若不傳, 則默認是撤掉`Order`單</li></ul>|
+
+
+---
+
+### 響應參數
+| 參數 | 類型 | 說明|
+|:----- |:-----|----- |
+|list |array |Object|
+|> orderId |string |訂單ID |
+|> orderLinkId |string |用戶自定義的訂單ID |
+|success |string |"1": 成功, "0": 失敗|
+
+:::info
+ack僅表示請求被成功接受. 請使用websocket-order推送來確認訂單狀態
+:::
+
+### 請求示例
+
+<Tabs groupId="programming-languages">
+<TabItem value="http" label="HTTP">
+
+```http
+POST /v5/order/cancel-all HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1672219779140
+X-BAPI-RECV-WINDOW: 5000
+Content-Type: application/json
+
+{
+  "category": "spot",
+  "symbol": "BTCUSDT"
+}
+```
+
+</TabItem>
+
+</Tabs>
+
+### 響應示例
+```json
+{
+    "retCode": 0,
+    "retMsg": "OK",
+    "result": {
+        "list": [
+            {
+                "orderId": "1616024329462743808",
+                "orderLinkId": "1616024329462743809"
+            },
+            {
+                "orderId": "1616024287544869632",
+                "orderLinkId": "1616024287544869633"
+            }
+        ],
+        "success": "1"
+    },
+    "retExtInfo": {},
+    "time": 1707381118116
+}
+```

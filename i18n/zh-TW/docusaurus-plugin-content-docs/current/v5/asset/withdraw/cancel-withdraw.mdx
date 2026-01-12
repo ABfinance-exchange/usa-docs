@@ -1,0 +1,55 @@
+---
+title: 撤銷提幣
+sidebar_label: 撤銷提幣
+sidebar_position: 17
+---
+
+### HTTP 請求
+POST `/v5/asset/withdraw/cancel`
+
+### 請求參數
+| 參數 | 是否必需 | 類型 | 說明|
+|:----- |:-------|:-----|------ |
+|id |**true** |string |提現Id |
+
+### 響應參數
+| 參數 | 類型 | 說明|
+|:----- |:-----|----- |
+|status |integer|`0`: 失敗. `1`: 成功 |
+
+### 請求示例
+
+<Tabs groupId="programming-languages">
+<TabItem value="http" label="HTTP">
+
+```http
+POST /v5/asset/withdraw/cancel HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1672197227732
+X-BAPI-RECV-WINDOW: 5000
+X-BAPI-SIGN: XXXXX
+Content-Type: application/json
+
+{
+    "id": "10197"
+}
+```
+
+</TabItem>
+
+</Tabs>
+
+### 響應示例
+
+```json
+{
+    "retCode": 0,
+    "retMsg": "success",
+    "result": {
+        "status": 1
+    },
+    "retExtInfo": {},
+    "time": 1672197228408
+}
+```
