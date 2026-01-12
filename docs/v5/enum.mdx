@@ -1,0 +1,446 @@
+---
+title: Enums Definitions
+sidebar_label: Enums Definitions
+---
+
+### locale
+* `de-DE`
+* `en-US`
+* `es-AR`
+* `es-ES`
+* `es-MX`
+* `fr-FR`
+* `kk-KZ`
+* `id-ID`
+* `uk-UA`
+* `ja-JP`
+* `ru-RU`
+* `th-TH`
+* `pt-BR`
+* `tr-TR`
+* `vi-VN`
+* `zh-TW`
+* `ar-SA`
+* `hi-IN`
+* `fil-PH`
+
+### announcementType
+* `new_crypto`
+* `latest_news`
+* `delistings`
+* `latest_activities`
+* `product_updates`
+* `maintenance_updates`
+* `new_fiat_listings`
+* `other`
+
+### announcementTag
+* `Spot`
+* `Derivatives`
+* `Spot Listings`
+* `BTC`
+* `ETH`
+* `Trading Bots`
+* `USDC`
+* `Leveraged Tokens`
+* `USDT`
+* `Margin Trading`
+* `Partnerships`
+* `Launchpad`
+* `Upgrades`
+* `ByVotes`
+* `Delistings`
+* `VIP`
+* `Futures`
+* `Institutions`
+* `Options`
+* `WEB3`
+* `Copy Trading`
+* `Earn`
+* `Savings`
+* `Dual Asset`
+* `Liquidity Mining`
+* `Shark Fin`
+* `Launchpool`
+* `NFT     GrabPic`
+* `Buy Crypto`
+* `P2P Trading`
+* `Fiat Deposit`
+* `Crypto Deposit`
+* `Спот`
+* `Спот лістинги`
+* `Торгові боти`
+* `Токени з кредитним плечем`
+* `Маржинальна торгівля`
+* `Партнерство`
+* `Оновлення`
+* `Делістинги`
+* `Ф'ючерси`
+* `Опціони`
+* `Копітрейдинг`
+* `Накопичення`
+* `Бівалютні інвестиції`
+* `Майнінг ліквідності`
+* `Купівля криптовалюти`
+* `P2P торгівля`
+* `Фіатні депозити`
+* `Криптодепозити`
+* `Копитрейдинг`
+* `Торговые боты`
+* `Деривативы`
+* `P2P`
+* `Спот листинги`
+* `Деривативи`
+* `MT4`
+* `Lucky Draw`
+* `Unified Trading Account`
+* `Єдиний торговий акаунт`
+* `Единый торговый аккаунт`
+* `Институциональный трейдинг`
+* `Інституціональний трейдинг`
+* `Делистинг`
+
+### category
+* `spot`
+
+### orderStatus
+_open status_
+* `New`&emsp;order has been placed successfully
+* `PartiallyFilled`
+* `Untriggered`&emsp;Conditional orders are created
+
+_closed status_
+* `Rejected`
+* `PartiallyFilledCanceled`
+* `Filled`
+* `Cancelled`
+* `Triggered`&emsp;instantaneous state for conditional orders from Untriggered to New
+* `Deactivated`&emsp;tp/sl order, conditional order, OCO order are cancelled before they are triggered
+
+### timeInForce
+* `GTC`&emsp;GoodTillCancel
+* `IOC`&emsp;ImmediateOrCancel
+* `FOK`&emsp;FillOrKill
+* <a href="https://www.abfinance.com/en/help-center/article/Post-Only-Order">PostOnly</a>
+* <a href="https://www.abfinance.com/en/help-center/article/Retail-Price-Improvement-RPI-Order">RPI</a>&emsp;features:<ul><li><b>Exclusive Matching</b>: Only match non-algorithmic users; no execution against orders from Open API.</li>
+<li><b>Post-Only Mechanism</b>: Act as maker orders, adding liquidity</li>
+<li><b>Lower Priority</b>: Execute after non-RPI orders at the same price level.</li>
+<li><b>Limited Access</b>: Initially for select market makers across multiple pairs.</li>
+<li><b>Order Book Updates</b>: Excluded from API but displayed on the GUI.</li></ul>
+
+### createType
+* `CreateByUser`
+* `CreateByAdminClosing`
+* `CreateByMmRateClose`&emsp;Order created by Mm rate close function - web/app
+* `CreateByMartingaleBot`&emsp;Order created by Martingale bot - web/app
+* `CloseByMartingaleBot`&emsp;Order closed by Martingale bot - web/app
+* `CreateByIceBerg`&emsp;Order created by Ice berg strategy - web/app
+* `CreateByArbitrage`&emsp;Order created by arbitrage - web/app
+
+### execType
+* `Trade`
+* `UNKNOWN`&emsp;May be returned by a classic account. Cannot query by this type
+
+### orderType
+* `Market`
+* `Limit`
+
+### stopOrderType
+* `TakeProfit`
+* `StopLoss`
+* `Stop`
+* `PartialTakeProfit`
+* `PartialStopLoss`
+* `tpslOrder`&emsp;TP/SL order
+* `OcoOrder`&emsp;Oco order
+* `BidirectionalTpslOrder`&emsp;Spot bidirectional tpsl order
+
+### tickDirection
+* `PlusTick`&emsp;price rise
+* `ZeroPlusTick`&emsp;trade occurs at the same price as the previous trade, which occurred at a price higher than that for the trade preceding it
+* `MinusTick`&emsp;price drop
+* `ZeroMinusTick`&emsp;trade occurs at the same price as the previous trade, which occurred at a price lower than that for the trade preceding it
+
+### interval
+* `1` `3` `5` `15` `30` `60` `120` `240` `360` `720`&emsp;minute
+* `D`&emsp;day
+* `W`&emsp;week
+* `M`&emsp;month
+
+### intervalTime
+* `5min` `15min` `30min`&emsp;minute
+* `1h` `4h`&emsp;hour
+* `1d`&emsp;day
+
+### rejectReason
+* `EC_NoError`
+* `EC_Others`
+* `EC_UnknownMessageType`
+* `EC_MissingClOrdID`
+* `EC_MissingOrigClOrdID`
+* `EC_ClOrdIDOrigClOrdIDAreTheSame`
+* `EC_DuplicatedClOrdID`
+* `EC_OrigClOrdIDDoesNotExist`
+* `EC_TooLateToCancel`
+* `EC_UnknownOrderType`
+* `EC_UnknownSide`
+* `EC_UnknownTimeInForce`
+* `EC_WronglyRouted`
+* `EC_MarketOrderPriceIsNotZero`
+* `EC_LimitOrderInvalidPrice`
+* `EC_NoEnoughQtyToFill`
+* `EC_NoImmediateQtyToFill`&emsp;a maker could be found to fill your order
+* `EC_PerCancelRequest`
+* `EC_MarketOrderCannotBePostOnly`
+* `EC_PostOnlyWillTakeLiquidity`
+* `EC_CancelReplaceOrder`
+* `EC_InvalidSymbolStatus`
+* `EC_CancelForNoFullFill`
+* `EC_BySelfMatch`
+* `EC_QtyCannotBeZero`
+* `EC_MarketOrderNoSupportTIF`
+* `EC_ReachMaxTradeNum`
+* `EC_InvalidPriceScale`
+* `EC_BitIndexInvalid`
+* `EC_StopBySelfMatch`
+* `EC_InvalidSmpType`
+* `EC_CancelByMMP`
+* `EC_InvalidUserType`
+* `EC_InvalidMirrorOid`
+* `EC_InvalidMirrorUid`
+* `EC_EcInvalidQty`
+* `EC_InvalidAmount`
+* `EC_LoadOrderCancel`
+* `EC_MarketQuoteNoSuppSell`
+* `EC_DisorderOrderID`
+* `EC_InvalidBaseValue`
+* `EC_LoadOrderCanMatch`
+* `EC_SecurityStatusFail`
+* `EC_ReachRiskPriceLimit`
+* `EC_OrderNotExist`
+* `EC_CancelByOrderValueZero`&emsp;order cancelled as its remaining value is zero
+* `EC_CancelByMatchValueZero`&emsp;order cancelled as the order it matched with has a remaining value of zero
+* `EC_ReachMarketPriceLimit`
+
+### accountType
+* `UNIFIED`&emsp;Unified Trading Account
+* `FUND`&emsp;Funding Account
+
+### transferStatus
+* `SUCCESS`
+* `PENDING`
+* `FAILED`
+
+### depositStatus
+* `0`&emsp;unknown
+* `1`&emsp;toBeConfirmed
+* `2`&emsp;processing
+* `3`&emsp;success (finalised status of a success deposit)
+* `4`&emsp;deposit failed
+* `10011`&emsp;pending to be credited to funding pool
+* `10012`&emsp;Credited to funding pool successfully
+
+### withdrawStatus
+* `SecurityCheck`
+* `Pending`
+* `success`
+* `CancelByUser`
+* `Reject`
+* `Fail`
+* `BlockchainConfirmed`
+* `MoreInformationRequired`
+* `Unknown`&emsp;a rare status
+
+### triggerBy
+* `LastPrice`
+* `IndexPrice`
+* `MarkPrice`
+
+### cancelType
+* `CancelByUser`
+* `CancelByAdmin`
+* `CancelByTpSlTsClear`&emsp;TP/SL order cancelled when the position is cleared
+* `CancelBySmp`&emsp;cancelled by <a href="https://ABfinance-exchange.github.io/docs/v5/smp">SMP</a>
+* `CancelByDCP`&emsp;cancelled by DCP triggering
+* `CancelByOCOTpCanceledBySlTriggered`&emsp;The take profit order was canceled due to the triggering of the stop loss
+* `CancelByOCOSlCanceledByTpTriggered`&emsp;The stop loss order was canceled due to the triggering of the take profit
+
+### optionPeriod
+* BTC: `7`,`14`,`21`,`30`,`60`,`90`,`180`,`270`days
+* ETH: `7`,`14`,`21`,`30`,`60`,`90`,`180`,`270`days
+* SOL: `7`,`14`,`21`,`30`,`60`,`90`days
+
+### dataRecordingPeriod
+* `5min` `15min` `30min`&emsp;minute
+* `1h` `4h`&emsp;hour
+* `4d`&emsp;day
+
+
+### status
+* `Trading`
+
+### symbolType
+* `innovation`
+* `adventure`
+* `xstocks`
+
+### type(uta-translog)
+* `TRANSFER_IN`&emsp;Assets that transferred into Unified wallet
+* `TRANSFER_OUT`&emsp;Assets that transferred out from Unified wallet
+* `TRADE`
+* `LIQUIDATION`
+* `AIRDROP`
+* `BONUS`&emsp;Bonus claimed
+* `BONUS_RECOLLECT`&emsp;Bonus expired
+* `FEE_REFUND`&emsp;Trading fee refunded
+* `INTEREST`&emsp;Interest occurred due to borrowing
+* `CURRENCY_BUY`&emsp;Currency convert, and the liquidation for borrowing asset(UTA loan)
+* `CURRENCY_SELL`&emsp;Currency convert, and the liquidation for borrowing asset(UTA loan)
+* `BORROWED_AMOUNT_INS_LOAN`
+* `PRINCIPLE_REPAYMENT_INS_LOAN`
+* `INTEREST_REPAYMENT_INS_LOAN`
+* `AUTO_SOLD_COLLATERAL_INS_LOAN`&emsp;the liquidation for borrowing asset(INS loan)
+* `AUTO_BUY_LIABILITY_INS_LOAN`&emsp;the liquidation for borrowing asset(INS loan)
+* `AUTO_PRINCIPLE_REPAYMENT_INS_LOAN`
+* `AUTO_INTEREST_REPAYMENT_INS_LOAN`
+* `TRANSFER_IN_INS_LOAN`&emsp;Transfer In when in the liquidation of OTC loan
+* `TRANSFER_OUT_INS_LOAN`&emsp;Transfer Out when in the liquidation of OTC loan
+* `SPOT_REPAYMENT_SELL`&emsp;One-click repayment currency sell
+* `SPOT_REPAYMENT_BUY`&emsp;One-click repayment currency buy
+* `TOKENS_SUBSCRIPTION`&emsp;Spot leverage token subscription
+* `TOKENS_REDEMPTION`&emsp;Spot leverage token redemption
+* `AUTO_DEDUCTION`&emsp;Asset auto deducted by system (roll back)
+* `FLEXIBLE_STAKING_SUBSCRIPTION`&emsp;Byfi flexible stake subscription
+* `FLEXIBLE_STAKING_REDEMPTION`&emsp;Byfi flexible stake redemption
+* `FIXED_STAKING_SUBSCRIPTION`&emsp;Byfi fixed stake subscription
+* `FLEXIBLE_STAKING_REFUND`&emsp;Byfi flexiable stake refund
+* `FIXED_STAKING_REFUND`&emsp;Byfi fixed stake refund
+* `PREMARKET_TRANSFER_OUT`
+* `PREMARKET_DELIVERY_SELL_NEW_COIN`
+* `PREMARKET_DELIVERY_BUY_NEW_COIN`
+* `PREMARKET_DELIVERY_PLEDGE_PAY_SELLER`
+* `PREMARKET_DELIVERY_PLEDGE_BACK`
+* `PREMARKET_ROLLBACK_PLEDGE_BACK`
+* `PREMARKET_ROLLBACK_PLEDGE_PENALTY_TO_BUYER`
+* `CUSTODY_NETWORK_FEE`&emsp;fireblocks business
+* `CUSTODY_SETTLE_FEE`&emsp;fireblocks business
+* `CUSTODY_LOCK`&emsp;fireblocks / copper business
+* `CUSTODY_UNLOCK`&emsp;fireblocks business
+* `CUSTODY_UNLOCK_REFUND`&emsp;fireblocks business
+* `LOANS_BORROW_FUNDS`&emsp;crypto loan
+* `LOANS_PLEDGE_ASSET`&emsp;crypto loan repayment
+* `BONUS_TRANSFER_IN`
+* `BONUS_TRANSFER_OUT`
+* `PEF_TRANSFER_IN`
+* `PEF_TRANSFER_OUT`
+* `PEF_PROFIT_SHARE`
+* `ONCHAINEARN_SUBSCRIPTION`&emsp;tranfer out for on chain earn
+* `ONCHAINEARN_REDEMPTION`&emsp;tranfer in for on chain earn
+* `ONCHAINEARN_REFUND`&emsp;tranfer in for on chain earn failed
+* `STRUCTURE_PRODUCT_SUBSCRIPTION`&emsp;tranfer out for structure product
+* `STRUCTURE_PRODUCT_REFUND`&emsp;tranfer in for structure product
+* `CLASSIC_WEALTH_MANAGEMENT_SUBSCRIPTION`&emsp;tranfer out for classic wealth management
+* `PREMIMUM_WEALTH_MANAGEMENT_SUBSCRIPTION`&emsp;tranfer in for classic wealth management
+* `PREMIMUM_WEALTH_MANAGEMENT_REFUND`&emsp;tranfer in for classic wealth management refund
+* `LIQUIDITY_MINING_SUBSCRIPTION`&emsp;tranfer out for liquidity mining
+* `LIQUIDITY_MINING_REFUND`&emsp;tranfer in for liquidity mining
+* `PWM_SUBSCRIPTION`&emsp;tranfer out for PWM
+* `PWM_REFUND`&emsp;tranfer in for PWM
+* `DEFI_INVESTMENT_SUBSCRIPTION`&emsp;tranfer out for DEFI subscription
+* `DEFI_INVESTMENT_REFUND`&emsp;transfer in for DEFI refund
+* `DEFI_INVESTMENT_REDEMPTION`&emsp;tranfer in for DEFI redemption
+* `INSTITUTION_LOAN_IN`&emsp;Borrowed Amount (INS Loan)
+* `INSTITUTION_PAYBACK_PRINCIPAL_OUT`&emsp;Principal repayment (INS Loan)
+* `INSTITUTION_PAYBACK_INTEREST_OUT`&emsp;Interest repayment (INS Loan) 
+* `INSTITUTION_EXCHANGE_SELL`&emsp;Auto sold collateral (INS Loan)
+* `INSTITUTION_EXCHANGE_BUY`&emsp;Auto buy liability (INS Loan)
+* `INSTITUTION_LIQ_PRINCIPAL_OUT`&emsp;Auto principal repayment (INS Loan)
+* `INSTITUTION_LIQ_INTEREST_OUT`&emsp;Auto interest repayment (INS Loan)
+* `INSTITUTION_LOAN_TRANSFER_IN`&emsp;Transfer in (INS Loan)
+* `INSTITUTION_LOAN_TRANSFER_OUT`&emsp;Transfer out (INS Loan)
+* `INSTITUTION_LOAN_WITHOUT_WITHDRAW`&emsp;Transfer out (INS Loan)
+* `INSTITUTION_LOAN_RESERVE_IN`&emsp;Reserve fund in (INS Loan)
+* `INSTITUTION_LOAN_RESERVE_OUT`&emsp;Reserve fund out (INS Loan)
+* `SPREAD_FEE_OUT`&emsp;Spread fee for EU Broker
+* `PLATFORM_TOKEN_MNT_LIQRECALLEDMMNT`&emsp;Recall MNT
+* `PLATFORM_TOKEN_MNT_LIQRETURNEDMNT`&emsp;Return MNT
+* `BORROW`&emsp;Manual loan borrow and auto loan borrow
+* `REPAY`&emsp;Manual loan repay and auto loan repay
+* `BROKER_ABACCOUNT_FEE`&emsp;Borker AB fee deduction
+* `EARNING_REDEMPTION_SELL`
+* `EARNING_REDEMPTION_BUY`
+* `DBS_CASH_OUT`
+* `DBS_CASH_IN`
+* `DBS_CASH_OUT_TR`
+* `DBS_CASH_IN_TR`
+* `CUSTODY_CASH_RECOVER_TR`
+* `ALPHA_SMALL_TOKEN_REFUND`
+
+### unifiedMarginStatus
+* `5`&emsp;Unified trading account 2.0
+* `6`&emsp;Unified trading account 2.0 (pro version)
+
+### convertAccountType
+* `eb_convert_uta`&emsp;Unified Trading Account
+* `eb_convert_funding`&emsp;Funding Account
+
+### 
+_Spot_:
+* `BTCUSDT`
+* `ETHUSDC`
+### vipLevel
+* No VIP
+* VIP-1
+* VIP-2
+* VIP-3
+* VIP-4
+* VIP-5
+* VIP-Supreme
+* PRO-1
+* PRO-2
+* PRO-3
+* PRO-4
+* PRO-5
+* PRO-6
+
+### adlRankIndicator
+* `0`&emsp;default value of empty position
+* `1`
+* `2`
+* `3`
+* `4`
+* `5`
+
+### smpType
+* default: `None`
+* `CancelMaker`
+* `CancelTaker`
+* `CancelBoth`
+
+### extraFees.feeType
+* `UNKNOWN`
+* `TAX`&emsp;Government tax. Only for Indonesian site
+* `CFX`&emsp;Indonesian foreign exchange tax. Only for Indonesian site
+* `WHT`&emsp;EU withholding tax. Only for EU site
+* `GST`&emsp;Indian GST tax. Only for kyc=Indian users
+* `VAT`&emsp;ARE VAT tax. Only for kyc=ARE users
+
+### extraFees.subFeeType
+* `UNKNOWN`
+* `TAX_PNN`&emsp;Tax fee, fiat currency to digital currency. Only for Indonesian site
+* `TAX_PPH`&emsp;Tax fee, digital currency to fiat currency. Only for Indonesian site
+* `CFX_FIEE`&emsp;CFX fee, fiat currency to digital currency. Only for Indonesian site
+* `AUT_WITHHOLDING_TAX`&emsp;EU site withholding tax. Only for EU site
+* `IND_GST`&emsp;Indian GST tax. Only for kyc=Indian users
+* `ARE_VAT`&emsp;ARE VAT tax. Only for kyc=ARE users
+
+### product
+* `2`&emsp;Spot
+
+
+### env
+* `1`&emsp;Production
+* `2`&emsp;Production Demo service
+
+### bizType
+* `SPOT`

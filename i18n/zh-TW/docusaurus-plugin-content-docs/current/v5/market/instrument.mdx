@@ -1,0 +1,193 @@
+---
+title: 查詢可交易產品的規格信息
+sidebar_label: 查詢可交易產品的規格信息
+sidebar_position: 4.5
+---
+
+查詢全站可交易產品的基礎配置規則信息
+> **覆蓋範圍: 現貨**
+
+:::caution
+* 現貨不支持翻頁，因此`limit`, `cusor`無效.
+* 在極端市場波動期間, 此介面可能會出現延遲增加或資料傳遞暫時延遲的情況
+:::
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+### HTTP請求
+GET `/v5/market/instruments-info`
+
+### 請求參數
+| 參數 | 是否必需 | 類型 | 說明|
+|:----- |:-------|:-----|------ |
+|[category](../enum#category) |<b>true</b> |string |產品類型. `spot`|
+|symbol |false |string |合約名稱|
+|[symbolType](../enum#symboltype) |false |string |交易對所屬區域|
+|[status](../enum#status) |false |string |交易對狀態篩選 <ul><li>現貨 僅有`Trading`狀態</li></ul>|
+|limit |false |integer |每頁數量限制. [`1`, `1000`]. 默認: `500`|
+|cursor |false |string |游標，用於翻頁|
+
+### 響應參數
+<Tabs groupId="market-category">
+
+
+<TabItem value="spot" label="Spot">
+    <table border="0.8">
+        <tr>
+            <th>參數</th><th>類型</th><th>說明</th>
+        </tr>
+        <tr>
+            <td>category</td><td>string</td><td>產品類型</td>
+        </tr>
+        <tr>
+            <td>list</td><td>array</td><td>Object</td>
+        </tr>
+        <tr>
+            <td>> symbol</td><td>string</td><td>合約名稱 </td>
+        </tr>
+        <tr>
+            <td>> baseCoin</td><td>string</td><td>交易幣種 </td>
+        </tr>
+        <tr>
+            <td>> quoteCoin</td><td>string</td><td>報價幣種 </td>
+        </tr>
+        <tr>
+            <td>> innovation</td><td>string</td><td>已廢棄, 請參照<code>symbolType</code></td>
+        </tr>
+        <tr>
+            <td>> <a href="../enum#symboltype">symbolType</a></td><td>string</td><td> 交易對所屬區域</td>
+        </tr>
+        <tr>
+            <td>> <a href="../enum#status">status</a></td><td>string</td><td>合約狀態 </td>
+        </tr>
+        <tr>
+            <td>> <a href="../enum#margintrading">marginTrading</a></td><td>string</td><td>該幣對是否支持槓桿交易 <ul><li>該字段僅用於說明不同帳戶類型下某個幣對是否支持槓桿交易</li><li>您可能會遇到某個幣對支持槓桿交易, 但是不支持單邊買入或者賣出, 這種情況下您需要前往<a href="/v5/account/collateral-info">查詢抵押品信息 (UTA)</a>確認目標幣種是否可借貸</li></ul></td>
+        </tr>
+         <tr>
+            <td>> stTag</td><td>string</td><td>幣對是否存在. <code>0</code>: 否, <code>1</code>: 是 </td>
+        </tr>
+        <tr>
+            <td>> lotSizeFilter</td><td>Object</td><td>數量屬性 </td>
+        </tr>
+        <tr>
+            <td>>> basePrecision</td><td>string</td><td>交易幣種精度 </td>
+        </tr>
+        <tr>
+            <td>>> quotePrecision</td><td>string</td><td>報價幣種精度 </td>
+        </tr>
+        <tr>
+            <td>>> minOrderQty</td><td>string</td><td>單筆訂單最小下單量, 已廢棄, 不再檢查<code>minOrderQty</code>，而是檢查<code>minOrderAmt</code></td>
+        </tr>
+        <tr>
+            <td>>> maxOrderQty</td><td>string</td><td>單筆訂單最大下單量, 已廢棄, 請基於訂單類型參考<code>maxLimitOrderQty</code>, <code>maxMarketOrderQty</code> </td>
+        </tr>
+        <tr>
+            <td>>> minOrderAmt</td><td>string</td><td>單筆訂單最小訂單額 </td>
+        </tr>
+        <tr>
+            <td>>> maxOrderAmt</td><td>string</td><td>單筆訂單最大訂單額, 已廢棄, 不再檢查 <code>maxOrderAmt</code>，而是檢查 <code>maxLimitOrderQty</code> 和 <code>maxMarketOrderQty</code></td>
+        </tr>
+         <tr>
+            <td>>> maxLimitOrderQty</td><td>string</td><td>單筆限價訂單最大下單量 <ul><li>被動委託(Post-Only)與零售價格優化(RPI)的最大限價訂單下單量為5x <code>maxLimitOrderQty</code></li></ul></td>
+        </tr>
+         <tr>
+            <td><nobr>>> maxMarketOrderQty</nobr></td><td>string</td><td>單筆市價訂單最大下單量 </td>
+        </tr>
+         <tr>
+            <td>>> postOnlyMaxLimitOrderSize </td><td>string</td><td>被動委託(Post-Only)與零售價格優化(RPI)的最大限價單規模</td>
+        </tr>
+        <tr>
+            <td>> priceFilter</td><td>Object</td><td>價格屬性 </td>
+        </tr>
+        <tr>
+            <td>>> tickSize</td><td>string</td><td>修改訂單的步長 </td>
+        </tr>
+        <tr>
+            <td>> riskParameters</td><td>Object</td><td>限價單價格風控參數</td>
+        </tr>
+        <tr>
+            <td>>> priceLimitRatioX</td><td>string</td><td>參數 X</td>
+        </tr>
+        <tr>
+            <td>>> priceLimitRatioY</td><td>string</td><td>參數 Y</td>
+        </tr>
+    </table>
+</TabItem>
+</Tabs>
+
+
+---
+
+### 請求示例
+
+<Tabs groupId="market-category">
+
+<TabItem value="spot" label="Spot">
+
+<Tabs groupId="programming-languages">
+<TabItem value="http" label="HTTP">
+
+```http
+GET /v5/market/instruments-info?category=spot&symbol=BTCUSDT HTTP/1.1
+Host: api-testnet.abfinance.com
+```
+
+
+</TabItem>
+</Tabs>
+</TabItem>
+</Tabs>
+
+
+### 響應示例
+
+<Tabs groupId="market-category">
+
+<TabItem value="spot" label="Spot">
+
+```json
+{
+    "retCode": 0,
+    "retMsg": "OK",
+    "result": {
+        "category": "spot",
+        "list": [
+            {
+                "symbol": "BTCUSDT",
+                "baseCoin": "BTC",
+                "quoteCoin": "USDT",
+                "innovation": "0",
+                "status": "Trading",
+                "marginTrading": "utaOnly",
+                "stTag": "0",
+                "lotSizeFilter": {
+                    "basePrecision": "0.000001",
+                    "quotePrecision": "0.0000001",
+                    "minOrderQty": "0.000011",
+                    "maxOrderQty": "83",
+                    "minOrderAmt": "5",
+                    "maxOrderAmt": "8000000",
+                    "maxLimitOrderQty": "83",
+                    "maxMarketOrderQty": "41.5",
+                    "postOnlyMaxLimitOrderSize":"60000"
+                },
+                "priceFilter": {
+                    "tickSize": "0.1"
+                },
+                "riskParameters": {
+                    "priceLimitRatioX": "0.005",
+                    "priceLimitRatioY": "0.01"
+                },
+                "symbolType": ""
+            }
+        ]
+    },
+    "retExtInfo": {},
+    "time": 1760027412300
+}
+```
+
+</TabItem>
+</Tabs>
+

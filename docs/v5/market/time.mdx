@@ -1,0 +1,54 @@
+---
+title: Get Server Time
+sidebar_label: Get Server Time
+sidebar_position: 0.5
+---
+
+:::info
+* During periods of extreme market volatility, this interface may experience increased latency or temporary delays in data delivery
+:::
+
+### HTTP Request
+GET `/v5/market/time`
+
+### Request Parameters
+None
+
+### Response Parameters
+| Parameter | Type | Comments|
+|:----- |:-----|----- |
+| timeSecond | string | Server timestamp (sec)  |
+| timeNano | string | Server timestamp (nano)  |
+
+
+---
+
+### Request Example
+
+<Tabs groupId="programming-languages">
+<TabItem value="http" label="HTTP">
+
+```http
+GET /v5/market/time HTTP/1.1
+Host: api-testnet.abfinance.com
+
+```
+
+</TabItem>
+
+</Tabs>
+
+### Response Example
+
+```json
+{
+    "retCode": 0,
+    "retMsg": "OK",
+    "result": {
+        "timeSecond": "1688639403",
+        "timeNano": "1688639403423213947"
+    },
+    "retExtInfo": {},
+    "time": 1688639403423
+}
+```
