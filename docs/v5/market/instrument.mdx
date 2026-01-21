@@ -62,7 +62,7 @@ GET `/v5/market/instruments-info`
             <td>> <a href="../enum#status">status</a></td><td>string</td><td>Instrument status </td>
         </tr>
         <tr>
-            <td>> <a href="../enum#margintrading">marginTrading</a></td><td>string</td><td>Whether or not this symbol supports margin trading<ul><li>This is to identify if the symbol supports margin trading under different account modes</li><li>You may find some symbols do not support margin buy or margin sell, so you need to go to <a href="/v5/account/collateral-info">Collateral Info (UTA)</a> to check if that coin is borrowable</li><li>When the lending pool has insufficient balance to lend out funds (can happen during big market movements) then this will switch to <code>none</code> until there is sufficient balance to re-enable margin trading</li></ul></td>
+            <td>> <a href="../enum#margintrading">marginTrading</a></td><td>string</td><td>Whether or not this symbol supports margin trading</td>
         </tr>
          <tr>
             <td>> stTag</td><td>string</td><td>Whether or not it has an special treatment label. <code>0</code>: false, <code>1</code>: true </td>
