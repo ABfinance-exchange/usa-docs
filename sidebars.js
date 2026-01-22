@@ -20,7 +20,6 @@ const sidebars = {
 
   v5SideBar: [
     'v5/guide',
-    'v5/announcement',
     'v5/smp',
     {
       type: 'category',
@@ -57,7 +56,6 @@ const sidebars = {
       type: 'category',
       label: 'Asset',
       items: [
-        'v5/asset/exchange',
         'v5/asset/coin-info',
         'v5/asset/sub-uid-list',
         {
@@ -173,7 +171,7 @@ const sidebars = {
             }
           ]
         }
-        
+
       ]
     },
     {
