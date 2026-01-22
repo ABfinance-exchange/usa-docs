@@ -6,8 +6,6 @@ sidebar_position: 1
 獲取統一帳戶錢包餘額, 查詢各個幣種的資產信息. 默認不返回資產或負債為0的幣種信息。
 
 :::info
-* 在UTA手動借貸新邏輯下，現貨負債對應的`spotBorrow`
-* 舊 `walletBalance` = 新 `walletBalance` - `spotBorrow`
 * 在極端市場波動期間, 此介面可能會出現延遲增加或資料傳遞暫時延遲的情況
 :::
 
@@ -25,7 +23,7 @@ GET `/v5/account/wallet-balance`
 |:----- |:-----|----- |
 |list |array |Object |
 |> accountType |string |帳戶類型 |
-|> accountIMRate |string |帳戶初始保證金率 <li>您可以參考該[鏈結](https://www.abfinance.com/en/help-center/article/Glossary-Unified-Trading-Account)了解統一帳戶下字段含義和計算方式</li><li>下面所有帳戶維度的字段都不適用於逐倉模式</li>|
+|> accountIMRate |string |帳戶初始保證金率 <li>下面所有帳戶維度的字段都不適用於逐倉模式</li>|
 |> accountMMRate |string |帳戶維持保證金率|
 |> totalEquity |string |總凈值為賬戶中每個幣種資產凈值的法幣估值之和 (USD): ∑Asset Equity By USD value of each asset|
 |> totalWalletBalance |string |賬戶維度換算成usd的錢包餘額: ∑Asset Wallet Balance By USD value of each asset|
