@@ -13,7 +13,7 @@ GET `/v5/earn/order`
 ### Request Parameters
 | Parameter | Required | Type | Comments|
 |:----- |:-------|:-----|------ |
-|category|**true**|string|`FlexibleSaving`,`OnChain` <br/>**Remarks**: currently, only flexible savings and OnChain is supported|
+|category|**true**|string|`OnChain` <br/>**Remarks**: currently, only OnChain is supported|
 |orderId|false|string|Order ID.  <li>For category = `OnChain`, either orderId or orderLinkId is **required**</li><li>if both are passed, make sure they're matched, otherwise returning empty result</li>|
 |orderLinkId|false|string|Order link ID<br/>**Remarks**: Always return the latest one if order link id is ever reused when querying by orderLinkId only|
 | productId   | false    | string    | Product ID                                                                                                                      |

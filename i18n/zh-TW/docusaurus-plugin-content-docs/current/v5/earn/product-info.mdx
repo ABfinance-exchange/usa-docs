@@ -13,14 +13,14 @@ GET `/v5/earn/product`
 ### 請求參數
 | 參數 | 是否必需 | 類型 | 說明|
 |:----- |:-------|:-----|------ |
-|category|**true**|string|`FlexibleSaving`,`OnChain` <br/>**備註**: 本期僅支持活期理財和鏈上賺幣|
+|category|**true**|string|`OnChain` <br/>**備註**: 本期僅支持鏈上賺幣|
 |coin|false|string|幣種名稱 |
 
 ### 響應參數
 | 參數 | 類型 | 說明|
 |:----- |:-----|----- |
 |list|array|Object|
-|> category|string |`FlexibleSaving`,`OnChain` |
+|> category|string |`OnChain` |
 |> estimateApr|string |預估年化利率, e.g., `3%`, `4.25%`<br/>**備註**: 1)預估年化收益率提供潛在收益的動態預覽，根據市場行情每 10 分鐘更新一次. <br/>2) 請注意，該數值僅為估算值，可能會與您獲得的實際年化收益率有所不同.<br/>3) 不展示部分幣種支持的平台獎勵年化收益率|
 |> coin|string |幣種名稱|
 |> minStakeAmount|string |最小質押額 |
@@ -52,7 +52,7 @@ GET `/v5/earn/product`
 <TabItem value="http" label="HTTP">
 
 ```http
-GET /v5/earn/product?category=FlexibleSaving&coin=BTC HTTP/1.1
+GET /v5/earn/product?category=OnChain&coin=BTC HTTP/1.1
 Host: api-testnet.abfinance.com
 ```
 
@@ -65,7 +65,7 @@ session = HTTP(
     testnet=True,
 )
 print(session.get_earn_product_info(
-    category="FlexibleSaving",
+    category="OnChain",
     coin="BTC",
 ))
 ```
@@ -90,7 +90,7 @@ print(session.get_earn_product_info(
     "result": {
         "list": [
             {
-                "category": "FlexibleSaving",
+                "category": "OnChain",
                 "estimateApr": "0.3%",
                 "coin": "BTC",
                 "minStakeAmount": "0.001",

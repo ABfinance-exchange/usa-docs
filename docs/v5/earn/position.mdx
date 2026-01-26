@@ -8,7 +8,6 @@ API key needs "Earn" permission
 :::
 
 :::note
-For Flexible Saving, fully redeemed position is also returned in the response
 For Onchain, only active position will be returned in the response
 :::
 
@@ -18,7 +17,7 @@ GET `/v5/earn/position`
 ### Request Parameters
 | Parameter | Required | Type | Comments|
 |:----- |:-------|:-----|------ |
-|category|**true**|string|`FlexibleSaving`,`OnChain`|
+|category|**true**|string|`OnChain`|
 |productId|false|string|Product ID|
 |coin|false|string|Coin name|
 
@@ -45,7 +44,7 @@ GET `/v5/earn/position`
 <TabItem value="http" label="HTTP">
 
 ```http
-GET /v5/earn/position?category=FlexibleSaving&coin=USDT HTTP/1.1
+GET /v5/earn/position?category=OnChain&coin=USDT HTTP/1.1
 Host: api-testnet.abfinance.com
 X-BAPI-SIGN: XXXXXX
 X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
@@ -65,7 +64,7 @@ session = HTTP(
     api_secret="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
 )
 print(session.get_staked_position(
-    category="FlexibleSaving",
+    category="OnChain",
     coin="USDT",
 ))
 ```
