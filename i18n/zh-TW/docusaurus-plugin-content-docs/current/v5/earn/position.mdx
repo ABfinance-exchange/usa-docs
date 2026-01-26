@@ -8,7 +8,6 @@ API key需要"理財""權限
 :::
 
 :::note
-對於活期儲蓄，返回訊息裡也返回完全贖回的部分
 對於鏈上賺幣，返回訊息中僅返回當前的部分
 :::
 
@@ -18,7 +17,7 @@ GET `/v5/earn/position`
 ### 請求參數
 | 參數 | 是否必需 | 類型 | 說明|
 |:----- |:-------|:-----|------ |
-|category|**true**|string|產品類別：`FlexibleSaving`,`OnChain`|
+|category|**true**|string|產品類別：`OnChain`|
 |productId|false|string|持倉對應的產品 ID|
 |coin|false|string|幣種名稱|
 
@@ -45,7 +44,7 @@ GET `/v5/earn/position`
 <TabItem value="http" label="HTTP">
 
 ```http
-GET /v5/earn/position?category=FlexibleSaving&coin=USDT HTTP/1.1
+GET /v5/earn/position?category=OnChain&coin=USDT HTTP/1.1
 Host: api-testnet.abfinance.com
 X-BAPI-SIGN: XXXXXX
 X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
@@ -65,7 +64,7 @@ session = HTTP(
     api_secret="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
 )
 print(session.get_staked_position(
-    category="FlexibleSaving",
+    category="OnChain",
     coin="USDT",
 ))
 ```

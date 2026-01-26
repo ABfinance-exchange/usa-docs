@@ -19,7 +19,7 @@ POST `/v5/earn/place-order`
 ### Request Parameters
 | Parameter | Required | Type | Comments|
 |:----- |:-------|:-----|------ |
-|category |**true**| string |`FlexibleSaving`,`OnChain` <br/>**Remarks**: currently, only flexible savings and on chain is supported|
+|category |**true**| string |`OnChain` <br/>**Remarks**: currently, only on chain is supported|
 |orderType |**true**| string |`Stake`, `Redeem`|
 |accountType |**true**| string |`FUND`, `UNIFIED`. Onchain only supports FUND|
 |amount |**true**| string |<li>Stake amount needs to satisfy minStake and maxStake</li><li>Both stake and redeem amount need to satify precision requirement</li>|
@@ -51,7 +51,7 @@ Content-Type: application/json
 Content-Length: 190
 
 {
-    "category": "FlexibleSaving",
+    "category": "OnChain",
     "orderType": "Redeem",
     "accountType": "FUND",
     "amount": "0.35",
@@ -72,7 +72,7 @@ session = HTTP(
     api_secret="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
 )
 print(session.stake_or_redeem(
-    category="FlexibleSaving",
+    category="Chain",
     orderType="Redeem",
     accountType="FUND",
     amount="0.35",
