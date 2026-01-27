@@ -48,7 +48,6 @@ GET `/v5/order/realtime`
 |> isLeverage |string |Whether to borrow `0`: false, `1`: true|
 |> [positionIdx](../enum#positionidx) |integer |Position index. Used to identify positions in different position modes.|
 |> [orderStatus](../enum#orderstatus) |string |Order status |
-|> [createType](../enum#createtype) |string |Order create type <li>Spot does not have this key</li> |
 |> [cancelType](../enum#canceltype) |string |Cancel type |
 |> [rejectReason](../enum#rejectreason) |string |Reject reason|
 |> avgPrice |string |Average filled price, returns `""` for those orders without avg price|
@@ -65,7 +64,6 @@ GET `/v5/order/realtime`
 |> triggerPrice |string |Trigger price. If `stopOrderType`=_TrailingStop_, it is activate price. Otherwise, it is trigger price|
 |> takeProfit |string |Take profit price |
 |> stopLoss |string |Stop loss price |
-|> tpslMode |string |TP/SL mode, `Full`: entire position for TP/SL. `Partial`: partial position tp/sl. Spot does not have this field, and Option returns always "" |
 |> ocoTriggerBy |string |The trigger type of Spot OCO order.`OcoTriggerByUnknown`, `OcoTriggerByTp`, `OcoTriggerByBySl`|
 |> tpLimitPrice |string |The limit order price when take profit price is triggered|
 |> slLimitPrice |string |The limit order price when stop loss price is triggered|
@@ -151,7 +149,6 @@ Content-Type: application/json
                 "smpType": "None",
                 "smpGroup": 0,
                 "smpOrderId": "",
-                "tpslMode": "Full",
                 "tpLimitPrice": "",
                 "slLimitPrice": "",
                 "placeType": "",

@@ -64,128 +64,45 @@ sidebar_label: 錯誤碼
 | 110019 |訂單id非法。 |
 | 110020 |不允許有超過500個活動訂單。 |
 | 110022 |數量已受到限制，無法修改訂單以新增數量。 |
-| 110023 |現時你只能减少你在這份合約上的頭寸。 請查看我們的公告或聯系客服瞭解詳情。 |
-| 110024 |您有一個持倉，因此無法切換位置模式。 |
-| 110025 |倉位模式尚未修改。 |
 | 110026 |全倉/逐倉模式尚未修改。 |
 | 110027 |保證金尚未修改。 |
-| 110028 |您已有未結訂單，因此無法切換倉位模式。 |
-| 110029 |此符號不支持對沖模式。 |
-| 110031 |不存在風險限額資訊，請檢查風險限額規則。 |
 | 110032 |訂單不合法 |
-| 110033 |沒有未平倉頭寸，您無法設定保證金 |
-| 110034 |沒有淨頭寸 |
-| 110035 |清算前未完成訂單取消 |
-| 110036 |由於交叉保證金模式，您不允許更改杠杆。 |
 | 110037 |用戶設置清單沒有此交易對 |
-| 110038 |由於投資組合保證金模式，您不允許更改杠杆率。 |
-| 110039 |維護保證金率過高。 這可能引發清算。 |
-| 110040 |訂單將觸發強制清算，請重新提交訂單。 |
-| 110041 |當存在倉位或maker訂單時，不允許跳過清算 |
-| 110042 |現時，由於預交割狀態，您只能减少您在本合約中的頭寸。 |
-| 110043 |設定杠杆尚未修改。 |
-| 110044 |可用保證金不足。 |
 | 110045 |錢包餘額不足。 |
-| 110046 |此調整將立即觸發清算。 |
 | 110049 |tick note只能是數位 |
 | 110050 |無效的幣種 |
 | 110051 |用戶的可用餘額不能覆蓋當前市場的最低價格 |
 | 110052 |您的可用餘額不足以設定價格 |
 | 110053 |用戶可用餘額不能覆蓋當前市場價格和上限價格 |
-| 110054 |此倉位至少有一個獲利連結訂單，因此無法切換獲利和止損模式 |
-| 110055 |此倉位至少有一個止損連結訂單，因此無法切換獲利和止損模式 |
-| 110056 |此倉位至少有一個尾隨止損連結訂單，因此無法切換獲利和止損模式 |
 | 110057 |條件訂單或限制訂單包含TP/SL相關參數 |
-| 110058 |由於剩餘倉位大小不足，您無法設定獲利和止損。 |
 | 110059 |不允許修改部分填寫的未結訂單的TP/SL |
 | 110060 |在完全TP/SL模式下，不允許修改TP/SL |
 | 110061 |部分tpSlMode下不允許有超過20個TP/SL |
-| 110062 |未找到該機构的MMP資訊。 |
-| 110063 |結算正在進行中！ ｛｛key0｝｝不可用於交易。 |
-| 110064 |修改後的契约數量不能小於或等於成交的數量。 |
-| 110065 |尚未為您的帳戶啟用MMP。 請聯系您的BD經理。 |
-| 110066 |現時不允許交易。 |
-| 110067 |不支持統一帳戶。 |
-| 110068 |不允許杠杆交易。 |
-| 110069 |機構借貸客戶不得交易。 |
-| 110070 |ETP合約不能交易。 |
 | 110071 |抱歉，我們正在修改統一保證金帳戶！ 現時，不支持新的升級。 如果您有任何問題，請聯繫我們的24/7客戶支援。 |
 | 110072 |OrderLinkedID 不能重複|
-| 110073 |設置保證金模式失敗. 請檢查響應裡的具體原因內容|
-| 110076 |僅逐倉保證金下支持自動添加保證金|
 | 110077 |組合保證金模式不支持此操作|
-| 110078 |無法減少過多的保證金|
 | 110079 |訂單正在處理中, 請稍後再試|
-| 110080 |Operations Restriction: The current LTV ratio of your Institutional Lending has hit the liquidation threshold. Assets in your account are being liquidated. 目前機構借貸帳戶的LTV達到強平閾值 (交易/杠杆/风险限额等操作)|
-| 110082 |You cannot lift Reduce-Only restrictions, as no Reduce-Only restrictions are applied to your position 您的倉位沒有受到Reduce-Only限制, 無需解禁|
-| 110083 |Reduce-Only restrictions must be lifted for both Long and Short positions at the same time 對於多空倉位, Reduce-Only 限制需要同時解除|
-| 110085 |The risk limit and margin ratio for this contract has been updated, please select a supported risk limit and place your order again 該合約的風險限額和保證金率已經更新, 請使用支持的風險限額並重新下單|
-| 110086 |Current order leverage exceeds the maximum available for your current Risk Limit tier. Please lower leverage before placing an order 當前槓桿超過您當前風險限額等級的最大槓桿. 請降低槓桿後再重新下單|
-| 110087 |Leverage for Perpetual or Futures contracts cannot exceed the maximum allowed for your Institutional loan 期貨的槓桿不能超過場外借貸產品規定的最大槓桿倍數|
 | 110088 |Please Upgrade to UTA to trade 請升級到UTA後再進行交易|
-| 110089 |Exceeds the maximum risk limit level 超過了最大風險限額等級|
-| 110090 |Order placement failed as your position may exceed the max limit. Please adjust your leverage to {{leverage}} or below to increase the max. position limit 超過了當前風險限額等級支持的最大槓桿|
 | 110092 |expect Rising, but trigger_price[XXXXX] <= current[XXXXX]??laste 期望趨勢上行觸發, 但是觸發價格小於當前的市場價格|
 | 110093 |expect Falling, but trigger_price[XXXXX] >= current[XXXXX]??last 期望趨勢下行觸發, 但是觸發價格大於當前的市場價格|
 | 110094 |Order notional value below the lower limit 訂單最小下單金額小於名義價值金額|
-| 110095 |You cannot create, modify or cancel Pre-Market Perpetual orders during the Call Auction. 集合競價每個階段都有不同訂單操作要求|
-| 110096 |Pre-Market Perpetual Trading does not support Portfolio Margin mode. 組合保證金模式不支持盤前交易|
-| 110097 |Non-UTA users cannot access Pre-Market Perpetual Trading. To place, modify or cancel Pre-Market Perpetual orders, please upgrade your Standard Account to UTA. 經典帳戶不支持盤前交易|
-| 110098 |Only Good-Till-Canceled (GTC) orders are supported during Call Auction. 集合競價階段僅支持GTC訂單|
-| 110099 |You cannot create TP/SL orders during the Call Auction for Pre-Market Perpetuals. 集合競價階段不支持止盈止損、條件單|
-| 110100 |You cannot place, modify, or cancel Pre-Market Perpetual orders when you are in Demo Trading. 模擬交易不支持盤前交易|
-| 110101 |Trading inverse contracts under Cross and Portfolio modes requires enabling the settlement asset as collateral. 統一帳戶2.0的全倉/組合保證金模式, 交易反向合約需要預先打開對應幣種的抵押開關|
-| 110102 |The user does not support trading Inverse contracts - 帶單交易pro, 機構借貸帳戶暫不支持uta2.0的反向合約交易|
 | 110103 |Only Post-Only orders are available at this stage|
-| 110104 |The LTV for ins Loan has exceeded the limit, and opening inverse contracts is prohibited 不允許開倉|
-| 110105 |The LTV for ins Loan has exceeded the limit, and trading inverse contracts is prohibited 不允許交易|
-| 110106 |Restrictions on Ins Loan; inverse contracts are not on the whitelist and are not allowed for trading 合約不在名單內, 無法交易|
-| 110107 |Restrictions on ins Loan; leverage exceeding the limit for inverse contracts is not allowed 槓桿超過限定|
 | 110108 |Allowable range: 1 to 10000 tick size|
 | 110109 |Allowable range: 0.01% to 10%|
-| 110110 |Spread trading is not available in isolated margin trading mode 價差交易不支持逐倉模式|
-| 110111 |To access spread trading, upgrade to the latest version of UTA 價差交易僅支持UTA2.0|
-| 110112 |Spread trading is not available for Copy Trading 帶單不支持價差交易|
-| 110113 |Spread trading is not available in hedge mode 價差交易不支持雙向持倉模式|
-| 110114 |You have a Spread trading order in progress. Please try again later 不能操作在途狀態的組合訂單|
 | 110115 |The cancellation of a combo single-leg order can only be done by canceling the combo order 組合單腿訂單只能被組合訂單撤銷|
 | 110116 |The entry price of a single leg, derived from the combo order price, exceeds the limit price 組合單腿訂單價格超過單腿業務訂單價格區間|
 | 110117 |The modification of a combo single-leg order can only be done by modifying the combo order 組合單腿訂單只能組合訂單修改|
-| 110118 |Unable to retrieve a pruce of the market order due to low liquidity 組合合約沒有盤口，無法定市價|
 | 110119 |Order failed. RPI orders are restricted to approved market makers only|
 | 110120 |Order price cannot be smaller than xxxx, the price limitation|
 | 110121 |Order price cannot be higher than xxxx, the price limitation|
-| 170346 |Settle coin is not a collateral coin, cannot trade settleCoin不是抵押品, 无法交易|
-| 170360 |symbol[XXXX] cannot trade 價差交易需要幣種打開抵押品|
 | 3100181 |uid can not be null  uid 不能為空|
 | 3100197 |由於升級UTA中, 用戶暫時被封禁|
-| 3200316 |USDC Options Trading Restriction: The current LTV ratio for your Institutional Lending has reached the maximum allowable amount for USDC Options trading. 目前機構借貸風險水平無法進行期權交易|
-| 3200317 |USDC Options Open Position Restriction: The current LTV ratio for your Institutional Lending has reached the maximum allowable amount for opening USDC Options positions.目前機構借貸風險水平無法進行期權買入|
 | 3100326 |BaseCoin is required  baseCoin必須傳|
 | 3200403 |逐倉保證金模式下無法進行此產品交易|
-| 3200419 |Unable to switch to Portfolio margin due to active pre-market Perpetual orders and positions 在有盤前永續訂單和倉位的情況下, 無法切換到PM模式|
-| 3200320 |Operations Restriction: The current LTV ratio of your Institutional Lending has hit the liquidation threshold. Assets in your account are being liquidated. 目前機構借貸帳戶的LTV達到強平閾值 (修改保证金模式或者现货杠杆时) |
-| 3400208 | 您有未關閉的雙向持倉或逐倉模式下的USDT永續倉位|
-| 3400209 | 有USDT永續倉位時，小時整點的前後10分鐘禁止升級 |
-| 3400210 | 您合約帳戶當前風險率過高|
-| 3400211 | 升級後，帳戶風險率過高 |
-| 3400212 | 有USDC永續倉位或者期權倉位時，小時整點的前後10分鐘禁止升級|
-| 3400213 | 您USDC合約帳戶當前風險率過高 |
-| 3400052 | 您有未取消的USDC永續掛單|
-| 3400053 | 您有未取消的期權掛單|
-| 3400054 | 您有未取消的USDT永續掛單|
 | 3400214 | 系統處理異常，請稍候再試|
 | 3400071 | 您未達到帳戶升級的資產要求，無法完成升級|
-| 3401010 | Cannot switch to PM mode 無法切換到PM模式(帶單帳戶嘗試切換到PM模式)|
-| 3400139 | The total value of your positions and orders has exceeded the risk limit for a Perpetual or Futures contract 當前PM模式下的倉位超過了全倉或者逐倉的最大允許風險限額|
 | 181017 |OrderStatus must be final status 僅支持查詢終態 |
-| 182100 |Compulsory closing of positions, no repayment allowed 強平清算中, 不支持還款 |
-| 182101 |Failed repayment, insufficient collateral balance 試算抵押品餘額不足, 還款失敗 |
-| 182102 |Failed repayment, there are no liabilities in the current currency 該幣種不存在任何負債 |
-| 182103 |Institutional lending users are not supported 機構借貸用戶不支持一鍵還款 |
-| 182108 |Switching failed, margin verification failed, please re-adjust the currency status 保證金校驗失敗, 請檢查對應幣種的狀態|
 | 182110 |Failed to switch 無法切換 |
-| 182111 |The requested currency has a non guaranteed gold currency or does not support switching status currencies 請求的幣種是非保證金幣種|
 | 182112 |Duplicate currency, please re-adjust 重複的幣種, 請調整後重試 |
 
 ## 現貨交易
@@ -391,79 +308,6 @@ sidebar_label: 錯誤碼
 | 700007 |Large Amount Limit大額限制|
 | 700012 |UTA升級中, 禁止申請報價|
 
-## 質押借貸 (新版)
-|錯誤碼 |描述 |
-|:----:|:-------------------------------|
-|148001|This currency is not supported for flexible savings. 此幣種不支援彈性儲蓄。|
-|148002|The entered amount is below the minimum borrowable amount. 輸入金額低於最低可借金額。|
-|148003|Exceeds the allowed decimal precision for this currency. 超出該幣種允許的小數精度。|
-|148004|This currency cannot be used as collateral. 該幣種無法用作抵押品。|
-|148005|Exceeds the allowed decimal precision for this collateral currency. 超出該抵押幣種允許的小數精度。|
-|148006|The amount of collateral exceeds the upper limit of the platform. 抵押金額超過平台上限。|
-|148007|Borrow amount cannot be negative. 借款金額不能為負數。|
-|148008|Collateral amount cannot be negative. 抵押金額不能為負數。|
-|148009|LTV exceeds the risk threshold. 質押率（LTV）超過風險閾值。|
-|148010|Insufficient available quota. 可用額度不足。|
-|148011|Insufficient balance in the funding pool . 資金池餘額不足。|
-|148012|Insufficient collateral amount. 抵押金額不足。|
-|148013|Non-borrowing users cannot adjust collateral. 非借款用戶無法調整抵押品。|
-|148014|This currency is not supported. 該幣種不被支援。|
-|148015|Loan term exceeds the allowed range. 借款期限超出允許範圍。|
-|148016|The specified lending rate is not supported. 指定的出借利率不被支援。|
-|148017|The interest rate exceeds the allowed decimal precision. 利率超出允許的小數精度。|
-|148018|Exceeded the maximum number of open orders. 超出最大未完成訂單數量。|
-|148019|The system is busy, please try again later. 系統忙碌，請稍後重試。|
-|148020|Insufficient platform lending quota. 平台出借額度不足。|
-|148021|Operation conflict detected. Please try again later. 操作衝突，請稍後重試。|
-|148022|Insufficient assets for lending. 出借資產不足。|
-|148023|Loan order not found. 找不到借款訂單。|
-|148024|Loan cancellation failed: the order may have been completed or has an invalid amount. 借款訂單取消失敗：訂單可能已完成或金額無效。|
-|148025|Lending order cancellation failed: the order may have been completed or has an invalid amount. 出借訂單取消失敗：訂單可能已完成或金額無效。|
-|148026|Failed to create repayment. Please try again later. 創建還款失敗，請稍後重試。|
-|148027|No active loan found for this account. Operation not allowed. 該帳戶無有效借款，操作不允許。|
-|148028|Repayment amount exceeds the supported precision for the currency. 還款金額超出該幣種支持的精度。|
-|148029|Insufficient balance in the repayment account. 還款帳戶餘額不足。|
-|148030|Deposit order not found. 找不到存款訂單。|
-|148031|Operation not allowed during liquidation. 清算期間不允許操作。|
-|148032|No outstanding debt. Repayment is not allowed. 無未償還債務，不允許還款。|
-|148033|This loan order cannot be repaid. 該借款訂單無法還款。|
-|148034|Please wait and try again later. 請稍候並重試。|
-|148035|Please wait and try again later. 請稍候並重試。|
-|148036|Failed to adjust collateral amount. Please try again later. 調整抵押金額失敗，請稍後重試。|
-|148037|Insufficient assets or adjustment amount exceeds the maximum allowed. 資產不足或調整金額超過最大允許值。|
-|148038|Repayment amount cannot exceed the debt amount of the position. 還款金額不可超過該持倉的債務金額。|
-|148039|Duplicate collateral assets detected. Please review and resubmit. 發現重複的抵押資產，請檢查後重新提交。|
-|148040|Pledge token is error.質押權杖錯誤。|
-|148041|Repay order is exist.還款單已存在。|
-|148042|Exceeds the allowed decimal precision for this currency.超出該幣種允許的小數精度。|
-
-## 機構借貸
-|錯誤碼 |描述 |
-|:----:|:-------------------------------|
-| 3777002 |UID cannot be bound repeatedly. UID不能重複綁定|
-| 3777003 |UID cannot be unbound because the UID has not been bound to a risk unit. 無法解綁, 因為UID還沒有在風險單元內|
-| 3777004 |The main UID of the risk unit cannot be unbound. 風險單元主UID不允許解綁|
-| 3777006 |UID cannot be bound, please try again with a different UID." 導致的原因: 1. 請求接口的UID不是風險單元內的UID; 2. 請求接口的UID與被操作的UID不存在母子或子子關係|
-| 3777005 |You have unsettled lending or borrowing orders. Please try again later.存在未結算的借出或借入訂單，請稍後重試|
-| 3777007 |UID cannot be bound, please upgrade to UTA Pro." UID無法綁定, 請先將該UID升級到統一帳戶|
-| 3777012 |Your request is currently being processed. Please wait and try again later 已經提交請求請稍後重試|
-| 3777027 |UID cannot be bound, leveraged trading closure failed. UID無法綁定, 因為無法自動關閉槓桿交易|
-| 3777029 |You currently have orders for pre-market trading that can’t be bind UIDs 由於當前存在盤前交易訂單，所以無法綁定UID|
-| 3777030 |This account has activated copyPro and cannot bind uid 該帳戶已經激活了copy pro, 無法綁定到機構借貸|
-
-### 卡券
-|錯誤碼 |描述 |
-|:----:|:-------------------------------|
-| 400001 |invalid parameter 無效入參|
-| 400101 |The voucher was recycled 卡券已經被回收|
-| 400102 |The voucher has exceeded the redemption date (expired) 卡券已經過期|
-| 400103 |The voucher is not available for redemption 卡券還未開始|
-| 400105 |Budget exceeded 超出預算|
-| 403001 |Account rejected, check if the input accountId valid, account banned, or kyc issue 輸入帳戶無效/被禁/kyc問題|
-| 404001 |resource not found|
-| 404011 |Insufficient inventory 庫存不足|
-| 409011 |VIP level limit VIP等級限制|
-| 500001 |Internal server error 系統錯誤|
 
 ## 理財
 |Code |Description |
@@ -499,32 +343,3 @@ sidebar_label: 錯誤碼
 | 3500002 |Current user is not an institutional user 當前用戶不是機構用戶|
 | 3500153 |No permission to operate these UIDs 無權操作這些UID|
 | 3500153 |You do not have permission to query other UIDs 您無權查詢其他UID|
-
-## 手動借貸
-| 錯誤碼  | 錯誤信息                                       |
-|:--------|:---------------------------------------------|
-| 34022001  | System error. Please try again later. 系統異常  |
-| 34022003  | System error. Please try again later. 系統異常  |
-| 34022027  | Invalid request parameters. 請求參數不合法     |
-| 34022030  | Borrowing demand is high, and the fund pool is currently low. Please wait a moment. 資金池可用餘額不足     |
-| 34022031  | Risk rate limit exceeded. Please reduce your borrow amount in the Unified Trading Account. 交易校驗不通過     |
-| 34022033  | Borrowing precision must be an integer multiple. 下單數量精度必須是整數倍     |
-| 34022034  | The minimum repayment amount must be an integer multiple. 還款數量必須是整數倍     |
-| 34022035  | You cannot repay while interest is being calculated. 計息中不允許還款     |
-| 34022036  | Please enable Margin Trading to continue. 現貨槓桿未開啟     |
-| 34022038  | Repayment is in progress. Please do not repeat the operation.  借還款處理中訂單    |
-| 34022010  | The borrowed asset does not exist. 不支援的幣種    |
-| 34022041  | Currently, your account has no borrowed coins. No repayments are needed. 用戶無負債無需還款     |
-| 34022044  | Repayment unsuccessful.  還款失敗    |
-| 34022045  | Borrowing unsuccessful.  借款失敗    |
-| 34022011  | Amount must be at least. 借款數量不能小於最小下單數量     |
-| 34022014  | Decimal precision cannot exceed 18 digits. 小數精度不能超過18位     |
-| 34022047  | CopyTrade not supported. copyTrade用戶不允許申請借幣     |
-| 34022048  | Borrowing is not allowed during liquidation.  強平中    |
-| 34022049  | Insufficient collateral balance. 試算抵押品餘額不足：還款失敗，抵押品餘額不足     |
-| 34022050  | Repayment failed. You currently have spot hedging liabilities. Please close your derivatives positions before repayment. 輸入幣種錯誤：“當前幣種不存在負債”     |
-| 34022051  | Institutional loan in progress. 機構借貸處理中     |
-| 34022052  | Institutional loan transactions banned.  機構借貸交易封鎖    |
-| 35000011  | You have existing pending loan orders. Please try again later. 存在撮合中的借款訂單     |
-| 34022053  | Please contact the sales to enable the manual borrowing feature.  黑名單攔截    |
-| 34022094  | This coin does not support repayment through coin exchange.    這幣種不支持還有其他coin負債  |

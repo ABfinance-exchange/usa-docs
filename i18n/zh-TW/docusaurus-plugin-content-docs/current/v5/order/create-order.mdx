@@ -8,7 +8,7 @@ sidebar_position: 1
 :::info
 - **支持的訂單類型 (`orderType`):**<br/>
 限價單: <code>orderType</code>=<i>Limit</i>, 需要指定訂單數量和價格.<br/>
-市價單: <code>orderType</code>=<i>Market</i>, 以平台市場內最優的價格一直執行到成交. 選擇市價單時，price 參數為空。在期貨交易系統，為了保護市價單產生嚴重的滑點，平台交易系統會將市價單轉為限價單進行撮合，如果市場價格轉限價時，超過滑點設置的閾值，該筆市場價格訂單將會被取消。滑點閾值是指訂單價格偏離最新成交價格的百分比，目前閾值設置為：BTC 合約3%，其他合約5%。
+市價單: <code>orderType</code>=<i>Market</i>, 以平台市場內最優的價格一直執行到成交. 選擇市價單時，price 參數為空。在交易系統中，為了保護市價單產生嚴重的滑點，平台交易系統會將市價單轉為限價單進行撮合，如果市場價格轉限價時，超過滑點設置的閾值，該筆市場價格訂單將會被取消。滑點閾值是指訂單價格偏離最新成交價格的百分比。
 
 - **支持的timeInForce策略:**<br/>
 `GTC` 一直有效至取消<br/>
@@ -18,13 +18,13 @@ sidebar_position: 1
 `RPI`: 提升零售訂單價格流動訂單; 指定做市商允許下此類訂單; 本身具有post only屬性, 但是此訂單僅和來自網頁或者APP端的訂單成交
 
 - **如何創建條件單:**<br/>
-在提交訂單時，如果設置了**triggerPrice**，則該訂單會自動轉為條件單。另外條件單不佔用保證金，如果條件單觸發後，保證金不足，則該筆訂單會被取消。
+在提交訂單時，如果設置了**triggerPrice**，則該訂單會自動轉為條件單。
 
 -  您可以在下單時設置止盈止損。
 
 - **訂單數量**: 訂單數量，只支持正數。
 
-- **訂單價格**: 下限價單，價格字段**必傳**。若您有倉位, 下單價格需要高於強平價. 對於設置價格的步長，請參閱該[接口](../market/instrument#)中的`priceFilter` > `tickSize`.
+- **訂單價格**: 下限價單，價格字段**必傳**。 對於設置價格的步長，請參閱該[接口](../market/instrument#)中的`priceFilter` > `tickSize`.
 
 - **用戶自定義訂單Id**: 最大長度不超過36個字符且唯一。您可以自定義設置的订单ID(`orderLinkId`)，我们会为您关联到平台系统的唯一订单ID，并把唯一订单ID在活动委托创建成功后一并返回给您（包括Websocket），您可以使用 平台 的订单ID 和 orderLinkId 去獲取和取消訂單，如果在參數輸入中同時輸入 orderId 和 orderLinkId，平台會優先以 orderId 為准來處理對應訂單.
 
@@ -64,8 +64,8 @@ POST `/v5/order/create`
 |[smpType](../enum#smptype) |false |string |Smp執行類型. [什麼是SMP?](../smp)|
 |tpLimitPrice |false |string |觸發止盈後轉換為限價單的價格 <ul><li>現貨: 參數必傳當創建訂單時帶了`takeProfit` 和 `tpOrderType=Limit`</li></ul>|
 |slLimitPrice |false |string |觸發止損後轉換為限價單的價格 <ul><li>現貨: 參數必傳當創建訂單時帶了`stopLoss` 和 `slOrderType=Limit`</li></ul>|
-|tpOrderType |false |string |止盈觸發後的訂單類型 <ul><li>現貨: <br/>`Market`: 當帶了參數"takeProfit", <br/>`Limit`: 當帶了參數"takeProfit" 和 "tpLimitPrice" </li></ul>|
-|slOrderType |false |string |止損觸發後的訂單類型 <ul><li>現貨: <br/>`Market`: 當帶了參數"stopLoss", <br/>`Limit`: 當帶了參數"stopLoss" 和 "slLimitPrice" </li></ul>|
+|tpOrderType |false |string |止盈觸發後的訂單類型 <ul><li>現貨: <br/>`Market`: 當帶了參數"takeProfit","tpOrderType"需传值`Market` <br/>`Limit`: 當帶了參數"takeProfit" 和 "tpLimitPrice","tpOrderType"需传值`Limit` </li></ul>|
+|slOrderType |false |string |止損觸發後的訂單類型 <ul><li>現貨: <br/>`Market`: 當帶了參數"stopLoss","slOrderType"需传值`Market` <br/>`Limit`: 當帶了參數"stopLoss" 和 "slLimitPrice",,"slOrderType"需传值`Limit` </li></ul>|
 
 ### 響應參數
 | 參數 | 類型 | 說明|
@@ -95,11 +95,11 @@ X-BAPI-RECV-WINDOW: 5000
 Content-Type: application/json
 
 // 現貨下僅maker單
-{"category":"spot","symbol":"BTCUSDT","side":"Buy","orderType":"Limit","qty":"0.1","price":"15600","timeInForce":"PostOnly","orderLinkId":"spot-test-01","isLeverage":0,"orderFilter":"Order"}
+{"category":"spot","symbol":"BTCUSDT","side":"Buy","orderType":"Limit","qty":"0.1","price":"15600","timeInForce":"PostOnly","orderLinkId":"spot-test-01","orderFilter":"Order"}
 
 
 // 現貨市價單, qty為報價幣種金額
-{"category":"spot","symbol":"BTCUSDT","side":"Buy","orderType":"Market","qty":"200","timeInForce":"IOC","orderLinkId":"spot-test-04","isLeverage":0,"orderFilter":"Order"}
+{"category":"spot","symbol":"BTCUSDT","side":"Buy","orderType":"Market","qty":"200","timeInForce":"IOC","orderLinkId":"spot-test-04","orderFilter":"Order"}
 
 ```
 

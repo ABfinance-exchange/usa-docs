@@ -22,9 +22,6 @@ POST `/v5/order/amend`
 |price |false |string |Order price after modification. Do not pass it if not modify the price|
 |takeProfit |false |string |Take profit price after modification. If pass "0", it means cancel the existing take profit of the order. Do not pass it if you do not want to modify the take profit|
 |stopLoss |false |string |Stop loss price after modification. If pass "0", it means cancel the existing stop loss of the order. Do not pass it if you do not want to modify the stop loss|
-|[tpTriggerBy](../enum#triggerby) |false |string |The price type to trigger take profit. When set a take profit, this param is **required** if no initial value for the order|
-|[slTriggerBy](../enum#triggerby) |false |string |The price type to trigger stop loss. When set a take profit, this param is **required** if no initial value for the order|
-|[triggerBy](../enum#triggerby) |false |string |Trigger price type|
 |tpLimitPrice |false |string |Limit order price when take profit is triggered. Only working when original order sets partial limit tp/sl. |
 |slLimitPrice |false |string |Limit order price when stop loss is triggered. Only working when original order sets partial limit tp/sl. |
 
