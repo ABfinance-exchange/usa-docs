@@ -26,7 +26,6 @@ POST `/v5/order/create-batch`
 |[category](../enum#category) |**true** |string |產品類型  `spot`|
 |request |**true** |array |Object |
 |> symbol |**true** |string |合約名稱|
-|> isLeverage |false |integer |是否走現貨槓桿下單. `0`(default): 否，是幣幣訂單, `1`: 是，是槓桿訂單|
 |> side |**true** |string |方向. `Buy`, `Sell`|
 |> [orderType](../enum#ordertype) |**true** |string |訂單類型. `Market`, `Limit`|
 |> qty |**true** |string |訂單數量 訂單數量 <ul><li>現貨: 可以通過設置`marketUnit`來表示市價單qty的單位, 市價買單默認是`quoteCoin`, 市價賣單默認是`baseCoin`</li></ul>|
@@ -87,7 +86,6 @@ Content-Type: application/json
             "symbol": "BTCUSDT",
             "side": "Buy",
             "orderType": "Limit",
-            "isLeverage": 0,
             "qty": "0.05",
             "price": "30000",
             "timeInForce": "GTC",
@@ -97,7 +95,6 @@ Content-Type: application/json
             "symbol": "ATOMUSDT",
             "side": "Sell",
             "orderType": "Limit",
-            "isLeverage": 0,
             "qty": "2",
             "price": "12",
             "timeInForce": "GTC",

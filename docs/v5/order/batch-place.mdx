@@ -35,7 +35,6 @@ POST `/v5/order/create-batch`
 |> price |false |string |Order price <ul><li>Market order will ignore this field</li><li>Please check the min price and price precision from [instrument info](../market/instrument#response-parameters) endpoint</li></ul> |
 |> orderFilter |false |string |If it is not passed, `Order` by default. <ul><li>`Order`</li><li>`tpslOrder`: Spot TP/SL order, the assets are occupied even before the order is triggered</li><li>`StopOrder`: Spot conditional order, the assets will not be occupied until the price of the underlying asset reaches the trigger price, and the required assets will be occupied after the Conditional order is triggered</li></ul>Valid for `spot` **only**|
 |> triggerPrice |false |string |<ul><li>For spot, it is the `orderFilter`="tpslOrder", or "StopOrder" trigger price</li></ul>|
-|> [triggerBy](../enum#triggerby) |false |string |Conditional order param (Perps & Futures). Trigger price type. `LastPrice`, `IndexPrice`, `MarkPrice`|
 |> [timeInForce](../enum#timeinforce) |false |string |<a href="https://www.abfinance.com/en/help-center/article/What-Are-Time-In-Force-TIF-GTC-IOC-FOK">Time in force</a> <ul><li>Market order will use `IOC` directly</li><li>If not passed, `GTC` is used by default</li> </ul>|
 |> orderLinkId |false |string |User customised order ID. A max of 36 characters. Combinations of numbers, letters (upper and lower cases), dashes, and underscores are supported.<br/>Spot: orderLinkId rules:<br/><ul><li>optional param</li><li>always unique</li></ul>|
 |> takeProfit |false |string |Take profit price|
@@ -89,7 +88,6 @@ Content-Type: application/json
             "symbol": "BTCUSDT",
             "side": "Buy",
             "orderType": "Limit",
-            "isLeverage": 0,
             "qty": "0.05",
             "price": "30000",
             "timeInForce": "GTC",
@@ -99,7 +97,6 @@ Content-Type: application/json
             "symbol": "ATOMUSDT",
             "side": "Sell",
             "orderType": "Limit",
-            "isLeverage": 0,
             "qty": "2",
             "price": "12",
             "timeInForce": "GTC",

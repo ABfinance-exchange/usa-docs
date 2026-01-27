@@ -47,7 +47,6 @@ GET `/v5/order/realtime`
 |> isLeverage |string |是否借貸. 僅`spot`有效<li>`0`: 否</li><li>`1`: 是</li>|
 |> [positionIdx](../enum#positionidx) |integer |倉位標識。用戶不同倉位模式 |
 |> [orderStatus](../enum#orderstatus) |string |訂單狀態 |
-|> [createType](../enum#createtype) |string |訂單創建類型<li>現貨不返回該字段</li> |
 |> [cancelType](../enum#canceltype) |string |訂單被取消類型 |
 |> [rejectReason](../enum#rejectreason) |string |拒絕原因|
 |> avgPrice |string |訂單平均成交價格 <li>不存在avg price場景的訂單將會返回`""`</li>|
@@ -64,7 +63,6 @@ GET `/v5/order/realtime`
 |> triggerPrice |string |觸發價格. 若`stopOrderType`=_TrailingStop_, 則這是激活價格. 否則, 它是觸發價格|
 |> takeProfit |string |止盈價格 |
 |> stopLoss |string |止損價格 |
-|> tpslMode |string |止盈止損模式 `Full`: 全部倉位止盈止損, `Partial`: 部分倉位止盈止損<br/>現貨不返回該字段, 期權總是返回""|
 |> ocoTriggerBy |string |現貨OCO訂單的觸發類型.`OcoTriggerByUnknown`, `OcoTriggerByTp`, `OcoTriggerBySl`|
 |> tpLimitPrice |string |觸發止盈後轉換為限價單的價格 |
 |> slLimitPrice |string |觸發止損後轉換為限價單的價格 |
@@ -150,7 +148,6 @@ Content-Type: application/json
                 "smpType": "None",
                 "smpGroup": 0,
                 "smpOrderId": "",
-                "tpslMode": "Full",
                 "tpLimitPrice": "",
                 "slLimitPrice": "",
                 "placeType": "",
