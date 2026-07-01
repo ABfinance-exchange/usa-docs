@@ -1,61 +1,144 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * ABF Design System — Docusaurus Theme Overrides
+ * Based on ABF Design Guideline (2025-05)
  */
 
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #f7a60f;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-}
-
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #f7a60f;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-}
-
-
-/* applyfont */
+/* === Font === */
 @font-face {
-  font-family: 'ABfinance';
-  src: url('/font/Inter-Regular.ttf');
-  /* international */
-  src: url('/font/NotoSansTC-Regular.otf');
-  /* zh-TW */
+  font-family: 'Inter';
+  src: url('/font/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 
+/* === Light Mode === */
+:root {
+  --ifm-color-primary: #5749CE;
+  --ifm-color-primary-dark: #4A3DB5;
+  --ifm-color-primary-darker: #3F34A0;
+  --ifm-color-primary-darkest: #2E2675;
+  --ifm-color-primary-light: #6B5FD6;
+  --ifm-color-primary-lighter: #8078E0;
+  --ifm-color-primary-lightest: #B5B7FF;
 
+  --ifm-background-color: #FAFAFA;
+  --ifm-background-surface-color: #FFFFFF;
+  --ifm-font-color-base: #121214;
+  --ifm-font-color-secondary: #7F838A;
+  --ifm-table-border-color: #DDE1E5;
+
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.5;
+  --ifm-heading-font-weight: 600;
+  --ifm-font-weight-bold: 600;
+
+  --ifm-code-font-size: 95%;
+  --ifm-code-background: #F3F4F5;
+  --ifm-code-border-radius: 4px;
+
+  --ifm-global-radius: 8px;
+  --ifm-button-border-radius: 8px;
+  --ifm-card-border-radius: 16px;
+  --ifm-alert-border-radius: 8px;
+
+  --ifm-spacing-horizontal: 16px;
+  --ifm-spacing-vertical: 16px;
+
+  --docusaurus-highlighted-code-line-bg: rgba(87, 73, 206, 0.1);
+
+  --abf-success: #06C167;
+  --abf-error: #F63649;
+  --abf-warning: #FFFDC1;
+  --abf-border-radius-sm: 4px;
+  --abf-border-radius-md: 8px;
+  --abf-border-radius-lg: 16px;
+}
+
+/* === Dark Mode === */
+[data-theme='dark'] {
+  --ifm-color-primary: #9084FF;
+  --ifm-color-primary-dark: #7B6EF0;
+  --ifm-color-primary-darker: #6B5FD6;
+  --ifm-color-primary-darkest: #5749CE;
+  --ifm-color-primary-light: #A89CFF;
+  --ifm-color-primary-lighter: #C9CED6;
+  --ifm-color-primary-lightest: #D8DBFF;
+
+  --ifm-background-color: #000000;
+  --ifm-background-surface-color: #16171A;
+  --ifm-font-color-base: #FFFFFF;
+  --ifm-font-color-secondary: #6A6E73;
+  --ifm-table-border-color: #1E1F24;
+
+  --ifm-code-background: #141414;
+
+  --docusaurus-highlighted-code-line-bg: rgba(144, 132, 255, 0.15);
+}
+
+/* === Body === */
 body {
-  font-family: 'ABfinance';
+  font-family: var(--ifm-font-family-base);
 }
 
+/* === Navbar === */
+.navbar {
+  border-bottom: 1px solid var(--ifm-table-border-color);
+  box-shadow: none;
+}
 
+[data-theme='dark'] .navbar {
+  background-color: #000000;
+}
 
-/* use minimalist-style tables (as used in the old slate documentation) by default */
+[data-theme='light'] .navbar {
+  background-color: #FFFFFF;
+}
+
+/* === Sidebar === */
+.menu__link--active:not(.menu__link--sublist) {
+  color: var(--ifm-color-primary);
+  border-radius: var(--abf-border-radius-md);
+}
+
+[data-theme='light'] .menu__link--active:not(.menu__link--sublist) {
+  background-color: rgba(87, 73, 206, 0.06);
+}
+
+[data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
+  background-color: rgba(144, 132, 255, 0.1);
+}
+
+/* === Tables === */
+table {
+  display: table;
+  width: 100%;
+  table-layout: auto;
+}
+
 table th,
 table td {
-  padding: 5px 10px;
+  padding: 8px 12px;
   border: none;
-  background-color: var(--ifm-table-head-background);
+  border-bottom: 1px solid var(--ifm-table-border-color);
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+table td:last-child {
+  white-space: normal;
+  min-width: 200px;
+}
+
+table th {
+  font-weight: 600;
+  color: var(--ifm-font-color-secondary);
+  font-size: 14px;
 }
 
 table td {
-  padding: 10px;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 table tr {
@@ -67,57 +150,207 @@ table tr:first-child {
 }
 
 table tr:last-child {
-  border-bottom: 2px solid var(--ifm-table-border-color);
+  border-bottom: none;
 }
 
+.markdown > table {
+  display: block;
+  overflow-x: auto;
+}
 
-/* blocky table style: blocky borders, no stripes (zebra rows) */
+/* blocky table style */
 .blocky_table table {
   border-collapse: collapse;
   display: block;
 }
 
 .blocky_table tr:nth-child(2n) {
-  background-color: var(--ifm-table-head-background);
+  background-color: var(--ifm-background-surface-color);
 }
 
 .blocky_table th,
 .blocky_table table td {
-  border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
-  padding: var(--ifm-table-cell-padding);
-  background-color: var(--ifm-table-head-background);
+  border: 1px solid var(--ifm-table-border-color);
+  padding: 8px 12px;
 }
 
-.blocky_table th {
-  color: var(--ifm-table-head-color);
-  font-weight: var(--ifm-table-head-font-weight);
+/* === Links === */
+a:hover {
+  text-decoration: underline;
 }
 
-/* it is also possible to assign a style per .mdx file, by referring to its ID (find it by inspecting the page)
-"\2f" = "/"; because CSS classes don't parse the forward slash correctly
-html.docs-doc-id-v5/upgrade-guide = html.docs-doc-id-v5\2fupgrade-guide */
-/*
-html.docs-doc-id-v5\2fupgrade-guide table {
-  border-collapse: collapse;
-  display: block;
+/* === Scrollbar === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--ifm-background-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-emphasis-300);
+  border-radius: 4px;
 }
 
-html.docs-doc-id-v5\2fupgrade-guide table tr:nth-child(odd)>td {
-  background-color: var(--ifm-background-color);
+/* === Focus === */
+*:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-radius: var(--abf-border-radius-sm);
 }
 
-html.docs-doc-id-v5\2fupgrade-guide table tr:nth-child(even)>td {
-  background-color: var(--ifm-background-color);
+/* === Admonitions (Alerts) === */
+.alert,
+.admonition {
+  border: none;
+  border-left: none;
+  border-radius: var(--abf-border-radius-md);
+  padding: 12px 16px;
+  box-shadow: none;
 }
 
-html.docs-doc-id-v5\2fupgrade-guide th,
-  html.docs-doc-id-v5\2fupgrade-guide table td {
-    border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
-    padding: var(--ifm-table-cell-padding);
+/* Info / Note — highlighted info, light purple */
+.alert--info,
+.admonition-note,
+.admonition-info {
+  --ifm-alert-background-color: rgba(87, 73, 206, 0.06);
+  --ifm-alert-foreground-color: #121214;
+  --ifm-alert-border-color: transparent;
+  background-color: rgba(87, 73, 206, 0.06);
+  border: none;
 }
 
-html.docs-doc-id-v5\2fupgrade-guide th {
-    color: var(--ifm-table-head-color);
-    font-weight: var(--ifm-table-head-font-weight);
+[data-theme='dark'] .alert--info,
+[data-theme='dark'] .admonition-note,
+[data-theme='dark'] .admonition-info {
+  --ifm-alert-background-color: rgba(144, 132, 255, 0.1);
+  --ifm-alert-foreground-color: #FFFFFF;
+  background-color: rgba(144, 132, 255, 0.1);
 }
-*/
+
+/* Tips */
+.alert--success,
+.alert--tip,
+.admonition-tip {
+  --ifm-alert-background-color: #F3F4F5;
+  --ifm-alert-foreground-color: #121214;
+  --ifm-alert-border-color: transparent;
+  background-color: #F3F4F5;
+  border: none;
+}
+
+[data-theme='dark'] .alert--success,
+[data-theme='dark'] .alert--tip,
+[data-theme='dark'] .admonition-tip {
+  --ifm-alert-background-color: #1E1F24;
+  --ifm-alert-foreground-color: #FFFFFF;
+  background-color: #1E1F24;
+}
+
+/* Warning / Caution / Danger */
+.alert--warning,
+.alert--danger,
+.alert--caution,
+.admonition-warning,
+.admonition-caution,
+.admonition-danger {
+  --ifm-alert-background-color: rgba(246, 54, 73, 0.06);
+  --ifm-alert-foreground-color: #121214;
+  --ifm-alert-border-color: transparent;
+  background-color: rgba(246, 54, 73, 0.06);
+  border: none;
+}
+
+[data-theme='dark'] .alert--warning,
+[data-theme='dark'] .alert--danger,
+[data-theme='dark'] .alert--caution,
+[data-theme='dark'] .admonition-warning,
+[data-theme='dark'] .admonition-caution,
+[data-theme='dark'] .admonition-danger {
+  --ifm-alert-background-color: rgba(246, 54, 73, 0.12);
+  --ifm-alert-foreground-color: #FFFFFF;
+  background-color: rgba(246, 54, 73, 0.12);
+}
+
+/* Admonition inner text: links and code use neutral dark color, not brand green/purple */
+.alert a,
+.admonition a,
+div[class*="admonition"] a {
+  color: var(--ifm-font-color-base) !important;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.alert a:hover,
+.admonition a:hover,
+div[class*="admonition"] a:hover {
+  color: var(--ifm-font-color-base) !important;
+}
+
+/* Admonition inline code — same text color as surrounding, deeper background */
+.alert--info code,
+.admonition-note code,
+.admonition-info code {
+  color: inherit !important;
+  background-color: rgba(87, 73, 206, 0.12) !important;
+}
+
+[data-theme='dark'] .alert--info code,
+[data-theme='dark'] .admonition-note code,
+[data-theme='dark'] .admonition-info code {
+  background-color: rgba(144, 132, 255, 0.18) !important;
+}
+
+.alert--success code,
+.alert--tip code,
+.admonition-tip code {
+  color: inherit !important;
+  background-color: rgba(0, 0, 0, 0.07) !important;
+}
+
+[data-theme='dark'] .alert--success code,
+[data-theme='dark'] .alert--tip code,
+[data-theme='dark'] .admonition-tip code {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.alert--warning code,
+.alert--danger code,
+.alert--caution code,
+.admonition-warning code,
+.admonition-caution code,
+.admonition-danger code {
+  color: inherit !important;
+  background-color: rgba(246, 54, 73, 0.12) !important;
+}
+
+[data-theme='dark'] .alert--warning code,
+[data-theme='dark'] .alert--danger code,
+[data-theme='dark'] .alert--caution code,
+[data-theme='dark'] .admonition-warning code,
+[data-theme='dark'] .admonition-caution code,
+[data-theme='dark'] .admonition-danger code {
+  background-color: rgba(246, 54, 73, 0.18) !important;
+}
+
+.alert--secondary code {
+  color: inherit !important;
+  background-color: rgba(0, 0, 0, 0.07) !important;
+}
+
+[data-theme='dark'] .alert--secondary code {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Secondary */
+.alert--secondary {
+  --ifm-alert-background-color: #F3F4F5;
+  --ifm-alert-foreground-color: #121214;
+  background-color: #F3F4F5;
+  border: none;
+}
+
+[data-theme='dark'] .alert--secondary {
+  --ifm-alert-background-color: #1E1F24;
+  --ifm-alert-foreground-color: #FFFFFF;
+  background-color: #1E1F24;
+}
