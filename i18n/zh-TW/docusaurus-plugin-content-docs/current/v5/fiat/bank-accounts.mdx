@@ -1,0 +1,69 @@
+---
+title: 獲取銀行帳戶列表
+sidebar_label: 獲取銀行帳戶列表
+sidebar_position: 1
+---
+
+獲取與當前用戶關聯的所有銀行帳戶，按創建時間升序返回。
+
+:::tip
+- 結果按創建時間升序排列。
+:::
+
+### HTTP Request
+GET `/v5/fiat/bank-accounts`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|currency |**true** |string |用於篩選銀行帳戶的幣種代碼。 |
+
+### Response Parameters
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|retCode |integer |返回碼，0 表示成功。 |
+|retMsg |string |返回訊息。 |
+|result |object |結果物件。 |
+|> data |array |銀行帳戶物件列表。 |
+|>> bankName |string |銀行名稱。 |
+|>> bankAccountId |string |銀行帳號 ID。 |
+|>> accountNumberMasked |string |銀行帳號掩碼。 |
+|>> status |string |帳戶狀態：pending_verification &#124; active &#124; rejected。 |
+|>> createdAt |integer |帳戶創建時間，毫秒時間戳。 |
+
+### Request Example
+
+```http
+GET /v5/fiat/bank-accounts?currency=USD HTTP/1.1
+Host: api.bybit.com
+X-BAPI-API-KEY: YOUR_API_KEY
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-SIGN: YOUR_SIGNATURE
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "",
+  "result": {
+    "data": [
+      {
+        "bankName": "Chase Bank",
+        "bankAccountId": "ba_001abc123",
+        "accountNumberMasked": "****1234",
+        "status": "active",
+        "createdAt": 1717804800000
+      },
+      {
+        "bankName": "Bank of America",
+        "bankAccountId": "ba_002def456",
+        "accountNumberMasked": "****5678",
+        "status": "pending_verification",
+        "createdAt": 1717891200000
+      }
+    ]
+  }
+}
+```

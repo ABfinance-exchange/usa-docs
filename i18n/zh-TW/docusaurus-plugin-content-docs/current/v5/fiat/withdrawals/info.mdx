@@ -1,0 +1,72 @@
+---
+title: 查詢提現訂單
+sidebar_label: 查詢提現訂單
+sidebar_position: 3
+---
+
+通過平台訂單 ID 或客戶端訂單 ID 查詢單筆法幣提現訂單。
+
+:::tip
+- clientOrderId 與 withdrawalId 必須填寫其中一個，不可同時為空。
+:::
+
+### HTTP Request
+GET `/v5/fiat/withdrawals/info`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|clientOrderId |false |string |調用方幂等鍵，與 withdrawalId 二者必填其一。 |
+|withdrawalId |false |string |平台分配的訂單 ID，與 clientOrderId 二者必填其一。 |
+
+### Response Parameters
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|retCode |integer |返回碼，0 表示成功。 |
+|retMsg |string |返回訊息。 |
+|result |object |結果物件。 |
+|> withdrawalId |string |平台訂單 ID。 |
+|> clientOrderId |string |調用方幂等鍵。 |
+|> status |string |訂單狀態：processing &#124; completed &#124; failed。 |
+|> amount |string |請求提現金額。 |
+|> fee |string |平台手續費。 |
+|> netAmount |string |實際匯出金額。 |
+|> currency |string |提現幣種。 |
+|> bankAccountId |string |目標銀行帳戶 ID。 |
+|> failureReason |string |失敗原因，僅當狀態為 failed 時填充。 |
+|> createdAt |integer |訂單創建時間，毫秒時間戳。 |
+|> updatedAt |integer |最後狀態變更時間，毫秒時間戳。 |
+|> completedAt |integer |訂單完成時間，毫秒時間戳，僅當狀態為 completed 時填充。 |
+
+### Request Example
+
+```http
+GET /v5/fiat/withdrawals/info?withdrawalId=wd_20240608_xyz789 HTTP/1.1
+Host: api.bybit.com
+X-BAPI-API-KEY: YOUR_API_KEY
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-SIGN: YOUR_SIGNATURE
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "",
+  "result": {
+    "withdrawalId": "wd_20240608_xyz789",
+    "clientOrderId": "my-order-20240608-001",
+    "status": "completed",
+    "amount": "500.00",
+    "fee": "5.00",
+    "netAmount": "495.00",
+    "currency": "USD",
+    "bankAccountId": "ba_001abc123",
+    "failureReason": null,
+    "createdAt": 1717804800000,
+    "updatedAt": 1717808400000,
+    "completedAt": 1717808400000
+  }
+}
+```

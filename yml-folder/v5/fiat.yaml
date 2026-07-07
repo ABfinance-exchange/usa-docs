@@ -1,0 +1,342 @@
+openapi: 3.0.0
+servers:
+  - url: https://api-testnet.abfinance.com
+    description: Testnet server
+info:
+  description: Add Fiat Withdraw APIs
+  version: 1.0.0
+  title: v5 fiat api
+tags:
+  - name: fiat
+    x-displayName: Fiat
+paths:
+  /v5/fiat/bank-accounts:
+    get:
+      operationId: get-bank-accounts
+      tags:
+        - fiat
+      summary: Get Bank Accounts
+      description: Retrieve all bank accounts associated with the authenticated user, returned in ascending order by creation time.
+      parameters:
+        - name: currency
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Currency code to filter bank accounts.
+          example: USD
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  retCode:
+                    type: integer
+                    description: Return code. 0 indicates success.
+                  retMsg:
+                    type: string
+                    description: Return message.
+                  result:
+                    type: object
+                    properties:
+                      data:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            bankName:
+                              type: string
+                              description: Bank name.
+                            bankAccountId:
+                              type: string
+                              description: Bank account ID.
+                            accountNumberMasked:
+                              type: string
+                              description: Masked bank account number.
+                            status:
+                              type: string
+                              description: "Account status: pending_verification | active | rejected."
+                            createdAt:
+                              type: integer
+                              description: Account creation time in milliseconds timestamp.
+  /v5/fiat/withdrawals/create:
+    post:
+      operationId: create-withdrawal
+      tags:
+        - fiat
+      summary: Create Withdrawal Order
+      description: Initiate a fiat withdrawal order to transfer USD balance to a linked bank account.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - bankAccountId
+                - amount
+                - currency
+                - clientOrderId
+              properties:
+                bankAccountId:
+                  type: string
+                  description: Target bank account ID. The account must have status = active.
+                  example: ba_001abc123
+                amount:
+                  type: string
+                  description: USD amount to withdraw.
+                  example: "500.00"
+                currency:
+                  type: string
+                  description: Currency of the withdrawal. Must be USD.
+                  enum:
+                    - USD
+                  example: USD
+                currency_type:
+                  type: string
+                  description: Currency type.
+                  enum:
+                    - fiat
+                    - crypto
+                  example: fiat
+                clientOrderId:
+                  type: string
+                  description: Caller-defined unique ID used as an idempotency key.
+                  example: my-order-20240608-001
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  retCode:
+                    type: integer
+                    description: Return code. 0 indicates success.
+                  retMsg:
+                    type: string
+                    description: Return message.
+                  result:
+                    type: object
+                    properties:
+                      withdrawalId:
+                        type: string
+                        description: Platform-assigned order ID.
+                      clientOrderId:
+                        type: string
+                        description: Echo of the caller's idempotency key.
+                      status:
+                        type: string
+                        description: "Order status: processing | completed | failed."
+                      amount:
+                        type: string
+                        description: Requested withdrawal amount.
+                      fee:
+                        type: string
+                        description: Platform fee deducted.
+                      netAmount:
+                        type: string
+                        description: Actual amount remitted (amount minus fee).
+                      currency:
+                        type: string
+                        description: Currency of the withdrawal.
+                      bankAccountId:
+                        type: string
+                        description: Target bank account ID.
+  /v5/fiat/withdrawals/info:
+    get:
+      operationId: get-withdrawal-info
+      tags:
+        - fiat
+      summary: Get Withdrawal Order
+      description: Query a single fiat withdrawal order by platform order ID or client order ID.
+      parameters:
+        - name: clientOrderId
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Caller's idempotency key. Either this or withdrawalId must be provided.
+          example: my-order-20240608-001
+        - name: withdrawalId
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Platform-assigned order ID. Either this or clientOrderId must be provided.
+          example: wd_20240608_xyz789
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  retCode:
+                    type: integer
+                    description: Return code. 0 indicates success.
+                  retMsg:
+                    type: string
+                    description: Return message.
+                  result:
+                    type: object
+                    properties:
+                      withdrawalId:
+                        type: string
+                        description: Platform-assigned order ID.
+                      clientOrderId:
+                        type: string
+                        description: Caller's idempotency key.
+                      status:
+                        type: string
+                        description: "Order status: processing | completed | failed."
+                      amount:
+                        type: string
+                        description: Requested withdrawal amount.
+                      fee:
+                        type: string
+                        description: Platform fee deducted.
+                      netAmount:
+                        type: string
+                        description: Actual amount remitted.
+                      currency:
+                        type: string
+                        description: Currency of the withdrawal.
+                      bankAccountId:
+                        type: string
+                        description: Target bank account ID.
+                      failureReason:
+                        type: string
+                        description: Failure reason. Populated only when status is failed.
+                      createdAt:
+                        type: integer
+                        description: Order creation time in milliseconds timestamp.
+                      updatedAt:
+                        type: integer
+                        description: Last status change time in milliseconds timestamp.
+                      completedAt:
+                        type: integer
+                        description: Order completion time in milliseconds timestamp. Populated only when status is completed.
+  /v5/fiat/withdrawals/list:
+    get:
+      operationId: get-withdrawal-list
+      tags:
+        - fiat
+      summary: Get Withdrawal Order List
+      description: Query a paginated list of fiat withdrawal orders with optional filters by status, bank account, and time range.
+      parameters:
+        - name: status
+          in: query
+          required: false
+          schema:
+            type: string
+            enum:
+              - processing
+              - completed
+              - failed
+          description: Filter by order status.
+          example: completed
+        - name: bankAccountId
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Filter by target bank account ID.
+          example: ba_001abc123
+        - name: startTime
+          in: query
+          required: false
+          schema:
+            type: integer
+          description: Order creation start time in milliseconds timestamp.
+          example: 1717804800000
+        - name: endTime
+          in: query
+          required: false
+          schema:
+            type: integer
+          description: Order creation end time in milliseconds timestamp.
+          example: 1717891200000
+        - name: limit
+          in: query
+          required: true
+          schema:
+            type: integer
+          description: Number of records per page. Default 20, max 100.
+          example: 20
+        - name: page
+          in: query
+          required: true
+          schema:
+            type: integer
+          description: Page number. Default 1.
+          example: 1
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  retCode:
+                    type: integer
+                    description: Return code. 0 indicates success.
+                  retMsg:
+                    type: string
+                    description: Return message.
+                  result:
+                    type: object
+                    properties:
+                      data:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            withdrawalId:
+                              type: string
+                              description: Platform-assigned order ID.
+                            clientOrderId:
+                              type: string
+                              description: Caller's idempotency key.
+                            status:
+                              type: string
+                              description: "Order status: processing | completed | failed."
+                            amount:
+                              type: string
+                              description: Requested withdrawal amount.
+                            fee:
+                              type: string
+                              description: Platform fee deducted.
+                            netAmount:
+                              type: string
+                              description: Actual amount remitted.
+                            currency:
+                              type: string
+                              description: Currency of the withdrawal.
+                            bankAccountId:
+                              type: string
+                              description: Target bank account ID.
+                            failureReason:
+                              type: string
+                              description: Failure reason. Populated only when status is failed.
+                            createdAt:
+                              type: integer
+                              description: Order creation time in milliseconds timestamp.
+                            updatedAt:
+                              type: integer
+                              description: Last status change time in milliseconds timestamp.
+                            completedAt:
+                              type: integer
+                              description: Order completion time in milliseconds timestamp. Populated only when status is completed.
+                      page:
+                        type: integer
+                        description: Current page number.
+                      total:
+                        type: integer
+                        description: Total number of matching records (when computable).

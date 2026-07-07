@@ -1,0 +1,79 @@
+---
+title: 創建提現訂單
+sidebar_label: 創建提現訂單
+sidebar_position: 2
+---
+
+發起法幣提現訂單，將 USD 餘額轉入已綁定的銀行帳戶。
+
+:::tip
+- 發起提現前，bankAccountId 的狀態必須為 active。
+- clientOrderId 用作幂等鍵，相同 clientOrderId 的重複請求不會創建重複訂單。
+- currency 必須為 USD。
+- 若銀行帳戶狀態為 pending_verification，請求將被拒絕，返回 retCode 40010、retMsg "Create error"，result 為 null。
+:::
+
+### HTTP Request
+POST `/v5/fiat/withdrawals/create`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|bankAccountId |**true** |string |目標銀行帳戶 ID，帳戶狀態必須為 active。 |
+|amount |**true** |string |提現的 USD 金額。 |
+|currency |**true** |string |提現幣種，必須為 USD。 `USD` |
+|currency_type |false |string |幣種類型。 `fiat` `crypto` |
+|clientOrderId |**true** |string |調用方自定義的唯一 ID，用作幂等鍵。 |
+
+### Response Parameters
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|retCode |integer |返回碼，0 表示成功。 |
+|retMsg |string |返回訊息。 |
+|result |object |結果物件。 |
+|> withdrawalId |string |平台分配的訂單 ID。 |
+|> clientOrderId |string |回顯調用方的幂等鍵。 |
+|> status |string |訂單狀態：processing &#124; completed &#124; failed。 |
+|> amount |string |請求提現金額。 |
+|> fee |string |扣除的平台手續費。 |
+|> netAmount |string |實際匯出金額（金額減去手續費）。 |
+|> currency |string |提現幣種。 |
+|> bankAccountId |string |目標銀行帳戶 ID。 |
+
+### Request Example
+
+```http
+POST /v5/fiat/withdrawals/create HTTP/1.1
+Host: api.bybit.com
+Content-Type: application/json
+X-BAPI-API-KEY: YOUR_API_KEY
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-SIGN: YOUR_SIGNATURE
+
+{
+  "bankAccountId": "ba_001abc123",
+  "amount": "500.00",
+  "currency": "USD",
+  "currency_type": "fiat",
+  "clientOrderId": "my-order-20240608-001"
+}
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "",
+  "result": {
+    "withdrawalId": "wd_20240608_xyz789",
+    "clientOrderId": "my-order-20240608-001",
+    "status": "processing",
+    "amount": "500.00",
+    "fee": "5.00",
+    "netAmount": "495.00",
+    "currency": "USD",
+    "bankAccountId": "ba_001abc123"
+  }
+}
+```

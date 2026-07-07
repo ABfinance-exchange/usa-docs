@@ -1,0 +1,79 @@
+---
+title: Create Withdrawal Order
+sidebar_label: Create Withdrawal Order
+sidebar_position: 2
+---
+
+Initiate a fiat withdrawal order to transfer USD balance to a linked bank account.
+
+:::tip
+- The bankAccountId must have status = active before initiating a withdrawal.
+- clientOrderId serves as an idempotency key; repeated requests with the same clientOrderId will not create duplicate orders.
+- currency must be USD.
+- If the bank account status is pending_verification, the request will be rejected with retCode 40010 and retMsg "Create error", result will be null.
+:::
+
+### HTTP Request
+POST `/v5/fiat/withdrawals/create`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|bankAccountId |**true** |string |Target bank account ID. The account must have status = active. |
+|amount |**true** |string |USD amount to withdraw. |
+|currency |**true** |string |Currency of the withdrawal. Must be USD. `USD` |
+|currency_type |false |string |Currency type. `fiat` `crypto` |
+|clientOrderId |**true** |string |Caller-defined unique ID used as an idempotency key. |
+
+### Response Parameters
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|retCode |integer |Return code. 0 indicates success. |
+|retMsg |string |Return message. |
+|result |object |Result object. |
+|> withdrawalId |string |Platform-assigned order ID. |
+|> clientOrderId |string |Echo of the caller's idempotency key. |
+|> status |string |Order status: processing &#124; completed &#124; failed. |
+|> amount |string |Requested withdrawal amount. |
+|> fee |string |Platform fee deducted. |
+|> netAmount |string |Actual amount remitted (amount minus fee). |
+|> currency |string |Currency of the withdrawal. |
+|> bankAccountId |string |Target bank account ID. |
+
+### Request Example
+
+```http
+POST /v5/fiat/withdrawals/create HTTP/1.1
+Host: api.bybit.com
+Content-Type: application/json
+X-BAPI-API-KEY: YOUR_API_KEY
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-SIGN: YOUR_SIGNATURE
+
+{
+  "bankAccountId": "ba_001abc123",
+  "amount": "500.00",
+  "currency": "USD",
+  "currency_type": "fiat",
+  "clientOrderId": "my-order-20240608-001"
+}
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "",
+  "result": {
+    "withdrawalId": "wd_20240608_xyz789",
+    "clientOrderId": "my-order-20240608-001",
+    "status": "processing",
+    "amount": "500.00",
+    "fee": "5.00",
+    "netAmount": "495.00",
+    "currency": "USD",
+    "bankAccountId": "ba_001abc123"
+  }
+}
+```

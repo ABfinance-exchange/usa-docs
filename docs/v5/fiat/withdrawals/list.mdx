@@ -1,0 +1,100 @@
+---
+title: Get Withdrawal Order List
+sidebar_label: Get Withdrawal Order List
+sidebar_position: 4
+---
+
+Query a paginated list of fiat withdrawal orders with optional filters by status, bank account, and time range.
+
+:::tip
+- limit defaults to 20 and the maximum allowed value is 100.
+- page defaults to 1.
+:::
+
+### HTTP Request
+GET `/v5/fiat/withdrawals/list`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|status |false |string |Filter by order status. `processing` `completed` `failed` |
+|bankAccountId |false |string |Filter by target bank account ID. |
+|startTime |false |integer |Order creation start time in milliseconds timestamp. |
+|endTime |false |integer |Order creation end time in milliseconds timestamp. |
+|limit |**true** |integer |Number of records per page. Default 20, max 100. |
+|page |**true** |integer |Page number. Default 1. |
+
+### Response Parameters
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|retCode |integer |Return code. 0 indicates success. |
+|retMsg |string |Return message. |
+|result |object |Result object. |
+|> data |array |List of withdrawal order objects. |
+|>> withdrawalId |string |Platform-assigned order ID. |
+|>> clientOrderId |string |Caller's idempotency key. |
+|>> status |string |Order status: processing &#124; completed &#124; failed. |
+|>> amount |string |Requested withdrawal amount. |
+|>> fee |string |Platform fee deducted. |
+|>> netAmount |string |Actual amount remitted. |
+|>> currency |string |Currency of the withdrawal. |
+|>> bankAccountId |string |Target bank account ID. |
+|>> failureReason |string |Failure reason. Populated only when status is failed. |
+|>> createdAt |integer |Order creation time in milliseconds timestamp. |
+|>> updatedAt |integer |Last status change time in milliseconds timestamp. |
+|>> completedAt |integer |Order completion time in milliseconds timestamp. Populated only when status is completed. |
+|> page |integer |Current page number. |
+|> total |integer |Total number of matching records (when computable). |
+
+### Request Example
+
+```http
+GET /v5/fiat/withdrawals/list?status=completed&bankAccountId=ba_001abc123&startTime=1717804800000&endTime=1717891200000&limit=20&page=1 HTTP/1.1
+Host: api.bybit.com
+X-BAPI-API-KEY: YOUR_API_KEY
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-SIGN: YOUR_SIGNATURE
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "",
+  "result": {
+    "data": [
+      {
+        "withdrawalId": "wd_20240608_xyz789",
+        "clientOrderId": "my-order-20240608-001",
+        "status": "completed",
+        "amount": "500.00",
+        "fee": "5.00",
+        "netAmount": "495.00",
+        "currency": "USD",
+        "bankAccountId": "ba_001abc123",
+        "failureReason": null,
+        "createdAt": 1717804800000,
+        "updatedAt": 1717808400000,
+        "completedAt": 1717808400000
+      },
+      {
+        "withdrawalId": "wd_20240607_abc123",
+        "clientOrderId": "my-order-20240607-002",
+        "status": "completed",
+        "amount": "200.00",
+        "fee": "2.00",
+        "netAmount": "198.00",
+        "currency": "USD",
+        "bankAccountId": "ba_001abc123",
+        "failureReason": null,
+        "createdAt": 1717718400000,
+        "updatedAt": 1717722000000,
+        "completedAt": 1717722000000
+      }
+    ],
+    "page": 1,
+    "total": 2
+  }
+}
+```

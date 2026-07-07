@@ -1,0 +1,72 @@
+---
+title: Get Withdrawal Order
+sidebar_label: Get Withdrawal Order
+sidebar_position: 3
+---
+
+Query a single fiat withdrawal order by platform order ID or client order ID.
+
+:::tip
+- Either clientOrderId or withdrawalId must be provided; both cannot be omitted simultaneously.
+:::
+
+### HTTP Request
+GET `/v5/fiat/withdrawals/info`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|clientOrderId |false |string |Caller's idempotency key. Either this or withdrawalId must be provided. |
+|withdrawalId |false |string |Platform-assigned order ID. Either this or clientOrderId must be provided. |
+
+### Response Parameters
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|retCode |integer |Return code. 0 indicates success. |
+|retMsg |string |Return message. |
+|result |object |Result object. |
+|> withdrawalId |string |Platform-assigned order ID. |
+|> clientOrderId |string |Caller's idempotency key. |
+|> status |string |Order status: processing &#124; completed &#124; failed. |
+|> amount |string |Requested withdrawal amount. |
+|> fee |string |Platform fee deducted. |
+|> netAmount |string |Actual amount remitted. |
+|> currency |string |Currency of the withdrawal. |
+|> bankAccountId |string |Target bank account ID. |
+|> failureReason |string |Failure reason. Populated only when status is failed. |
+|> createdAt |integer |Order creation time in milliseconds timestamp. |
+|> updatedAt |integer |Last status change time in milliseconds timestamp. |
+|> completedAt |integer |Order completion time in milliseconds timestamp. Populated only when status is completed. |
+
+### Request Example
+
+```http
+GET /v5/fiat/withdrawals/info?withdrawalId=wd_20240608_xyz789 HTTP/1.1
+Host: api.bybit.com
+X-BAPI-API-KEY: YOUR_API_KEY
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-SIGN: YOUR_SIGNATURE
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "",
+  "result": {
+    "withdrawalId": "wd_20240608_xyz789",
+    "clientOrderId": "my-order-20240608-001",
+    "status": "completed",
+    "amount": "500.00",
+    "fee": "5.00",
+    "netAmount": "495.00",
+    "currency": "USD",
+    "bankAccountId": "ba_001abc123",
+    "failureReason": null,
+    "createdAt": 1717804800000,
+    "updatedAt": 1717808400000,
+    "completedAt": 1717808400000
+  }
+}
+```

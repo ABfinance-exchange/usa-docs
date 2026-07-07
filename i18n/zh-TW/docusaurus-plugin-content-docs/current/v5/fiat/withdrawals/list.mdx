@@ -1,0 +1,100 @@
+---
+title: 查詢提現訂單列表
+sidebar_label: 查詢提現訂單列表
+sidebar_position: 4
+---
+
+查詢法幣提現訂單的分頁列表，支持按狀態、銀行帳戶及時間範圍篩選。
+
+:::tip
+- limit 默認為 20，最大值為 100。
+- page 默認為 1。
+:::
+
+### HTTP Request
+GET `/v5/fiat/withdrawals/list`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|status |false |string |按訂單狀態篩選。 `processing` `completed` `failed` |
+|bankAccountId |false |string |按目標銀行帳戶 ID 篩選。 |
+|startTime |false |integer |訂單創建起始時間，毫秒時間戳。 |
+|endTime |false |integer |訂單創建結束時間，毫秒時間戳。 |
+|limit |**true** |integer |每頁記錄數，默認 20，最大 100。 |
+|page |**true** |integer |頁碼，默認 1。 |
+
+### Response Parameters
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|retCode |integer |返回碼，0 表示成功。 |
+|retMsg |string |返回訊息。 |
+|result |object |結果物件。 |
+|> data |array |提現訂單物件列表。 |
+|>> withdrawalId |string |平台訂單 ID。 |
+|>> clientOrderId |string |調用方幂等鍵。 |
+|>> status |string |訂單狀態：processing &#124; completed &#124; failed。 |
+|>> amount |string |請求提現金額。 |
+|>> fee |string |平台手續費。 |
+|>> netAmount |string |實際匯出金額。 |
+|>> currency |string |提現幣種。 |
+|>> bankAccountId |string |目標銀行帳戶 ID。 |
+|>> failureReason |string |失敗原因，僅當狀態為 failed 時填充。 |
+|>> createdAt |integer |訂單創建時間，毫秒時間戳。 |
+|>> updatedAt |integer |最後狀態變更時間，毫秒時間戳。 |
+|>> completedAt |integer |訂單完成時間，毫秒時間戳，僅當狀態為 completed 時填充。 |
+|> page |integer |當前頁碼。 |
+|> total |integer |匹配的記錄總數（可計算時返回）。 |
+
+### Request Example
+
+```http
+GET /v5/fiat/withdrawals/list?status=completed&bankAccountId=ba_001abc123&startTime=1717804800000&endTime=1717891200000&limit=20&page=1 HTTP/1.1
+Host: api.bybit.com
+X-BAPI-API-KEY: YOUR_API_KEY
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-SIGN: YOUR_SIGNATURE
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "",
+  "result": {
+    "data": [
+      {
+        "withdrawalId": "wd_20240608_xyz789",
+        "clientOrderId": "my-order-20240608-001",
+        "status": "completed",
+        "amount": "500.00",
+        "fee": "5.00",
+        "netAmount": "495.00",
+        "currency": "USD",
+        "bankAccountId": "ba_001abc123",
+        "failureReason": null,
+        "createdAt": 1717804800000,
+        "updatedAt": 1717808400000,
+        "completedAt": 1717808400000
+      },
+      {
+        "withdrawalId": "wd_20240607_abc123",
+        "clientOrderId": "my-order-20240607-002",
+        "status": "completed",
+        "amount": "200.00",
+        "fee": "2.00",
+        "netAmount": "198.00",
+        "currency": "USD",
+        "bankAccountId": "ba_001abc123",
+        "failureReason": null,
+        "createdAt": 1717718400000,
+        "updatedAt": 1717722000000,
+        "completedAt": 1717722000000
+      }
+    ],
+    "page": 1,
+    "total": 2
+  }
+}
+```
