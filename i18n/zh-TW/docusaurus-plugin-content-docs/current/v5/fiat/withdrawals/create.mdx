@@ -22,7 +22,7 @@ POST `/v5/fiat/withdrawals/create`
 |bankAccountId |**true** |string |目標銀行帳戶 ID，帳戶狀態必須為 active。 |
 |amount |**true** |string |提現的 USD 金額。 |
 |currency |**true** |string |提現幣種，必須為 USD。 `USD` |
-|currency_type |false |string |幣種類型。 `fiat` `crypto` |
+|currencyType |false |string |幣種類型。 `fiat` `crypto` |
 |clientOrderId |**true** |string |調用方自定義的唯一 ID，用作幂等鍵。 |
 
 ### Response Parameters
@@ -54,7 +54,7 @@ X-BAPI-SIGN: YOUR_SIGNATURE
   "bankAccountId": "ba_001abc123",
   "amount": "500.00",
   "currency": "USD",
-  "currency_type": "fiat",
+  "currencyType": "fiat",
   "clientOrderId": "my-order-20240608-001"
 }
 ```

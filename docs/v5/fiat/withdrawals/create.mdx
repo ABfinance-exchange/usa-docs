@@ -22,7 +22,7 @@ POST `/v5/fiat/withdrawals/create`
 |bankAccountId |**true** |string |Target bank account ID. The account must have status = active. |
 |amount |**true** |string |USD amount to withdraw. |
 |currency |**true** |string |Currency of the withdrawal. Must be USD. `USD` |
-|currency_type |false |string |Currency type. `fiat` `crypto` |
+|currencyType |false |string |Currency type. `fiat` `crypto` |
 |clientOrderId |**true** |string |Caller-defined unique ID used as an idempotency key. |
 
 ### Response Parameters
@@ -54,7 +54,7 @@ X-BAPI-SIGN: YOUR_SIGNATURE
   "bankAccountId": "ba_001abc123",
   "amount": "500.00",
   "currency": "USD",
-  "currency_type": "fiat",
+  "currencyType": "fiat",
   "clientOrderId": "my-order-20240608-001"
 }
 ```
