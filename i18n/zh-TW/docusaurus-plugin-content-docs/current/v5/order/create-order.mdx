@@ -26,7 +26,7 @@ sidebar_position: 1
 
 - **訂單價格**: 下限價單，價格字段**必傳**。 對於設置價格的步長，請參閱該[接口](../market/instrument#)中的`priceFilter` > `tickSize`.
 
-- **用戶自定義訂單Id**: 最大長度不超過36個字符且唯一。您可以自定義設置的订单ID(`orderLinkId`)，我们会为您关联到平台系统的唯一订单ID，并把唯一订单ID在活动委托创建成功后一并返回给您（包括Websocket），您可以使用 平台 的订单ID 和 orderLinkId 去獲取和取消訂單，如果在參數輸入中同時輸入 orderId 和 orderLinkId，平台會優先以 orderId 為准來處理對應訂單.
+- **用戶自定義訂單Id**: 最大長度不超過46個字符且唯一。您可以自定義設置的订单ID(`orderLinkId`)，我们会为您关联到平台系统的唯一订单ID，并把唯一订单ID在活动委托创建成功后一并返回给您（包括Websocket），您可以使用 平台 的订单ID 和 orderLinkId 去獲取和取消訂單，如果在參數輸入中同時輸入 orderId 和 orderLinkId，平台會優先以 orderId 為准來處理對應訂單.
 
 - **訂單持有上限:**<br/>
 **現貨:** 單帳戶單交易對: 總計支持500個掛單，包括最多持有30個止盈止損委託單和30個條件單委託單<br/>

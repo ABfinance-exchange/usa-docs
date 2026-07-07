@@ -27,7 +27,7 @@ GET `/v5/fiat/withdrawals/info`
 |result |object |Result object. |
 |> withdrawalId |string |Platform-assigned order ID. |
 |> clientOrderId |string |Caller's idempotency key. |
-|> status |string |Order status: processing &#124; completed &#124; failed. |
+|> status |string |Order status. `processing`, `completed`, `failed` |
 |> amount |string |Requested withdrawal amount. |
 |> fee |string |Platform fee deducted. |
 |> netAmount |string |Actual amount remitted. |

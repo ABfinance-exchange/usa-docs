@@ -27,7 +27,7 @@ GET `/v5/fiat/withdrawals/info`
 |result |object |結果物件。 |
 |> withdrawalId |string |平台訂單 ID。 |
 |> clientOrderId |string |調用方幂等鍵。 |
-|> status |string |訂單狀態：processing &#124; completed &#124; failed。 |
+|> status |string |訂單狀態。`processing`, `completed`, `failed` |
 |> amount |string |請求提現金額。 |
 |> fee |string |平台手續費。 |
 |> netAmount |string |實際匯出金額。 |

@@ -21,8 +21,8 @@ POST `/v5/fiat/withdrawals/create`
 |:----- |:-------|:-----|------ |
 |bankAccountId |**true** |string |目標銀行帳戶 ID，帳戶狀態必須為 active。 |
 |amount |**true** |string |提現的 USD 金額。 |
-|currency |**true** |string |提現幣種，必須為 USD。 `USD` |
-|currencyType |false |string |幣種類型。 `fiat` `crypto` |
+|currency |**true** |string |提現幣種，必須為 `USD`。 |
+|currencyType |false |string |幣種類型。必須為 `fiat`。 |
 |clientOrderId |**true** |string |調用方自定義的唯一 ID，用作幂等鍵。 |
 
 ### Response Parameters
@@ -33,7 +33,7 @@ POST `/v5/fiat/withdrawals/create`
 |result |object |結果物件。 |
 |> withdrawalId |string |平台分配的訂單 ID。 |
 |> clientOrderId |string |回顯調用方的幂等鍵。 |
-|> status |string |訂單狀態：processing &#124; completed &#124; failed。 |
+|> status |string |訂單狀態。`processing`, `completed`, `failed` |
 |> amount |string |請求提現金額。 |
 |> fee |string |扣除的平台手續費。 |
 |> netAmount |string |實際匯出金額（金額減去手續費）。 |

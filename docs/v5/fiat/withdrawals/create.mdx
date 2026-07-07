@@ -21,8 +21,8 @@ POST `/v5/fiat/withdrawals/create`
 |:----- |:-------|:-----|------ |
 |bankAccountId |**true** |string |Target bank account ID. The account must have status = active. |
 |amount |**true** |string |USD amount to withdraw. |
-|currency |**true** |string |Currency of the withdrawal. Must be USD. `USD` |
-|currencyType |false |string |Currency type. `fiat` `crypto` |
+|currency |**true** |string |Currency of the withdrawal. Must be `USD`. |
+|currencyType |false |string |Currency type. Must be `fiat`. |
 |clientOrderId |**true** |string |Caller-defined unique ID used as an idempotency key. |
 
 ### Response Parameters
@@ -33,7 +33,7 @@ POST `/v5/fiat/withdrawals/create`
 |result |object |Result object. |
 |> withdrawalId |string |Platform-assigned order ID. |
 |> clientOrderId |string |Echo of the caller's idempotency key. |
-|> status |string |Order status: processing &#124; completed &#124; failed. |
+|> status |string |Order status. `processing`, `completed`, `failed` |
 |> amount |string |Requested withdrawal amount. |
 |> fee |string |Platform fee deducted. |
 |> netAmount |string |Actual amount remitted (amount minus fee). |

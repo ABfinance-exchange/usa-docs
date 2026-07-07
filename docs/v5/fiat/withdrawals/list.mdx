@@ -17,7 +17,7 @@ GET `/v5/fiat/withdrawals/list`
 ### Request Parameters
 | Parameter | Required | Type | Comments|
 |:----- |:-------|:-----|------ |
-|status |false |string |Filter by order status. `processing` `completed` `failed` |
+|status |false |string |Filter by order status. `processing`, `completed`, `failed` |
 |bankAccountId |false |string |Filter by target bank account ID. |
 |startTime |false |integer |Order creation start time in milliseconds timestamp. |
 |endTime |false |integer |Order creation end time in milliseconds timestamp. |
@@ -33,7 +33,7 @@ GET `/v5/fiat/withdrawals/list`
 |> data |array |List of withdrawal order objects. |
 |>> withdrawalId |string |Platform-assigned order ID. |
 |>> clientOrderId |string |Caller's idempotency key. |
-|>> status |string |Order status: processing &#124; completed &#124; failed. |
+|>> status |string |Order status. `processing`, `completed`, `failed` |
 |>> amount |string |Requested withdrawal amount. |
 |>> fee |string |Platform fee deducted. |
 |>> netAmount |string |Actual amount remitted. |

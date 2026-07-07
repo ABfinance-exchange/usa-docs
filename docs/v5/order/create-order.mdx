@@ -29,7 +29,7 @@ For the minimum unit of the price change, please refer to the `priceFilter` > `t
 
 - **orderLinkId**: You can customize the active order ID. We can link this ID to the order ID in the system. Once the
 active order is successfully created, we will send the unique order ID in the system to you. Then, you can use this order
-ID to cancel active orders, and if both orderId and orderLinkId are entered in the parameter input, Will prioritize the orderId to process the corresponding order. Meanwhile, your customized order ID should be no longer than 36 characters and should be **unique**.
+ID to cancel active orders, and if both orderId and orderLinkId are entered in the parameter input, Will prioritize the orderId to process the corresponding order. Meanwhile, your customized order ID should be no longer than 46 characters and should be **unique**.
 
 - **Open orders up limit:**<br/>
 **Spot:** 500 orders in total, including a maximum of 30 open TP/SL orders, a maximum of 30 open conditional orders for each symbol per account<br/>
@@ -61,7 +61,7 @@ POST `/v5/order/create`
 |orderFilter |false |string |If it is not passed, `Order` by default. <ul><li>`Order`</li><li>`tpslOrder`: Spot TP/SL order, the assets are occupied even before the order is triggered</li><li>`StopOrder`: Spot conditional order, the assets will not be occupied until the price of the underlying asset reaches the trigger price, and the required assets will be occupied after the Conditional order is triggered</li></ul>Valid for `spot` **only**|
 |triggerPrice |false |string |<ul><li>For spot, it is the TP/SL and Conditional order trigger price</li></ul>|
 |[timeInForce](../enum#timeinforce) |false |string |<a href="https://www.abfinance.com/en/help-center/article/What-Are-Time-In-Force-TIF-GTC-IOC-FOK">Time in force</a> <ul><li>Market order will always use `IOC`</li><li>If not passed, `GTC` is used by default</li> </ul>|
-|orderLinkId |false |string |User customised order ID. A max of 36 characters. Combinations of numbers, letters (upper and lower cases), dashes, and underscores are supported.|
+|orderLinkId |false |string |User customised order ID. A max of 46 characters. Combinations of numbers, letters (upper and lower cases), dashes, and underscores are supported.|
 |takeProfit |false |string |Take profit price<li>Spot Limit order supports take profit, stop loss or limit take profit, limit stop loss when creating an order</li>|
 |stopLoss |false |string |Stop loss price <li>Spot Limit order supports take profit, stop loss or limit take profit, limit stop loss when creating an order</li>|
 |[smpType](../enum#smptype) |false |string |Smp execution type. [What is SMP?](../smp)|
