@@ -1,0 +1,53 @@
+i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/enum.mdx
+  6618ec8dda8fb014 458-508
+docs/v5/enum.mdx
+  6618ec8dda8fb014 350-400
+docs/v5/fiat/transfer/get-quota.mdx
+  6618ec8dda8fb014 1-140
+i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/websocket/private/fiat-order.mdx
+  6618ec8dda8fb014 1-10,12-17,20,22-31,33-44
+docs/v5/fiat/transfer/confirm.mdx
+  6618ec8dda8fb014 1-82
+docs/v5/websocket/private/fiat-order.mdx
+  6618ec8dda8fb014 1-44
+docs/v5/fiat/transfer/get-info.mdx
+  6618ec8dda8fb014 1-72
+docs/v5/fiat/transfer/get-payment-setting.mdx
+  6618ec8dda8fb014 1-63
+sidebars.js
+  6618ec8dda8fb014 152-161
+i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/fiat/transfer/create.mdx
+  6618ec8dda8fb014 1-12,14-15,17-18,21-27,29-43,45-47,51,54-66,68-76,80-81
+docs/v5/fiat/transfer/get-common-config.mdx
+  6618ec8dda8fb014 1-96
+docs/v5/fiat/transfer/update-payment-setting.mdx
+  6618ec8dda8fb014 1-52
+docs/v5/fiat/transfer/create.mdx
+  6618ec8dda8fb014 1-81
+docs/v5/fiat/transfer/get-transaction-history.mdx
+  6618ec8dda8fb014 1-96
+docs/v5/fiat/transfer/query-order.mdx
+  6618ec8dda8fb014 1-210
+i18n/zh-TW/docusaurus-plugin-content-docs/current/v5/fiat/transfer/confirm.mdx
+  6618ec8dda8fb014 1-6,8,10-11,13-17,19-36,38-40,44,47-53,55-77,81-82
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2-bit.9+daa2e24",
+  "base_commit_sha": "d643085f9e5ac49773eb26f874880b0f76ef8c63",
+  "prompts": {
+    "6618ec8dda8fb014": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b0baecc9-a561-4387-a377-cdf1b97d6e6b",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "jarrett.wong",
+      "messages": [],
+      "total_additions": 5386,
+      "total_deletions": 895,
+      "accepted_lines": 2157,
+      "overriden_lines": 28
+    }
+  }
+}
