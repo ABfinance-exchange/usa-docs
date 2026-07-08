@@ -1,0 +1,50 @@
+---
+title: Refresh Quote
+sidebar_label: Refresh Quote
+sidebar_position: 7
+---
+
+Refresh the price quote associated with an ABF transfer order.
+
+:::info
+`retCode = 5001001` indicates insufficient balance.
+:::
+
+### HTTP Request
+POST `/fiat/private/channel/abf/transfer/quote/refresh`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|orderNo |**true** |string |Order number |
+
+### Response Parameters
+None
+
+### Request Example
+
+```http
+POST /fiat/private/channel/abf/transfer/quote/refresh HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+Content-Type: application/json
+
+{
+  "orderNo": ""
+}
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {},
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

@@ -1,0 +1,72 @@
+---
+title: Get Transfer Basic Info
+sidebar_label: Get Transfer Basic Info
+sidebar_position: 1
+---
+
+Retrieve the basic configuration for an ABF transfer order, including balance, arrival time, single-transaction limits, and fee.
+
+:::tip
+- `currency` is currently fixed as `USD`.
+- `currencyType` is currently fixed as `fiat`.
+- The balance value applies the security limit obtained from Asset Core (min logic) as of Checkout v1.2.0.
+:::
+
+### HTTP Request
+GET `/fiat/public/channel/abf/transfer/info`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|bizCode |**true** |string |Business code |
+|transCode |**true** |string |Transaction code |
+|currency |**true** |string |Currency, fixed as `USD` |
+|[currencyType](../../enum#currencytype) |**true** |string |Currency type, fixed as `fiat` |
+|paymentId |**true** |integer |Payment method ID |
+
+### Response Parameters
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|arrivalTimeMin |string |Minimum arrival time, unit: days |
+|arrivalTimeMax |string |Maximum arrival time, unit: days |
+|limitMin |string |Minimum single-transaction limit |
+|limitMax |string |Maximum single-transaction limit |
+|usdBalance |string |USD balance |
+|totalBalance |string |Total balance (USD + crypto converted to USD equivalent) |
+|fee |object |Fee info |
+|> amount |string |Fee amount |
+|> currency |string |Fee currency |
+
+### Request Example
+
+```http
+GET /fiat/public/channel/abf/transfer/info?bizCode=PAY_BANK&transCode=PAY_BANK_PAY_OUT&currency=USD&currencyType=fiat&paymentId=1 HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {
+    "arrivalTimeMin": "",
+    "arrivalTimeMax": "",
+    "limitMin": "0",
+    "limitMax": "0",
+    "usdBalance": "0",
+    "totalBalance": "0",
+    "fee": {
+      "amount": "0",
+      "currency": "USD"
+    }
+  },
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

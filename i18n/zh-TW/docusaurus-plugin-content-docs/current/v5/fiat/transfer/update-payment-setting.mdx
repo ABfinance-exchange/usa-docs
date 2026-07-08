@@ -1,0 +1,52 @@
+---
+title: 更新支付偏好
+sidebar_label: 更新支付偏好
+sidebar_position: 4
+---
+
+更新用戶在 ABF 轉帳流程中使用的加密貨幣支付偏好。
+
+### HTTP請求
+POST `/fiat/private/channel/abf/transfer/payment/setting/update`
+
+### 請求參數
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|bizCode |**true** |string |產品代碼 |
+|transCode |**true** |string |交易代碼 |
+|currencyCodes |false |array[string] |加密貨幣支付偏好排序列表，如 `["USDT", "BTC"]` |
+
+### 響應參數
+無
+
+### 請求示例
+
+```http
+POST /fiat/private/channel/abf/transfer/payment/setting/update HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+Content-Type: application/json
+
+{
+  "bizCode": "PAY_BANK",
+  "transCode": "PAY_BANK_PAY_OUT",
+  "currencyCodes": [
+    "USDT"
+  ]
+}
+```
+
+### 響應示例
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {},
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

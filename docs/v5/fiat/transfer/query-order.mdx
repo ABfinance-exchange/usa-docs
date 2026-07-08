@@ -1,0 +1,210 @@
+---
+title: Query Transfer Order
+sidebar_label: Query Transfer Order
+sidebar_position: 8
+---
+
+Query a single ABF transfer order by order number, including payee details, amount breakdown, per-currency conversion details, and appeal information (if triggered).
+
+### HTTP Request
+GET `/fiat/private/channel/abf/transfer/order`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|orderNo |**true** |string |Order number |
+
+### Response Parameters
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|orderNo |string |Order number |
+|bizCode |string |Product code |
+|transCode |string |Transaction code |
+|receiver |object |Payee information (`TargetAccount`) |
+|> accountId |string |Account ID |
+|> accountName |string |Account name |
+|> accountNumber |string |Account number |
+|> accountType |string |Account type (only populated for ACH) |
+|> routingNumber |string |Routing number (only populated for wire transfer) |
+|> countryIcon |string |Country icon |
+|> accountIcon |string |Bank icon |
+|> appIcon |string |App icon |
+|> webIcon |string |Web icon |
+|receiveAmount |object |Payee-received amount |
+|> amount |string |Amount |
+|> currency |string |Currency |
+|> [currencyType](../../enum#currencytype) |string |Currency type |
+|> precision |integer |Precision |
+|transactionAmount |object |Total payment info |
+|> amount |string |Amount |
+|> currency |string |Currency |
+|> [currencyType](../../enum#currencytype) |string |Currency type |
+|> precision |integer |Precision |
+|fiatTransactionAmount |object |Fiat portion of the payment |
+|> amount |string |Amount |
+|> currency |string |Currency |
+|> [currencyType](../../enum#currencytype) |string |Currency type |
+|> precision |integer |Precision |
+|cryptoTransactionAmount |object |Crypto portion of the payment |
+|> amount |string |Amount |
+|> currency |string |Currency |
+|> [currencyType](../../enum#currencytype) |string |Currency type |
+|> precision |integer |Precision |
+|cryptoTransactionList |array |Per-currency crypto conversion details |
+|> convertFromCurrency |string |From currency |
+|> convertFromCurrencyPrecision |integer |From currency precision |
+|> [convertFromCurrencyType](../../enum#currencytype) |string |From currency type |
+|> convertFromCurrencyIconLight |string |From currency icon (light) |
+|> convertFromCurrencyIconDark |string |From currency icon (dark) |
+|> convertToCurrency |string |To currency |
+|> convertToCurrencyPrecision |integer |To currency precision |
+|> [convertToCurrencyType](../../enum#currencytype) |string |To currency type |
+|> convertToCurrencyIconLight |string |To currency icon (light) |
+|> convertToCurrencyIconDark |string |To currency icon (dark) |
+|> convertFrom |string |From amount |
+|> convertTo |string |To amount |
+|> price |string |Unit price |
+|> pricePrecision |integer |Quote precision |
+|> fee |object |Transaction fee |
+|>> amount |string |Amount |
+|>> currency |string |Currency |
+|>> [currencyType](../../enum#currencytype) |string |Currency type |
+|>> precision |integer |Precision |
+|convertFee |object |Conversion fee |
+|> amount |string |Amount |
+|> currency |string |Currency |
+|> [currencyType](../../enum#currencytype) |string |Currency type |
+|> precision |integer |Precision |
+|fee |object |Transaction fee |
+|> amount |string |Amount |
+|> currency |string |Currency |
+|> [currencyType](../../enum#currencytype) |string |Currency type |
+|> precision |integer |Precision |
+|[status](../../enum#fiattransferorderstatus) |string |Order status |
+|failReason |string |Failure reason (multi-language) |
+|failReasonCode |string |Failure reason error code |
+|paymentMethod |string |Payment method |
+|transactTime |integer |Transaction time, millisecond timestamp |
+|quoteExpire |integer |Quote expiry time, 13-digit timestamp |
+|cardToken |string |Card token |
+|relationOrderId |array[string] |Related order IDs (populated only when this order is a refund) |
+|note |string |Remarks |
+|arrivalTimeMin |string |Minimum arrival time, unit: days |
+|arrivalTimeMax |string |Maximum arrival time, unit: days |
+|appealId |string |Risk-control appeal ID |
+|appealWebPath |string |Risk-control appeal web link |
+|appealAppPath |string |Risk-control appeal app link |
+|firstAppeal |boolean |Whether this is the first appeal on the order |
+
+### Request Example
+
+```http
+GET /fiat/private/channel/abf/transfer/order?orderNo=xxx HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {
+    "orderNo": "",
+    "bizCode": "PAY_BANK",
+    "transCode": "PAY_BANK_PAY_OUT",
+    "receiver": {
+      "accountId": "",
+      "accountName": "",
+      "accountNumber": "",
+      "accountType": "ACH",
+      "routingNumber": "",
+      "countryIcon": "",
+      "accountIcon": "",
+      "appIcon": "",
+      "webIcon": ""
+    },
+    "receiveAmount": {
+      "amount": "0",
+      "currency": "USD",
+      "currencyType": "fiat",
+      "precision": 2
+    },
+    "transactionAmount": {
+      "amount": "0",
+      "currency": "USD",
+      "currencyType": "fiat",
+      "precision": 2
+    },
+    "fiatTransactionAmount": {
+      "amount": "0",
+      "currency": "USD",
+      "currencyType": "fiat",
+      "precision": 2
+    },
+    "cryptoTransactionAmount": {
+      "amount": "0",
+      "currency": "USD",
+      "currencyType": "fiat",
+      "precision": 2
+    },
+    "cryptoTransactionList": [
+      {
+        "convertFromCurrency": "USDT",
+        "convertFromCurrencyPrecision": 4,
+        "convertFromCurrencyType": "crypto",
+        "convertFromCurrencyIconLight": "",
+        "convertFromCurrencyIconDark": "",
+        "convertToCurrency": "USD",
+        "convertToCurrencyPrecision": 2,
+        "convertToCurrencyType": "fiat",
+        "convertToCurrencyIconLight": "",
+        "convertToCurrencyIconDark": "",
+        "convertFrom": "0",
+        "convertTo": "0",
+        "price": "0",
+        "pricePrecision": 4,
+        "fee": {
+          "amount": "0",
+          "currency": "USD",
+          "currencyType": "fiat",
+          "precision": 2
+        }
+      }
+    ],
+    "convertFee": {
+      "amount": "0",
+      "currency": "USD",
+      "currencyType": "fiat",
+      "precision": 2
+    },
+    "fee": {
+      "amount": "0",
+      "currency": "USD",
+      "currencyType": "fiat",
+      "precision": 2
+    },
+    "status": "1005",
+    "failReason": "",
+    "failReasonCode": "",
+    "paymentMethod": "PAY_BANK_PAY_OUT",
+    "transactTime": 1717804800000,
+    "quoteExpire": 1717804800000,
+    "cardToken": "",
+    "relationOrderId": [],
+    "note": "",
+    "arrivalTimeMin": "",
+    "arrivalTimeMax": "",
+    "appealId": "",
+    "appealWebPath": "",
+    "appealAppPath": "",
+    "firstAppeal": false
+  },
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

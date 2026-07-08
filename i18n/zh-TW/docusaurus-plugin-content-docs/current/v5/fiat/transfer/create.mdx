@@ -1,0 +1,81 @@
+---
+title: 創建轉帳訂單
+sidebar_label: 創建轉帳訂單
+sidebar_position: 5
+---
+
+創建 ABF 轉帳訂單。
+
+:::info
+當 `retCode` 為 `300900003`、`300900004` 或 `300900005` 之一時，請求已被風控攔截，需讀取響應中的 `appealCase` 物件將用戶引導至申訴流程。
+:::
+
+### HTTP請求
+POST `/fiat/private/channel/abf/transfer/order/create`
+
+### 請求參數
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|bizCode |**true** |string |產品代碼 |
+|transCode |**true** |string |交易代碼 |
+|[currencyType](../../enum#currencytype) |**true** |string |幣種類型，固定為 `fiat` |
+|currencyCode |**true** |string |幣種代碼 |
+|amount |**true** |string |金額 |
+|cardToken |**true** |string |卡片 Token |
+|paymentId |**true** |integer |支付方式 ID |
+|note |false |string |備註 |
+
+### 響應參數
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|orderNo |string |訂單編號 |
+|[orderBizStatus](../../enum#fiattransferorderstatus) |string |訂單業務狀態 |
+|appealCase |object |風控彈窗載荷。僅當 `retCode` 為 `300900003`、`300900004` 或 `300900005` 時存在。 |
+|> appealId |string |申訴 ID |
+|> [appealStatus](../../enum#appealstatus) |string |申訴狀態 |
+|> bizCode |string |產品代碼 |
+|> orderId |string |觸發的訂單 ID |
+|> requireType |string |所需文件類型，多值以逗號分隔（如 `SOP,POA`） |
+|> reviewId |integer |審核記錄 ID |
+|> webPath |string |Web 跳轉鏈接 |
+|> appPath |string |App 跳轉鏈接 |
+|> ext |string |擴展信息（JSON 字串） |
+
+### 請求示例
+
+```http
+POST /fiat/private/channel/abf/transfer/order/create HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+Content-Type: application/json
+
+{
+  "bizCode": "PAY_BANK",
+  "transCode": "PAY_BANK_PAY_OUT",
+  "currencyType": "fiat",
+  "currencyCode": "USD",
+  "amount": "0",
+  "cardToken": "",
+  "paymentId": 0,
+  "note": ""
+}
+```
+
+### 響應示例
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {
+    "orderNo": "",
+    "orderBizStatus": "1001",
+    "appealCase": null
+  },
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

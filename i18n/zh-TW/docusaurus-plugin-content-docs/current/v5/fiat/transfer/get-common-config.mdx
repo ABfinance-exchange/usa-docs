@@ -1,0 +1,96 @@
+---
+title: 查詢通用配置
+sidebar_label: 查詢通用配置
+sidebar_position: 10
+---
+
+批量獲取業務配置。傳入 `scene=abf_order_config` 可取得訂單列表的篩選枚舉(`paymentType` 與 `status`)。
+
+### HTTP請求
+GET `/fiat/public/channel/common-config-batch`
+
+### 請求參數
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|scene |**true** |string |業務配置場景。傳入 `abf_order_config`。多值以英文逗號分隔。 |
+
+### 響應參數
+
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|paymentType |array |支付類型選項 |
+|> name |string |選項名稱 |
+|> ckey |string |i18n key |
+|> value |string |選項值 |
+|status |array |狀態選項 |
+|> name |string |選項名稱 |
+|> ckey |string |i18n key |
+|> value |string |選項值 |
+
+### 請求示例
+
+```http
+GET /fiat/public/channel/common-config-batch?scene=abf_order_config HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+```
+
+### 響應示例
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {
+    "paymentType": [
+      {
+        "name": "PAY_BANK_PAY_OUT",
+        "ckey": "type_PAY_BANK_PAY_OUT",
+        "value": "PAY_BANK_PAY_OUT"
+      }
+    ],
+    "status": [
+      {
+        "name": "Successful",
+        "ckey": "successMessage",
+        "value": "1"
+      },
+      {
+        "name": "Failed",
+        "ckey": "failedMsg",
+        "value": "2"
+      },
+      {
+        "name": "Processing",
+        "ckey": "processingStatus",
+        "value": "0"
+      },
+      {
+        "name": "Timeout",
+        "ckey": "transactionTimeOut",
+        "value": "4"
+      },
+      {
+        "name": "partial_refund",
+        "ckey": "partialRefunded",
+        "value": "11"
+      },
+      {
+        "name": "refund",
+        "ckey": "bybitPayRefundStatus",
+        "value": "12"
+      },
+      {
+        "name": "partialCollected",
+        "ckey": "partialCollected",
+        "value": "13"
+      }
+    ]
+  },
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

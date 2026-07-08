@@ -1,0 +1,63 @@
+---
+title: Get Payment Preference
+sidebar_label: Get Payment Preference
+sidebar_position: 3
+---
+
+Retrieve the user's saved payment preference for ABF transfers, including USD fiat balance and the ordered list of available payment currencies with their USD-equivalent balances.
+
+### HTTP Request
+GET `/fiat/private/channel/abf/transfer/payment/setting`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|bizCode |**true** |string |Business code |
+|transCode |**true** |string |Transaction code |
+
+### Response Parameters
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|usdBalance |string |USD fiat balance |
+|usdPrecision |integer |USD display precision |
+|list |array |Payment preference list |
+|> currencyCode |string |Currency code |
+|> currencyName |string |Currency name |
+|> currencyIconLight |string |Currency icon (light theme) |
+|> currencyIconDark |string |Currency icon (dark theme) |
+|> usdBalance |string |Balance converted to USD equivalent |
+
+### Request Example
+
+```http
+GET /fiat/private/channel/abf/transfer/payment/setting?bizCode=PAY_BANK&transCode=PAY_BANK_PAY_OUT HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {
+    "usdBalance": "0",
+    "usdPrecision": 2,
+    "list": [
+      {
+        "currencyCode": "USDT",
+        "currencyName": "",
+        "currencyIconLight": "",
+        "currencyIconDark": "",
+        "usdBalance": "0"
+      }
+    ]
+  },
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

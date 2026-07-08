@@ -1,0 +1,81 @@
+---
+title: Create Transfer Order
+sidebar_label: Create Transfer Order
+sidebar_position: 5
+---
+
+Create an ABF transfer order.
+
+:::info
+When `retCode` is one of `300900003`, `300900004`, or `300900005`, the request has been intercepted by risk control. Read the `appealCase` object in the response to redirect the user to the appeal flow.
+:::
+
+### HTTP Request
+POST `/fiat/private/channel/abf/transfer/order/create`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|bizCode |**true** |string |Business code |
+|transCode |**true** |string |Transaction code |
+|[currencyType](../../enum#currencytype) |**true** |string |Currency type, fixed as `fiat` |
+|currencyCode |**true** |string |Currency code |
+|amount |**true** |string |Amount |
+|cardToken |**true** |string |Card token |
+|paymentId |**true** |integer |Payment method ID |
+|note |false |string |Remarks |
+
+### Response Parameters
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|orderNo |string |Order number |
+|[orderBizStatus](../../enum#fiattransferorderstatus) |string |Order business status |
+|appealCase |object |Risk-control popup payload. Present only when `retCode` is `300900003`, `300900004` or `300900005`. |
+|> appealId |string |Appeal ID |
+|> [appealStatus](../../enum#appealstatus) |string |Appeal status |
+|> bizCode |string |Product code |
+|> orderId |string |Triggering order ID |
+|> requireType |string |Required file types, multiple values joined by comma (e.g., `SOP,POA`) |
+|> reviewId |integer |Review record ID |
+|> webPath |string |Web redirect link |
+|> appPath |string |App redirect link |
+|> ext |string |Extended info (JSON string) |
+
+### Request Example
+
+```http
+POST /fiat/private/channel/abf/transfer/order/create HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+Content-Type: application/json
+
+{
+  "bizCode": "PAY_BANK",
+  "transCode": "PAY_BANK_PAY_OUT",
+  "currencyType": "fiat",
+  "currencyCode": "USD",
+  "amount": "0",
+  "cardToken": "",
+  "paymentId": 0,
+  "note": ""
+}
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {
+    "orderNo": "",
+    "orderBizStatus": "1001",
+    "appealCase": null
+  },
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

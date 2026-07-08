@@ -1,0 +1,96 @@
+---
+title: 查詢交易歷史
+sidebar_label: 查詢交易歷史
+sidebar_position: 9
+---
+
+分頁查詢 ABF 轉帳訂單列表，支援按狀態、產品代碼、支付方式及時間範圍篩選。
+
+### HTTP請求
+GET `/fiat/private/channel/abf/transfer/transaction-history`
+
+### 請求參數
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|[status](../../enum#fiattransfertransactionstatus) |false |string |按訂單狀態篩選。請求側可傳:`0`、`1`、`2`、`12`、`1011`、`1012`(為響應側完整枚舉的子集) |
+|page |false |integer |頁碼 |
+|pageSize |false |integer |每頁記錄數 |
+|beginTime |false |integer |起始時間（毫秒時間戳） |
+|endTime |false |integer |結束時間（毫秒時間戳） |
+|bizCode |false |string |產品代碼 |
+|transCode |false |string |交易代碼 |
+|paymentType |false |string |支付類型。留空或傳入 `PAY_BANK_PAY_OUT` |
+
+### 響應參數
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|page |integer |當前頁碼 |
+|total |integer |記錄總數 |
+|list |array |訂單列表 |
+|> orderNo |string |訂單編號 |
+|> transactAmount |object |總支付金額 |
+|>> amount |string |金額 |
+|>> currency |string |幣種 |
+|>> [currencyType](../../enum#currencytype) |string |幣種類型 |
+|> receiveAmount |object |到帳金額 |
+|>> amount |string |金額 |
+|>> currency |string |幣種 |
+|>> [currencyType](../../enum#currencytype) |string |幣種類型 |
+|> fee |object |交易手續費 |
+|>> amount |string |金額 |
+|>> currency |string |幣種 |
+|>> [currencyType](../../enum#currencytype) |string |幣種類型 |
+|> [status](../../enum#fiattransfertransactionstatus) |string |訂單狀態 |
+|> paymentMethod |string |支付方式 |
+|> paymentMethodCkey |string |支付方式名稱 key（用於 i18n） |
+|> transactTime |integer |交易時間（毫秒時間戳） |
+
+### 請求示例
+
+```http
+GET /fiat/private/channel/abf/transfer/transaction-history?status=1&page=1&pageSize=20&paymentType=PAY_BANK_PAY_OUT HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+```
+
+### 響應示例
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {
+    "page": 1,
+    "total": 1,
+    "list": [
+      {
+        "orderNo": "",
+        "transactAmount": {
+          "amount": "0",
+          "currency": "USD",
+          "currencyType": "fiat"
+        },
+        "receiveAmount": {
+          "amount": "0",
+          "currency": "USD",
+          "currencyType": "fiat"
+        },
+        "fee": {
+          "amount": "0",
+          "currency": "USD",
+          "currencyType": "fiat"
+        },
+        "status": "1",
+        "paymentMethod": "PAY_BANK_PAY_OUT",
+        "paymentMethodCkey": "type_PAY_BANK_PAY_OUT",
+        "transactTime": 1717804800000
+      }
+    ]
+  },
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

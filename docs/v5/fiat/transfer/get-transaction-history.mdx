@@ -1,0 +1,96 @@
+---
+title: Get Transaction History
+sidebar_label: Get Transaction History
+sidebar_position: 9
+---
+
+Query a paginated list of ABF transfer orders, optionally filtered by status, business code, payment type, and time range.
+
+### HTTP Request
+GET `/fiat/private/channel/abf/transfer/transaction-history`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|[status](../../enum#fiattransfertransactionstatus) |false |string |Filter by order status. Request-side accepts a subset: `0`, `1`, `2`, `12`, `1011`, `1012` |
+|page |false |integer |Page number |
+|pageSize |false |integer |Page size |
+|beginTime |false |integer |Start time (millisecond timestamp) |
+|endTime |false |integer |End time (millisecond timestamp) |
+|bizCode |false |string |Product code |
+|transCode |false |string |Transaction code |
+|paymentType |false |string |Payment type. Leave empty or pass `PAY_BANK_PAY_OUT` |
+
+### Response Parameters
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|page |integer |Current page number |
+|total |integer |Total record count |
+|list |array |Order list |
+|> orderNo |string |Order number |
+|> transactAmount |object |Total payment info |
+|>> amount |string |Amount |
+|>> currency |string |Currency |
+|>> [currencyType](../../enum#currencytype) |string |Currency type |
+|> receiveAmount |object |Payee-received amount |
+|>> amount |string |Amount |
+|>> currency |string |Currency |
+|>> [currencyType](../../enum#currencytype) |string |Currency type |
+|> fee |object |Transaction fee |
+|>> amount |string |Amount |
+|>> currency |string |Currency |
+|>> [currencyType](../../enum#currencytype) |string |Currency type |
+|> [status](../../enum#fiattransfertransactionstatus) |string |Order status |
+|> paymentMethod |string |Payment method |
+|> paymentMethodCkey |string |Payment method name key (for i18n) |
+|> transactTime |integer |Transaction time (millisecond timestamp) |
+
+### Request Example
+
+```http
+GET /fiat/private/channel/abf/transfer/transaction-history?status=1&page=1&pageSize=20&paymentType=PAY_BANK_PAY_OUT HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {
+    "page": 1,
+    "total": 1,
+    "list": [
+      {
+        "orderNo": "",
+        "transactAmount": {
+          "amount": "0",
+          "currency": "USD",
+          "currencyType": "fiat"
+        },
+        "receiveAmount": {
+          "amount": "0",
+          "currency": "USD",
+          "currencyType": "fiat"
+        },
+        "fee": {
+          "amount": "0",
+          "currency": "USD",
+          "currencyType": "fiat"
+        },
+        "status": "1",
+        "paymentMethod": "PAY_BANK_PAY_OUT",
+        "paymentMethodCkey": "type_PAY_BANK_PAY_OUT",
+        "transactTime": 1717804800000
+      }
+    ]
+  },
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

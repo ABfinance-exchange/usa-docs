@@ -1,0 +1,96 @@
+---
+title: Get Common Configuration
+sidebar_label: Get Common Configuration
+sidebar_position: 10
+---
+
+Fetch business configuration in batch. Pass `scene=abf_order_config` to retrieve the order-list filter enums (`paymentType` and `status`).
+
+### HTTP Request
+GET `/fiat/public/channel/common-config-batch`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|scene |**true** |string |Business configuration scene. Pass `abf_order_config`. Multiple values are comma-separated. |
+
+### Response Parameters
+
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|paymentType |array |Payment-type options |
+|> name |string |Option name |
+|> ckey |string |i18n key |
+|> value |string |Option value |
+|status |array |Status options |
+|> name |string |Option name |
+|> ckey |string |i18n key |
+|> value |string |Option value |
+
+### Request Example
+
+```http
+GET /fiat/public/channel/common-config-batch?scene=abf_order_config HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {
+    "paymentType": [
+      {
+        "name": "PAY_BANK_PAY_OUT",
+        "ckey": "type_PAY_BANK_PAY_OUT",
+        "value": "PAY_BANK_PAY_OUT"
+      }
+    ],
+    "status": [
+      {
+        "name": "Successful",
+        "ckey": "successMessage",
+        "value": "1"
+      },
+      {
+        "name": "Failed",
+        "ckey": "failedMsg",
+        "value": "2"
+      },
+      {
+        "name": "Processing",
+        "ckey": "processingStatus",
+        "value": "0"
+      },
+      {
+        "name": "Timeout",
+        "ckey": "transactionTimeOut",
+        "value": "4"
+      },
+      {
+        "name": "partial_refund",
+        "ckey": "partialRefunded",
+        "value": "11"
+      },
+      {
+        "name": "refund",
+        "ckey": "bybitPayRefundStatus",
+        "value": "12"
+      },
+      {
+        "name": "partialCollected",
+        "ckey": "partialCollected",
+        "value": "13"
+      }
+    ]
+  },
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

@@ -1,0 +1,140 @@
+---
+title: Get Cumulative Quota
+sidebar_label: Get Cumulative Quota
+sidebar_position: 2
+---
+
+Query the user's cumulative transaction quota (daily / weekly / monthly / yearly) at the current KYC / VIP level and the next level. For transfer-out this endpoint reuses the channel withdrawal quota configuration.
+
+:::tip
+- For the ABF transfer-out flow, pass `bizCode=PAY_BANK` and `transCode=PAY_BANK_PAY_OUT`.
+- The legacy values `WITHDRAW` / `WITHDRAW_APPLY` etc. are still accepted here for cross-flow quota lookups.
+:::
+
+### HTTP Request
+GET `/fiat/public/channel/level-quota`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|fiat |**true** |string |Fiat currency, currently fixed as `USD` |
+|bizCode |**true** |string |Business code. For transfer-out use `PAY_BANK`. Other values (`DEPOSIT`, `WITHDRAW`, `EXPRESS`) are supported for their respective flows |
+|transCode |**true** |string |Transaction code. For transfer-out use `PAY_BANK_PAY_OUT`. Other values (`DEPOSIT_APPLY`, `WITHDRAW_APPLY`, `EXPRESS_APPLY`) map to their respective flows |
+
+### Response Parameters
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|currentLevelQuota |object |Quota at the current level |
+|> totalLimit |object |Total limit block |
+|>> dayLimit |object |Daily total limit |
+|>>> min |string |Minimum |
+|>>> max |string |Maximum |
+|>> weekLimit |object |Weekly total limit |
+|>>> min |string |Minimum |
+|>>> max |string |Maximum |
+|>> monthLimit |object |Monthly total limit |
+|>>> min |string |Minimum |
+|>>> max |string |Maximum |
+|>> yearLimit |object |Annual total limit |
+|>>> min |string |Minimum |
+|>>> max |string |Maximum |
+|> availableLimit |object |Remaining available limit |
+|>> dayLimit |string |Available daily quota |
+|>> weekLimit |string |Available weekly quota |
+|>> monthLimit |string |Available monthly quota |
+|>> yearLimit |string |Available annual quota |
+|nextLevelQuota |object |Quota at the next level |
+|> totalLimit |object |Total limit block |
+|>> dayLimit |object |Daily total limit |
+|>>> min |string |Minimum |
+|>>> max |string |Maximum |
+|>> weekLimit |object |Weekly total limit |
+|>>> min |string |Minimum |
+|>>> max |string |Maximum |
+|>> monthLimit |object |Monthly total limit |
+|>>> min |string |Minimum |
+|>>> max |string |Maximum |
+|>> yearLimit |object |Annual total limit |
+|>>> min |string |Minimum |
+|>>> max |string |Maximum |
+|> availableLimit |object |Remaining available limit |
+|>> dayLimit |string |Available daily quota |
+|>> weekLimit |string |Available weekly quota |
+|>> monthLimit |string |Available monthly quota |
+|>> yearLimit |string |Available annual quota |
+
+### Request Example
+
+```http
+GET /fiat/public/channel/level-quota?fiat=USD&bizCode=PAY_BANK&transCode=PAY_BANK_PAY_OUT HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {
+    "currentLevelQuota": {
+      "totalLimit": {
+        "dayLimit": {
+          "min": "0",
+          "max": "0"
+        },
+        "weekLimit": {
+          "min": "0",
+          "max": "0"
+        },
+        "monthLimit": {
+          "min": "0",
+          "max": "0"
+        },
+        "yearLimit": {
+          "min": "0",
+          "max": "0"
+        }
+      },
+      "availableLimit": {
+        "dayLimit": "0",
+        "weekLimit": "0",
+        "monthLimit": "0",
+        "yearLimit": "0"
+      }
+    },
+    "nextLevelQuota": {
+      "totalLimit": {
+        "dayLimit": {
+          "min": "0",
+          "max": "0"
+        },
+        "weekLimit": {
+          "min": "0",
+          "max": "0"
+        },
+        "monthLimit": {
+          "min": "0",
+          "max": "0"
+        },
+        "yearLimit": {
+          "min": "0",
+          "max": "0"
+        }
+      },
+      "availableLimit": {
+        "dayLimit": "0",
+        "weekLimit": "0",
+        "monthLimit": "0",
+        "yearLimit": "0"
+      }
+    }
+  },
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

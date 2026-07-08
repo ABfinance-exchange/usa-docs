@@ -455,3 +455,54 @@ _現貨_:
     - 是否是maker單 = FALSE
         - 方向 = Buy -> 交易幣種 (BTC)
         - 方向 = Sell -> 報價幣種 (USDT)
+
+### fiatTransferOrderStatus
+`/fiat/private/channel/abf/transfer/order` 響應中的訂單狀態碼。
+
+* `1001`&emsp;ORDER_CREATED — 訂單創建（列表不可見）
+* `1002`&emsp;ORDER_CONFIRMED — 訂單已提交
+* `1003`&emsp;PAYMENT_PENDING — 支付處理中
+* `1004`&emsp;PAYMENT_SUCCESS — 支付成功
+* `1005`&emsp;ORDER_SUCCESS — 訂單成功
+* `1006`&emsp;ORDER_FAIL — 訂單失敗
+* `1007`&emsp;ORDER_OVERTIME — 訂單超時
+* `1008`&emsp;PARTIAL_REFUND — 部分退款
+* `1009`&emsp;REFUND — 訂單已退回
+* `1010`&emsp;OVER_REFUND — 超額退款
+* `1011`&emsp;RISK_CREATE — 風控創建
+* `1012`&emsp;RISK_PENDING — 風控處理中
+* `1013`&emsp;RISK_PASS — 風控通過
+* `1014`&emsp;REFUND_PENDING — 退款處理中
+
+### fiatTransferTransactionStatus
+`/fiat/private/channel/abf/transfer/transaction-history` 請求篩選與響應中的狀態碼。
+
+* `0`&emsp;處理中
+* `1`&emsp;成功
+* `2`&emsp;失敗
+* `4`&emsp;超時
+* `11`&emsp;部分退款
+* `12`&emsp;已退款
+* `1011`&emsp;Risk Create（風控創建）
+* `1012`&emsp;Risk Pending（風控處理中）
+
+### appealStatus
+風控申訴狀態。
+
+* `PENDING`&emsp;待提交
+* `COMMITED`&emsp;已提交
+* `REJECTED`&emsp;被拒絕
+* `PASS`&emsp;審核通過
+* `REFUSE`&emsp;拒絕且不可重新提交
+
+### challengeType
+訂單確認返回的挑戰類型。
+
+* `0`&emsp;無挑戰
+* `1`&emsp;CVV 挑戰
+* `2`&emsp;3DS 挑戰
+* `3`&emsp;2FA 挑戰
+
+### currencyType
+* `fiat`
+* `crypto`

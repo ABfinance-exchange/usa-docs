@@ -1,0 +1,50 @@
+---
+title: 刷新報價
+sidebar_label: 刷新報價
+sidebar_position: 7
+---
+
+刷新 ABF 轉帳訂單的價格報價。
+
+:::info
+`retCode = 5001001` 表示餘額不足。
+:::
+
+### HTTP請求
+POST `/fiat/private/channel/abf/transfer/quote/refresh`
+
+### 請求參數
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|orderNo |**true** |string |訂單編號 |
+
+### 響應參數
+無
+
+### 請求示例
+
+```http
+POST /fiat/private/channel/abf/transfer/quote/refresh HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+Content-Type: application/json
+
+{
+  "orderNo": ""
+}
+```
+
+### 響應示例
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {},
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

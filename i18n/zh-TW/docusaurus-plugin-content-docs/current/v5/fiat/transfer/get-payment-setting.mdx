@@ -1,0 +1,63 @@
+---
+title: 查詢支付偏好
+sidebar_label: 查詢支付偏好
+sidebar_position: 3
+---
+
+查詢用戶為 ABF 轉帳保存的支付偏好，包含 USD 法幣餘額及依順序排列的可用支付幣種列表（含 USD 等值餘額）。
+
+### HTTP請求
+GET `/fiat/private/channel/abf/transfer/payment/setting`
+
+### 請求參數
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|bizCode |**true** |string |產品代碼 |
+|transCode |**true** |string |交易代碼 |
+
+### 響應參數
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|usdBalance |string |USD 法幣餘額 |
+|usdPrecision |integer |USD 展示精度 |
+|list |array |支付偏好列表 |
+|> currencyCode |string |幣種代碼 |
+|> currencyName |string |幣種名稱 |
+|> currencyIconLight |string |幣種圖示（淺色） |
+|> currencyIconDark |string |幣種圖示（深色） |
+|> usdBalance |string |折算為 USD 的餘額 |
+
+### 請求示例
+
+```http
+GET /fiat/private/channel/abf/transfer/payment/setting?bizCode=PAY_BANK&transCode=PAY_BANK_PAY_OUT HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+```
+
+### 響應示例
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {
+    "usdBalance": "0",
+    "usdPrecision": 2,
+    "list": [
+      {
+        "currencyCode": "USDT",
+        "currencyName": "",
+        "currencyIconLight": "",
+        "currencyIconDark": "",
+        "usdBalance": "0"
+      }
+    ]
+  },
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```
