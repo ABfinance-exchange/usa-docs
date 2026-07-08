@@ -347,3 +347,54 @@ _Spot_:
 
 ### bizType
 * `SPOT`
+
+### fiatTransferOrderStatus
+Status codes for `/fiat/private/channel/abf/transfer/order` response.
+
+* `1001`&emsp;ORDER_CREATED — Order created (not visible in list)
+* `1002`&emsp;ORDER_CONFIRMED — Order submitted
+* `1003`&emsp;PAYMENT_PENDING — Payment pending
+* `1004`&emsp;PAYMENT_SUCCESS — Payment succeeded
+* `1005`&emsp;ORDER_SUCCESS — Order succeeded
+* `1006`&emsp;ORDER_FAIL — Order failed
+* `1007`&emsp;ORDER_OVERTIME — Order timed out
+* `1008`&emsp;PARTIAL_REFUND — Partial refund
+* `1009`&emsp;REFUND — Order returned
+* `1010`&emsp;OVER_REFUND — Over refund
+* `1011`&emsp;RISK_CREATE — Risk control created
+* `1012`&emsp;RISK_PENDING — Risk control pending
+* `1013`&emsp;RISK_PASS — Risk control passed
+* `1014`&emsp;REFUND_PENDING — Refund pending
+
+### fiatTransferTransactionStatus
+Status codes for `/fiat/private/channel/abf/transfer/transaction-history` (request filter and response).
+
+* `0`&emsp;Processing (pending)
+* `1`&emsp;Success
+* `2`&emsp;Failed
+* `4`&emsp;Timeout
+* `11`&emsp;Partial refund
+* `12`&emsp;Refunded
+* `1011`&emsp;Risk Create
+* `1012`&emsp;Risk Pending
+
+### appealStatus
+Risk control appeal status.
+
+* `PENDING`&emsp;Pending submission
+* `COMMITED`&emsp;Submitted
+* `REJECTED`&emsp;Rejected
+* `PASS`&emsp;Review passed
+* `REFUSE`&emsp;Rejected and cannot be resubmitted
+
+### challengeType
+Challenge type returned by order confirmation.
+
+* `0`&emsp;No challenge
+* `1`&emsp;CVV challenge
+* `2`&emsp;3DS challenge
+* `3`&emsp;2FA challenge
+
+### currencyType
+* `fiat`
+* `crypto`

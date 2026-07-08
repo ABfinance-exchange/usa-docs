@@ -1,0 +1,140 @@
+---
+title: 查詢累計額度
+sidebar_label: 查詢累計額度
+sidebar_position: 2
+---
+
+查詢用戶當前 KYC / VIP 等級以及下一等級的日 / 週 / 月 / 年累計交易額度。轉帳出款流程復用渠道提現額度配置。
+
+:::tip
+- ABF 轉帳出款流程傳入 `bizCode=PAY_BANK`、`transCode=PAY_BANK_PAY_OUT`。
+- 舊值 `WITHDRAW` / `WITHDRAW_APPLY` 等仍可用於跨流程額度查詢。
+:::
+
+### HTTP請求
+GET `/fiat/public/channel/level-quota`
+
+### 請求參數
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|fiat |**true** |string |法幣幣種，目前固定為 `USD` |
+|bizCode |**true** |string |產品代碼。轉帳出款使用 `PAY_BANK`。其他值（`DEPOSIT`、`WITHDRAW`、`EXPRESS`）分別對應各流程 |
+|transCode |**true** |string |交易代碼。轉帳出款使用 `PAY_BANK_PAY_OUT`。其他值（`DEPOSIT_APPLY`、`WITHDRAW_APPLY`、`EXPRESS_APPLY`）分別對應各流程 |
+
+### 響應參數
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|currentLevelQuota |object |當前等級的額度 |
+|> totalLimit |object |總額度區塊 |
+|>> dayLimit |object |日總額度 |
+|>>> min |string |最小 |
+|>>> max |string |最大 |
+|>> weekLimit |object |週總額度 |
+|>>> min |string |最小 |
+|>>> max |string |最大 |
+|>> monthLimit |object |月總額度 |
+|>>> min |string |最小 |
+|>>> max |string |最大 |
+|>> yearLimit |object |年總額度 |
+|>>> min |string |最小 |
+|>>> max |string |最大 |
+|> availableLimit |object |剩餘可用額度 |
+|>> dayLimit |string |可用日額度 |
+|>> weekLimit |string |可用週額度 |
+|>> monthLimit |string |可用月額度 |
+|>> yearLimit |string |可用年額度 |
+|nextLevelQuota |object |下一等級的額度 |
+|> totalLimit |object |總額度區塊 |
+|>> dayLimit |object |日總額度 |
+|>>> min |string |最小 |
+|>>> max |string |最大 |
+|>> weekLimit |object |週總額度 |
+|>>> min |string |最小 |
+|>>> max |string |最大 |
+|>> monthLimit |object |月總額度 |
+|>>> min |string |最小 |
+|>>> max |string |最大 |
+|>> yearLimit |object |年總額度 |
+|>>> min |string |最小 |
+|>>> max |string |最大 |
+|> availableLimit |object |剩餘可用額度 |
+|>> dayLimit |string |可用日額度 |
+|>> weekLimit |string |可用週額度 |
+|>> monthLimit |string |可用月額度 |
+|>> yearLimit |string |可用年額度 |
+
+### 請求示例
+
+```http
+GET /fiat/public/channel/level-quota?fiat=USD&bizCode=PAY_BANK&transCode=PAY_BANK_PAY_OUT HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+```
+
+### 響應示例
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {
+    "currentLevelQuota": {
+      "totalLimit": {
+        "dayLimit": {
+          "min": "0",
+          "max": "0"
+        },
+        "weekLimit": {
+          "min": "0",
+          "max": "0"
+        },
+        "monthLimit": {
+          "min": "0",
+          "max": "0"
+        },
+        "yearLimit": {
+          "min": "0",
+          "max": "0"
+        }
+      },
+      "availableLimit": {
+        "dayLimit": "0",
+        "weekLimit": "0",
+        "monthLimit": "0",
+        "yearLimit": "0"
+      }
+    },
+    "nextLevelQuota": {
+      "totalLimit": {
+        "dayLimit": {
+          "min": "0",
+          "max": "0"
+        },
+        "weekLimit": {
+          "min": "0",
+          "max": "0"
+        },
+        "monthLimit": {
+          "min": "0",
+          "max": "0"
+        },
+        "yearLimit": {
+          "min": "0",
+          "max": "0"
+        }
+      },
+      "availableLimit": {
+        "dayLimit": "0",
+        "weekLimit": "0",
+        "monthLimit": "0",
+        "yearLimit": "0"
+      }
+    }
+  },
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

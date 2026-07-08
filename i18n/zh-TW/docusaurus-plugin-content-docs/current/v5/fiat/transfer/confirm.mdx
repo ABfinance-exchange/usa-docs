@@ -1,0 +1,82 @@
+---
+title: 確認轉帳訂單
+sidebar_label: 確認轉帳訂單
+sidebar_position: 6
+---
+
+確認先前透過 [創建轉帳訂單](create) 建立的 ABF 轉帳訂單。
+
+### HTTP請求
+POST `/fiat/private/channel/abf/transfer/order/confirm`
+
+### 請求參數
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|orderNo |**true** |string |訂單編號 |
+|riskToken |false |string |安全組件認證 Token，將透傳給風控 |
+
+### 響應參數
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|[challengeType](../../enum#challengetype) |integer |挑戰類型 |
+|challengeParams |object |挑戰相關參數。依 `challengeType` 只填相關子集,其餘字段留空。 |
+|> riskToken |string |風控協議 Token |
+|> riskTokenType |string |協議類型 |
+|> riskVer |string |協議版本號 |
+|> token3ds |string |3DS Token |
+|> version3ds |string |3DS 版本 |
+|> orderId |string |訂單 ID |
+|> payload |string |Payload |
+|> transactionId |string |交易 ID |
+|> channel |string |渠道 |
+|appealCase |object |風控彈窗載荷。字段定義同 [創建轉帳訂單](create#response-parameters)。 |
+|config |object |合規牆配置 |
+|> endpointExec |string |端點執行地址 |
+|> endpointArgs |object |端點參數 |
+
+### 請求示例
+
+```http
+POST /fiat/private/channel/abf/transfer/order/confirm HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+Content-Type: application/json
+
+{
+  "orderNo": "",
+  "riskToken": ""
+}
+```
+
+### 響應示例
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {
+    "challengeType": 0,
+    "challengeParams": {
+      "riskToken": "",
+      "riskTokenType": "",
+      "riskVer": "",
+      "token3ds": "",
+      "version3ds": "",
+      "orderId": "",
+      "payload": "",
+      "transactionId": "",
+      "channel": ""
+    },
+    "appealCase": null,
+    "config": {
+      "endpointExec": "",
+      "endpointArgs": {}
+    }
+  },
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

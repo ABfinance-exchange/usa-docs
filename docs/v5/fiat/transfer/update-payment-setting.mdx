@@ -1,0 +1,52 @@
+---
+title: Update Payment Preference
+sidebar_label: Update Payment Preference
+sidebar_position: 4
+---
+
+Update the user's crypto payment preference for the ABF transfer flow.
+
+### HTTP Request
+POST `/fiat/private/channel/abf/transfer/payment/setting/update`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|bizCode |**true** |string |Business code |
+|transCode |**true** |string |Transaction code |
+|currencyCodes |false |array[string] |Ordered crypto preference list, e.g., `["USDT", "BTC"]` |
+
+### Response Parameters
+None
+
+### Request Example
+
+```http
+POST /fiat/private/channel/abf/transfer/payment/setting/update HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+Content-Type: application/json
+
+{
+  "bizCode": "PAY_BANK",
+  "transCode": "PAY_BANK_PAY_OUT",
+  "currencyCodes": [
+    "USDT"
+  ]
+}
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {},
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

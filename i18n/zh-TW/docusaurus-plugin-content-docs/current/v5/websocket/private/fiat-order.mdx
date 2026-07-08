@@ -1,0 +1,44 @@
+---
+title: 法幣收銀訂單
+sidebar_label: 法幣收銀訂單
+sidebar_position: 5
+---
+
+訂閱 ABF 法幣收銀訂單（如透過 [創建轉帳訂單](../../fiat/transfer/create) 建立的 ABF 轉帳訂單）的實時狀態變更。
+
+**Topic：** `fiat.cashier.order`
+
+### 響應參數
+| Parameter | Type | Comments|
+|:----- |:-----|----- |
+|topic |string |Topic 名稱，`fiat.cashier.order` |
+|data |object |推送載荷 |
+|> orderNo |string |訂單編號 |
+|> [orderStatus](../../enum#fiattransferorderstatus) |string |訂單狀態 |
+|> bizCode |string |產品代碼 |
+|> transCode |string |交易代碼 |
+
+### 訂閱示例
+
+```json
+{
+    "op": "subscribe",
+    "args": [
+        "fiat.cashier.order"
+    ]
+}
+```
+
+### 推送示例
+
+```json
+{
+    "topic": "fiat.cashier.order",
+    "data": {
+        "orderNo": "",
+        "orderStatus": "1005",
+        "bizCode": "PAY_BANK",
+        "transCode": "PAY_BANK_PAY_OUT"
+    }
+}
+```

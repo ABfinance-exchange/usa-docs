@@ -1,0 +1,72 @@
+---
+title: 查詢轉帳基本信息
+sidebar_label: 查詢轉帳基本信息
+sidebar_position: 1
+---
+
+查詢 ABF 轉帳訂單的基本配置，包含餘額、到帳時間、單筆限額及手續費。
+
+:::tip
+- `currency` 目前固定為 `USD`。
+- `currencyType` 目前固定為 `fiat`。
+- 自 Checkout v1.2.0 起，餘額值會套用 Asset Core 的安全額度（min 邏輯）。
+:::
+
+### HTTP請求
+GET `/fiat/public/channel/abf/transfer/info`
+
+### 請求參數
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|bizCode |**true** |string |產品代碼 |
+|transCode |**true** |string |交易代碼 |
+|currency |**true** |string |幣種，固定為 `USD` |
+|[currencyType](../../enum#currencytype) |**true** |string |幣種類型，固定為 `fiat` |
+|paymentId |**true** |integer |支付方式 ID |
+
+### 響應參數
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|arrivalTimeMin |string |最小到帳時間，單位：天 |
+|arrivalTimeMax |string |最大到帳時間，單位：天 |
+|limitMin |string |單筆最小限額 |
+|limitMax |string |單筆最大限額 |
+|usdBalance |string |USD 餘額 |
+|totalBalance |string |總餘額（USD + 加密貨幣折算為 USD 等值） |
+|fee |object |手續費信息 |
+|> amount |string |手續費金額 |
+|> currency |string |手續費幣種 |
+
+### 請求示例
+
+```http
+GET /fiat/public/channel/abf/transfer/info?bizCode=PAY_BANK&transCode=PAY_BANK_PAY_OUT&currency=USD&currencyType=fiat&paymentId=1 HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+```
+
+### 響應示例
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {
+    "arrivalTimeMin": "",
+    "arrivalTimeMax": "",
+    "limitMin": "0",
+    "limitMax": "0",
+    "usdBalance": "0",
+    "totalBalance": "0",
+    "fee": {
+      "amount": "0",
+      "currency": "USD"
+    }
+  },
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

@@ -1,0 +1,82 @@
+---
+title: Confirm Transfer Order
+sidebar_label: Confirm Transfer Order
+sidebar_position: 6
+---
+
+Confirm an ABF transfer order previously created via [Create Transfer Order](create).
+
+### HTTP Request
+POST `/fiat/private/channel/abf/transfer/order/confirm`
+
+### Request Parameters
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|orderNo |**true** |string |Order number |
+|riskToken |false |string |Security-component authentication token, passed through to risk control |
+
+### Response Parameters
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|[challengeType](../../enum#challengetype) |integer |Challenge type |
+|challengeParams |object |Challenge-related parameters. Only the subset of fields relevant to `challengeType` is populated. |
+|> riskToken |string |Risk control protocol token |
+|> riskTokenType |string |Protocol type |
+|> riskVer |string |Protocol version number |
+|> token3ds |string |3DS token |
+|> version3ds |string |3DS version |
+|> orderId |string |Order ID |
+|> payload |string |Payload |
+|> transactionId |string |Transaction ID |
+|> channel |string |Channel |
+|appealCase |object |Risk-control popup payload. See [Create Transfer Order](create#response-parameters) for field-level definitions. |
+|config |object |Compliance wall configuration |
+|> endpointExec |string |Endpoint execution address |
+|> endpointArgs |object |Endpoint parameters |
+
+### Request Example
+
+```http
+POST /fiat/private/channel/abf/transfer/order/confirm HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+Content-Type: application/json
+
+{
+  "orderNo": "",
+  "riskToken": ""
+}
+```
+
+### Response Example
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {
+    "challengeType": 0,
+    "challengeParams": {
+      "riskToken": "",
+      "riskTokenType": "",
+      "riskVer": "",
+      "token3ds": "",
+      "version3ds": "",
+      "orderId": "",
+      "payload": "",
+      "transactionId": "",
+      "channel": ""
+    },
+    "appealCase": null,
+    "config": {
+      "endpointExec": "",
+      "endpointArgs": {}
+    }
+  },
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```

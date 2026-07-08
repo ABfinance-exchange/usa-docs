@@ -1,0 +1,210 @@
+---
+title: 查詢轉帳訂單
+sidebar_label: 查詢轉帳訂單
+sidebar_position: 8
+---
+
+依訂單編號查詢單筆 ABF 轉帳訂單，包含收款人資訊、金額拆分、各幣種兌換明細及申訴資訊（若觸發風控）。
+
+### HTTP請求
+GET `/fiat/private/channel/abf/transfer/order`
+
+### 請求參數
+| Parameter | Required | Type | Comments|
+|:----- |:-------|:-----|------ |
+|orderNo |**true** |string |訂單編號 |
+
+### 響應參數
+| Parameter | Type | Comments|
+|:----- |:-----|------- |
+|orderNo |string |訂單編號 |
+|bizCode |string |產品代碼 |
+|transCode |string |交易代碼 |
+|receiver |object |收款人資訊（`TargetAccount`） |
+|> accountId |string |帳戶 ID |
+|> accountName |string |帳戶名稱 |
+|> accountNumber |string |帳戶號碼 |
+|> accountType |string |帳戶類型（僅 ACH 有值） |
+|> routingNumber |string |路由號碼（僅電匯有值） |
+|> countryIcon |string |國家圖示 |
+|> accountIcon |string |銀行圖示 |
+|> appIcon |string |App 圖示 |
+|> webIcon |string |Web 圖示 |
+|receiveAmount |object |收款人到帳金額 |
+|> amount |string |金額 |
+|> currency |string |幣種 |
+|> [currencyType](../../enum#currencytype) |string |幣種類型 |
+|> precision |integer |精度 |
+|transactionAmount |object |總支付金額 |
+|> amount |string |金額 |
+|> currency |string |幣種 |
+|> [currencyType](../../enum#currencytype) |string |幣種類型 |
+|> precision |integer |精度 |
+|fiatTransactionAmount |object |法幣支付部分 |
+|> amount |string |金額 |
+|> currency |string |幣種 |
+|> [currencyType](../../enum#currencytype) |string |幣種類型 |
+|> precision |integer |精度 |
+|cryptoTransactionAmount |object |加密貨幣支付部分 |
+|> amount |string |金額 |
+|> currency |string |幣種 |
+|> [currencyType](../../enum#currencytype) |string |幣種類型 |
+|> precision |integer |精度 |
+|cryptoTransactionList |array |各幣種兌換明細 |
+|> convertFromCurrency |string |來源幣種 |
+|> convertFromCurrencyPrecision |integer |來源幣種精度 |
+|> [convertFromCurrencyType](../../enum#currencytype) |string |來源幣種類型 |
+|> convertFromCurrencyIconLight |string |來源幣種圖示（淺色） |
+|> convertFromCurrencyIconDark |string |來源幣種圖示（深色） |
+|> convertToCurrency |string |目標幣種 |
+|> convertToCurrencyPrecision |integer |目標幣種精度 |
+|> [convertToCurrencyType](../../enum#currencytype) |string |目標幣種類型 |
+|> convertToCurrencyIconLight |string |目標幣種圖示（淺色） |
+|> convertToCurrencyIconDark |string |目標幣種圖示（深色） |
+|> convertFrom |string |來源金額 |
+|> convertTo |string |目標金額 |
+|> price |string |單價 |
+|> pricePrecision |integer |報價精度 |
+|> fee |object |交易手續費 |
+|>> amount |string |金額 |
+|>> currency |string |幣種 |
+|>> [currencyType](../../enum#currencytype) |string |幣種類型 |
+|>> precision |integer |精度 |
+|convertFee |object |兌換手續費 |
+|> amount |string |金額 |
+|> currency |string |幣種 |
+|> [currencyType](../../enum#currencytype) |string |幣種類型 |
+|> precision |integer |精度 |
+|fee |object |交易手續費 |
+|> amount |string |金額 |
+|> currency |string |幣種 |
+|> [currencyType](../../enum#currencytype) |string |幣種類型 |
+|> precision |integer |精度 |
+|[status](../../enum#fiattransferorderstatus) |string |訂單狀態 |
+|failReason |string |失敗原因（多語言） |
+|failReasonCode |string |失敗原因錯誤碼 |
+|paymentMethod |string |支付方式 |
+|transactTime |integer |交易時間，毫秒時間戳 |
+|quoteExpire |integer |報價過期時間，13 位時間戳 |
+|cardToken |string |卡片 Token |
+|relationOrderId |array[string] |關聯訂單 ID（僅當本訂單為退款時有值） |
+|note |string |備註 |
+|arrivalTimeMin |string |最小到帳時間，單位：天 |
+|arrivalTimeMax |string |最大到帳時間，單位：天 |
+|appealId |string |風控申訴 ID |
+|appealWebPath |string |風控申訴 Web 鏈接 |
+|appealAppPath |string |風控申訴 App 鏈接 |
+|firstAppeal |boolean |是否為該訂單的首次申訴 |
+
+### 請求示例
+
+```http
+GET /fiat/private/channel/abf/transfer/order?orderNo=xxx HTTP/1.1
+Host: api-testnet.abfinance.com
+X-BAPI-SIGN: XXXXX
+X-BAPI-API-KEY: xxxxxxxxxxxxxxxxxx
+X-BAPI-TIMESTAMP: 1717804800000
+X-BAPI-RECV-WINDOW: 5000
+```
+
+### 響應示例
+
+```json
+{
+  "retCode": 0,
+  "retMsg": "success",
+  "result": {
+    "orderNo": "",
+    "bizCode": "PAY_BANK",
+    "transCode": "PAY_BANK_PAY_OUT",
+    "receiver": {
+      "accountId": "",
+      "accountName": "",
+      "accountNumber": "",
+      "accountType": "ACH",
+      "routingNumber": "",
+      "countryIcon": "",
+      "accountIcon": "",
+      "appIcon": "",
+      "webIcon": ""
+    },
+    "receiveAmount": {
+      "amount": "0",
+      "currency": "USD",
+      "currencyType": "fiat",
+      "precision": 2
+    },
+    "transactionAmount": {
+      "amount": "0",
+      "currency": "USD",
+      "currencyType": "fiat",
+      "precision": 2
+    },
+    "fiatTransactionAmount": {
+      "amount": "0",
+      "currency": "USD",
+      "currencyType": "fiat",
+      "precision": 2
+    },
+    "cryptoTransactionAmount": {
+      "amount": "0",
+      "currency": "USD",
+      "currencyType": "fiat",
+      "precision": 2
+    },
+    "cryptoTransactionList": [
+      {
+        "convertFromCurrency": "USDT",
+        "convertFromCurrencyPrecision": 4,
+        "convertFromCurrencyType": "crypto",
+        "convertFromCurrencyIconLight": "",
+        "convertFromCurrencyIconDark": "",
+        "convertToCurrency": "USD",
+        "convertToCurrencyPrecision": 2,
+        "convertToCurrencyType": "fiat",
+        "convertToCurrencyIconLight": "",
+        "convertToCurrencyIconDark": "",
+        "convertFrom": "0",
+        "convertTo": "0",
+        "price": "0",
+        "pricePrecision": 4,
+        "fee": {
+          "amount": "0",
+          "currency": "USD",
+          "currencyType": "fiat",
+          "precision": 2
+        }
+      }
+    ],
+    "convertFee": {
+      "amount": "0",
+      "currency": "USD",
+      "currencyType": "fiat",
+      "precision": 2
+    },
+    "fee": {
+      "amount": "0",
+      "currency": "USD",
+      "currencyType": "fiat",
+      "precision": 2
+    },
+    "status": "1005",
+    "failReason": "",
+    "failReasonCode": "",
+    "paymentMethod": "PAY_BANK_PAY_OUT",
+    "transactTime": 1717804800000,
+    "quoteExpire": 1717804800000,
+    "cardToken": "",
+    "relationOrderId": [],
+    "note": "",
+    "arrivalTimeMin": "",
+    "arrivalTimeMax": "",
+    "appealId": "",
+    "appealWebPath": "",
+    "appealAppPath": "",
+    "firstAppeal": false
+  },
+  "retExtMap": {},
+  "retExtInfo": {}
+}
+```
