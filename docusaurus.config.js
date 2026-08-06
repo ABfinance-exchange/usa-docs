@@ -36,73 +36,73 @@ const config = {
   //       id: "openapi",
   //       docsPluginId: "classic",
   //       config: {
-  //         v5_market: {
-  //           specPath: "yml-folder/v5/market.yaml",
-  //           outputDir: "docs/api-explorer/v5/market",
+  //         v1_market: {
+  //           specPath: "yml-folder/v1/market.yaml",
+  //           outputDir: "docs/api-explorer/v1/market",
   //           sidebarOptions: {
   //             groupPathsBy: "tag",
   //             categoryLinkSource: "tag"
   //           }
   //         },
-  //         v5_trade: {
-  //           specPath: "yml-folder/v5/trade.yaml",
-  //           outputDir: "docs/api-explorer/v5/trade",
+  //         v1_trade: {
+  //           specPath: "yml-folder/v1/trade.yaml",
+  //           outputDir: "docs/api-explorer/v1/trade",
   //           sidebarOptions: {
   //             groupPathsBy: "tag",
   //             categoryLinkSource: "tag"
   //           }
   //         },
-  //         v5_account: {
-  //           specPath: "yml-folder/v5/account.yaml",
-  //           outputDir: "docs/api-explorer/v5/account",
+  //         v1_account: {
+  //           specPath: "yml-folder/v1/account.yaml",
+  //           outputDir: "docs/api-explorer/v1/account",
   //           sidebarOptions: {
   //             groupPathsBy: "tag",
   //             categoryLinkSource: "tag"
   //           }
   //         },
-  //         v5_position: {
-  //           specPath: "yml-folder/v5/position.yaml",
-  //           outputDir: "docs/api-explorer/v5/position",
+  //         v1_position: {
+  //           specPath: "yml-folder/v1/position.yaml",
+  //           outputDir: "docs/api-explorer/v1/position",
   //           sidebarOptions: {
   //             groupPathsBy: "tag",
   //             categoryLinkSource: "tag"
   //           }
   //         },
-  //         v5_asset: {
-  //           specPath: "yml-folder/v5/asset.yaml",
-  //           outputDir: "docs/api-explorer/v5/asset",
+  //         v1_asset: {
+  //           specPath: "yml-folder/v1/asset.yaml",
+  //           outputDir: "docs/api-explorer/v1/asset",
   //           sidebarOptions: {
   //             groupPathsBy: "tag",
   //             categoryLinkSource: "tag"
   //           }
   //         },
-  //         v5_user: {
-  //           specPath: "yml-folder/v5/user.yaml",
-  //           outputDir: "docs/api-explorer/v5/user",
+  //         v1_user: {
+  //           specPath: "yml-folder/v1/user.yaml",
+  //           outputDir: "docs/api-explorer/v1/user",
   //           sidebarOptions: {
   //             groupPathsBy: "tag",
   //             categoryLinkSource: "tag"
   //           }
   //         },
-  //         v5_lt: {
-  //           specPath: "yml-folder/v5/lt.yaml",
-  //           outputDir: "docs/api-explorer/v5/lt",
+  //         v1_lt: {
+  //           specPath: "yml-folder/v1/lt.yaml",
+  //           outputDir: "docs/api-explorer/v1/lt",
   //           sidebarOptions: {
   //             groupPathsBy: "tag",
   //             categoryLinkSource: "tag"
   //           }
   //         },
-  //         v5_spot_margin_uta: {
-  //           specPath: "yml-folder/v5/spot-margin-uta.yaml",
-  //           outputDir: "docs/api-explorer/v5/spot-margin-uta",
+  //         v1_spot_margin_uta: {
+  //           specPath: "yml-folder/v1/spot-margin-uta.yaml",
+  //           outputDir: "docs/api-explorer/v1/spot-margin-uta",
   //           sidebarOptions: {
   //             groupPathsBy: "tag",
   //             categoryLinkSource: "tag"
   //           }
   //         },
-  //         v5_spot_margin_normal: {
-  //           specPath: "yml-folder/v5/spot-margin-normal.yaml",
-  //           outputDir: "docs/api-explorer/v5/spot-margin-normal",
+  //         v1_spot_margin_normal: {
+  //           specPath: "yml-folder/v1/spot-margin-normal.yaml",
+  //           outputDir: "docs/api-explorer/v1/spot-margin-normal",
   //           sidebarOptions: {
   //             groupPathsBy: "tag",
   //             categoryLinkSource: "tag"
@@ -173,7 +173,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'v5/guide',
+            docId: 'v1/guide',
             position: 'left',
             label: 'V5 API',
           },
@@ -186,7 +186,7 @@ const config = {
 
               {
                 type: 'doc',
-                docId: 'changelog/v5',
+                docId: 'changelog/v1',
                 label: 'Changelog',
               },
 
