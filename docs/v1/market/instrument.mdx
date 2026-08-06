@@ -7,12 +7,7 @@ sidebar_position: 4.5
 Query for the instrument specification of online trading pairs.
 > **Covers: Spot**
 
-:::info
-* Spot does not support pagination, so `limit`, `cursor` are invalid.
-:::
-
 :::caution
-* This endpoint returns 500 entries by default.You will need to use `cursor` for pagination or `limit` to get all entries.
 * During periods of extreme market volatility, this interface may experience increased latency or temporary delays in data delivery
 :::
 
@@ -25,9 +20,6 @@ GET `/v1/market/instruments-info`
 |[category](../enum#category) |**true** |string |Product type. `spot`|
 |[symbol](../enum#symbol) |false |string |Symbol name, like `BTCUSDT`, uppercase only|
 |[symbolType](../enum#symboltype) |false |string |SymbolType:The region to which the trading pair belongs|
-|[status](../enum#status) |false |string |Symbol status filter <ul><li>Spot has `Trading` only</li></ul>|
-|limit |false |integer |Limit for data size per page. [`1`, `1000`]. Default: `500`|
-|cursor |false |string |Cursor. Use the `nextPageCursor` token from the response to retrieve the next page of the result set|
 
 ### Response Parameters
 <Tabs groupId="market-category">
