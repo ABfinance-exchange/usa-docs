@@ -8,7 +8,6 @@ Query the DCP configuration of the account. Before calling the interface, please
 
 * Only the configured main / sub account can query information from this API. Calling this API by an account always returns empty.
 
-* If you only request to activate Spot trading for DCP, the contract and options data will not be returned.
 
 :::info
 * Support Spot [SPOT]
@@ -49,8 +48,6 @@ X-BAPI-RECV-WINDOW: 5000
 ### Response Example
 
 ```json
-// it means my account enables Spot and Deriviatvies on the backend
-// Options is not enabled with DCP
 {
     "retCode": 0,
     "retMsg": "success",

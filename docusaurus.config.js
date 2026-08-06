@@ -175,7 +175,7 @@ const config = {
             type: 'doc',
             docId: 'v1/guide',
             position: 'left',
-            label: 'V5 API',
+            label: 'V1 API',
           },
 
           {
