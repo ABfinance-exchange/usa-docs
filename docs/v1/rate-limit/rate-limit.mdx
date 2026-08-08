@@ -73,16 +73,13 @@ X-Bapi-Limit-Reset-Timestamp: 1672738134824
         <td>/v1/order/disconnected-cancel-all</td><td align="center">5/s</td><td align="center">N</td>
     </tr>
     <tr>
-        <td rowSpan="4">GET</td><td>/v1/order/realtime</td><td align="center">50/s</td><td align="center">N</td>
+        <td rowSpan="3">GET</td><td>/v1/order/realtime</td><td align="center">50/s</td><td align="center">N</td>
     </tr>
     <tr>
         <td>/v1/order/history</td><td align="center">50/s</td><td align="center">N</td>
     </tr>
     <tr>
         <td>/v1/execution/list</td><td align="center">50/s</td><td align="center">N</td>
-    </tr>
-    <tr>
-        <td>/v1/order/spot-borrow-check</td><td align="center">50/s</td><td align="center">N</td>
     </tr>
 </table>
 </span>
@@ -116,7 +113,7 @@ X-Bapi-Limit-Reset-Timestamp: 1672738134824
         <th>Method</th><th>Path</th><th>Limit</th><th>upgradable</th>
     </tr>
     <tr>
-        <td rowSpan="13">GET</td><td>/v1/asset/transfer/query-asset-info</td><td>60 req/min</td><td>N</td>
+        <td rowSpan="12">GET</td><td>/v1/asset/transfer/query-asset-info</td><td>60 req/min</td><td>N</td>
     </tr>
     <tr>
         <td>/v1/asset/transfer/query-transfer-coin-list</td><td>60 req/min</td><td>N</td>
@@ -151,7 +148,6 @@ X-Bapi-Limit-Reset-Timestamp: 1672738134824
     <tr>
         <td>/v1/asset/coin/query-info</td><td>5 req/s</td><td>N</td>
     </tr>
-   
     <tr>
         <td rowSpan="5">POST</td><td>/v1/asset/transfer/inter-transfer</td><td>60 req/min</td><td>N</td>
     </tr>
